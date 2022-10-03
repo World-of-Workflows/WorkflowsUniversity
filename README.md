@@ -11,3 +11,4 @@ For reference material, click [here](reference-guide.md)
    2. [Manage Users](manage-users.md) - Learn how to work with and manage users
 2. Electronic Forms
    1. [Jotform Integration](jotform-integration.md) - Integrate Jotform with your system and deliver awesome electronic forms
+3. [Tasks](tasks/README.md)
