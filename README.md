@@ -8,5 +8,6 @@ For reference material, click [here](reference-guide.md)
 
 1. Users and Capabilities
    1. [Manage Capabilities](manage-capabilities.md) - Learn to work with the system of capabilities and to add and edit capabilities in your system.
+   2. [Manage Users](manage-users.md) - Learn how to work with and manage users
 2. Electronic Forms
    1. [Jotform Integration](jotform-integration.md) - Integrate Jotform with your system and deliver awesome electronic forms
