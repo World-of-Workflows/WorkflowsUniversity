@@ -7,10 +7,10 @@ To start, build a form in Jotform.
 ## To configure a jotform to work with HubOne Workflows.
 
 1. In HubOne Workflows, create a new Workflow
-2. Add a HTTP Activity configured as follows:
+2. Add a **HTTP Endpoint** activity configured as follows:
    ![Http Activity](2022-10-03-13-10-38.png)
    Set the Path to be any path you want, but ensure POST and Read Content are both checked. Ensure you go to **Common** and set the **Technical Name** to be **JotFormPost**.
-3. [Optional] Add a HTTP Response Activity after this to show some feedback to the user.
+3. [Optional] Add a HTTP Response Activity after this to show some feedback to the user. You could even add a [Thank you page](thank-you-page.md).
 4. Go to Jotform and open your form
 5. Click **SETTINGS**
 6. Choose **Form Settings**
