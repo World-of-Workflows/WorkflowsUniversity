@@ -6,6 +6,7 @@ The following workflow activities are available:
 
 ### Read Line
 Read text from standard in.
+
 **Category:** Console
 
 **There are no input parameters**
@@ -20,8 +21,10 @@ Read text from standard in.
 #### Outcomes
 
 - Done
+
 ### Write Line
 Write text to standard out.
+
 **Category:** Console
 
 #### Input Parameters
@@ -36,8 +39,10 @@ Write text to standard out.
 #### Outcomes
 
 - Done
+
 ### Open Browser
 Opens a new instance of a browser
+
 **Category:** Rpa.Web
 
 #### Input Parameters
@@ -57,8 +62,10 @@ Opens a new instance of a browser
 #### Outcomes
 
 - Done
+
 ### Close Browser
 Closes a instance of a browser
+
 **Category:** Rpa.Web
 
 #### Input Parameters
@@ -73,8 +80,10 @@ Closes a instance of a browser
 #### Outcomes
 
 - Done
+
 ### Navigate to Url
 Navigates to a URL
+
 **Category:** Rpa.Web
 
 #### Input Parameters
@@ -90,8 +99,10 @@ Navigates to a URL
 #### Outcomes
 
 - Done
+
 ### Click Element
 Clicks an element in the GUI
+
 **Category:** Rpa.Web
 
 #### Input Parameters
@@ -109,8 +120,10 @@ Clicks an element in the GUI
 #### Outcomes
 
 - Done
+
 ### Type Text
 Clicks an element in the GUI
+
 **Category:** Rpa.Web
 
 #### Input Parameters
@@ -129,8 +142,10 @@ Clicks an element in the GUI
 #### Outcomes
 
 - Done
+
 ### Get Text
 Extracts text from an element
+
 **Category:** Rpa.Web
 
 #### Input Parameters
@@ -147,8 +162,10 @@ Extracts text from an element
 #### Outcomes
 
 - Done
+
 ### Send Email
 Send an email message.
+
 **Category:** Email
 
 #### Input Parameters
@@ -174,8 +191,10 @@ Send an email message.
 
 - Done
 - Unexpected Error
+
 ### Entity Changed
 Triggers when an entity was added, updated or deleted.
+
 **Category:** Entity
 
 #### Input Parameters
@@ -195,8 +214,10 @@ Triggers when an entity was added, updated or deleted.
 #### Outcomes
 
 - Done
+
 ### Delete File
 Deletes file at specified location
+
 **Category:** File
 
 #### Input Parameters
@@ -211,8 +232,10 @@ Deletes file at specified location
 #### Outcomes
 
 - Done
+
 ### Enumerate Files
 Enumerates files in a given folder
+
 **Category:** File
 
 #### Input Parameters
@@ -235,8 +258,10 @@ Enumerates files in a given folder
 #### Outcomes
 
 - Done
+
 ### File Exists
 Checks if a file exists
+
 **Category:** File
 
 #### Input Parameters
@@ -252,8 +277,10 @@ Checks if a file exists
 
 - True
 - False
+
 ### Out File
 Output input value to specified location
+
 **Category:** File
 
 #### Input Parameters
@@ -270,8 +297,10 @@ Output input value to specified location
 #### Outcomes
 
 - Done
+
 ### Read File
 Output input value to specified location
+
 **Category:** File
 
 #### Input Parameters
@@ -290,8 +319,10 @@ Output input value to specified location
 #### Outcomes
 
 - Done
+
 ### Temp File
 Created a temporary file and returns its path
+
 **Category:** File
 
 **There are no input parameters**
@@ -306,8 +337,10 @@ Created a temporary file and returns its path
 #### Outcomes
 
 - Done
+
 ### Watch Directory
 Triggers when files are created/modified in the given folder
+
 **Category:** File
 
 #### Input Parameters
@@ -329,8 +362,10 @@ Triggers when files are created/modified in the given folder
 #### Outcomes
 
 - Done
+
 ### Cron
 Triggers periodically based on a specified CRON expression.
+
 **Category:** Timers
 
 #### Input Parameters
@@ -345,8 +380,10 @@ Triggers periodically based on a specified CRON expression.
 #### Outcomes
 
 - Done
+
 ### Timer
 Triggers at a specified interval.
+
 **Category:** Timers
 
 #### Input Parameters
@@ -361,8 +398,10 @@ Triggers at a specified interval.
 #### Outcomes
 
 - Done
+
 ### Start at
 Triggers at a specified moment in time.
+
 **Category:** Timers
 
 #### Input Parameters
@@ -377,8 +416,10 @@ Triggers at a specified moment in time.
 #### Outcomes
 
 - Done
+
 ### Clear Timer
 Cancel a timer (Cron, StartAt, Timer) so that it is not executed.
+
 **Category:** Timers
 
 #### Input Parameters
@@ -393,8 +434,10 @@ Cancel a timer (Cron, StartAt, Timer) so that it is not executed.
 #### Outcomes
 
 - Done
+
 ### HTTP Endpoint
 Handle an incoming HTTP request.
+
 **Category:** HTTP
 
 #### Input Parameters
@@ -419,8 +462,10 @@ Handle an incoming HTTP request.
 #### Outcomes
 
 - Done
+
 ### HTTP Response
 Write an HTTP response.
+
 **Category:** HTTP
 
 #### Input Parameters
@@ -439,8 +484,10 @@ Write an HTTP response.
 #### Outcomes
 
 - Done
+
 ### Send HTTP Request
 Send an HTTP request.
+
 **Category:** HTTP
 
 #### Input Parameters
@@ -470,8 +517,10 @@ Send an HTTP request.
 
 - Done
 - Unsupported Status Code
+
 ### Redirect
 Write an HTTP redirect response.
+
 **Category:** HTTP
 
 #### Input Parameters
@@ -487,8 +536,10 @@ Write an HTTP redirect response.
 #### Outcomes
 
 - Done
+
 ### Run JavaScript
 Run JavaScript code.
+
 **Category:** Scripting
 
 #### Input Parameters
@@ -508,8 +559,10 @@ Run JavaScript code.
 #### Outcomes
 
 - Done
+
 ### Capability Create
 Adds a new capability
+
 **Category:** Users
 
 #### Input Parameters
@@ -530,8 +583,10 @@ Adds a new capability
 
 - Success
 - Failed
+
 ### Capabilities Get List
 Gets a list of all capabilities
+
 **Category:** Users
 
 #### Input Parameters
@@ -551,8 +606,10 @@ Gets a list of all capabilities
 
 - Success
 - Failed
+
 ### Data Type Add
 Adds a new Data Type to be used as a hint to the Data CRUD UI
+
 **Category:** Data
 
 #### Input Parameters
@@ -574,8 +631,10 @@ Adds a new Data Type to be used as a hint to the Data CRUD UI
 
 - Success
 - Failed
+
 ### DataTypes get List
 Gets a list of all DataTypes
+
 **Category:** Data
 
 **There are no input parameters**
@@ -593,8 +652,10 @@ Gets a list of all DataTypes
 
 - Success
 - Failed
+
 ### Entity Created
 Waits for an entity to be created
+
 **Category:** Data
 
 #### Input Parameters
@@ -614,8 +675,10 @@ Waits for an entity to be created
 
 - Success
 - Failed
+
 ### Entity Updated
 Waits for an Entity to be updated
+
 **Category:** Data
 
 #### Input Parameters
@@ -635,8 +698,10 @@ Waits for an Entity to be updated
 
 - Complete
 - Failed
+
 ### Object Create
 Creates a Brand New Object
+
 **Category:** Data
 
 #### Input Parameters
@@ -659,8 +724,10 @@ Creates a Brand New Object
 
 - Success
 - Failed
+
 ### Object Create, Set, Promote to Variable
 Creates a new Object, Sets Data, Promotes it and returns in a Variable
+
 **Category:** Data
 
 #### Input Parameters
@@ -685,8 +752,10 @@ Creates a new Object, Sets Data, Promotes it and returns in a Variable
 
 - Success
 - Failed
+
 ### Object Detail Create
 Creates a new Desired State for an Object
+
 **Category:** Data
 
 #### Input Parameters
@@ -708,8 +777,10 @@ Creates a new Desired State for an Object
 
 - Success
 - Failed
+
 ### Object Detail Create and Promote
 Creates a new Desired State for an Object then immediately promotes it
+
 **Category:** Data
 
 #### Input Parameters
@@ -732,8 +803,10 @@ Creates a new Desired State for an Object then immediately promotes it
 
 - Success
 - Failed
+
 ### Object Detail Get
 Gets the detail of an object from a specific State
+
 **Category:** Data
 
 #### Input Parameters
@@ -755,8 +828,10 @@ Gets the detail of an object from a specific State
 
 - Success
 - Failed
+
 ### Object Detail Promote
 Promotes an Object Version from Desired State to Current State
+
 **Category:** Data
 
 #### Input Parameters
@@ -778,8 +853,10 @@ Promotes an Object Version from Desired State to Current State
 
 - Success
 - Failed
+
 ### Object Detail To Variable
 Gets the detail of an object from a specific State and places it in a workflow variable
+
 **Category:** Data
 
 #### Input Parameters
@@ -797,8 +874,10 @@ Gets the detail of an object from a specific State and places it in a workflow v
 
 - Success
 - Failed
+
 ### Objects Get List by Type
 Gets a List of Objects by Type
+
 **Category:** Data
 
 #### Input Parameters
@@ -821,8 +900,10 @@ Gets a List of Objects by Type
 
 - Success
 - Failed
+
 ### Objects get list with Query
 Gets a list of objects based on a query
+
 **Category:** Data
 
 #### Input Parameters
@@ -844,8 +925,10 @@ Gets a list of objects based on a query
 
 - Success
 - Failed
+
 ### Object Update
 Updates an object
+
 **Category:** Data
 
 **There are no input parameters**
@@ -861,8 +944,10 @@ Updates an object
 
 - Success
 - Failed
+
 ### Object Rename
 Renames an object
+
 **Category:** Data
 
 #### Input Parameters
@@ -883,8 +968,10 @@ Renames an object
 
 - Success
 - Failed
+
 ### Task Ask Simple Question and Wait
 Create a Task and Waits until a simple question has been responded to
+
 **Category:** Tasks
 
 #### Input Parameters
@@ -911,8 +998,10 @@ Create a Task and Waits until a simple question has been responded to
 
 #### Outcomes
 
+
 ### Task Create
 Creates a new Task
+
 **Category:** Tasks
 
 #### Input Parameters
@@ -937,8 +1026,10 @@ Creates a new Task
 
 - Success
 - Failed
+
 ### Task Create and Wait
 Create a Task and Waits until it is complete or has timed out
+
 **Category:** Tasks
 
 #### Input Parameters
@@ -966,8 +1057,10 @@ Create a Task and Waits until it is complete or has timed out
 - Complete
 - Failed
 - TimedOut
+
 ### Task Delete
 Deletes a Task
+
 **Category:** Tasks
 
 #### Input Parameters
@@ -987,8 +1080,10 @@ Deletes a Task
 
 - Success
 - Failed
+
 ### Task detail add
 Adds a Detail to Task
+
 **Category:** Tasks
 
 #### Input Parameters
@@ -1011,8 +1106,10 @@ Adds a Detail to Task
 
 - Success
 - Failed
+
 ### Task details get list
 Gets the details associated with a task
+
 **Category:** Tasks
 
 #### Input Parameters
@@ -1033,8 +1130,10 @@ Gets the details associated with a task
 
 - Success
 - Failed
+
 ### Tasks get list
 Gets lis of tasks with a specific id or assigned to user
+
 **Category:** Tasks
 
 #### Input Parameters
@@ -1056,8 +1155,10 @@ Gets lis of tasks with a specific id or assigned to user
 
 - Success
 - Failed
+
 ### Task Update
 Updates a task
+
 **Category:** Tasks
 
 #### Input Parameters
@@ -1080,8 +1181,10 @@ Updates a task
 
 - Success
 - Failed
+
 ### Type add Column
 Adds a column to a type
+
 **Category:** Data
 
 #### Input Parameters
@@ -1111,8 +1214,10 @@ Adds a column to a type
 
 - Success
 - Failed
+
 ### Type add index
 Adds an index to a type
+
 **Category:** Data
 
 #### Input Parameters
@@ -1134,8 +1239,10 @@ Adds an index to a type
 
 - Success
 - Failed
+
 ### Type Create
 Creates a new Type
+
 **Category:** Data
 
 #### Input Parameters
@@ -1156,8 +1263,10 @@ Creates a new Type
 
 - Success
 - Failed
+
 ### Type Delete
 Deletes a Type
+
 **Category:** Data
 
 #### Input Parameters
@@ -1173,8 +1282,10 @@ Deletes a Type
 
 - Success
 - Failed
+
 ### Type get columns
 Gets the Columns for a Type
+
 **Category:** Data
 
 #### Input Parameters
@@ -1198,8 +1309,10 @@ Gets the Columns for a Type
 
 - Success
 - Failed
+
 ### Types Get List
 Gets a List of All Types
+
 **Category:** Data
 
 **There are no input parameters**
@@ -1217,8 +1330,10 @@ Gets a List of All Types
 
 - Success
 - Failed
+
 ### Type Remove Index
 Removes an index from a type
+
 **Category:** Data
 
 #### Input Parameters
@@ -1240,8 +1355,10 @@ Removes an index from a type
 
 - Success
 - Failed
+
 ### User Add
 Adds a new user
+
 **Category:** Users
 
 #### Input Parameters
@@ -1264,8 +1381,10 @@ Adds a new user
 
 - Success
 - Failed
+
 ### User Capability Add
 Assigns a capability to a User
+
 **Category:** Users
 
 #### Input Parameters
@@ -1287,8 +1406,10 @@ Assigns a capability to a User
 
 - Success
 - Failed
+
 ### Capability Remove
 Removes a Capability from a user
+
 **Category:** Users
 
 #### Input Parameters
@@ -1311,8 +1432,10 @@ Removes a Capability from a user
 
 - Success
 - Failed
+
 ### Users Get List
 Gets the list of users
+
 **Category:** Users
 
 #### Input Parameters
@@ -1334,8 +1457,10 @@ Gets the list of users
 
 - Success
 - Failed
+
 ### User Update
 Updates a User
+
 **Category:** User
 
 #### Input Parameters
@@ -1359,8 +1484,10 @@ Updates a User
 
 - Success
 - Failed
+
 ### JotForm Parse
 Parse an incoming form. Takes results of HTTP activity and works to ensure the appropriate object type is created, adds or updates a record
+
 **Category:** JotForm
 
 #### Input Parameters
@@ -1383,8 +1510,10 @@ Parse an incoming form. Takes results of HTTP activity and works to ensure the a
 
 - Success
 - Failed
+
 ### Quick Data Insert
 Quickly inserts the provided data into a type and upgrades if required
+
 **Category:** Data
 
 #### Input Parameters
@@ -1407,8 +1536,10 @@ Quickly inserts the provided data into a type and upgrades if required
 
 - Success
 - Failed
+
 ### Get Customers
 Retrieves Customers from the database
+
 **Category:** Tuftware Sales
 
 #### Input Parameters
@@ -1428,8 +1559,10 @@ Retrieves Customers from the database
 
 - Success
 - Failed
+
 ### Get Customer Rep
 Retrieves a Rep for a customer
+
 **Category:** Tuftware Sales
 
 #### Input Parameters
@@ -1451,8 +1584,10 @@ Retrieves a Rep for a customer
 - Failed
 - CustomerNotFound
 - RepNotFound
+
 ### Run Workflow
 Runs a child workflow.
+
 **Category:** Workflows
 
 #### Input Parameters
@@ -1480,7 +1615,9 @@ Runs a child workflow.
 
 - Done
 - Not Found
+
 ### Workflow
+
 
 **Category:** Miscellaneous
 
@@ -1496,8 +1633,10 @@ Runs a child workflow.
 #### Outcomes
 
 - Done
+
 ### State
 Puts the workflow into the specified state.
+
 **Category:** State Machine
 
 #### Input Parameters
@@ -1512,8 +1651,10 @@ Puts the workflow into the specified state.
 
 #### Outcomes
 
+
 ### Interrupt Trigger
 Resumes suspended workflows that are blocked on a specific trigger.
+
 **Category:** Workflows
 
 #### Input Parameters
@@ -1530,8 +1671,10 @@ Resumes suspended workflows that are blocked on a specific trigger.
 #### Outcomes
 
 - Done
+
 ### Send Signal
 Sends the specified signal.
+
 **Category:** Workflows
 
 #### Input Parameters
@@ -1549,8 +1692,10 @@ Sends the specified signal.
 #### Outcomes
 
 - Done
+
 ### Signal Received
 Suspend workflow execution until the specified signal is received.
+
 **Category:** Workflows
 
 #### Input Parameters
@@ -1570,8 +1715,10 @@ Suspend workflow execution until the specified signal is received.
 #### Outcomes
 
 - Done
+
 ### Fault
 Put the workflow in a faulted state.
+
 **Category:** Primitives
 
 #### Input Parameters
@@ -1585,7 +1732,9 @@ Put the workflow in a faulted state.
 
 #### Outcomes
 
+
 ### Inline
+
 
 **Category:** Miscellaneous
 
@@ -1601,8 +1750,10 @@ Put the workflow in a faulted state.
 #### Outcomes
 
 - Done
+
 ### Set Context ID
 Set context ID on the workflow.
+
 **Category:** Primitives
 
 #### Input Parameters
@@ -1617,8 +1768,10 @@ Set context ID on the workflow.
 #### Outcomes
 
 - Done
+
 ### Set Name
 Set the name of the workflow instance.
+
 **Category:** Primitives
 
 #### Input Parameters
@@ -1633,8 +1786,10 @@ Set the name of the workflow instance.
 #### Outcomes
 
 - Done
+
 ### Set Transient Variable
 Set a transient variable on the current workflow execution context.
+
 **Category:** Primitives
 
 #### Input Parameters
@@ -1650,8 +1805,10 @@ Set a transient variable on the current workflow execution context.
 #### Outcomes
 
 - Done
+
 ### Set Variable
 Set variable on the workflow.
+
 **Category:** Primitives
 
 #### Input Parameters
@@ -1667,8 +1824,10 @@ Set variable on the workflow.
 #### Outcomes
 
 - Done
+
 ### Correlate
 Set the CorrelationId of the workflow to a given value.
+
 **Category:** Workflows
 
 #### Input Parameters
@@ -1687,8 +1846,10 @@ Set the CorrelationId of the workflow to a given value.
 #### Outcomes
 
 - Done
+
 ### Break
 Break out of a While, For or ForEach loop.
+
 **Category:** Control Flow
 
 **There are no input parameters**
@@ -1699,8 +1860,10 @@ Break out of a While, For or ForEach loop.
 #### Outcomes
 
 - Done
+
 ### Finish
 Removes any blocking activities from the current container (workflow or composite activity).
+
 **Category:** Workflows
 
 #### Input Parameters
@@ -1719,8 +1882,10 @@ Removes any blocking activities from the current container (workflow or composit
 
 #### Outcomes
 
+
 ### For Each
 Iterate over a collection.
+
 **Category:** Control Flow
 
 #### Input Parameters
@@ -1740,8 +1905,10 @@ Iterate over a collection.
 
 - Iterate
 - Done
+
 ### Fork
 Fork workflow execution into multiple branches.
+
 **Category:** Control Flow
 
 #### Input Parameters
@@ -1755,8 +1922,10 @@ Fork workflow execution into multiple branches.
 
 #### Outcomes
 
+
 ### For
 Iterate between two numbers.
+
 **Category:** Control Flow
 
 #### Input Parameters
@@ -1779,8 +1948,10 @@ Iterate between two numbers.
 
 - Iterate
 - Done
+
 ### If/Else
 Evaluate a Boolean expression and continue execution depending on the result.
+
 **Category:** Control Flow
 
 #### Input Parameters
@@ -1797,8 +1968,10 @@ Evaluate a Boolean expression and continue execution depending on the result.
 - True
 - False
 - Done
+
 ### Join
 Merge workflow execution back into a single branch.
+
 **Category:** Control Flow
 
 #### Input Parameters
@@ -1814,8 +1987,10 @@ Merge workflow execution back into a single branch.
 #### Outcomes
 
 - Done
+
 ### Parallel for Each
 Iterate over a collection in parallel.
+
 **Category:** Control Flow
 
 #### Input Parameters
@@ -1831,8 +2006,10 @@ Iterate over a collection in parallel.
 
 - Iterate
 - Done
+
 ### Switch
 Evaluate multiple conditions and continue execution depending on the results.
+
 **Category:** Control Flow
 
 #### Input Parameters
@@ -1849,8 +2026,10 @@ Evaluate multiple conditions and continue execution depending on the results.
 
 - Default
 - Done
+
 ### While
 Execute while a given condition is true.
+
 **Category:** Control Flow
 
 #### Input Parameters
@@ -1866,8 +2045,10 @@ Execute while a given condition is true.
 
 - Iterate
 - Done
+
 ### Compensable
 Allow work that executed after this activity to be undone.
+
 **Category:** Compensation
 
 **There are no input parameters**
@@ -1882,8 +2063,10 @@ Allow work that executed after this activity to be undone.
 - Cancel
 - Confirm
 - Done
+
 ### Compensate
 Invoke a specific compensable activity.
+
 **Category:** Compensation
 
 #### Input Parameters
@@ -1899,8 +2082,10 @@ Invoke a specific compensable activity.
 #### Outcomes
 
 - Done
+
 ### Confirm
 Confirm a specific compensable activity.
+
 **Category:** Compensation
 
 #### Input Parameters
@@ -1915,7 +2100,9 @@ Confirm a specific compensable activity.
 #### Outcomes
 
 - Done
+
 ### Composite Activity
+
 
 **Category:** Miscellaneous
 
@@ -1931,3 +2118,4 @@ Confirm a specific compensable activity.
 #### Outcomes
 
 - Done
+
