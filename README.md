@@ -13,3 +13,4 @@ For reference material, click [here](reference-guide.md)
    1. [Jotform Integration](jotform-integration.md) - Integrate Jotform with your system and deliver awesome electronic forms
 3. [Tasks](tasks/README.md)
 4. [Activities](activity-guide.md) - Reference information on all the activities that can be used to create workflows.
+5. [Object Workflows](object-workflows.md) - Create Workflows that can be started from the Object Edit Screen
