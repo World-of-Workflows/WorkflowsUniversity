@@ -1434,7 +1434,7 @@ Removes a Capability from a user
 - Failed
 
 ### Users Get List
-Gets the list of users
+Gets the list of Users
 
 **Category:** Users
 
