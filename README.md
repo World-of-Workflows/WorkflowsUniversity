@@ -6,16 +6,15 @@ Welcome to HubOne Workflows University. This collection of processes and documen
 
 This guide assumes you are new to HubOne Workflows and want to quickly get everything up and running.
 
-
-1. **Users and Capabilities**
+1. **[Installation](installation.md)** - Use this guide to install HubOne Workflows on Windows, Linux or Mac.
+2. **Users and Capabilities**
    1. [Manage Capabilities](manage-capabilities.md) - Learn to work with the system of capabilities and to add and edit capabilities in your system.
    2. [Manage Users](manage-users.md) - Learn how to work with and manage users.
-2. **Electronic Forms**
+3. **Electronic Forms**
    1. [Jotform Integration](jotform-integration.md) - Integrate Jotform with your system and deliver awesome electronic forms.
-3. **[Tasks](tasks/README.md)** - Manage end-user tasks and use the task management system.
-4. **[Activities](activity-guide.md)** - Reference information on all the activities that can be used to create workflows.
-5. **[Object Workflows](object-workflows.md)** - Create Workflows that can be started from the Object Edit Screen.
-6. **[Installation](installation.md)** - Use this guide to install HubOne Workflows on Windows, Linux or Mac.
+4. **[Tasks](tasks/README.md)** - Manage end-user tasks and use the task management system.
+5. **[Activities](activity-guide.md)** - Reference information on all the activities that can be used to create workflows.
+6. **[Object Workflows](object-workflows.md)** - Create Workflows that can be started from the Object Edit Screen.
 7. **[Configuration](configuration-file.md)** - Use this guide to configure your instance of HubOne Workflows.
 8. **[Release Notes](release-notes-1-0.md)** - Read the latest release notes.
 9. Workflow Development
