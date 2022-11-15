@@ -30,4 +30,4 @@ This guide assumes you are new to HubOne Workflows and want to quickly get every
    3.  Flow Control
    4.  Working with Tasks
 10.  Advanced Configuration
-     1.   [Changing Directory](changing-directory.md) - Shows how to host workflows in a different Azure Active Directory
+     1.   **[Changing Directory](changing-directory.md)** - Shows how to host workflows in a different Azure Active Directory
