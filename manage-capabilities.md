@@ -1,16 +1,13 @@
 # [Managing Capabilities](https://app.tango.us/app/workflow/69590b5e-6e94-4901-8af3-67640af571c9?utm_source=markdown&utm_medium=markdown&utm_campaign=workflow%20export%20links)
 
 __Description:__ 
-In this guide, you learn how to manage capabilities in the system
+In this guide, you learn how to manage capabilities in the system.
 
 
 __Date:__ October 2, 2022
 
 __Author:__ Nick Beaugeard
 
-__Source:__ [Tango](https://app.tango.us/app/workflow/69590b5e-6e94-4901-8af3-67640af571c9?utm_source=markdown&utm_medium=markdown&utm_campaign=workflow%20export%20links)
-
-***
 
 ### 1. [Go to Dashboard | HubOne Workflows](https://localhost:7063/)
 
