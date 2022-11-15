@@ -8,6 +8,7 @@ To start, build a form in Jotform.
 
 1. In HubOne Workflows, create a new Workflow
 2. Add a **HTTP Endpoint** activity configured as follows:
+   ![Http Activity Chooser](2022-11-16-07-25-09.png)
    ![Http Activity](2022-10-03-13-10-38.png)
    Set the Path to be any path you want, but ensure POST and Read Content are both checked. Ensure you go to **Common** and set the **Technical Name** to be **JotFormPost**.
 3. [Optional] Add a HTTP Response Activity after this to show some feedback to the user. You could even add a [Thank you page](thank-you-page.md).
@@ -18,7 +19,7 @@ To start, build a form in Jotform.
    ![Jotform Form Settings](2022-10-03-13-12-53.png)
 8. Scroll down until you see **Send Post Data**. Ensure this is set to **Yes**
    ![Send Post Data](2022-10-03-13-14-09.png)
-9. Still in Jotform, click **THANK YOU PAGE**
+9.  Still in Jotform, click **THANK YOU PAGE**
 10. Select **Redirect to an external link after submission**
 11. Enter the URL of your workflows instance followed by the **Path** from the Activity you created in step 1
 
