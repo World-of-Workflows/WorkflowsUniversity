@@ -41,7 +41,7 @@ __Source:__ [Tango](https://app.tango.us/app/workflow/831bf5cb-4ce0-415a-a77a-49
 ![Step 8 screenshot](https://images.tango.us/public/screenshot_0219c27b-bbe3-4a6f-8d3e-3c8e48b90f34.png?crop=focalpoint&fit=crop&fp-x=0.9712&fp-y=0.3287&fp-z=3.0233&w=1200&ar=1718%3A1235)
 
 
-### 9. Click on User capabilities…
+### 9. Click on User capabilities
 ![Step 9 screenshot](https://images.tango.us/public/screenshot_920c44ed-b90c-47d0-abcb-47013c55d586.png?crop=focalpoint&fit=crop&fp-x=0.8484&fp-y=0.4308&fp-z=3.1626&w=1200&ar=1718%3A1235)
 
 
