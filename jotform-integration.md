@@ -4,7 +4,7 @@
 
 To start, build a form in Jotform.
 
-## To configure a jotform to work with HubOne Workflows.
+## To configure a jotform to work with HubOne Workflows
 
 1. In HubOne Workflows, create a new Workflow
 2. Add a **HTTP Endpoint** activity configured as follows:
