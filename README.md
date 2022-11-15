@@ -18,3 +18,16 @@ This guide assumes you are new to HubOne Workflows and want to quickly get every
 6. **[Installation](installation.md)** - Use this guide to install HubOne Workflows on Windows, Linux or Mac
 7. **[Configuration](configuration-file.md)** - Use this guide to configure your instance of HubOne Workflows.
 8. **[Release Notes](release-notes-1-0.md)** - Read the latest release notes.
+9. Workflow Development
+   1.  Triggers or Starting Workflows
+       1.  Timers
+       2.  Http
+       3.  Object Based
+   2.  Working with Data
+       1.  Creating Types
+       2.  Creating Objects
+       3.  Using the State Model
+   3.  Flow Control
+   4.  Working with Tasks
+10.  Advanced Configuration
+     1.   [Changing Directory](changing-directory.md) - Shows how to host workflows in a different Azure Active Directory
