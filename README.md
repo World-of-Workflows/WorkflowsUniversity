@@ -12,7 +12,7 @@ This guide assumes you are new to HubOne Workflows and want to quickly get every
    2. [Manage Users](manage-users.md) - Learn how to work with and manage users.
 2. **Electronic Forms**
    1. [Jotform Integration](jotform-integration.md) - Integrate Jotform with your system and deliver awesome electronic forms.
-3. **[Tasks](tasks/README.md)**
+3. **[Tasks](tasks/README.md)** - Manage end-user tasks and use the task management system.
 4. **[Activities](activity-guide.md)** - Reference information on all the activities that can be used to create workflows.
 5. **[Object Workflows](object-workflows.md)** - Create Workflows that can be started from the Object Edit Screen.
 6. **[Installation](installation.md)** - Use this guide to install HubOne Workflows on Windows, Linux or Mac.
