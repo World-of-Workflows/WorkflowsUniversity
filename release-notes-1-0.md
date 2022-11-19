@@ -21,7 +21,7 @@ Welcome to the release notes for HubOne Workflows. This document contains inform
 - [1513](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1513) - DataInstance Page - When adding new data, the previous entry is still in the slide in
   **WORKAROUND**: When adding new data, delete the existing entries
 - [1599](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1599) - Remove SQL injection sites (eg: WhereString definitions and parameters)
-  **WORKAROUND:** Don't allow end users access to the UI in this version, use it as an admin UI for task and process automation only
+  **WORKAROUND:** Don't allow end Users access to the UI in this version, use it as an admin UI for task and process automation only
 - [1617](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1617) - Add the workflow NAME (not just ID) and version number to Task details
   **WORKAROUND:** Lookup the workflow from the ID in the Workflows Tab.
 - [1630](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1630) - RollBackObjectAsync not implemented
@@ -61,7 +61,7 @@ Welcome to the release notes for HubOne Workflows. This document contains inform
 - [1946](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1946) - Low Priority - Admin Page - No Blue bar when the menu is clicked
 - [1947](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1947) - UI Testing - Object Types Page - No error handling on invalid Object Type
 - [1949](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1949) - UI Testing - Users Page - Users have authorization to the workflows page
-- [1950](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1950) - UI Testing - Users Page - Editing a users email creates a new user.
+- [1950](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1950) - UI Testing - Users Page - Editing a Users email creates a new user.
 - [1951](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1951) - UI Testing - Object Types page - Invalid Name no error handling
 - [1957](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1957) - UI Testing - Workflows/Tasks - Workflow doesn't create task
 - [1958](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1958) - UI Testing - Import Page - Not working
