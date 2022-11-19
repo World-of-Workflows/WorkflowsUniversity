@@ -15,4 +15,9 @@ The Task Pane shows the details of a task and has 6 main areas:
 - Custom Actions
 - Additional Information
 
+## Working with the All tasks View
+- [Opening the View](all-tasks.md)
+
+
+
 

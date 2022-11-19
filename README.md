@@ -21,7 +21,7 @@ This guide assumes you are new to HubOne Workflows and want to quickly get every
    1.  Triggers or Starting Workflows
        1.  Timers
        2.  Http
-       3.  Object Based
+       3.  Object-Based
    2.  Working with Data
        1.  Creating Types
        2.  Creating Objects
