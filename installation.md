@@ -1,5 +1,5 @@
 # Installation
-This doocument contains instructions on how to install and configure HubOne Workflows on your machine.
+This document contains instructions on how to install and configure HubOne Workflows on your machine.
 
 ## Windows Installation
 
