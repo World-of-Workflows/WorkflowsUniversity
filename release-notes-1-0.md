@@ -24,12 +24,8 @@ Welcome to the release notes for HubOne Workflows. This document contains inform
   **WORKAROUND:** Don't allow end Users access to the UI in this version, use it as an admin UI for task and process automation only
 - [1617](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1617) - Add the workflow NAME (not just ID) and version number to Task details
   **WORKAROUND:** Lookup the workflow from the ID in the Workflows Tab.
-- [1620](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1620) - Test CreateObjectDetailAsync (Invalid Data Type Match)
-- [1621](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1621) - ObjectGetList does not bring back list
-- [1627](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1627) - RemoveColumnAsync doesn't correctly check column name and objectId
-- [1629](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1629) - RenameTypeAsync --> RenameObjectTypeAsync
 - [1630](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1630) - RollBackObjectAsync not implemented
-- [1631](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1631) - SearchAllTablesAsync sql injection and not working
+  **WORKAROUND:** None. In this version you cannot roll back objects
 - [1632](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1632) - GetAllTasksAsync not working
 - [1633](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1633) - UpdateObjectDetailAsync desiredState Id does not exist
 - [1634](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1634) - UpdateTaskAsync not implemented
