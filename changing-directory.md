@@ -45,7 +45,7 @@ In Expose an API:
 2. Select Save and continue.
 3. Provide a Scope name (for example, API.Access).
 4. Provide an Admin consent display name (for example, Access API).
-5. Provide an Admin consent description (for example, Allows the app to access server app API endpoints.).
+5. Provide an Admin consent description (for example, Allows the app to access server app API endpoints).
 6. Confirm that the State is set to Enabled.
 7. Select Add scope.
 
