@@ -56,7 +56,7 @@ Record the following information:
 
 In Authentication > Platform configurations > Single-page application (SPA):
 
-1. Confirm the Redirect URI of https://localhost:7063/authentication/login-callback is present.
+1. Confirm the Redirect URI of https://localhost:7063/authentication/login-callback is present. ( or the URL your application  uses)
 2. In the Implicit grant section, ensure that the checkboxes for Access tokens and ID tokens are not selected.
 3. The remaining defaults for the app are acceptable for this experience.
 4. Select the Save button.
