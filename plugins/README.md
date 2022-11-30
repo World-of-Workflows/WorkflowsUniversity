@@ -4,7 +4,14 @@ Plugins are libraries of activities which can be dynamically added to World of W
 
 These libaries must be digitally signed with the World of Workflows certificate, to ensure that malicious code does not get into customers hands, however library authors can create libraries and submit them for approval.
 
-To create a library:
+
+The following Plugins are available:
+
+- [AzureAdmin](azureadmin.md) - This plugin provides tools for working with Azure
+
+
+
+## To create a library:
 
 ## Create the Csharp Project
 1. A Library is a standard dotnet 7.0 Class Library.
@@ -14,6 +21,7 @@ To create a library:
    2. Add a reference to ```Elsa.Core``` (Current Version 2.9.1 at time of writing) and add a reference to ```HubOneWorkflows.Plugins```.
 
    A standard .csproj file will look like this:
+
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
 
@@ -65,7 +73,7 @@ public class ConfigCommand :ICommand
 
 Note here we add our name, description a reference to this assembly and the Elsa Options to add any activities that are required.
 
-## Write Activites
+## Write Activities
 Next, add your activities as normal.
 
 ## Publish
