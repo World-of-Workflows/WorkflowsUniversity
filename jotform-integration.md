@@ -4,7 +4,7 @@
 
 To start, build a form in Jotform.
 
-## How to Configure a Jotform to work with World of Workflows
+## How to configure a Jotform to work with World of Workflows
 
 1. In World of Workflows, create a new workflow.
 2. Add a **HTTP Endpoint** activity configured as follows:
