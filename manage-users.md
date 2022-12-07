@@ -10,7 +10,7 @@ __Source:__ [Tango](https://app.tango.us/app/workflow/831bf5cb-4ce0-415a-a77a-49
 
 ***
 
-### 1. [Go to Dashboard | HubOne Workflows](https://localhost:7063/)
+### 1. [Go to Dashboard | World of Workflows](https://localhost:7063/)
 
 
 ### 2. Click on "Admin".
