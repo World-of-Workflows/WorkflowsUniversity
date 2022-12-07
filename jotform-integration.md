@@ -10,7 +10,7 @@ To start, build a form in Jotform.
 2. Add a **HTTP Endpoint** activity configured as follows:
    ![Http Activity Chooser](2022-11-16-07-25-09.png)
    ![Http Activity](2022-10-03-13-10-38.png)
-   Set the "Path" to be any path you want, but ensure **POST** and **Read Content** are both checked. Ensure you go to **Common** and set the **Technical Name** to be **JotFormPost**.
+   Set the **Path** to be any path you want, but ensure **POST** and **Read Content** are both checked. Ensure you go to **Common** and set the **Technical Name** to be **JotFormPost**.
 3. [Optional] Add a **HTTP Response Activity** after this to show some feedback to the user. You could even add a [thank you page](thank-you-page.md).
 4. Go to Jotform and open your form.
 5. Click **SETTINGS**.
