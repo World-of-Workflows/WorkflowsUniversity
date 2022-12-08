@@ -2,13 +2,13 @@
 
 > HubOne Workflows Version 1.0.0. Released 11 November 2022
 
-Welcome to HubOne Workflows University. This collection of processes and documentation will help you get used to working with HubOne Workflows.
+Welcome to Workflows University. This collection of processes and documentation will help you get used to working with World of Workflows.
 
-This guide assumes you are new to HubOne Workflows and want to quickly get everything up and running.
+This guide assumes you are new to World of Workflows and want to quickly get everything up and running.
 
-1. **[Installation](installation.md)** - Use this guide to install HubOne Workflows on Windows, Linux or Mac.
+1. **[Installation](installation.md)** - Use this guide to install World of Workflows on Windows, Linux or Mac.
 2. **Users and Capabilities**
-   1. [Manage Capabilities](manage-capabilities.md) - Learn to work with the system of capabilities and to add and edit capabilities in your system.
+    1. [Manage Capabilities](manage-capabilities.md) - Learn how to add and edit capabilities in your system.
    2. [Manage Users](manage-Users.md) - Learn how to add and edit users in your system.
 3. **Electronic Forms**
    1. [Jotform Integration](jotform-integration.md) - Integrate Jotform with your system and deliver awesome electronic forms.
