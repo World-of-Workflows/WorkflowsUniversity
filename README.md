@@ -11,7 +11,7 @@ This guide assumes you are new to World of Workflows and want to quickly get eve
     1. [Manage Capabilities](manage-capabilities.md) - Learn how to add and edit capabilities in your system.
    2. [Manage Users](manage-Users.md) - Learn how to add and edit users in your system.
 3. **Electronic Forms**
-   1. [Jotform Integration](jotform-integration.md) - Integrate Jotform with your system and deliver awesome electronic forms.
+   1. [Jotform Integration](jotform-integration.md) - Learn how to integrate Jotform with your system and deliver awesome electronic forms.
 4. **[Tasks](tasks/README.md)** - Manage end-user tasks and use the task management system.
 5. **[Activities](activity-guide.md)** - Reference information on all the activities that can be used to create workflows.
 6. **[Object Workflows](object-workflows.md)** - Create Workflows that can be started from the Object Edit Screen.
