@@ -8,7 +8,7 @@ This guide assumes you are new to HubOne Workflows and want to quickly get every
 
 1. **[Installation](installation.md)** - Use this guide to install HubOne Workflows on Windows, Linux or Mac.
 2. **Users and Capabilities**
-   1. [Manage Capabilities](manage-capabilities.md) - Learn to work with the system of capabilities and to add and edit capabilities in your system.
+   1. [Manage Capabilities](manage-capabilities.md) - Learn how to add and edit capabilities in your system.
    2. [Manage Users](manage-Users.md) - Learn how to work with and manage Users.
 3. **Electronic Forms**
    1. [Jotform Integration](jotform-integration.md) - Integrate Jotform with your system and deliver awesome electronic forms.
