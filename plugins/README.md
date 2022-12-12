@@ -83,11 +83,13 @@ Publish the Library using the following dotnet command
 dotnet publish -c Release
 ```
 
-## Integrate
-Copy the contents of the ```bin\Release\net7.0\publish``` folder to the ```Extensions\<AssemblyName>``` folder in the World of Workflows installation.
+## Sign
+You will need to code sign the Primary assembly of the plugin. To do this you will need a provided code signing key from World of Workflows. To sign the Primary Assembly, run the following command:
 
-For example, if your assembly is WorldOfWorkflows.Actvities.Office365.dll, the folder should be WorldOfWorkflows.Activities.Office365
+```cmd
+HubOneWorkflows.CodeSigner.exe -f {PRIMARY_DLL_PATH} -c {PFX_KEY_PATH} -p {PASSWORD}
+```
 
+Next Zip the entire publish folder to the name of the Primary Assembly. e.g. if your assembly is called ```WorldOfWorkflows.Plugins.Office365.dll``` then the zip file should be called ```WorldOfWorkflows.Plugins.Office365.zip```
 
-## Run
-Restart World of Workflows and your activities will be available.
+Using your copy of World of Workflows, enter Developer mode through settings and upload the Zip file. If all is correct, on reboot, the plugin will be available.
