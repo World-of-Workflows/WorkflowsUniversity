@@ -6,7 +6,10 @@ Welcome to Workflows University. This collection of processes and documentation 
 
 This guide assumes you are new to World of Workflows and want to quickly get everything up and running.
 
-1. **[Installation](installation.md)** - Use this guide to install World of Workflows on Windows, Linux or Mac.
+
+**To get started, begin with our [Workflows Primer Course](learn-workflows/README.md)**
+
+1. **[Installation](installation.md)** - Use this guide to install HubOne Workflows on Windows, Linux or Mac.
 2. **Users and Capabilities**
     1. [Manage Capabilities](manage-capabilities.md) - Learn how to add and edit capabilities in your system.
    2. [Manage Users](manage-Users.md) - Learn how to add and edit users in your system.
