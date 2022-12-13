@@ -6,6 +6,8 @@ Welcome to HubOne Workflows University. This collection of processes and documen
 
 This guide assumes you are new to HubOne Workflows and want to quickly get everything up and running.
 
+To get started, begin with our [Workflows Primer Course](learn-workflows/README.md)
+
 1. **[Installation](installation.md)** - Use this guide to install HubOne Workflows on Windows, Linux or Mac.
 2. **Users and Capabilities**
    1. [Manage Capabilities](manage-capabilities.md) - Learn to work with the system of capabilities and to add and edit capabilities in your system.
