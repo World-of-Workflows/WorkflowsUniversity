@@ -39,6 +39,6 @@ World of Workflows consists of several components which work together to autoamt
 - **API** our API allows 3rd party systems to easily integrate with World of Workflows.
 - **Solutions** are collections of workflows and data allowing authors to write whole business solutions and quickly load them into new systems.
 
-
+> Many of the modules in this course are hands on. You will get the most benefit by following along withe the video or the written instructions.
 
 Next [The Database](database.md)
