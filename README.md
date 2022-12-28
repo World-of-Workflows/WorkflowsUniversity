@@ -1,10 +1,10 @@
 # Workflows University
 
-> HubOne Workflows Version 1.0.0. Released 11 November 2022
+> HubOne Workflows Version 1.1.0. Released 23 December 2022
 
 Welcome to Workflows University. This collection of processes and documentation will help you get used to working with World of Workflows.
 
-This guide assumes you are new to World of Workflows and want to quickly get everything up and running.
+This guide assumes you are new to the World of Workflows and want to quickly get everything up and running.
 
 
 **To get started, begin with our [Workflows Primer Course](learn-workflows/README.md)**
