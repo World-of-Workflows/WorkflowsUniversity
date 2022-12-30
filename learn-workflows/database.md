@@ -35,7 +35,7 @@ Go ahead and create these types.
 
 We've now and hopefully successfully added four types of data. Next we need to add columns to describe the data.
 
-Each type has a column created for you, called Title. This is what we call the title field and is used when linking tables together. For a customer, this should be the name of the company. For a contact it could be the first and last name. You are free to choose what goes in the title field and can also automatically change it later.
+Each type has a column created for you, called Title. This is what we call the title field and is used when linking tables together. For a customer, this should be the name of the company. For a contact it could be the first and last name. You are free to choose what goes in the title field and can also change it later.
 
 Follow along the next section and add the columns we need to get started with our CRM.
 
@@ -85,6 +85,7 @@ If we want to send them a birthday card, lets add their date of birth. <break ti
 Finally, lets add a link or relationship to a company so we can see where each user works. Notice I do this by making the data type a big Integer, clicking Foreign Key and choosing the type this is related to.
 
 Here are the fields for Contacts:
+
 | Name | DataType | Display Name | Description | Order | Visible |
 | -- | -- | -- | -- | -- | -- |
 | FirstName | String | First Name | The first name of the contact | 1 | True |
@@ -98,7 +99,7 @@ Next, we're going to add columns to the Leads type. Leads are special in that th
 
 Leads have the CompanyName, the FirstName and LastName of the contact along with their phone and email address and finally a location for notes.
 
-We expect our sales team will update a lead until qualified then create Customer, Contact and Opportunity Records. We'll use workflows to do this automatically later on, but for now, we're just creating enough columns to work with our data as we need it for our simple solution.
+We expect our sales team will update a lead until qualified. Once qualified they will commonly create Customer, Contact and Opportunity Records. We'll use workflows to do this automatically later on, but for now, we're just creating enough columns to work with our data as we need it for our simple solution.
 
 Here are the columns for Leads:
 
