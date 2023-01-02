@@ -1,5 +1,5 @@
 [Previous](control-flow.md) | [Home](README.md) | [Next](template.md)
-
+{% raw %}
 # Iteration
 
 Iteration tags repeatedly run blocks of code.
@@ -439,3 +439,4 @@ Information about a parent tablerow loop.
 | row | The 1-based index of current row. | number
 
 [Previous](control-flow.md) | [Home](README.md) | [Next](template.md)
+{% endraw %}

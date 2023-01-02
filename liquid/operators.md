@@ -1,5 +1,5 @@
 [Previous](introduction.md) | [Home](README.md) | [Next](truthy-amd-falsy.md)
-
+{% raw %}
 # Operators
 Liquid includes many logical and comparison operators. You can use operators to create logic with control flow tags.
 
@@ -71,3 +71,4 @@ In tags with more than one ```and``` or ```or``` operator, operators are checked
 ```
 
 [Previous](introduction.md) | [Home](README.md) | [Next](truthy-amd-falsy.md)
+{% endraw %}
