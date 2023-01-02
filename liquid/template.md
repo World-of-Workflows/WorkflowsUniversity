@@ -73,7 +73,8 @@ Temporarily disables tag processing. This is useful for generating certain conte
 ```liquid
 {% raw %}
 In Handlebars, {{ this }} will be HTML-escaped, but {{{ that }}} will not.
-{% endraw %}
+use endraw to end the raw block.
+
 ```
 
 #### Output
