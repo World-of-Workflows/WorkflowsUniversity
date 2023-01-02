@@ -4,6 +4,8 @@
 
 The following table contains filters aavailable using Liquid.
 
+{% raw %}
+
 | Filter | Description | Input | Output |
 | --- | --- | --- | --: |
 | abs | Returns the absolute value of a number. | ```{{ -17 | abs }}``` | 17 |
@@ -13,6 +15,7 @@ The following table contains filters aavailable using Liquid.
 | capitalize | Makes the first character of a string capitalized and converts the remaining characters to lowercase. | ```{{ "hello world" | capitalize }}``` | ```Hello world``` |
 | ceil | Rounds a number up to the nearest integer. | ```{{ 4.2 | ceil }}``` | ```5``` |
 | compact | Removes any ```nil``` values from an array. | ```{{ [1, 2, 3, "", nil, false] | compact }}``` | ```[1, 2, 3]``` |
+| concat | Concatenates two strings. | ```{{ "hello" | concat: " world" }}``` | ```hello world``` |
 | date | Formats a date. | ```{{ "2016-01-01" | date: "%Y" }}``` | ```2016``` |
 | default | Returns the specified value if the input is ```nil```, false or an empty string. | ```{{ nil | default: "hello" }}``` | ```hello``` |
 | divided_by | Divides a number by another number. | ```{{ 100 | divided_by: 2 }}``` | ```50``` |
@@ -52,6 +55,7 @@ The following table contains filters aavailable using Liquid.
 | url_encode | URL encodes a string. | ```{{ "hello world" | url_encode }}``` | ```hello%20world``` |
 | url_decode | URL decodes a string. | ```{{ "hello%20world" | url_decode }}``` | ```hello world``` |
 | where | Filters an array of objects by a specified property. | ```{{ site.posts | where: "title", "hello world" }}``` | ```[<Post title="hello world">]``` |
+{% endraw %}
 
 
 
