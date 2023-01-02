@@ -1,4 +1,5 @@
 [Previous](expressions-in-workflows.md) | [Home](README.md) | [Next](control-flow.md)
+
 {% raw %}
 # Whitespace control
 
@@ -73,4 +74,4 @@ Input
 
 [Previous](expressions-in-workflows.md) | [Home](README.md) | [Next](control-flow.md)
 
-{% endraw % }
+{% endraw %}
