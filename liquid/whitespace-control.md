@@ -1,5 +1,5 @@
 [Previous](expressions-in-workflows.md) | [Home](README.md) | [Next](control-flow.md)
-
+{% raw %}
 # Whitespace control
 
 In Liquid, you can include a hyphen in your tag syntax ```{{-```, ```-}}```, ```{%-```, and ```-%}``` to strip whitespace from the left or right side of a rendered tag.
@@ -72,3 +72,5 @@ Input
 ```Wow, John G. Chalmers-Smith, you have a long name!```
 
 [Previous](expressions-in-workflows.md) | [Home](README.md) | [Next](control-flow.md)
+
+{% endraw % }
