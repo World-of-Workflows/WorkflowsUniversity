@@ -1,5 +1,5 @@
 [Previous](README.md) | [Home](README.md) | [Next](operators.md)
-
+{% raw %}
 ## Introduction
 
 Liquid uses a combination of objects, tags, and filters inside template files to display dynamic content.
@@ -69,3 +69,4 @@ Multiple filters can be used on one output, and are applied from left to right.
 ```Hello Adam!```
 
 [Previous](README.md) | [Home](README.md) | [Next](operators.md)
+{% endraw %}

@@ -1,5 +1,5 @@
 [Previous](truthy-amd-falsy.md) | [Home](README.md) | [Next](expressions-in-workflows.md)
-
+{% raw %}
 # Types
 Liquid objects can be one of six types:
 
@@ -138,3 +138,5 @@ You can check to see if an object exists or not before you access any of its att
 Both empty strings and empty arrays will return true if checked for equivalence with empty.
 
 [Previous](truthy-amd-falsy.md) | [Home](README.md) | [Next](expressions-in-workflows.md)
+
+{% endraw %}

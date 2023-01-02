@@ -1,5 +1,5 @@
 [Previous](types.md) | [Home](README.md) | [Next](whitespace-control.md)
-
+{% raw %}
 # Liquid Expressions
 
 The following Liquid expressions are supported:
@@ -167,3 +167,4 @@ Example output:
 ```https://localhost:5001/signals/trigger/{some base64 token}```
 
 [Previous](types.md) | [Home](README.md) | [Next](whitespace-control.md)
+{% endraw %}

@@ -1,10 +1,10 @@
 [Previous](variable.md) | [Home](README.md) 
-
+{% raw %}
 # Filters
 
 The following table contains filters aavailable using Liquid.
 
-{% raw %}
+
 
 | Filter | Description | Input | Output |
 | --- | --- | --- | --: |

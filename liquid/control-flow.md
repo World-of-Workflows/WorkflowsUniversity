@@ -1,7 +1,7 @@
 [Previous](expressions-in-workflows.md) | [Home](README.md) | [Next](iteration.md)
 
 # Control flow
-
+{% raw %}
 Control flow tags create conditions that decide whether blocks of Liquid code get executed.
 
 ## if
@@ -90,4 +90,7 @@ An optional else statement at the end of the case provides code to execute if no
 
 ```This is a cake```
 
+{%endraw%}
 [Previous](expressions-in-workflows.md) | [Home](README.md) | [Next](iteration.md)
+
+{% endraw %}
