@@ -13,7 +13,6 @@ The following table contains filters aavailable using Liquid.
 | capitalize | Makes the first character of a string capitalized and converts the remaining characters to lowercase. | ```{{ "hello world" | capitalize }}``` | ```Hello world``` |
 | ceil | Rounds a number up to the nearest integer. | ```{{ 4.2 | ceil }}``` | ```5``` |
 | compact | Removes any ```nil``` values from an array. | ```{{ [1, 2, 3, "", nil, false] | compact }}``` | ```[1, 2, 3]``` |
-| concat | Concatenates two strings. | ```{{ "hello" | concat: " world" }}``` | ```hello world``` |
 | date | Formats a date. | ```{{ "2016-01-01" | date: "%Y" }}``` | ```2016``` |
 | default | Returns the specified value if the input is ```nil```, false or an empty string. | ```{{ nil | default: "hello" }}``` | ```hello``` |
 | divided_by | Divides a number by another number. | ```{{ 100 | divided_by: 2 }}``` | ```50``` |
