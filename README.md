@@ -12,7 +12,7 @@ This guide assumes you are new to the World of Workflows and want to quickly get
 1. **[Installation](installation.md)** - Use this guide to install HubOne Workflows on Windows, Linux or Mac.
 2. **Users and Capabilities**
     1. [Manage Capabilities](manage-capabilities.md) - Learn how to add and edit capabilities in your system.
-   2. [Manage Users](manage-Users.md) - Learn how to add and edit users in your system.
+   2. [Manage Users](manage-users.md) - Learn how to add and edit users in your system.
 3. **[Tasks](tasks/README.md)** - Manage end-user tasks and use the task management system.
 4. **[Activities](activity-guide.md)** - Reference information on all the activities that can be used to create workflows.
 5. **[Object Workflows](object-workflows.md)** - Create Workflows that can be started from the Object Edit Screen.
