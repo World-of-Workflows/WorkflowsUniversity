@@ -38,3 +38,5 @@ This guide assumes you are new to the World of Workflows and want to quickly get
 11.  Reference Guides
      1.   **[Activities Reference](activity-guide.md)** - Reference information on all the activities that can be used to create workflows.
      2.   **[Liquid Reference](liquid/README.md)** - Reference Guide on the Liquid Language used in Workflows.
+     3.   **[Javascript Reference](javascript/README.md)** - Reference Guide on the Javascript Language used in Workflows.
+     4.   **[Compensable Activities](compensable.md)** - Reference Guide on the Compensable Activities used in Workflows.
