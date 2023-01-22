@@ -1,6 +1,7 @@
 # The Database
 
 [![Watch the video](https://img.youtube.com/vi/WThvIWSbnDw/maxresdefault.jpg)](https://youtu.be/WThvIWSbnDw)
+*Click to watch the video*
 
 Welcome to this module on the World of Workflows database. In this course, you'll learn the basics of World of Workflows database design and management. 
 
