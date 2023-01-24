@@ -58,5 +58,5 @@ Finally, you get the **Task Metadata** which shows the Workflow and instance tha
 
 > **Note**: if you are using the Personal Edition, Capability and Assigned To are not used.
 
-
+Previous [Views](views.md) | Next [Workflows](workflows.md)
   
