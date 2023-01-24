@@ -1,5 +1,8 @@
   # Tasks
 
+[![Watch the video](https://img.youtube.com/vi/Ul0sroe0d-4/maxresdefault.jpg)](https://youtu.be/Ul0sroe0d-4)
+*Click to watch the video*
+
 Welcome to the module on the World of Workflows task management system. This system is designed to help you manage your tasks more effectively and efficiently. With our system, you can create tasks with multiple outcomes, detailed descriptions, and the ability to update data directly from the task itself. 
 
 You'll learn how to set up and configure the system, create and manage tasks, and use its powerful features to stay organized and on top of your work. 
