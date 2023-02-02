@@ -1,6 +1,6 @@
 # Workflows University
 
-> HubOne Workflows Version 1.1.0. Released 23 December 2022
+> HubOne Workflows Version 1.3.0. Released 4 February 2023
 
 Welcome to Workflows University. This collection of processes and documentation will help you get used to working with World of Workflows.
 
@@ -22,12 +22,9 @@ This guide assumes you are new to the World of Workflows and want to quickly get
        1.  **[Creating a Workflow](workflow-development/creating-a-workflow.md)** - How to create a Workflow Definitions
        2.  **[Editing a Workflow](workflow-development/editing-a-workflow.md)** - How to edit a workflow definition.
        3.  Deleting a Workflow
-   2.  [Starting Workflows](workflow-development/starting-workflows.md) - Learn how to start a workflow.
+   2.  **[Starting Workflows](workflow-development/starting-workflows.md)** - Learn how to start a workflow.
        1.  **[Dual Triggers](workflow-development/dual-triggers.md)** - Learn how to create a workflow that can be started from a number of triggers.
-   3.  Working wih Data
-       1.  Creating Types
-       2.  Creating Objects
-       3.  Using the State Model
+   3.  **[Working with Data](data/README.md)** - Shows how to work with data in Workflows
    4.  Flow Control
    5.  Working with Tasks
 8.  **Electronic Forms**
