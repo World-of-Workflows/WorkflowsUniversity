@@ -9,6 +9,8 @@ This guide assumes you are new to the World of Workflows and want to quickly get
 
 **To get started, begin with our [Workflows Primer Course](learn-workflows/README.md)**
 
+> There are differences between the Personal Edition and the Business and Enterprise Editions. This initial Release contains the Personal Edition. Please read the version differences docuemnt [here](versions.md)
+
 1. **[Installation](installation.md)** - Use this guide to install HubOne Workflows on Windows, Linux or Mac.
 2. **Users and Capabilities**
     1. [Manage Capabilities](manage-capabilities.md) - Learn how to add and edit capabilities in your system.
