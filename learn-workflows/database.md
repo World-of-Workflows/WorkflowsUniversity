@@ -109,8 +109,8 @@ Here are the columns for Leads:
 | CompanyName | String | Company Name | The name of the company | 1 | True |
 | FirstName | String | First Name | The first name of the contact | 2 | True |
 | LastName | String | Last Name | The last name of the contact | 3 | True |
-| Phone | Phone | Phone | The phone number of the contact | 4 | True |
-| Email | Email | Email | The email address of the contact | 5 | True |
+| Phone | String | Phone | The phone number of the contact | 4 | True |
+| Email | String | Email | The email address of the contact | 5 | True |
 | Notes | String | Notes | Notes about the lead | 6 | True |
 | Qualified | True/False | Qualified | Whether the lead has been qualified | 7 | True |
 
