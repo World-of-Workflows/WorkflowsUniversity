@@ -29,16 +29,16 @@ World of Workflows runs **solutions**, which are a configuration of the platform
 World of Workflows is written in Microsoft dotnet 7.
 
 # Components
-World of Workflows consists of several components which work together to autoamted your business processes:
+World of Workflows consists of several components which work together to automate your business processes:
 
 - **Workflows** are the core of the system and allow you to graphically design your workflows as flowcharts and the system will then automated based on your instructions.
 - **The Database** allows you to store information about your business and the system will then allow you to query and update this information. It can also be used to integrate multiple systems together.
-- **Tasks** As few processes can be *totally* automated, the task system allows you to configure the system to instruct your team to perform exactly the right task when it is needs.
+- **Tasks** As few processes can be *totally* automated, the task system allows you to configure the system to instruct your team to perform exactly the right task when it is needed.
 - **Views** allow you to show the team just the information they need and allows them to navigate quickly and easily through business data.
 - **Plugins** allow you to extend the system with additional workflow activities and integrate with other systems.
 - **API** our API allows 3rd party systems to easily integrate with World of Workflows.
 - **Solutions** are collections of workflows and data allowing authors to write whole business solutions and quickly load them into new systems.
 
-
+> Many of the modules in this course are hands on. You will get the most benefit by following along with the video or the written instructions.
 
 Next [The Database](database.md)
