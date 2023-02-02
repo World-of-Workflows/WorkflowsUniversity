@@ -53,11 +53,11 @@ To add a column to this type, click **Add column** and enter the data as follows
 - Visible chooses whether the column is visible or invisible to the end user. Invisible columns can be used by workflows to store data but are not shown to the user.
 - Indexed means that the column will be indexed for faster searching. This is useful for columns that are used to search for data.
 
-This next section takes about five minutes and over the next five minutes, you're going to setup all the data needed for a See Are Emm environment to manage your sales team.
+This next section takes about five minutes and over the next five minutes, you're going to setup all the data needed for a CRM environment to manage your sales team.
 
 World of Workflows can store all sorts of data and solve any number of business problems, but in this course we focus on managing your customers and leads.
 
-Clicking Properties on a type allows you to add columns. You add a column by clicking the  Add Column button.
+Clicking Properties on a type allows you to add columns. You add a column by clicking the Add Column button.
 
 To Customers we are going to add an address which is street address, city, state and postalcode.
 
@@ -74,11 +74,11 @@ The fields for Customers are shown below:
 | Website | URL | Website | The website of the customer | 5 | True |
 
 
-Next we setup Contacts. Contacts are people who work for a customer, and are the one's we contact directly. 
+Next we setup Contacts. Contacts are people who work for a customer, and are the ones we contact directly. 
 
 Let's navigate back to types and then click Properties on Contacts. Feel free to use the top menu if you get it wrong. 
 
-In this case we'll add firstname and LastName as strings.
+In this case we'll add FirstName and LastName as strings.
 
 Next we'll add the contact's email address and phone number. 
 
@@ -93,7 +93,7 @@ Here are the fields for Contacts:
 | LastName | String | Last Name | The last name of the contact | 2 | True |
 | Email | Email | Email | The email address of the contact | 3 | True |
 | Phone | Phone | Phone | The phone number of the contact | 4 | True |
-| BirthDate | Date | Birth Date | The birth date of the contact | 5 | True |
+| BirthDate | DateTime | Birth Date | The birth date of the contact | 5 | True |
 | Company | BigInteger - Foreign Key - Company | Company | The company the contact works for | 6 | True |
 
 Next, we're going to add columns to the Leads type. Leads are special in that they are not going to be related to customers or contacts unless we qualify them, so we seem like we are duplicating some columns.
@@ -135,6 +135,6 @@ Here are the columns for Opportunity:
 | Won | True/False | Won | Whether the opportunity was won | 6 | True |
 | Closed | True/False | Closed | Whether the opportunity is closed | 7 | True |
 
-So, you can see how easy it is to represent all types of data in the database of types in world of workflows. In the next module we'll look at actually working with data in the user interface and the module after that will deal with views and showing this data to users in a meaningful way.
+So, you can see how easy it is to represent all types of data in the database of types in World Of Workflows. In the next module we'll look at actually working with data in the user interface and the module after that will deal with views and showing this data to users in a meaningful way.
 
 Previous [Introduction](introduction-module.md) | Next [Views](views.md)
