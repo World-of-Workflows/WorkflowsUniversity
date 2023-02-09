@@ -16,7 +16,7 @@ Welcome to the release notes for HubOne Workflows. This document contains inform
 - **Workflows** - Advanced Workflow Engine
 
 ## Known Issues
-- [1293](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1293) - Name validation allows all characters unless if they're surrounded by '%' characters.
+- [1293](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1293) - Name validation allows all characters unless they're surrounded by '%' characters.
     **WORKAROUND**: Never use '%' characters to surround your names.
 - [1513](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1513) - DataInstance Page - When adding new data, the previous entry is still in the slide in
   **WORKAROUND**: When adding new data, delete the existing entries
@@ -52,7 +52,7 @@ Welcome to the release notes for HubOne Workflows. This document contains inform
 - [1924](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1924) - Controller Testing - DataTypeController - PutDataType
 - [1925](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1925) - Controller Testing - DataTypesController - PutDataType InvalidCastException
 - [1929](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1929) - Controller Testing - GetInstancesWithTitleByType - No Invalid ObjectTypeId check
-- [1930](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1930) - Capabilities - AddCapability not using logged in user for authorizing
+- [1930](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1930) - Capabilities - AddCapability not using logged in user for authorising
 - [1931](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1931) - Users - UpdateCapability using admin to authenticate
 - [1937](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1937) - UI Testing - Users Page - Delete User
 - [1941](https://dev.azure.com/tribetechau/HubOne%20Workflows/_queries/edit/1941) - Low Priority - UI Testing - Home Page - Video not clickable

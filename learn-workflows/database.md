@@ -5,7 +5,7 @@
 
 Welcome to this module on the World of Workflows database. In this course, you'll learn the basics of World of Workflows database design and management. 
 
-The World of Workflows database is a relational database which is a collection of data organized in tables with columns and rows, allowing for easy access and manipulation of the data. You'll learn about the different types of data types, the rules of good database design, and how to use the user interface and workflows to interact with the database. By the end of this course, you'll have a solid foundation in the principles of world of workflows databases and be able to use them effectively in your work. Let's get started.
+The World of Workflows database is a relational database which is a collection of data organized in tables with columns and rows, allowing for easy access and manipulation of the data. You'll learn about the different types of data types, the rules of good database design, and how to use the user interface and workflows to interact with the database. By the end of this course, you'll have a solid foundation in the principles of World of Workflows databases and be able to use them effectively in your work. Let's get started.
 
 # Types
 A **type** in the workflows database and a spreadsheet are similar in that they both organize data into rows and columns. However, there are some key differences between the two. A spreadsheet is typically used for storing and analyzing small amounts of data, while a table in the workflows database is designed for storing and managing large amounts of data. 
@@ -18,8 +18,8 @@ We consider spreadsheets commonly store quite **unstructured** data whereas the 
 
 - To create a new type, follow the procedure [here](procedures/create-type.md)
 
-## DataTypes
-Each column in a workflows database **type** has a specific datattype. The datatypes determine what kind of data can be stored in the column, and how the data can be used.
+## Data Types
+Each column in a workflows database **type** has a specific data type. The data types determine what kind of data can be stored in the column, and how the data can be used.
 
 For example, we can store currency values, dates, strings as simple types but also store email addresses, phone numbers, and URLs as more complex types.
 
@@ -32,7 +32,7 @@ Workflows also allows you to export your data, edit it outside of workflows and 
 When considering how you will configure your database, it's important to think about how you will use it. A session planning what data you will need and how you will use it is important to ensure you don't have to spend time redoing your work.
 
 > **Developer Mode**
-> Normally, in production you cannot rename or delete types or columns. This is to ensure that the data is immutable and cannot be removed. This is the normal configuration for World of Workflows. However an adminsitrator can enable developer mode which extends the system to allow these more dangerous activities.
+> Normally, in production you cannot rename or delete types or columns. This is to ensure that the data is immutable and cannot be removed. This is the normal configuration for World of Workflows. However an administrator can enable developer mode which extends the system to allow these more dangerous activities.
 
 When one works with the database, you normally:
 
@@ -86,7 +86,7 @@ A type is like a table of data which includes **rows** and **columns**, just lik
 
 The first thing you need to do is give your type a name. This is the name that will be used to refer to the type in the system. You can add a description to remind you (and others) what this type is all about. Click **Save** to save your type.
 
-The example we will work through in this course is to create a simple CRM or Customer Relationsip Management system.
+The example we will work through in this course is to create a simple CRM or Customer Relationship Management system.
 
 To do this, we will need to create four types;
 
@@ -116,15 +116,15 @@ To add a column to this type, click **Add column** and enter the data as follows
 - Visible chooses whether the column is visible or invisible to the end user. Invisible columns can be used by workflows to store data but are not shown to the user.
 - Indexed means that the column will be indexed for faster searching. This is useful for columns that are used to search for data.
 
-This next section takes about five minutes and over the next five minutes, you're going to setup all the data needed for a CRM environment to manage your sales team.
+This next section takes about five minutes and over the next five minutes, you're going to set up all the data needed for a CRM environment to manage your sales team.
 
 World of Workflows can store all sorts of data and solve any number of business problems, but in this course we focus on managing your customers and leads.
 
 Clicking Properties on a type allows you to add columns. You add a column by clicking the Add Column button.
 
-To Customers we are going to add an address which is street address, city, state and postalcode.
+To Customers we are going to add an address which is street address, city, state and postal code.
 
-We'll then add the website of the customer. Notice we make this a You Are Ell datatype instead of a string. Once done. Customers are complete.
+We'll then add the website of the customer. Notice we make this a You Are Ell data type instead of a string. Once done. Customers are complete.
 
 The fields for Customers are shown below:
 
