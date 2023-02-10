@@ -10,11 +10,11 @@ __Source:__ [Tango](https://app.tango.us/app/workflow/568ea768-6f9a-42d0-8d32-fd
 ### 1. [Go to Dashboard | World of Workflows](https://localhost:7063/)
 
 
-### 2. Click on Manage types
+### 2. Click on 'Manage types'
 ![Step 2 screenshot](https://images.tango.us/workflows/568ea768-6f9a-42d0-8d32-fd350b767371/steps/d63dc6c0-1963-4296-abf8-ec91c267cdb5/bcbdc5df-d757-4d27-915c-f677dcd10529.png?crop=focalpoint&fit=crop&fp-x=0.7009&fp-y=0.2146&fp-z=3.1154&w=1200&ar=3240%3A1922)
 
 
-### 3. Click on Add Type
+### 3. Click on 'Add Type'
 ![Step 3 screenshot](https://images.tango.us/workflows/568ea768-6f9a-42d0-8d32-fd350b767371/steps/7e54d57a-d6dd-4020-b673-c70028f1bf0b/f5e791c3-4afb-45a0-b3a0-5196f9196494.png?crop=focalpoint&fit=crop&fp-x=0.9042&fp-y=0.1033&fp-z=3.0335&w=1200&ar=3240%3A1922)
 
 

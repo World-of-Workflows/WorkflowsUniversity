@@ -20,7 +20,7 @@ The instructions below show how to do this:
 6. The example below shows the new type. Make note of the Title of your Type, in my case ```MyNewType```
    ![](2022-11-08-07-13-03.png)
 
-## 2. Creaste an Instance
+## 2. Create an Instance
 1. Click the Title of the Type you created above
 2. Click **Add**
 3. Enter the attributes of the new instance (in my case, this is just the title) and click **Save**
