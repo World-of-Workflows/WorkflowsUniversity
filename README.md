@@ -10,6 +10,8 @@ This guide assumes you are new to the **World of Workflows** and want to quickly
 
 **To get started, begin with our [Workflows Primer Course](learn-workflows/README.md)**
 
+> There are differences between the Personal Edition and the Business and Enterprise Editions. This initial Release contains the Personal Edition. Please read the version differences docuemnt [here](versions.md)
+
 1. **[Installation](installation.md)** - Use this guide to install HubOne Workflows on Windows, Linux or Mac.
 2. **Users and Capabilities**
     1. [Manage Capabilities](manage-capabilities.md) - Learn how to add and edit capabilities in your system.
@@ -27,7 +29,7 @@ This guide assumes you are new to the **World of Workflows** and want to quickly
        1.  **[Dual Triggers](workflow-development/dual-triggers.md)** - Learn how to create a workflow that can be started from several triggers.
    3.  **[Working with Data](data/README.md)** - Shows how to work with data in Workflows
    4.  Flow Control
-   5.  Working with Tasks
+   5. [Working with Tasks](workflow-development/working-with-tasks.md) - Learn how to work with tasks in Workflows.
 8.  **Electronic Forms**
     1.  **[Jotform Integration](jotform-integration.md)** - Learn how to integrate Jotform with your system and deliver awesome electronic forms.
 9.   Advanced Configuration
