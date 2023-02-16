@@ -28,7 +28,7 @@ This guide assumes you are new to the World of Workflows and want to quickly get
        1.  **[Dual Triggers](workflow-development/dual-triggers.md)** - Learn how to create a workflow that can be started from a number of triggers.
    3.  **[Working with Data](data/README.md)** - Shows how to work with data in Workflows
    4.  Flow Control
-   5.  Working with Tasks
+   5. [Working with Tasks](workflow-development/working-with-tasks.md) - Learn how to work with tasks in Workflows.
 8.  **Electronic Forms**
     1.  **[Jotform Integration](jotform-integration.md)** - Learn how to integrate Jotform with your system and deliver awesome electronic forms.
 9.   Advanced Configuration
