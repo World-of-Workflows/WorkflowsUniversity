@@ -31,12 +31,13 @@ This guide assumes you are new to the World of Workflows and want to quickly get
    5. [Working with Tasks](workflow-development/working-with-tasks.md) - Learn how to work with tasks in Workflows.
 8.  **Electronic Forms**
     1.  **[Jotform Integration](jotform-integration.md)** - Learn how to integrate Jotform with your system and deliver awesome electronic forms.
-9.   Advanced Configuration
+9. **[Reporting](reporting/README.md)** - Learn how to report on all the data in your instance of World of Workflows
+10.  Advanced Configuration
       1.   **[Changing Directory](changing-directory.md)** - Shows how to host workflows in a different Azure Active Directory.
       2.   **Plugins** - This shows how to create plugins for HubOne Workflows.
       3.   **[Backup](backup.md)** - Shows how to configure automatic backup and restore of your system.
       4.   **[Configuration](configuration-file.md)** - Use this guide to configure your instance of HubOne Workflows.Workflows.
-1.   Reference Guides
+11.   Reference Guides
      1.   **[Activities Reference](activity-guide.md)** - Reference information on all the activities that can be used to create workflows.
      2.   **[Liquid Reference](liquid/README.md)** - Reference Guide on the Liquid Language used in Workflows.
      3.   **[Javascript Reference](javascript/README.md)** - Reference Guide on the Javascript Language used in Workflows.
