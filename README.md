@@ -14,7 +14,7 @@ This guide assumes you are new to HubOne Workflows and want to quickly get every
    1. [Jotform Integration](jotform-integration.md) - Integrate Jotform with your system and deliver awesome electronic forms.
 4. **[Tasks](tasks/README.md)** - Manage end-user tasks and use the task management system.
 5. **[Activities](activity-guide.md)** - Reference information on all the activities that can be used to create workflows.
-6. **[Object Workflows](object-workflows.md)** - Create Workflows that can be started from the Object Edit Screen.
+6. **[Object Workflows](object-workflows.md)** - Create workflows that can be started from the object edit screen.
 7. **[Configuration](configuration-file.md)** - Use this guide to configure your instance of HubOne Workflows.
 8. **[Release Notes](release-notes-1-0.md)** - Read the latest release notes.
 9. Workflow Development
@@ -32,3 +32,5 @@ This guide assumes you are new to HubOne Workflows and want to quickly get every
 10.  Advanced Configuration
      1.   **[Changing Directory](changing-directory.md)** - Shows how to host workflows in a different Azure Active Directory.
      2.   **[Plugins](plugins/README.md)** - Shows how to create plugins for HubOne Workflows.
+11. Tutorials
+      1.  [Hello World](tutorials/hello-world.md)
