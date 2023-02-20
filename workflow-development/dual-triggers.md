@@ -8,4 +8,4 @@ During the development of a workflow, it is common to have a workflow based on a
 4. Link the tasks like this:
    ![](2022-11-25-15-14-47.png)
 
-The workflow wll now run eiher at the specified time, or upon pointing a browser at <host>/<endpoint>. eg https://localhost:7063/1st
+The workflow will now run either at the specified time, or upon pointing a browser at <host>/<endpoint>. eg https://localhost:7063/1st

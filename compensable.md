@@ -31,7 +31,7 @@ If an activity within the Body branch faults, the Cancel outcome is scheduled.
 
 ### Confirm
 
-For some scenarios, compensable activities should no longer allow to be compensated anymore.
+For some scenarios, compensable activities should no longer be allowed to be compensated anymore.
 To control this, the user should be able to explicitly confirm a compensable activity. When this happens, the Confirm outcome will be scheduled, allowing the user to do any work that finalizes some state.
 
 ## Compensate Activity

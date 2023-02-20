@@ -2,7 +2,7 @@
 
 There are three main ways to start a workflow:
 
-1. Timer based workflow - World of Workflows comes with a comprehsive scheduling system allowing you to run workflows at times that suit you.
+1. Timer based workflow - World of Workflows comes with a comprehensive scheduling system allowing you to run workflows at times that suit you.
 2. Http Based Workflow - Using the Http Activity, you can start a workflow by calling a URL that you create.
 3. Data Instance based workflow - By naming a workflow definition with a specific naming convention, you can start a workflow from the Object Edit Screen.
 
@@ -30,6 +30,7 @@ Now your workflow will run at the time you specify.
 
 Now, whenever you navigate to the URL you specified, the workflow will run.
 
+> **Note**: In Personal Edition, you will need to run this from a new *InPrivate* or *Incognito* session in your browser.
 ## Data Instance based workflow
 
 1. Create a new Workflow.

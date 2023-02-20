@@ -39,6 +39,6 @@ We're making the single-user version free to enable people to learn **World of W
 - **API** our API allows 3rd party systems to easily integrate with **World of Workflows**.
 - **Solutions** are collections of workflows and data allowing authors to write whole business solutions and quickly load them into new systems.
 
-> Many of the modules in this course are hands on. You will get the most benefit by following along with the video or the written instructions.
+> Many of the modules in this course are hands-on. You will get the most benefit by following along with the video or the written instructions.
 
 Next [The Database](database.md)
