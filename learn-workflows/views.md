@@ -64,7 +64,7 @@ The view with the Id of 1 is the parent view. This view is the top level view an
 
 ![](2023-01-23-09-57-09.png)
 
-When a button is clicked to navigate, the left most button is the parent view and any children populate after that.
+When a button is clicked to navigate, the leftmost button is the parent view and any children populate after that.
 
 ![](2023-01-23-09-58-07.png)
 

@@ -1,6 +1,6 @@
 # Workflow Development
 
-In order to work effectively with worlkflow development World of Workflows, it's important to understand its terminology. Below is a list of words that represent important concepts used in Elsa.
+In order to work effectively with workflow development World of Workflows, it's important to understand its terminology. Below is a list of words that represent important concepts used in Elsa.
 
 ## Workflow
 

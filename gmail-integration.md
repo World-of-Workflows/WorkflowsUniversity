@@ -11,7 +11,7 @@ To send emails via gmail, you need to get an application password. This is a pas
 3. Under "**Signing in to Google,**" select App Passwords. You may need to sign in. If you don’t have this option, it might be because:
    1. 2-Step Verification is not set up for your account.
    2. 2-Step Verification is only set up for security keys.
-   3. Your account is through work, school, or other organization.
+   3. Your account is through work, school, or other organisation.
    4. You turned on Advanced Protection.
 4. At the bottom, choose Select app and choose Other (Custom Name) and then enter "Workflows".
 5. Then choose Generate. Copy the Password provided.
@@ -26,7 +26,7 @@ Edit the SMTP section as follows:
 			"Host": "smtp.gmail.com",
 			"Port": "587",
 			"DefaultSender": "<YOUR GMAIL ADDRESS>",
-			"Username": "<YOUR GMAIIL ADDRESS>",
+			"Username": "<YOUR GMAIL ADDRESS>",
 			"Password": "<APPLICATION PASSWORD>",
 			"RequireCredentials": true,
 		    "SecureSocketOptions": 3,		

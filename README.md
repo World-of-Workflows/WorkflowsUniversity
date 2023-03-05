@@ -2,9 +2,10 @@
 
 > HubOne Workflows Version 1.3.0. Released 4 February 2023
 
-Welcome to Workflows University. This collection of processes and documentation will help you get used to working with World of Workflows.
 
-This guide assumes you are new to the World of Workflows and want to quickly get everything up and running.
+Welcome to **Workflows University**. This collection of processes and documentation will help you get used to working with World of Workflows.
+
+This guide assumes you are new to the **World of Workflows** and want to quickly get everything up and running.
 
 
 **To get started, begin with our [Workflows Primer Course](learn-workflows/README.md)**
@@ -25,7 +26,7 @@ This guide assumes you are new to the World of Workflows and want to quickly get
        2.  **[Editing a Workflow](workflow-development/editing-a-workflow.md)** - How to edit a workflow definition.
        3.  Deleting a Workflow
    2.  **[Starting Workflows](workflow-development/starting-workflows.md)** - Learn how to start a workflow.
-       1.  **[Dual Triggers](workflow-development/dual-triggers.md)** - Learn how to create a workflow that can be started from a number of triggers.
+       1.  **[Dual Triggers](workflow-development/dual-triggers.md)** - Learn how to create a workflow that can be started from several triggers.
    3.  **[Working with Data](data/README.md)** - Shows how to work with data in Workflows
    4.  Flow Control
    5. [Working with Tasks](workflow-development/working-with-tasks.md) - Learn how to work with tasks in Workflows.
@@ -44,3 +45,4 @@ This guide assumes you are new to the World of Workflows and want to quickly get
       3.   **[Javascript Reference](javascript/README.md)** - Reference Guide on the Javascript Language used in Workflows.
       4.   **[Compensable Activities](compensable.md)** - Reference Guide on the Compensable Activities used in Workflows.
       5.   **[Gmail Integration](gmail-integration.md)** - How to integrate Workflows PE with Gmail.
+
