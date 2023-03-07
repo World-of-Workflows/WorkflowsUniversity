@@ -12,7 +12,7 @@
 1. Open World of Workflows
 2. Navigate to Admin
 3. Click Import
-4. Choose the file `Leads.csv` from [here](Leads.csv)
+4. Choose the file `Leads.csv` from [here](files/Leads.csv)
    ![Choose File](2023-03-06-08-34-31.png)
 5. Click **Next**
    ![](2023-03-06-08-35-05.png)
@@ -36,7 +36,7 @@
    ![Workflows](2023-03-06-08-38-53.png)
 4. Click **Create Workflow**
 5. Select the **Publish** drop down (bottom right) and click **Import**
-6. Choose the file `AI Prospector.json` from [here](AI Prospector.json)
+6. Choose the file `AI Prospector.json` from [here](files/ai-prospector-workflow.json)
    ![Imported Workflow](2023-03-06-08-40-37.png)
 7. Click **Publish**
 
