@@ -36,8 +36,8 @@ The following steps register the application correctly in order to connect World
 8. Click **Web**
    ![Web Configuration](2023-03-06-08-20-50.png)
 9. Add the redirect URI of ```https://localhost:7063/v1/oauth2/callback``` for World of Workflows PE. For any other edition, replace ```localhost:7063``` with your World of Workflows domain.
-10. Select both Access tokens and ID tokens
-  ![Configure web](2023-03-06-08-22-36.png)  
+10. Select both Access tokens and ID tokens and click **Configure**
+  ![Configure web](2023-03-06-08-22-36.png) 
 11. On the left choose **Certificates and Secrets**
     ![Configured UI](2023-03-06-08-23-33.png)
 12. Click **New Client Secret**
