@@ -18,25 +18,23 @@ This guide assumes you are new to the World of Workflows and want to quickly get
 5. **[Object Workflows](object-workflows.md)** - Create Workflows that can be started from the Object Edit Screen.
 6. **[Configuration](configuration-file.md)** - Use this guide to configure your instance of HubOne Workflows.
 7. **[Release Notes](release-notes-1-0.md)** - Read the latest release notes.
-8. Workflow Development
-   1.  Triggers or Starting Workflows
-       1.  Timers
-       2.  Http
-       3.  Object-Based
-       4.  [Dual Triggers](workflow-development/dual-triggers.md)
+8. **[Workflow Development](workflow-development.md)** - Learn how to develop Workflows
+   1.  **[Triggers or Starting Workflows](starting-workflows.md)** - Learn how to start Workflows
+       1.  [Dual Triggers](workflow-development/dual-triggers.md)
    2.  Working with Data
        1.  Creating Types
        2.  Creating Objects
        3.  Using the State Model
    3.  Flow Control
    4.  Working with Tasks
-9. **Electronic Forms**
-   1. [Jotform Integration](jotform-integration.md) - Learn how to integrate Jotform with your system and deliver awesome electronic forms.
-10.   Advanced Configuration
-     1.   **[Changing Directory](changing-directory.md)** - Shows how to host workflows in a different Azure Active Directory.
-     2.   **Plugins** - This shows how to create plugins for HubOne Workflows.
-     3.   **[Backup](backup.md)** - Shows how to configure automatic backup and restore of your system.
-11.  Reference Guides
+9.  **[External Systems](external-systems.md)** - Learn how to connect Workflows to External Systems
+10. **Electronic Forms**
+    1.  [Jotform Integration](jotform-integration.md) - Learn how to integrate Jotform with your system and deliver awesome electronic forms.
+11.   Advanced Configuration
+      1.    **[Changing Directory](changing-directory.md)** - Shows how to host workflows in a different Azure Active Directory.
+      2.   **Plugins** - This shows how to create plugins for HubOne Workflows.
+      3.   **[Backup](backup.md)** - Shows how to configure automatic backup and restore of your system.
+12.  Reference Guides
      1.   **[Activities Reference](activity-guide.md)** - Reference information on all the activities that can be used to create workflows.
      2.   **[Liquid Reference](liquid/README.md)** - Reference Guide on the Liquid Language used in Workflows.
      3.   **[Javascript Reference](javascript/README.md)** - Reference Guide on the Javascript Language used in Workflows.
