@@ -87,3 +87,5 @@ Although variables can be created on the fly within a workflow as it executes, y
 # In this section
 
 - [Creating a Workflow](creating-a-workflow.md)
+- [Editing a Workflow](editing-a-workflow.md)
+- [Starting Workflows](starting-workflows.md)

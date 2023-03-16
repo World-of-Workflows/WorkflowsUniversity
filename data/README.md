@@ -14,7 +14,7 @@ Data is stored as types. These are like a spreadsheet. Rows are instances of the
 
 ## To Create a new Column
 1. Navigate to **Admin** then **Types**
-2. Click **Properties** on the type you wish to add a column for
+2. Click **Columns** on the type you wish to add a column for
 3. Click **Add Column**
    ![](2023-02-02-11-22-46.png)
    Enter the following information:

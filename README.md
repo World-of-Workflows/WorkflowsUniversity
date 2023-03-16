@@ -45,4 +45,5 @@ This guide assumes you are new to the **World of Workflows** and want to quickly
       3.   **[Javascript Reference](javascript/README.md)** - Reference Guide on the Javascript Language used in Workflows.
       4.   **[Compensable Activities](compensable.md)** - Reference Guide on the Compensable Activities used in Workflows.
       5.   **[Gmail Integration](gmail-integration.md)** - How to integrate Workflows PE with Gmail.
+13.   **[How to Guides](howto/README.md)** - Small articles detailing how to achieve certain tasks with Workflows. 
 
