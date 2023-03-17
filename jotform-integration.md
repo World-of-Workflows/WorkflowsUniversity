@@ -1,6 +1,6 @@
 # JotForm Integration
 
-[Jotform](https://jotform.com) is a popular electronic forms application. HubOne Workflows integrates with Jotforms configured in a specific way.
+[Jotform](https://jotform.com) is a popular electronic forms application. World of Workflows integrates with Jotforms configured in a specific way.
 
 To start, build a form in Jotform.
 
@@ -25,27 +25,26 @@ To start, build a form in Jotform.
 
 **Congratulations**, you now have a JotForm sending data to Workflows. There is lots you can do with this data, but one of the key things is to get it into the workflows database for later processing.
 
-Workflows comes with a special Activity, **Jotform Parse** which takes information from Jotform and will insert or update the workflows database as needed.
+Workflows comes with a special Activity, **JSON Data Insert** which takes information from Jotform and will insert or update the workflows database as needed.
 
 12. To make this work, go back to the workflow you created in step 1, above.
-13. At the end of the workflow, add the **Jotform Parse Activity**.
+13. At the end of the workflow, add the **JSON Data Insert** activity.
 
-    ![JotFormParseActivity](2022-10-03-13-17-50.png)
+    ![Json Data Insert Activity](2023-03-16-11-19-34.png)
 
     Enter the information as follows:
 
     | Item | Contents | Reason |
     | --- | --- |--- |
-    | Object Type | SalesVisit | This is the name of the object type you want to append to. if this is not in your database, the activity will automatically add it. |
+    | Object Type | SalesVisit | This is the name of the object type you want to append to. if this is not in your database, you just need to add a type. |
     | Key Field | submission_id | This is the key field, you can ensure the platform updates any objects with this field matching the one from jotform. For example, setting this to submission_id ensures that repeat identical submissions only update the data. |
-    | Activity Results | [see below](#activity-results-script) | This inserts the body from the HTTP Activity. |
+    | Values | [see below](#activity-results-script) | This inserts the body from the HTTP Activity. |
 
     The Activity results script is shown below:
 ### Activity Results Script
 
     ```js
-    var mything=getActivityProperty('JotFormPost','Output');
-    return JSON.stringify(mything.body)
+    activities.JotFormPast.Output().Body
     ```
 
     > Remember, change the text ```JotFormPost``` in the script to match the technical name of the activity created in Step 1, above.

@@ -7,7 +7,7 @@ This section details the server configuration file ```appsettings.json```  and w
 | "Logging": {<br/>		"LogLevel": {<br/>			"Default": "Information",<br/>			"Microsoft.AspNetCore": "Warning"<br/>		}<br/>	}, | Sets logging verbosity. Values are Debug, Warning or Information. |
 |	"AllowedHosts": "*", | Sets which hosts can access the API |
 |	"ConnectionType": "SQLite", | Sets the connection type. Values are ```SQLite``` or ```SQL``` |
-| 	"ConnectionStrings": {<br/>		"H1WFSQlite": "Data Source=./App_data/huboneworkflows.db",<br/>		"H1SQL": "Server=.;Database=H1Workflows;Trusted_Connection=True;Encrypt=False;",<br/>		"Tuftware": ""<br/>	}, | Sets the connection strings for SQLite and SQLServer and optionally other connectors if required. |
+| 	"ConnectionStrings": {<br/>		"H1WFSQlite": "Data Source=./App_data/worldofworkflows.db",<br/>		"H1SQL": "Server=.;Database=Workflows;Trusted_Connection=True;Encrypt=False;",<br/>		"Tuftware": ""<br/>	}, | Sets the connection strings for SQLite and SQLServer and optionally other connectors if required. |
 | 	"Elsa": { | Elsa Configuration Information |
 | 		"Features": { | Elsa Feature Configuration Information |
 |			"DefaultPersistence": { <br/>				"Enabled": true, <br/>				"Framework": "EntityFrameworkCore", <br/>				"ConnectionStringIdentifier": "Sqlite" <br/>			}, | Persistence configuration settings for Elsa. |

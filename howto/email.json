@@ -1,0 +1,27 @@
+{
+    "message": {
+        "subject": "EmailSubject",
+        "body": {
+            "contentType": "HTML",
+            "content": {
+                { Variables.Email | markup
+                }
+            }
+        },
+        "toRecipients": [
+            {
+                "emailAddress": {
+                    "address": "nbeaugeard@cranbrook.nsw.edu.au"
+                }
+            }
+        ],
+        "ccRecipients": [
+            {
+                "emailAddress": {
+                    "address": "nbeaugeard@cranbrook.nsw.edu.au"
+                }
+            }
+        ]
+    },
+    "saveToSentItems": "true"
+}

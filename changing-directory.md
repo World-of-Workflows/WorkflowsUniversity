@@ -1,6 +1,6 @@
 # Changing Directory
 
-Authentication in HubOne Workflows is performed using Azure Active Directory and this ensures security both through the client application and at the server side. To Change the directory for the application is simple yet slightly involved.
+Authentication in World of Workflows is performed using Azure Active Directory and this ensures security both through the client application and at the server side. To Change the directory for the application is simple yet slightly involved.
 
 In Order to change the Directory you will follow three steps:
 
@@ -27,7 +27,7 @@ Follow the guidance in Quickstart: [Set up a tenant to create a tenant in AAD](h
 #### Register an AAD app for the Server API app:
 
 1. Navigate to Azure Active Directory in the Azure portal. Select **App registrations** in the sidebar. Select the **New registration** button.
-2. Provide a Name for the app (for example, HubOne Workflows).
+2. Provide a Name for the app (for example, World of Workflows).
 3. Choose a Supported account type. You may select **Accounts in this organizational directory only (single tenant)** for this experience.
 4. The app does require a Redirect URI, make this the URI of your application when running locally, e.g. https://localhost:7063. It may ask what type of application. In this case, use SPA.
 5. If you're using an unverified publisher domain, clear the Permissions > Grant admin consent to openid and offline_access permissions checkbox. If the publisher domain is verified, this checkbox isn't present.
