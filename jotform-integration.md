@@ -1,6 +1,6 @@
 # JotForm Integration
 
-[Jotform](https://jotform.com) is a popular electronic forms application. HubOne Workflows integrates with Jotforms configured in a specific way.
+[Jotform](https://jotform.com) is a popular electronic forms application. World of Workflows integrates with Jotforms configured in a specific way.
 
 To start, build a form in Jotform.
 
