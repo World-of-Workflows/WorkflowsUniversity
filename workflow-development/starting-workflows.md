@@ -36,7 +36,7 @@ Now, whenever you navigate to the URL you specified, the workflow will run.
 1. Create a new Workflow.
 2. Click the Cog and open **Settings
     ![](2023-02-02-09-58-38.png)
-    The **Name** of the workflow is the internal name it is known by. > By prefixing the name with a Type Name from the database, followed by an underscore ```_```, you will have this workflow appear in the data editor and be run with the input being the id of the data instance you want the workflow to run as.
+    The **Name** of the workflow is the internal name it is known by.
     The **Display Name** is the name that will be shown to your end users in the interface.
     The **Description** is a useful place to store information on the workflow and why you created it in the first place.
 3. Click **Save**
