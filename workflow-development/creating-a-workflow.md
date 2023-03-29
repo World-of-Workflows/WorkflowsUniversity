@@ -1,6 +1,6 @@
 # Creating a Workflow
 
-To Work with your workflow definitions, you need to be an admin in system. If you are an Admin, you will see the **Admin** tab in the top Menu. Click **Admin** the click **Workflows** to go to the Workflow Dashboard:
+To Work with your workflow definitions, you need to be an admin in the system. If you are an Admin, you will see the **Admin** tab in the top Menu. Click **Admin** the click **Workflows** to go to the Workflow Dashboard:
 
 ![](2023-02-02-09-48-20.png)
 
@@ -19,13 +19,13 @@ To create a new workflow, click the **Create Workflow** button in the **Workflow
 
 ![](2023-02-02-09-51-57.png)
 
-The Workflow desginer will open. You can now start to build your workflow.
+The Workflow designer will open. You can now start to build your workflow.
 
 ![](2023-02-02-09-55-25.png)
 
-- Click **Start** to begin adding actities.
+- Click **Start** to begin adding activities.
 - The **Publish** dropdown allows you to publish, import and export a workflow definition.
-- The **<<** button shows additional information on yoru workflow including general information, and Version History.
+- The **<<** button shows additional information on your workflow including general information, and Version History.
 - The **?** icon gives help on using the designer.
 - The **Cog** setting allows you to set various options for this workflow.
 

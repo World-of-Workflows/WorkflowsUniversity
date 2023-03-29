@@ -52,7 +52,7 @@ You can also click **Unassign** if you no longer wish to work with this task. Cl
 
 ![](2023-01-24-11-06-48.png)
 
-Scrolling down gives the **Task Choices**, a set of ways to complete a task. If you are unable to complete the task, you can click **Error**, however, if you can complete the task, click one of the available choices, in green.
+Scrolling down gives the **Task Choices**, a set of ways to complete a task. If you are unable to complete the task, you can click **Error**. However, if you can complete the task, click one of the available choices, in green.
 
 Finally, you get the **Task Metadata** which shows the Workflow and instance that created the task, the Created Date and Due Date, and the Priority and Severity. At the bottom, you can see the capability that this task is assigned to.
 

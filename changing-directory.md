@@ -28,7 +28,7 @@ Follow the guidance in Quickstart: [Set up a tenant to create a tenant in AAD](h
 
 1. Navigate to Azure Active Directory in the Azure portal. Select **App registrations** in the sidebar. Select the **New registration** button.
 2. Provide a Name for the app (for example, HubOne Workflows).
-3. Choose a Supported account types. You may select **Accounts in this organizational directory only (single tenant)** for this experience.
+3. Choose a Supported account type. You may select **Accounts in this organizational directory only (single tenant)** for this experience.
 4. The app does require a Redirect URI, make this the URI of your application when running locally, e.g. https://localhost:7063. It may ask what type of application. In this case, use SPA.
 5. If you're using an unverified publisher domain, clear the Permissions > Grant admin consent to openid and offline_access permissions checkbox. If the publisher domain is verified, this checkbox isn't present.
    > **Note: If the application doesn't have a scope, azure will prompt you to create an application ID URI**
@@ -82,7 +82,7 @@ This file, ```appsettings.json``` resides in the root folder of the application.
 
 ```
 ## Change the configuration for the client
-This file, ```appsettings.json``` resides in the wwwroot folder of the publiches application. Make sure you also remove appsettings.json.br and appsettings.json.gz.
+This file, ```appsettings.json``` resides in the wwwroot folder of the published application. Make sure you also remove appsettings.json.br and appsettings.json.gz.
 ```json
  "AzureAdCli": {
     "Authority": "https://login.microsoftonline.com/{TENANT_ID}}",

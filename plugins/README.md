@@ -2,7 +2,7 @@
 
 Plugins are libraries of activities which can be dynamically added to World of Workflows.
 
-These libaries must be digitally signed with the World of Workflows certificate, to ensure that malicious code does not get into customers hands, however library authors can create libraries and submit them for approval.
+These libraries must be digitally signed with the World of Workflows certificate, to ensure that malicious code does not get into customers hands, however library authors can create libraries and submit them for approval.
 
 
 The following Plugins are available:
@@ -71,7 +71,7 @@ public class ConfigCommand :ICommand
 }
 ```
 
-Note here we add our name, description a reference to this assembly and the Elsa Options to add any activities that are required.
+Note here we add our name, description and a reference to this assembly and the Elsa Options to add any activities that are required.
 
 ## Write Activities
 Next, add your activities as normal.

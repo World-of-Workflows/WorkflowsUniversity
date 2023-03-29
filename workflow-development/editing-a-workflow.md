@@ -10,7 +10,7 @@ This will open the **Workflow Dashboard** in the **Workflow Definitions Page**
 
 Now click on the workflow you wish to edit
 
-The Workflow desginer will open. You can now start to edit your workflow.
+The Workflow designer will open. You can now start to edit your workflow.
 
 ![](2023-02-02-09-55-25.png)
 
