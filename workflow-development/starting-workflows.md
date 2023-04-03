@@ -39,7 +39,9 @@ Now, whenever you navigate to the URL you specified, the workflow will run.
     The **Name** of the workflow is the internal name it is known by.
     The **Display Name** is the name that will be shown to your end users in the interface.
     The **Description** is a useful place to store information on the workflow and why you created it in the first place.
-3. Click **Save**
+3. Add the Activity **Object Instance Trigger**
+4. Choose the Object Type
+5. Click **Save**
 
 Now, whenever you navigate to a specific instance of the type specified, this workflow will appear in the workflow tabs.
 
