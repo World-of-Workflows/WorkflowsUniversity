@@ -34,13 +34,10 @@ Now, whenever you navigate to the URL you specified, the workflow will run.
 ## Data Instance based workflow
 
 1. Create a new Workflow.
-2. Click the Cog and open **Settings
-    ![](2023-02-02-09-58-38.png)
-    The **Name** of the workflow is the internal name it is known by.
-    The **Display Name** is the name that will be shown to your end users in the interface.
-    The **Description** is a useful place to store information on the workflow and why you created it in the first place.
-3. Add the Activity **Object Instance Trigger**
-4. Choose the Object Type
+2. Click **Add Activity** and choose the **Data** category and the **Object Instance Trigger** activity
+3. Right Click and Choose Edit
+   ![](2023-04-06-09-44-20.png)
+4. Select the type you wish to trigger the workflow from
 5. Click **Save**
 
 Now, whenever you navigate to a specific instance of the type specified, this workflow will appear in the workflow tabs.
