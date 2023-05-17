@@ -33,10 +33,7 @@ Send an Http request to Microsoft Graph to Send the email
         "subject": "EmailSubject",
         "body": {
             "contentType": "HTML",
-            "content": {
-                { Variables.Email | markup
-                }
-            }
+            "content": {{ Variables.Email | markup }}
         },
         "toRecipients": [
             {
