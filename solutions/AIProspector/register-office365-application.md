@@ -51,4 +51,7 @@ The following steps register the application correctly in order to connect World
 18. Navigate to **Overview** on the top left
 19. Click **Endpoints**
 20. Record the correct information for the table at the top of this document.
+21. Your completed Credential screen should look something like this:
+<img width="890" alt="image" src="https://github.com/TribeDevAU/WorkflowsUniversity/assets/10161221/2d1eed5c-e675-47dd-bcfe-22555e79e928">
+22. Click Authorize and follow the prompts to sign in.
 
