@@ -33,10 +33,7 @@ Send an Http request to Microsoft Graph to Send the email
         "subject": "EmailSubject",
         "body": {
             "contentType": "HTML",
-            "content": {
-                { Variables.Email | markup
-                }
-            }
+            "content": {{ Variables.Email | markup }}
         },
         "toRecipients": [
             {
@@ -58,6 +55,11 @@ Send an Http request to Microsoft Graph to Send the email
     ```
 
 Content Type: ```application/json```
-Read Content: Checked
+
+Read Content: ```Checked```
+
 Response Content Parser: ```Auto Select```
+
 Supported Status Codes: ```202```
+
+On the ```Advanced``` tab, select the M365 credentials under ```Authorization```
