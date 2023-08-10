@@ -1,9 +1,12 @@
 # Workflows University
 
-> World of Workflows Version 1.3.491. Released 17 March 2023
+> World of Workflows Version 1.6. Released 22 August 2022
 
 
 Welcome to **Workflows University**. This collection of processes and documentation will help you get used to working with World of Workflows.
+
+**[READ THE CURRENT USER GUIDE HERE](./userguide/ug.md)**
+
 
 This guide assumes you are new to the **World of Workflows** and want to quickly get everything up and running.
 
