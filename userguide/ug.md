@@ -2936,15 +2936,15 @@ In this case, Liquid is rendering the content of the title property of the page 
 
 ### Tags
 
-Tags create the logic and control flow for templates. The curly brace percentage delimiters \`\`\`{%\`\`\` and \`\`\`%}\`\`\` and the text that they surround do not produce any visible output when the template is rendered. This lets you assign variables and create conditions or loops without showing any of the Liquid logic on the page.
+Tags create the logic and control flow for templates. The curly brace percentage delimiters ```{``` and ```}``` and the text that they surround do not produce any visible output when the template is rendered. This lets you assign variables and create conditions or loops without showing any of the Liquid logic on the page.
 
 #### Input
 
-{% if user %}
+```{% if user %}```
 
-Hello {{ user.name }}!
+```Hello {{ user.name }}!```
 
-{% endif %}
+```{% endif %}```
 
 #### Output
 
@@ -2968,7 +2968,7 @@ Filters change the output of a Liquid object or variable. They are used within d
 
 #### Input
 
-{{ "/my/fancy/url" \| append: ".html" }}
+```{{ "/my/fancy/url" \| append: ".html" }}```
 
 #### Output
 
@@ -2976,7 +2976,7 @@ Multiple filters can be used on one output, and are applied from left to right.
 
 #### Input
 
-{{ "adam!" \| capitalize \| prepend: "Hello " }}
+```{{ "adam!" \| capitalize \| prepend: "Hello " }}```
 
 #### Output
 
@@ -3001,19 +3001,19 @@ Basic operators
 
 For example:
 
-{% if product.title == "Awesome Shoes" %}
+```{% if product.title == "Awesome Shoes" %}```
 
 These shoes are awesome!
 
-{% endif %}
+```{% endif %}```
 
 You can do multiple comparisons in a tag using the *and* & *or* operators:
 
-{% if product.type == "Shirt" or product.type == "Shoes" %}
+```{% if product.type == "Shirt" or product.type == "Shoes" %}```
 
 This is a shirt or a pair of shoes.
 
-{% endif %}
+```{% endif %}```
 
 ##### contains
 
