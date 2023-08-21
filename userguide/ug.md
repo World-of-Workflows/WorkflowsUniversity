@@ -13,430 +13,313 @@ August 2023
 <img src="./media/image3.png" style="width:5.96319in;height:1.47175in" />
 
 # Table of Contents
+- [Table of Contents](#table-of-contents)
+- [Introduction](#introduction)
+  - [Purpose of the guide](#purpose-of-the-guide)
+  - [Overview of World of Workflows](#overview-of-world-of-workflows)
+  - [Key features and components of World of Workflows](#key-features-and-components-of-world-of-workflows)
+  - [Examples of process automation with world of workflows.](#examples-of-process-automation-with-world-of-workflows)
+- [Getting Started](#getting-started)
+  - [System requirements](#system-requirements)
+  - [Installation process](#installation-process)
+    - [Installing World of Workflows PE](#installing-world-of-workflows-pe)
+    - [Installing World of Workflows Business](#installing-world-of-workflows-business)
+      - [Pre-requisites](#pre-requisites)
+      - [Installation Process](#installation-process-1)
+  - [Installation of Business Edition](#installation-of-business-edition)
+    - [Installation on a Windows Server using IIS](#installation-on-a-windows-server-using-iis)
+    - [Installation on an Azure Web Application](#installation-on-an-azure-web-application)
+    - [Navigating the user interface](#navigating-the-user-interface)
+- [Database](#database)
+  - [Overview of the database functionality](#overview-of-the-database-functionality)
+  - [Creating and managing tables](#creating-and-managing-tables)
+    - [A word about data types](#a-word-about-data-types)
+    - [Relationships](#relationships)
+    - [Editing Columns](#editing-columns)
+    - [Deleting Types](#deleting-types)
+    - [Editing Data](#editing-data)
+      - [Columns](#columns)
+      - [Sort and Filter](#sort-and-filter)
+      - [Add Columns](#add-columns)
+      - [Edit Columns](#edit-columns)
+      - [Add Item](#add-item)
+      - [Inline edit](#inline-edit)
+      - [Bulk Delete](#bulk-delete)
+      - [Bulk Edit](#bulk-edit)
+      - [Refresh data](#refresh-data)
+      - [To Choose number of rows shown](#to-choose-number-of-rows-shown)
+      - [Move between pages](#move-between-pages)
+  - [Importing and exporting data](#importing-and-exporting-data)
+      - [Export](#export)
+      - [Import](#import)
+- [Views](#views)
+  - [Overview of Views](#overview-of-views)
+  - [Creating a new view](#creating-a-new-view)
+  - [Managing views](#managing-views)
+  - [Organizing views with hierarchy](#organizing-views-with-hierarchy)
+    - [Inline Edit](#inline-edit-1)
+  - [Data Editor](#data-editor)
+    - [View Data](#view-data)
+    - [Edit Data](#edit-data)
+    - [Workflows](#workflows)
+    - [Tasks](#tasks)
+    - [History](#history)
+- [Tasks](#tasks-1)
+  - [Overview of the Task Management System](#overview-of-the-task-management-system)
+  - [Picking tasks](#picking-tasks)
+  - [Understanding task details](#understanding-task-details)
+  - [Updating database fields within tasks](#updating-database-fields-within-tasks)
+  - [Working with action buttons](#working-with-action-buttons)
+- [Reporting](#reporting)
+  - [Excel](#excel)
+- [Building Workflows](#building-workflows)
+  - [Overview of Workflows](#overview-of-workflows)
+  - [Using the Workflows Editor](#using-the-workflows-editor)
+  - [Adding and configuring activities](#adding-and-configuring-activities)
+  - [Connecting activities](#connecting-activities)
+  - [Implementing triggers](#implementing-triggers)
+- [What are Workflows?](#what-are-workflows)
+      - [Common Settings](#common-settings)
+    - [**Common Settings**](#common-settings-1)
+      - [Variables](#variables)
+    - [Flow control](#flow-control)
+    - [JavaScript and Liquid](#javascript-and-liquid)
+    - [Loops](#loops)
+      - [For](#for)
+    - [For Each](#for-each)
+      - [Parallel For Each](#parallel-for-each)
+    - [Break](#break)
+    - [Fork](#fork)
+    - [If/Else](#ifelse)
+    - [Join](#join)
+    - [Parallel For Each](#parallel-for-each-1)
+    - [Switch](#switch)
+    - [While](#while)
+    - [Set Variable](#set-variable)
+    - [Set Transient Variable](#set-transient-variable)
+- [Task Management Activities](#task-management-activities)
+    - [Task Create](#task-create)
+    - [Task Delete](#task-delete)
+    - [Task Detail Create](#task-detail-create)
+  - [Task Update](#task-update)
+    - [Task Details Read](#task-details-read)
+- [HTTP Activities in Workflows](#http-activities-in-workflows)
+    - [HTTP Endpoint](#http-endpoint)
+    - [Send HTTP Request](#send-http-request)
+    - [HTTP Response](#http-response)
+  - [Redirect](#redirect)
+- [Data Activities](#data-activities)
+  - [Triggers](#triggers)
+    - [Object Instance Trigger](#object-instance-trigger)
+  - [Database Structure](#database-structure)
+    - [Type Create](#type-create)
+    - [Type Delete](#type-delete)
+    - [Types Read](#types-read)
+    - [Type Index Create](#type-index-create)
+    - [Type Index Delete](#type-index-delete)
+    - [Column Create](#column-create)
+    - [Columns Read by Type](#columns-read-by-type)
+  - [Data](#data)
+    - [Create Object Instance](#create-object-instance)
+  - [Update Object Instance](#update-object-instance)
+    - [Get Object Instance](#get-object-instance)
+    - [List Object Instances](#list-object-instances)
+    - [List Object Instance History](#list-object-instance-history)
+    - [JSON Data Insert](#json-data-insert)
+  - [Timer Activities](#timer-activities)
+    - [CRON](#cron)
+      - [Ranges and lists](#ranges-and-lists)
+      - [Unrestricted range](#unrestricted-range)
+      - [Step values](#step-values)
+      - [Example](#example)
+    - [Timer](#timer)
+    - [StartAt](#startat)
+    - [Clear Timer](#clear-timer)
+- [Documentation in World of Workflows](#documentation-in-world-of-workflows)
+  - [Data (ERD) Diagram](#data-erd-diagram)
+  - [Data Dictionary](#data-dictionary)
+  - [Views Dictionary](#views-dictionary)
+  - [Workflow Documentation](#workflow-documentation)
+- [Developing Plugins for World of Workflows](#developing-plugins-for-world-of-workflows)
+  - [Plugin Development Overview](#plugin-development-overview)
+  - [Creating a Custom Activity](#creating-a-custom-activity)
+  - [Implementing the ConfigCommand Class](#implementing-the-configcommand-class)
+  - [Code Signing and Importing the Plugin](#code-signing-and-importing-the-plugin)
+- [Solutions](#solutions)
+  - [Exporting Solutions](#exporting-solutions)
+  - [To import a solution](#to-import-a-solution)
+- [Examples](#examples)
+  - [Designing long-running workflows](#designing-long-running-workflows)
+      - [What if you have a complex workflow and breaking it into small flows does not suit?](#what-if-you-have-a-complex-workflow-and-breaking-it-into-small-flows-does-not-suit)
+    - [Implementing an Overview workflow](#implementing-an-overview-workflow)
+    - [Implementing the main workflow](#implementing-the-main-workflow)
+          - [Accept parameters from the Overview workflow](#accept-parameters-from-the-overview-workflow)
+          - [Use Status fields as starting points of your main workflow](#use-status-fields-as-starting-points-of-your-main-workflow)
+          - [Return to the Overview workflow frequently](#return-to-the-overview-workflow-frequently)
+          - [Ensure variables are available](#ensure-variables-are-available)
+- [Reference](#reference)
+  - [Data Types](#data-types)
+  - [Activity List](#activity-list)
+    - [Compensation](#compensation)
+      - [Compensable](#compensable)
+      - [Compensate](#compensate)
+      - [Confirm](#confirm)
+    - [Console Activities](#console-activities)
+      - [Read Line](#read-line)
+      - [Write Line](#write-line)
+    - [Control Flow](#control-flow)
+      - [If-Else](#if-else)
+      - [While](#while-1)
+      - [ForEach](#foreach)
+      - [Switch](#switch-1)
+      - [Break](#break-1)
+      - [For](#for-1)
+      - [Fork](#fork-1)
+      - [Join](#join-1)
+      - [Parallel for Each](#parallel-for-each-2)
+      - [Switch](#switch-2)
+    - [Email Activities](#email-activities)
+      - [Send Email](#send-email)
+    - [File Activities](#file-activities)
+      - [Read File](#read-file)
+      - [WriteFile](#writefile)
+      - [DeleteFile](#deletefile)
+- [oData Query Syntax](#odata-query-syntax)
+  - [Introduction](#introduction-1)
+  - [System Query Options](#system-query-options)
+    - [$filter](#filter)
+    - [$select](#select)
+    - [$orderby](#orderby)
+    - [$top](#top)
+    - [$skip](#skip)
+    - [$count](#count)
+  - [Query Functions](#query-functions)
+    - [String Functions](#string-functions)
+  - [Date Functions](#date-functions)
+    - [Math Functions](#math-functions)
+  - [Querying Related Entities](#querying-related-entities)
+    - [Expanding Related Entities](#expanding-related-entities)
+    - [Filtering Related Entities](#filtering-related-entities)
+  - [Combining Query Options](#combining-query-options)
+- [Liquid in World of Workflows](#liquid-in-world-of-workflows)
+  - [Introduction](#introduction-2)
+    - [Objects](#objects)
+      - [Input](#input)
+      - [Output](#output)
+    - [Tags](#tags)
+      - [Input](#input-1)
+      - [Output](#output-1)
+  - [Filters](#filters)
+      - [Input](#input-2)
+      - [Output](#output-2)
+      - [Input](#input-3)
+      - [Output](#output-3)
+  - [Operators](#operators)
+        - [contains](#contains)
+      - [Order of operations](#order-of-operations)
+  - [Truthy and falsy](#truthy-and-falsy)
+    - [Truthy](#truthy)
+      - [Input](#input-4)
+      - [Output](#output-4)
+    - [Falsy](#falsy)
+    - [Summary](#summary)
+  - [Types](#types)
+    - [String](#string)
+    - [Number](#number)
+    - [Boolean](#boolean)
+      - [Nil](#nil)
+      - [Input](#input-5)
+      - [Output](#output-5)
+    - [Array](#array)
+      - [Accessing items in arrays](#accessing-items-in-arrays)
+      - [Accessing specific items in arrays](#accessing-specific-items-in-arrays)
+      - [Input](#input-6)
+      - [Output](#output-6)
+    - [Initializing arrays](#initializing-arrays)
+    - [EmptyDrop](#emptydrop)
+      - [Checking for emptiness](#checking-for-emptiness)
+  - [Liquid Expressions](#liquid-expressions)
+    - [Common Variables](#common-variables)
+      - [Workflow Variables](#workflow-variables)
+      - [Input](#input-7)
+      - [Activity Output](#activity-output)
+      - [CorrelationId](#correlationid)
+      - [WorkflowInstanceId](#workflowinstanceid)
+      - [WorkflowDefinitionId](#workflowdefinitionid)
+      - [WorkflowDefinitionVersion](#workflowdefinitionversion)
+    - [Configuration](#configuration)
+    - [Common Filters](#common-filters)
+      - [json](#json)
+      - [base64](#base64)
+  - [Workflow Filters](#workflow-filters)
+      - [workflow\_definition\_id](#workflow_definition_id)
+      - [HTTP Variables](#http-variables)
+        - [Request](#request)
+      - [HTTP Filters](#http-filters)
+        - [signal\_url](#signal_url)
+      - [Markup](#markup)
+- [JavaScript Primer](#javascript-primer)
+    - [Variables](#variables-1)
+    - [Data Types](#data-types-1)
+    - [Control Structures](#control-structures)
+      - [If statement](#if-statement)
+      - [If-else statement](#if-else-statement)
+      - [While loop](#while-loop)
+      - [For loop](#for-loop)
+    - [Functions](#functions)
+    - [Objects and Arrays](#objects-and-arrays)
+    - [Working with Strings](#working-with-strings)
+      - [Concatenation](#concatenation)
+    - [String interpolation](#string-interpolation)
+      - [String methods](#string-methods)
+    - [Working with Arrays](#working-with-arrays)
+      - [push](#push)
+      - [pop](#pop)
+      - [unshift](#unshift)
+      - [shift](#shift)
+      - [forEach](#foreach-1)
+    - [Error Handling](#error-handling)
+  - [JavaScript in World of Workflows](#javascript-in-world-of-workflows)
+    - [Variables](#variables-2)
+      - [Workflow Variables](#workflow-variables-1)
+    - [Activity Output](#activity-output-1)
+    - [input](#input-8)
+    - [workflowInstanceId](#workflowinstanceid-1)
+    - [workflowDefinitionId](#workflowdefinitionid-1)
+    - [workflowDefinitionVersion](#workflowdefinitionversion-1)
+    - [correlationId](#correlationid-1)
+    - [currentCulture](#currentculture)
+    - [workflowContext](#workflowcontext)
+  - [Common Functions](#common-functions)
+    - [guid](#guid)
+    - [parseGuid](#parseguid)
+    - [setVariable](#setvariable)
+    - [getVariable](#getvariable)
+    - [getConfig](#getconfig)
+    - [isNullOrWhiteSpace](#isnullorwhitespace)
+    - [isNullOrEmpty](#isnullorempty)
+  - [Workflow Functions](#workflow-functions)
+    - [getWorkflowDefinitionIdByName](#getworkflowdefinitionidbyname)
+    - [getWorkflowDefinitionIdByTag](#getworkflowdefinitionidbytag)
+  - [HTTP Functions](#http-functions)
+    - [queryString](#querystring)
+    - [absoluteUrl](#absoluteurl)
+    - [signalUrl](#signalurl)
+  - [Date/Time Functions](#datetime-functions)
+    - [instantFromDateTimeUtc](#instantfromdatetimeutc)
+    - [currentInstant](#currentinstant)
+    - [currentYear](#currentyear)
+    - [startOfMonth](#startofmonth)
+    - [endOfMonth(instant: Instant?)](#endofmonthinstant-instant)
+    - [startOfPreviousMonth](#startofpreviousmonth)
+    - [plus](#plus)
+    - [minus](#minus)
+    - [durationFromDays](#durationfromdays)
+    - [formatInstant](#formatinstant)
+    - [localDateFromInstant](#localdatefrominstant)
+    - [instantFromLocalDate](#instantfromlocaldate)
+- [Plugins](#plugins)
 
-[Table of Contents [2](#_Toc142383969)](#_Toc142383969)
-
-[Introduction [9](#introduction)](#introduction)
-
-[Purpose of the guide [9](#purpose-of-the-guide)](#purpose-of-the-guide)
-
-[Overview of World of Workflows [9](#overview-of-world-of-workflows)](#overview-of-world-of-workflows)
-
-[Key features and components of World of Workflows [10](#key-features-and-components-of-world-of-workflows)](#key-features-and-components-of-world-of-workflows)
-
-[Examples of process automation with world of workflows. [11](#examples-of-process-automation-with-world-of-workflows.)](#examples-of-process-automation-with-world-of-workflows.)
-
-[Getting Started [12](#getting-started)](#getting-started)
-
-[System requirements [12](#system-requirements)](#system-requirements)
-
-[Installation process [12](#installation-process)](#installation-process)
-
-[Installing World of Workflows PE [12](#installing-world-of-workflows-pe)](#installing-world-of-workflows-pe)
-
-[Installing World of Workflows Business [13](#installing-world-of-workflows-business)](#installing-world-of-workflows-business)
-
-[Installation of Business Edition [15](#installation-of-business-edition)](#installation-of-business-edition)
-
-[Installation on a Windows Server using IIS [15](#installation-on-a-windows-server-using-iis)](#installation-on-a-windows-server-using-iis)
-
-[Installation on an Azure Web Application [16](#installation-on-an-azure-web-application)](#installation-on-an-azure-web-application)
-
-[Navigating the user interface [17](#navigating-the-user-interface)](#navigating-the-user-interface)
-
-[Database [18](#database)](#database)
-
-[Overview of the database functionality [18](#overview-of-the-database-functionality)](#overview-of-the-database-functionality)
-
-[Creating and managing tables [18](#creating-and-managing-tables)](#creating-and-managing-tables)
-
-[A word about data types [19](#a-word-about-data-types)](#a-word-about-data-types)
-
-[Relationships [20](#relationships)](#relationships)
-
-[Editing Columns [21](#editing-columns)](#editing-columns)
-
-[Deleting Types [21](#deleting-types)](#deleting-types)
-
-[Editing Data [22](#editing-data)](#editing-data)
-
-[Importing and exporting data [26](#importing-and-exporting-data)](#importing-and-exporting-data)
-
-[Views [29](#views)](#views)
-
-[Overview of Views [29](#overview-of-views)](#overview-of-views)
-
-[Creating a new view [29](#creating-a-new-view)](#creating-a-new-view)
-
-[Managing views [30](#managing-views)](#managing-views)
-
-[Organizing views with hierarchy [31](#organizing-views-with-hierarchy)](#organizing-views-with-hierarchy)
-
-[Inline Edit [31](#inline-edit-1)](#inline-edit-1)
-
-[Data Editor [31](#data-editor)](#data-editor)
-
-[View Data [31](#view-data)](#view-data)
-
-[Edit Data [32](#edit-data)](#edit-data)
-
-[Workflows [32](#workflows)](#workflows)
-
-[Tasks [32](#tasks)](#tasks)
-
-[History [32](#history)](#history)
-
-[Tasks [34](#tasks-1)](#tasks-1)
-
-[Overview of the Task Management System [34](#overview-of-the-task-management-system)](#overview-of-the-task-management-system)
-
-[Picking tasks [34](#picking-tasks)](#picking-tasks)
-
-[Understanding task details [34](#understanding-task-details)](#understanding-task-details)
-
-[Updating database fields within tasks [35](#updating-database-fields-within-tasks)](#updating-database-fields-within-tasks)
-
-[Working with action buttons [35](#working-with-action-buttons)](#working-with-action-buttons)
-
-[Reporting [36](#reporting)](#reporting)
-
-[Excel [36](#excel)](#excel)
-
-[Building Workflows [40](#building-workflows)](#building-workflows)
-
-[Overview of Workflows [40](#overview-of-workflows)](#overview-of-workflows)
-
-[Using the Workflows Editor [40](#using-the-workflows-editor)](#using-the-workflows-editor)
-
-[Adding and configuring activities [42](#adding-and-configuring-activities)](#adding-and-configuring-activities)
-
-[Connecting activities [43](#connecting-activities)](#connecting-activities)
-
-[Implementing triggers [43](#implementing-triggers)](#implementing-triggers)
-
-[What are Workflows? [44](#what-are-workflows)](#what-are-workflows)
-
-[Common Settings [44](#common-settings-1)](#common-settings-1)
-
-[Flow control [45](#flow-control)](#flow-control)
-
-[JavaScript and Liquid [45](#javascript-and-liquid)](#javascript-and-liquid)
-
-[Loops [46](#loops)](#loops)
-
-[For Each [47](#for-each)](#for-each)
-
-[Break [47](#break)](#break)
-
-[Fork [48](#fork)](#fork)
-
-[If/Else [49](#ifelse)](#ifelse)
-
-[Join [50](#join)](#join)
-
-[Parallel For Each [51](#parallel-for-each-1)](#parallel-for-each-1)
-
-[Switch [51](#switch)](#switch)
-
-[While [51](#while)](#while)
-
-[Set Variable [51](#set-variable)](#set-variable)
-
-[Set Transient Variable [51](#set-transient-variable)](#set-transient-variable)
-
-[Task Management Activities [52](#task-management-activities)](#task-management-activities)
-
-[Task Create [52](#task-create)](#task-create)
-
-[Task Delete [52](#task-delete)](#task-delete)
-
-[Task Detail Create [53](#task-detail-create)](#task-detail-create)
-
-[Task Update [53](#task-update)](#task-update)
-
-[Task Details Read [53](#task-details-read)](#task-details-read)
-
-[HTTP Activities in Workflows [54](#http-activities-in-workflows)](#http-activities-in-workflows)
-
-[HTTP Endpoint [55](#http-endpoint)](#http-endpoint)
-
-[Send HTTP Request [57](#send-http-request)](#send-http-request)
-
-[HTTP Response [58](#http-response)](#http-response)
-
-[Redirect [59](#redirect)](#redirect)
-
-[Data Activities [60](#data-activities)](#data-activities)
-
-[Triggers [60](#triggers)](#triggers)
-
-[Object Instance Trigger [60](#object-instance-trigger)](#object-instance-trigger)
-
-[Database Structure [61](#database-structure)](#database-structure)
-
-[Type Create [62](#type-create)](#type-create)
-
-[Type Delete [62](#type-delete)](#type-delete)
-
-[Types Read [63](#types-read)](#types-read)
-
-[Type Index Create [63](#type-index-create)](#type-index-create)
-
-[Type Index Delete [64](#type-index-delete)](#type-index-delete)
-
-[Column Create [65](#column-create)](#column-create)
-
-[Columns Read by Type [66](#columns-read-by-type)](#columns-read-by-type)
-
-[Data [67](#data)](#data)
-
-[Create Object Instance [67](#create-object-instance)](#create-object-instance)
-
-[Update Object Instance [68](#update-object-instance)](#update-object-instance)
-
-[Get Object Instance [69](#get-object-instance)](#get-object-instance)
-
-[List Object Instances [69](#list-object-instances)](#list-object-instances)
-
-[List Object Instance History [71](#list-object-instance-history)](#list-object-instance-history)
-
-[JSON Data Insert [73](#json-data-insert)](#json-data-insert)
-
-[Timer Activities [73](#timer-activities)](#timer-activities)
-
-[CRON [74](#cron)](#cron)
-
-[Timer [76](#timer)](#timer)
-
-[StartAt [76](#startat)](#startat)
-
-[Clear Timer [77](#clear-timer)](#clear-timer)
-
-[Documentation in World of Workflows [79](#documentation-in-world-of-workflows)](#documentation-in-world-of-workflows)
-
-[Data (ERD) Diagram [79](#data-erd-diagram)](#data-erd-diagram)
-
-[Data Dictionary [79](#data-dictionary)](#data-dictionary)
-
-[Views Dictionary [79](#views-dictionary)](#views-dictionary)
-
-[Workflow Documentation [79](#workflow-documentation)](#workflow-documentation)
-
-[Developing Plugins for World of Workflows [81](#developing-plugins-for-world-of-workflows)](#developing-plugins-for-world-of-workflows)
-
-[Plugin Development Overview [81](#plugin-development-overview)](#plugin-development-overview)
-
-[Creating a Custom Activity [81](#creating-a-custom-activity)](#creating-a-custom-activity)
-
-[Implementing the ConfigCommand Class [82](#implementing-the-configcommand-class)](#implementing-the-configcommand-class)
-
-[Code Signing and Importing the Plugin [82](#code-signing-and-importing-the-plugin)](#code-signing-and-importing-the-plugin)
-
-[Solutions [84](#solutions)](#solutions)
-
-[Exporting Solutions [84](#exporting-solutions)](#exporting-solutions)
-
-[To import a solution [85](#to-import-a-solution)](#to-import-a-solution)
-
-[Examples [87](#examples)](#examples)
-
-[Designing long-running workflows [87](#designing-long-running-workflows)](#designing-long-running-workflows)
-
-[Implementing an Overview workflow [89](#implementing-an-overview-workflow)](#implementing-an-overview-workflow)
-
-[Implementing the main workflow [94](#implementing-the-main-workflow)](#implementing-the-main-workflow)
-
-[Reference [100](#reference)](#reference)
-
-[Data Types [100](#data-types)](#data-types)
-
-[Activity List [101](#activity-list)](#activity-list)
-
-[Compensation [101](#compensation)](#compensation)
-
-[Console Activities [102](#console-activities)](#console-activities)
-
-[Control Flow [103](#control-flow)](#control-flow)
-
-[Email Activities [109](#email-activities)](#email-activities)
-
-[File Activities [110](#file-activities)](#file-activities)
-
-[oData Query Syntax [112](#odata-query-syntax)](#odata-query-syntax)
-
-[Introduction [112](#introduction-1)](#introduction-1)
-
-[System Query Options [112](#system-query-options)](#system-query-options)
-
-[\$filter [112](#filter)](#filter)
-
-[\$select [112](#select)](#select)
-
-[\$orderby [113](#orderby)](#orderby)
-
-[\$top [113](#top)](#top)
-
-[\$skip [114](#skip)](#skip)
-
-[\$count [114](#count)](#count)
-
-[Query Functions [114](#query-functions)](#query-functions)
-
-[String Functions [114](#string-functions)](#string-functions)
-
-[Date Functions [115](#date-functions)](#date-functions)
-
-[Math Functions [115](#math-functions)](#math-functions)
-
-[Querying Related Entities [115](#querying-related-entities)](#querying-related-entities)
-
-[Expanding Related Entities [115](#expanding-related-entities)](#expanding-related-entities)
-
-[Filtering Related Entities [116](#filtering-related-entities)](#filtering-related-entities)
-
-[Combining Query Options [116](#combining-query-options)](#combining-query-options)
-
-[Liquid in World of Workflows [117](#liquid-in-world-of-workflows)](#liquid-in-world-of-workflows)
-
-[Introduction [117](#introduction-2)](#introduction-2)
-
-[Objects [117](#objects)](#objects)
-
-[Tags [117](#tags)](#tags)
-
-[Filters [118](#filters)](#filters)
-
-[Operators [119](#operators)](#operators)
-
-[Truthy and falsy [120](#truthy-and-falsy)](#truthy-and-falsy)
-
-[Truthy [120](#truthy)](#truthy)
-
-[Falsy [121](#falsy)](#falsy)
-
-[Summary [121](#summary)](#summary)
-
-[Types [122](#types)](#types)
-
-[String [122](#string)](#string)
-
-[Number [122](#number)](#number)
-
-[Boolean [122](#boolean)](#boolean)
-
-[Array [123](#array)](#array)
-
-[Initializing arrays [124](#initializing-arrays)](#initializing-arrays)
-
-[EmptyDrop [124](#emptydrop)](#emptydrop)
-
-[Liquid Expressions [125](#liquid-expressions)](#liquid-expressions)
-
-[Common Variables [125](#common-variables)](#common-variables)
-
-[Configuration [126](#configuration)](#configuration)
-
-[Common Filters [127](#common-filters)](#common-filters)
-
-[Workflow Filters [128](#workflow-filters)](#workflow-filters)
-
-[JavaScript Primer [130](#javascript-primer)](#javascript-primer)
-
-[Variables [130](#variables-1)](#variables-1)
-
-[Data Types [130](#data-types-1)](#data-types-1)
-
-[Control Structures [130](#control-structures)](#control-structures)
-
-[Functions [131](#functions)](#functions)
-
-[Objects and Arrays [132](#objects-and-arrays)](#objects-and-arrays)
-
-[Working with Strings [132](#working-with-strings)](#working-with-strings)
-
-[String interpolation [132](#string-interpolation)](#string-interpolation)
-
-[Working with Arrays [134](#working-with-arrays)](#working-with-arrays)
-
-[Error Handling [135](#error-handling)](#error-handling)
-
-[JavaScript in World of Workflows [137](#javascript-in-world-of-workflows)](#javascript-in-world-of-workflows)
-
-[Variables [137](#variables-2)](#variables-2)
-
-[Activity Output [137](#activity-output-1)](#activity-output-1)
-
-[input [138](#input-8)](#input-8)
-
-[workflowInstanceId [138](#workflowinstanceid-1)](#workflowinstanceid-1)
-
-[workflowDefinitionId [138](#workflowdefinitionid-1)](#workflowdefinitionid-1)
-
-[workflowDefinitionVersion [138](#workflowdefinitionversion-1)](#workflowdefinitionversion-1)
-
-[correlationId [139](#correlationid-1)](#correlationid-1)
-
-[currentCulture [139](#currentculture)](#currentculture)
-
-[workflowContext [139](#workflowcontext)](#workflowcontext)
-
-[Common Functions [139](#common-functions)](#common-functions)
-
-[guid [139](#guid)](#guid)
-
-[parseGuid [139](#parseguid)](#parseguid)
-
-[setVariable [140](#setvariable)](#setvariable)
-
-[getVariable [140](#getvariable)](#getvariable)
-
-[getConfig [140](#getconfig)](#getconfig)
-
-[isNullOrWhiteSpace [141](#isnullorwhitespace)](#isnullorwhitespace)
-
-[isNullOrEmpty [141](#isnullorempty)](#isnullorempty)
-
-[Workflow Functions [142](#workflow-functions)](#workflow-functions)
-
-[getWorkflowDefinitionIdByName [142](#getworkflowdefinitionidbyname)](#getworkflowdefinitionidbyname)
-
-[getWorkflowDefinitionIdByTag [142](#getworkflowdefinitionidbytag)](#getworkflowdefinitionidbytag)
-
-[HTTP Functions [142](#http-functions)](#http-functions)
-
-[queryString [142](#querystring)](#querystring)
-
-[absoluteUrl [142](#absoluteurl)](#absoluteurl)
-
-[signalUrl [142](#signalurl)](#signalurl)
-
-[Date/Time Functions [143](#datetime-functions)](#datetime-functions)
-
-[instantFromDateTimeUtc [143](#instantfromdatetimeutc)](#instantfromdatetimeutc)
-
-[currentInstant [143](#currentinstant)](#currentinstant)
-
-[currentYear [143](#currentyear)](#currentyear)
-
-[startOfMonth [143](#startofmonth)](#startofmonth)
-
-[endOfMonth(instant: Instant?) [143](#endofmonthinstant-instant)](#endofmonthinstant-instant)
-
-[startOfPreviousMonth [144](#startofpreviousmonth)](#startofpreviousmonth)
-
-[plus [144](#plus)](#plus)
-
-[minus [144](#minus)](#minus)
-
-[durationFromDays [144](#durationfromdays)](#durationfromdays)
-
-[formatInstant [144](#formatinstant)](#formatinstant)
-
-[localDateFromInstant [144](#localdatefrominstant)](#localdatefrominstant)
-
-[instantFromLocalDate [145](#instantfromlocaldate)](#instantfromlocaldate)
-
-[Plugins [146](#plugins)](#plugins)
 
 # Introduction
 
