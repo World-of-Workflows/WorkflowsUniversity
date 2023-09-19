@@ -146,7 +146,7 @@ In this case we'll add FirstName and LastName as strings.
 Next we'll add the contact's email address and phone number. 
 
 If we want to send them a birthday card, lets add their date of birth. <break time="8s"/> 
-Finally, lets add a link or relationship to a company so we can see where each user works. Notice I do this by making the data type a big Integer, clicking Foreign Key and choosing the type this is related to.
+Finally, lets add a link or relationship to a customer so we can see where each user works. Notice I do this by making the data type a big Integer, clicking Foreign Key and choosing the type this is related to.
 
 Here are the fields for Contacts:
 
@@ -157,11 +157,11 @@ Here are the fields for Contacts:
 | Email | Email | Email | The email address of the contact | 3 | True |
 | Phone | Phone | Phone | The phone number of the contact | 4 | True |
 | BirthDate | DateTime | Birth Date | The birth date of the contact | 5 | True |
-| Company | BigInteger - Foreign Key - Company | Company | The company the contact works for | 6 | True |
+| Customer | BigInteger - Foreign Key - Customer | Company | The customer the contact works for | 6 | True |
 
 Next, we're going to add columns to the Leads type. Leads are special in that they are not going to be related to customers or contacts unless we qualify them, so we seem like we are duplicating some columns.
 
-Leads have the CompanyName, the FirstName and LastName of the contact along with their phone and email address and finally a location for notes.
+Leads have the CustomerName, the FirstName and LastName of the contact along with their phone and email address and finally a location for notes.
 
 We expect our sales team will update a lead until qualified. Once qualified they will commonly create Customer, Contact and Opportunity Records. We'll use workflows to do this automatically later on, but for now, we're just creating enough columns to work with our data as we need it for our simple solution.
 
