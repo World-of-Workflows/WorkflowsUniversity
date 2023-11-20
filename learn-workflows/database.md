@@ -3,7 +3,7 @@
 [![Watch the video](https://img.youtube.com/vi/WThvIWSbnDw/maxresdefault.jpg)](https://youtu.be/WThvIWSbnDw)
 *Click to watch the video*
 
-Welcome to this module on the World of Workflows database. In this course, you'll learn the basics of World of Workflows database design and management. 
+Welcome to this module on the World of Workflows database. In this section, you'll learn the basics of World of Workflows database design and management. 
 
 The World of Workflows database is a relational database which is a collection of data organized in tables with columns and rows, allowing for easy access and manipulation of the data. You'll learn about the different types of data types, the rules of good database design, and how to use the user interface and workflows to interact with the database. By the end of this course, you'll have a solid foundation in the principles of World of Workflows databases and be able to use them effectively in your work. Let's get started.
 
@@ -16,7 +16,10 @@ Furthermore, a spreadsheet is typically used for simple data analysis, whereas a
 
 We consider spreadsheets commonly store quite **unstructured** data whereas the database in workflows is designed to store **structured** data.
 
-- To create a new type, follow the procedure [here](procedures/create-type.md)
+- To create a new type, follow the procedure 
+  [here](procedures/create-type.md)
+
+Managing Data in World of Workflows allows you to create, edit and delete types, columns and data to meet your exact business needs.
 
 ## Data Types
 Each column in a workflows database **type** has a specific data type. The data types determine what kind of data can be stored in the column, and how the data can be used.
@@ -31,8 +34,7 @@ Workflows also allows you to export your data, edit it outside of workflows and 
 ## Working with the database
 When considering how you will configure your database, it's important to think about how you will use it. A session planning what data you will need and how you will use it is important to ensure you don't have to spend time redoing your work.
 
-> **Developer Mode**
-> Normally, in production you cannot rename or delete types or columns. This is to ensure that the data is immutable and cannot be removed. This is the normal configuration for World of Workflows. However an administrator can enable developer mode which extends the system to allow these more dangerous activities.
+
 
 When one works with the database, you normally:
 
@@ -74,15 +76,15 @@ To access the database configuration you need to be an administrator or be runni
 
 You access the database by clicking **types** from the Admin Page.
 
-![Types Link](2022-12-28-13-25-36.png)
+![Types Link](2023-11-20-10-53-18.png)
 
 Unless you have already created some types or installed a **Solution**, there will be no types in your system
 
-You can create a new Type by clicking the **Add Type** button
+You can create a new Type by clicking the ![ ](image.png)**Add Type** button
 
 A type is like a table of data which includes **rows** and **columns**, just like a spreadsheet.
 
-![](2022-12-28-13-29-46.png)
+![Rows and Columns](2023-11-20-10-54-35.png)
 
 The first thing you need to do is give your type a name. This is the name that will be used to refer to the type in the system. You can add a description to remind you (and others) what this type is all about. Click **Save** to save your type.
 
@@ -97,6 +99,8 @@ To do this, we will need to create four types;
 
 Go ahead and create these types.
 
+> Each type begins with a single string column called **title**. This is important and is used when referencing your type from other types. You can change the name and description of the **title**. 
+
 We've now and hopefully successfully added four types of data. Next we need to add columns to describe the data.
 
 Each type has a column created for you, called Title. This is what we call the title field and is used when linking tables together. For a customer, this should be the name of the company. For a contact it could be the first and last name. You are free to choose what goes in the title field and can also change it later.
@@ -109,12 +113,12 @@ To add a column to this type, click **Add column** and enter the data as follows
 
 ![](2022-12-28-14-07-03.png)
 
-- The Column Name is the internal name of the column. It's a good idea to make this meaningful and have no spaces. You can use underscores or hyphens to separate words.
-- The Display Name is used to show to the user in lists and forms. This can be any text and needs to be meaningful to your users.
-- The Column Description is a description you can use to understand the column in the future so you know what it was for.
-- The Data Type is the type of data that will be stored in this column. You can choose from a number of different types. We'll cover these in the next section.
-- Visible chooses whether the column is visible or invisible to the end user. Invisible columns can be used by workflows to store data but are not shown to the user.
-- Indexed means that the column will be indexed for faster searching. This is useful for columns that are used to search for data.
+- The **Column Name** is the internal name of the column. It's a good idea to make this meaningful and have no spaces. You can use underscores or hyphens to separate words.
+- The **Display Name** is used to show to the user in lists and forms. This can be any text and needs to be meaningful to your users.
+- The Column **Description** is a description you can use to understand the column in the future so you know what it was for.
+- The **Data Type** is the type of data that will be stored in this column. You can choose from a number of different types. We'll cover these in the next section.
+- **Visible** chooses whether the column is visible or invisible to the end user. Invisible columns can be used by workflows to store data but are not shown to the user.
+- **Indexed** means that the column will be indexed for faster searching. This is useful for columns that are used to search for data.
 
 This next section takes about five minutes and over the next five minutes, you're going to set up all the data needed for a CRM environment to manage your sales team.
 
@@ -130,11 +134,12 @@ The fields for Customers are shown below:
 
 | Name | DataType | Display Name | Description | Order | Visible |
 | -- | -- | -- | -- | -- | -- |
-| StreetAddress| String | Street Address | The street address of the customer | 1 | True |
-| City | String | City | The city of the customer | 2 | True |
-| State | String | State | The state of the customer | 3 | True |
-| PostalCode | String | Postal Code | The postal code of the customer | 4 | True |
-| Website | URL | Website | The website of the customer | 5 | True |
+| Title | String | Customer Name | The Name of the Customer | 1 | True |
+| StreetAddress| String | Street Address | The street address of the customer | 2 | True |
+| City | String | City | The city of the customer | 3 | True |
+| State | String | State | The state of the customer | 4 | True |
+| PostalCode | String | Postal Code | The postal code of the customer | 5 | True |
+| Website | URL | Website | The website of the customer | 6 | True |
 
 
 Next we setup Contacts. Contacts are people who work for a customer, and are the ones we contact directly. 
@@ -146,22 +151,23 @@ In this case we'll add FirstName and LastName as strings.
 Next we'll add the contact's email address and phone number. 
 
 If we want to send them a birthday card, lets add their date of birth. <break time="8s"/> 
-Finally, lets add a link or relationship to a company so we can see where each user works. Notice I do this by making the data type a big Integer, clicking Foreign Key and choosing the type this is related to.
+Finally, lets add a link or relationship to a customer so we can see where each user works. Notice I do this by making the data type a big Integer, clicking Foreign Key and choosing the type this is related to.
 
 Here are the fields for Contacts:
 
 | Name | DataType | Display Name | Description | Order | Visible |
 | -- | -- | -- | -- | -- | -- |
-| FirstName | String | First Name | The first name of the contact | 1 | True |
-| LastName | String | Last Name | The last name of the contact | 2 | True |
-| Email | Email | Email | The email address of the contact | 3 | True |
-| Phone | Phone | Phone | The phone number of the contact | 4 | True |
-| BirthDate | DateTime | Birth Date | The birth date of the contact | 5 | True |
-| Company | BigInteger - Foreign Key - Company | Company | The company the contact works for | 6 | True |
+| Title | String | Full Name | Name of the Contact | 1 | True |
+| FirstName | String | First Name | The first name of the contact | 2 | True |
+| LastName | String | Last Name | The last name of the contact | 3 | True |
+| Email | Email | Email | The email address of the contact | 4 | True |
+| Phone | Phone | Phone | The phone number of the contact | 5 | True |
+| BirthDate | DateTime | Birth Date | The birth date of the contact | 6 | True |
+| Customer | BigInteger - Foreign Key - Customer | Company | The customer the contact works for | 7 | True |
 
 Next, we're going to add columns to the Leads type. Leads are special in that they are not going to be related to customers or contacts unless we qualify them, so we seem like we are duplicating some columns.
 
-Leads have the CompanyName, the FirstName and LastName of the contact along with their phone and email address and finally a location for notes.
+Leads have the CustomerName, the FirstName and LastName of the contact along with their phone and email address and finally a location for notes.
 
 We expect our sales team will update a lead until qualified. Once qualified they will commonly create Customer, Contact and Opportunity Records. We'll use workflows to do this automatically later on, but for now, we're just creating enough columns to work with our data as we need it for our simple solution.
 
@@ -169,7 +175,7 @@ Here are the columns for Leads:
 
 | Name | DataType | Display Name | Description | Order | Visible |
 | -- | -- | -- | -- | -- | -- |
-| CompanyName | String | Company Name | The name of the company | 1 | True |
+| Title | String | Company Name | The name of the company | 1 | True |
 | FirstName | String | First Name | The first name of the contact | 2 | True |
 | LastName | String | Last Name | The last name of the contact | 3 | True |
 | Phone | String | Phone | The phone number of the contact | 4 | True |
@@ -190,13 +196,14 @@ Here are the columns for Opportunity:
 
 | Name | DataType | Display Name | Description | Order | Visible |
 | -- | -- | -- | -- | -- | -- |
-| Company | BigInteger - Foreign Key - Company | Company | The company the contact works for | 1 | True |
-| Contact | BigInteger - Foreign Key - Contact | Contact | The contact for the opportunity | 2 | True |
-| OriginalLead | BigInteger - Foreign Key - Lead | Original Lead | The original lead for the opportunity | 3 | True |
-| Value | Decimal 2 | Value | The value of the opportunity | 4 | True |
-| CloseDate | DateTime | Close Date | The date the opportunity closes | 5 | True |
-| Won | True/False | Won | Whether the opportunity was won | 6 | True |
-| Closed | True/False | Closed | Whether the opportunity is closed | 7 | True |
+| Title | String | Opportunity Name | The Name of the opportunity | 1 | True |
+| Company | BigInteger - Foreign Key - Company | Company | The company the contact works for | 2 | True |
+| Contact | BigInteger - Foreign Key - Contact | Contact | The contact for the opportunity | 3 | True |
+| OriginalLead | BigInteger - Foreign Key - Lead | Original Lead | The original lead for the opportunity | 4 | True |
+| Value | Decimal 2 | Value | The value of the opportunity | 5 | True |
+| CloseDate | DateTime | Close Date | The date the opportunity closes | 6 | True |
+| Won | True/False | Won | Whether the opportunity was won | 7 | True |
+| Closed | True/False | Closed | Whether the opportunity is closed | 8 | True |
 
 So, you can see how easy it is to represent all types of data in the database of types in World Of Workflows. In the next module we'll look at actually working with data in the user interface and the module after that will deal with views and showing this data to users in a meaningful way.
 
