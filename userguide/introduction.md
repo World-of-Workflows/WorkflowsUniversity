@@ -163,7 +163,7 @@ This is the procedure to install on a Windows Server using IIS
 2.  Extract the contents of the downloaded Zip File
 3.  Copy the appsettings.json file created above to that folder
 4.  In IIS, create a new WebSite, and point it at the folder
-5.  Download and install the ASP.NET Core Runtime Hosting bundle from https://dotnet.microsoft.com/en-us/download/dotnet/7.0
+5.  Download and install the ASP.NET Core Runtime Hosting bundle from https://dotnet.microsoft.com/en-us/download/dotnet/8.0
 
 ### Installation on an Azure Web Application
 

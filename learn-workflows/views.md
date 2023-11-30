@@ -38,16 +38,16 @@ The following operators are available:
 
 | Operator | Name | Description |
 | -- | -- | -- |
-| ``==`` | Equals | Returns true if the left and right operands are equal. |
-| ``!=`` | Not Equals | Returns true if the left and right operands are not equal. |
-| ``<`` | Less Than | Returns true if the left operand is less than the right operand. |
-| ``<=`` | Less Than or Equal To | Returns true if the left operand is less than or equal to the right operand. |
-| ``>`` | Greater Than | Returns true if the left operand is greater than the right operand. |
-| ``>=`` | Greater Than or Equal To | Returns true if the left operand is greater than or equal to the right operand. |
+| ``eq`` | Equals | Returns true if the left and right operands are equal. |
+| ``ne`` | Not Equals | Returns true if the left and right operands are not equal. |
+| ``lt`` | Less Than | Returns true if the left operand is less than the right operand. |
+| ``le`` | Less Than or Equal To | Returns true if the left operand is less than or equal to the right operand. |
+| ``gt`` | Greater Than | Returns true if the left operand is greater than the right operand. |
+| ``ge`` | Greater Than or Equal To | Returns true if the left operand is greater than or equal to the right operand. |
 
 If your left operand, the field, is a date, or number then use the following syntax:
 
-```field.ToString() >= "100"```
+```field ge 100````
 
 ## Navigating Views
 
@@ -56,9 +56,9 @@ Here is an example of a number of views:
 | View Id | Name | Description | Fields | Type | Query | Parent |
 |---------|------|-------------|--------|------|--------|-------|
 | 1 | Customers | All Customers | Title | 1 |  | 0 | 
-| 2 | Active Customers | All active Customers | CompanyName,City,State,MyDate | 1 | Status=="2" | 1 | 
-| 3 | Retired Customers | All retired customers | CompanyName,City,State | 1 | Status=="3" | 1 | 
-| 4 | New Customers | All new customers | CompanyName,City,State | 1 | Status=="1" | 1 | 
+| 2 | Active Customers | All active Customers | Title,City,State,MyDate | 1 | Status eq 2 | 1 | 
+| 3 | Retired Customers | All retired customers | Title,City,State | 1 | Status eq 3 | 1 | 
+| 4 | New Customers | All new customers | Title,City,State | 1 | Status eq 1 | 1 | 
 
 The view with the Id of 1 is the parent view. This view is the top level view and is shown in the top menu. The other views are children of this view and are shown as buttons at the top of the view.
 
