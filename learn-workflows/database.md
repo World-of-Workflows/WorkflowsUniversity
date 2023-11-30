@@ -160,8 +160,8 @@ Here are the fields for Contacts:
 | Title | String | Full Name | Name of the Contact | 1 | True |
 | FirstName | String | First Name | The first name of the contact | 2 | True |
 | LastName | String | Last Name | The last name of the contact | 3 | True |
-| Email | Email | Email | The email address of the contact | 4 | True |
-| Phone | Phone | Phone | The phone number of the contact | 5 | True |
+| Email | String | Email | The email address of the contact | 4 | True |
+| Phone | String | Phone | The phone number of the contact | 5 | True |
 | BirthDate | DateTime | Birth Date | The birth date of the contact | 6 | True |
 | Customer | BigInteger - Foreign Key - Customer | Company | The customer the contact works for | 7 | True |
 
