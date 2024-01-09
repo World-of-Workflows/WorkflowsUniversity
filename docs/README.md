@@ -1,3 +1,9 @@
+---
+layout: default
+title: Home
+---
+<h1>{{ "Hello World!" | downcase }}</h1>
+
 # Workflows University
 
 > World of Workflows Version 1.7. Released 6 December 2022
