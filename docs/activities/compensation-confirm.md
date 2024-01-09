@@ -1,3 +1,10 @@
+---
+title: Confirm
+layout: default
+parent: Compensation
+grand_parent: Activities
+---
+
 # Confirm
 
 To confirm a compensable activity, the user can use the Confirm activity by specifying the name of the compensable activity.

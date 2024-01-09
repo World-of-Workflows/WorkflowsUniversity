@@ -1,3 +1,9 @@
+---
+title: Compensation
+layout: default
+parent: Activities
+has_children: true
+---
 # Compensation
 
 ## Introduction

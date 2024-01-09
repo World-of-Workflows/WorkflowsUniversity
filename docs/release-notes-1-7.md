@@ -1,3 +1,8 @@
+---
+title: Release notes 1.7
+layout: default
+nav_order: 2
+---
 # Release Notes
 ## Version 1.7.440
 

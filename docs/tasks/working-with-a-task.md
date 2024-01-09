@@ -1,3 +1,9 @@
+---
+title: Working with a Task
+layout: default
+parent: Tasks
+---
+
 # Working with a Task
 
 When working with a task, click the task.

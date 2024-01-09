@@ -1,3 +1,8 @@
+---
+title: Installation
+layout: default
+nav_order: 3
+---
 # Installation
 This document contains instructions on how to install and configure World of Workflows on your machine.
 

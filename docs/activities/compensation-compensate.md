@@ -1,3 +1,10 @@
+---
+title: Compensate
+layout: default
+parent: Compensation
+grand_parent: Activities
+---
+
 # Compensate
 
 Whenever an activity faults, any upper Compensable activity in its inbound branch will have its Compensate outcome scheduled for execution.

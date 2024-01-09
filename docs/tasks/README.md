@@ -1,3 +1,10 @@
+---
+title: Tasks
+layout: default
+has_children: true
+nav_order: 4
+---
+
 # Tasks
 
 The Task system is one of the key aspects of World of Workflows and is commonly the only part of the platform your Users will see. It consists of two main areas:

@@ -1,3 +1,10 @@
+---
+title: Compensable
+layout: default
+parent: Compensation
+grand_parent: Activities
+---
+
 # Compensable
 
 The Compensable Activity has 5 outcomes:

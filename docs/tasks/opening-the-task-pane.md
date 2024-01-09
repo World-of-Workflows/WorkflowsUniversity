@@ -1,3 +1,9 @@
+---
+title: Opening the Task Pane
+layout: default
+parent: Tasks
+---
+
 # Opening the task Pane
 
 From the Dashboard, click **Tasks** or chose **Tasks** from the top Menu bar.
