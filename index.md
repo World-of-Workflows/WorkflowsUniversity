@@ -7,51 +7,22 @@ nav_order: 1
 
 # Workflows University
 
-> World of Workflows Version 1.7. Released 6 December 2022
+> World of Workflows Version 1.7. Released 8 January 2024
 
-[Release Notes](./release-notes-1-7.md)
+Welcome to **Workflows University**. This documentation and training set will help you get used to working with World of Workflows.
 
-Welcome to **Workflows University**. This collection of processes and documentation will help you get used to working with World of Workflows.
+**World of Workflows** is a software product designed to assist businesses automate business processes. Automating business processes can **Save Time**, **Increase Efficiency** and **Remove Human Error**.
 
-**[READ THE CURRENT USER GUIDE HERE](./userguide/ug.md)**
+This collection of documents and training is designed to support advanced usees through detailed reference information and novice users through our getting started guidance.
+
+World of Workflows is available in two major editions:
+
+- **Personal Edition** - Runs on a local workstation and provides the full set of features excluding security, multi user and access from the web (Personal edition can only be accessed from the device it is installed on).
+- **Business Edition** - Can run on any device or cloud platform and uses Microsoft Entra Id for Authentication and access control. It can be accessed from anyone on the web with appropriate security.
 
 
-This guide assumes you are new to the **World of Workflows** and want to quickly get everything up and running.
 
 
-**To get started, begin with our [Workflows Primer Course](learn-workflows/README.md)**
 
-> There are differences between the Personal Edition and the Business and Enterprise Editions. This initial Release contains the Personal Edition. Please read the version differences document [here](versions.md)
 
-1. **[Installation](installation.md)** - Use this guide to install World of Workflows on Windows, Linux or Mac.
-2. **[Tasks](tasks/README.md)** - Manage end-user tasks and use the task management system.
-3. **[Activities](activity-guide.md)** - Reference information on all the activities that can be used to create workflows.
-4. **[Object Workflows](object-workflows.md)** - Create Workflows that can be started from the Object Edit Screen.
-5. **[Release Notes](release-notes-1-0.md)** - Read the latest release notes.
-6. **[Workflow Development](workflow-development/README.md)** - Learn how to work with workflows.
-   1. **[Working with Workflow Definitions](workflow-development/workflow-definitions.md)**
-       1.  **[Creating a Workflow](workflow-development/creating-a-workflow.md)** - How to create a Workflow Definitions
-       2.  **[Editing a Workflow](workflow-development/editing-a-workflow.md)** - How to edit a workflow definition.
-       3.  Deleting a Workflow
-   2.  **[Starting Workflows](workflow-development/starting-workflows.md)** - Learn how to start a workflow.
-       1.  **[Dual Triggers](workflow-development/dual-triggers.md)** - Learn how to create a workflow that can be started from several triggers.
-   3.  **[Working with Data](data/README.md)** - Shows how to work with data in Workflows
-   4.  Flow Control
-   5. [Working with Tasks](workflow-development/working-with-tasks.md) - Learn how to work with tasks in Workflows.
-7.  **Electronic Forms**
-    1.  **[Jotform Integration](jotform-integration.md)** - Learn how to integrate Jotform with your system and deliver awesome electronic forms.
-8. **[Reporting](reporting/README.md)** - Learn how to report on all the data in your instance of World of Workflows
-9.  **[Solutions](solutions/README.md)** - Solutions are configured files and instructions to get you up to speed quickly.
-10.  Advanced Configuration
-      1.   **[Changing Directory](changing-directory.md)** - Shows how to host workflows in a different Azure Active Directory.
-      2.   **Plugins** - This shows how to create plugins for World of Workflows.
-      3.   **[Backup](backup.md)** - Shows how to configure automatic backup and restore of your system.
-      4.   **[Configuration](configuration-file.md)** - Use this guide to configure your instance of World of Workflows.
-11.   Reference Guides
-      1.   **[Activities Reference](activity-guide.md)** - Reference information on all the activities that can be used to create workflows.
-      2.   **[Liquid Reference](liquid/README.md)** - Reference Guide on the Liquid Language used in Workflows.
-      3.   **[Javascript Reference](javascript/README.md)** - Reference Guide on the Javascript Language used in Workflows.
-      4.   **[Compensable Activities](compensable.md)** - Reference Guide on the Compensable Activities used in Workflows.
-      5.   **[Gmail Integration](gmail-integration.md)** - How to integrate Workflows PE with Gmail.
-12.   **[How to Guides](howto/README.md)** - Small articles detailing how to achieve certain tasks with Workflows. 
 

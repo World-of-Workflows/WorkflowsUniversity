@@ -3,27 +3,36 @@ title: Installation
 layout: default
 nav_order: 3
 ---
+
 # Installation
 This document contains instructions on how to install and configure World of Workflows on your machine.
 
-## Windows Installation
+## World of Workflows Personal Edition
 
-1. Download the latest version of [.NET 8](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
-2. Download the latest version of [World of Workflows](https://dev.azure.com/tribetechau/HubOne%20Workflows/_build?definitionId=11).
-3. Extract the ZIP file to a folder of your choice.
-4. Execute "RunWorkflows.cmd".
-5. Navigate to [https://localhost:7063](https://localhost:7063).
+### Windows Installation
 
-## Mac (Arm M1 Chip) Installation
-1. Download the latest version of [.NET 8](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
-2. Download the latest version of [World of Workflows](https://dev.azure.com/tribetechau/HubOne%20Workflows/_build?definitionId=11).
-3. Extract the "Mac-arm64" ZIP file to a folder of your choice.
-4. Execute the following from the terminal:
+1. Navigate to the [latest release](https://github.com/World-of-Workflows/WorkflowsUniversity/releases)
+2. Download the Windows Version of PE [WorldOfWorkflowsPE_1.xxx_win-x64.exe](https://github.com/World-of-Workflows/WorkflowsUniversity/releases/download/1.7.461/WorldOfWorkflowsPE_1.7.461_win-x64.exe)
+3. Run the downloaded application
+   ![WOW PE Installer Screen 1](image-5.png)
+4. Click **I agree to the License terms and conditions**
+5. Click **Install**
+   ![WOW PE Installer Screen 2](image-6.png)
+6. Click **Finish**
 
-```bash
-mkdir App_Data
-dotnet dev-certs https
-dotnet HubOneWorflowsApp.Server.dll --urls "https://*:7063"
-```
+**World of Workflows PE (Windows Installation)** is complete
 
-5. Open Chrome and navigate to [https://localhost:7063](https://localhost:7063).
+### Apple M1 or M2 Installation
+
+*Coming Soon*
+
+### Linux Installation
+
+*Coming Soon*
+
+## World of Workflows Business Edition
+
+World of Workflows Business Edition is a more complex, enterprise installation which should be performed by an IT professional. Instructions are located here:
+
+- **[World of Workflows BE Install Guide](https://github.com/World-of-Workflows/Business-Edition)**
+
