@@ -1,4 +1,9 @@
-[Previous](template.md) | [Home](README.md) | [Next](filters.md)
+---
+title: Variable
+layout: default
+parent: Liquid Reference
+nav_order: 10
+---
 {% raw %}
 # Variable
 Variable tags create new Liquid variables.
@@ -127,7 +132,5 @@ Creates and outputs a new number variable with initial value -1. On subsequent c
 ```
 
 Like increment, variables declared using decrement are independent from variables created using assign or capture.
-
-[Previous](template.md) | [Home](README.md) | [Next](filters.md)
 
 {% endraw %}

@@ -1,4 +1,9 @@
-[Previous](types.md) | [Home](README.md) | [Next](whitespace-control.md)
+---
+title: Use in World of Workflows
+layout: default
+parent: Liquid Reference
+nav_order: 6
+---
 {% raw %}
 # Liquid Expressions
 
@@ -166,5 +171,4 @@ Example output:
 
 ```https://localhost:5001/signals/trigger/{some base64 token}```
 
-[Previous](types.md) | [Home](README.md) | [Next](whitespace-control.md)
 {% endraw %}

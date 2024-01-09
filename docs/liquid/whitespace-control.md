@@ -1,4 +1,9 @@
-[Previous](expressions-in-workflows.md) | [Home](README.md) | [Next](control-flow.md)
+---
+title: Whitespace Control
+layout: default
+parent: Liquid Reference
+nav_order: 7
+---
 
 {% raw %}
 # Whitespace control
@@ -72,6 +77,5 @@ Input
 
 ```Wow, John G. Chalmers-Smith, you have a long name!```
 
-[Previous](expressions-in-workflows.md) | [Home](README.md) | [Next](control-flow.md)
 
 {% endraw %}

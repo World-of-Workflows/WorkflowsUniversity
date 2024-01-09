@@ -1,3 +1,9 @@
+---
+title: Reporting
+layout: default
+nav_order: 9
+---
+
 # Reporting
 
 This section of the documentation covers the reporting features of Workflows PE. World of Workflows PE stores its data in a [SQLite](https://www.sqlite.org/index.html) database.

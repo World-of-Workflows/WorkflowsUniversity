@@ -1,4 +1,9 @@
-[Previous](iteration.md) | [Home](README.md) | [Next](variable.md)
+---
+title: Template
+layout: default
+parent: Liquid Reference
+nav_order: 9
+---
 {% raw %}
 # Template
 Template tags tell Liquid where to disable processing for comments or non-Liquid markup, and how to establish relations among template files.
@@ -175,5 +180,4 @@ The include tag works similarly to the render tag, but it allows the code inside
 
 Note that when a template is rendered using the render tag, the include tag cannot be used within the template.
 
-[Previous](iteration.md) | [Home](README.md) | [Next](variable.md)
 {% endraw %}

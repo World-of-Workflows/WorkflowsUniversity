@@ -1,3 +1,10 @@
+---
+title: Introduction
+layout: default
+parent: User Guide
+nav_order: 1
+---
+
 Welcome to World of Workflows! World of Workflows is a software solution that allows anyone to automate business processes, be those simple processes for yourself or processes which encompass your entire business. 
 
 ## Overview of World of Workflows
@@ -62,36 +69,11 @@ Before installing World of Workflows, ensure that your system meets the followin
 | Requirement | Personal Edition | Business Edition |
 | -- | -- | -- |
 | Operating System | Windows 10 or better| Windows 10 1607+, macOS 10.15 (Catalina) or later, or Linux (Ubuntu 18.04 or later). Includes Windows Server 2012 and above. |
-</tr>
-<tr class="even">
-<td>Processor</td>
-<td>Intel Core i3 or equivalent</td>
-<td><p>Intel Core i3</p>
-<p>ARM processor</p>
-<p>Apple M1, M2</p></td>
-</tr>
-<tr class="odd">
-<td>Memory</td>
-<td>4Gb RAM Recommended</td>
-<td>8Gb RAM Recommended</td>
-</tr>
-<tr class="even">
-<td>Disk Space</td>
-<td>512Mb Available Storage</td>
-<td>2Gb Available Storage</td>
-</tr>
-<tr class="odd">
-<td>Internet Connection</td>
-<td>Broadband Connection</td>
-<td>Broadband Connection</td>
-</tr>
-<tr class="even">
-<td>Database</td>
-<td>Included</td>
-<td>Included or Microsoft SQL Server (Optional)</td>
-</tr>
-</tbody>
-</table>
+| Processor | Intel Core i3 or equivalent | Intel Core i3, ARM processor or Apple M1, M2 | 
+| Memory | 4Gb RAM Recommended | 8Gb RAM Recommended | 
+| Disk Space | 512Mb Available Storage | 2Gb Available Storage |
+| Internet Connection | Broadband Connection | Broadband Connection | 
+| Database | Included | Included or Microsoft SQL Server (Optional) | 
 
 *Please note that better performance may be achieved with higher system specifications.*
 

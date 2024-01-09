@@ -1,3 +1,8 @@
+---
+title: AI Prospector
+parent: Solutions
+layout: default
+---
 # AI prospector
 
 > Available for Workflows Versions 1.3.440 and above

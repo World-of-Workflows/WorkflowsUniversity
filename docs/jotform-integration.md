@@ -1,3 +1,9 @@
+---
+title: JotForm Integration
+layout: default
+nav_order: 8
+---
+
 # JotForm Integration
 
 [Jotform](https://jotform.com) is a popular electronic forms application. World of Workflows integrates with Jotforms configured in a specific way.

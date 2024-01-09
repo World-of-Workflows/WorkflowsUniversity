@@ -1,4 +1,10 @@
-[Previous](README.md) | [Home](README.md) | [Next](operators.md)
+---
+title: Introduction
+layout: default
+parent: Liquid Reference
+nav_order: 1
+---
+
 {% raw %}
 ## Introduction
 
@@ -68,5 +74,5 @@ Multiple filters can be used on one output, and are applied from left to right.
 
 ```Hello Adam!```
 
-[Previous](README.md) | [Home](README.md) | [Next](operators.md)
+
 {% endraw %}

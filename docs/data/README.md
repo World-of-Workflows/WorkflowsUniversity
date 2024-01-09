@@ -1,3 +1,8 @@
+---
+title: Working with Data
+layout: default
+nav_order: 4
+---
 # Working with Data
 
 World of Workflows comes with a highly performant and extensible data engine. This allows you to store data in a variety of ways, and to use that data in your workflows.

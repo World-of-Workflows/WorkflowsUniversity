@@ -1,4 +1,9 @@
-[Previous](control-flow.md) | [Home](README.md) | [Next](template.md)
+---
+title: Iteration
+layout: default
+parent: Liquid Reference
+nav_order: 8
+---
 {% raw %}
 # Iteration
 

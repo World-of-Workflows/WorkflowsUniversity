@@ -35,10 +35,10 @@ search:
   # Supports true or false (default)
   button: false
 
-  mermaid:
+mermaid:
   # Version of mermaid library
   # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
-  version: "9.1.3"
+  version: "10.6.1"
 
   # Heading anchor links appear on hover over h1-h6 tags in page content
 # allowing users to deep link to a particular heading on a page.

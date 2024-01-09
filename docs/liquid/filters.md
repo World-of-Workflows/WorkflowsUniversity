@@ -1,4 +1,10 @@
-[Previous](variable.md) | [Home](README.md) 
+---
+title: Filters
+layout: default
+parent: Liquid Reference
+nav_order: 3
+---
+
 {% raw %}
 # Filters
 

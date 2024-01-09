@@ -1,4 +1,9 @@
-[Previous](operators.md) | [Home](README.md) | [Next](types.md)
+---
+title: Truthy and Falsy
+layout: default
+parent: Liquid Reference
+nav_order: 4
+---
 {% raw %}
 # Truthy and falsy
 When a non-boolean data type is used in a boolean context (such as a conditional tag), Liquid decides whether to evaluate it as true or false. Data types that return true by default are called truthy. Data types that return false by default are called falsy.
@@ -54,5 +59,5 @@ The table below summarizes what is truthy or falsy in Liquid.
 | page | •	 
 | EmptyDrop | •	 
 
-[Previous](operators.md) | [Home](README.md) | [Next](types.md)
+
 {% endraw %}
