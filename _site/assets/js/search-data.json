@@ -604,16 +604,16 @@
     "doc": "Home",
     "title": "Workflows University",
     "content": "World of Workflows Version 1.7. Released 6 December 2022 . Release Notes . Welcome to Workflows University. This collection of processes and documentation will help you get used to working with World of Workflows. READ THE CURRENT USER GUIDE HERE . This guide assumes you are new to the World of Workflows and want to quickly get everything up and running. To get started, begin with our Workflows Primer Course . There are differences between the Personal Edition and the Business and Enterprise Editions. This initial Release contains the Personal Edition. Please read the version differences document here . | Installation - Use this guide to install World of Workflows on Windows, Linux or Mac. | Tasks - Manage end-user tasks and use the task management system. | Activities - Reference information on all the activities that can be used to create workflows. | Object Workflows - Create Workflows that can be started from the Object Edit Screen. | Release Notes - Read the latest release notes. | Workflow Development - Learn how to work with workflows. | Working with Workflow Definitions . | Creating a Workflow - How to create a Workflow Definitions | Editing a Workflow - How to edit a workflow definition. | Deleting a Workflow | . | Starting Workflows - Learn how to start a workflow. | Dual Triggers - Learn how to create a workflow that can be started from several triggers. | . | Working with Data - Shows how to work with data in Workflows | Flow Control | Working with Tasks - Learn how to work with tasks in Workflows. | . | Electronic Forms . | Jotform Integration - Learn how to integrate Jotform with your system and deliver awesome electronic forms. | . | Reporting - Learn how to report on all the data in your instance of World of Workflows | Solutions - Solutions are configured files and instructions to get you up to speed quickly. | Advanced Configuration . | Changing Directory - Shows how to host workflows in a different Azure Active Directory. | Plugins - This shows how to create plugins for World of Workflows. | Backup - Shows how to configure automatic backup and restore of your system. | Configuration - Use this guide to configure your instance of World of Workflows. | . | Reference Guides . | Activities Reference - Reference information on all the activities that can be used to create workflows. | Liquid Reference - Reference Guide on the Liquid Language used in Workflows. | Javascript Reference - Reference Guide on the Javascript Language used in Workflows. | Compensable Activities - Reference Guide on the Compensable Activities used in Workflows. | Gmail Integration - How to integrate Workflows PE with Gmail. | . | How to Guides - Small articles detailing how to achieve certain tasks with Workflows. | . ",
-    "url": "/docs/#workflows-university",
+    "url": "/#workflows-university",
     
-    "relUrl": "/docs/#workflows-university"
+    "relUrl": "/#workflows-university"
   },"87": {
     "doc": "Home",
     "title": "Home",
     "content": " ",
-    "url": "/docs/",
+    "url": "/",
     
-    "relUrl": "/docs/"
+    "relUrl": "/"
   },"88": {
     "doc": "Installation",
     "title": "Installation",
@@ -637,74 +637,74 @@
     "relUrl": "/docs/installation.html#mac-arm-m1-chip-installation"
   },"91": {
     "doc": "Introduction",
-    "title": "Introduction",
-    "content": "Liquid uses a combination of objects, tags, and filters inside template files to display dynamic content. Objects . Objects contain the content that Liquid displays on a page. Objects and variables are displayed when enclosed in double curly braces: {{ and }}. Input . {{ page.title }} . Output . In this case, Liquid is rendering the content of the title property of the page object, which contains the text Introduction. ### Tags Tags create the logic and control flow for templates. The curly brace percentage delimiters ```{%``` and ```%}``` and the text that they surround do not produce any visible output when the template is rendered. This lets you assign variables and create conditions or loops without showing any of the Liquid logic on the page. #### Input ```Liquid {% if user %} Hello {{ user.name }}! {% endif %} . Output . Hello Adam! . Tags can be categorized into various types: . | Control flow | Iteration | Template | Variable assignment | . You can read more about each type of tag in their respective sections. Filters . Filters change the output of a Liquid object or variable. They are used within double curly braces {{ }} and variable assignment, and are separated by a pipe character |. Input . {{ \"/my/fancy/url\" | append: \".html\" }} . Output . Multiple filters can be used on one output, and are applied from left to right. #### Input ```liquid {{ \"adam!\" | capitalize | prepend: \"Hello \" }} . Output . Hello Adam! . ",
-    "url": "/docs/liquid/introduction.html#introduction",
-    
-    "relUrl": "/docs/liquid/introduction.html#introduction"
-  },"92": {
-    "doc": "Introduction",
-    "title": "Introduction",
-    "content": " ",
-    "url": "/docs/liquid/introduction.html",
-    
-    "relUrl": "/docs/liquid/introduction.html"
-  },"93": {
-    "doc": "Introduction",
     "title": "Overview of World of Workflows",
     "content": "World of Workflows is a powerful software solution designed to streamline and optimize your business processes by providing an intuitive platform for creating, managing, and automating both simple and complex workflows. We consider any process you perform with more than one step to be considered a workflow. With over 100 activities to choose from, and plugins which extend this functionality, you can easily tailor workflows to suit your organization’s specific needs. By integrating a rich, dynamic, user-configurable database and an advanced task management system, World of Workflows enables you to efficiently manage your projects and tasks, collaborate with your team, and track progress in real-time. World of Workflows comes in two key editions: . | Personal Edition or PE runs on your local PC and is for personal use or workflow development. | Business Edition or BE runs on any of the major cloud providers or your servers and offers enhanced features such as single sign on and rich permissions and access control. | . ",
     "url": "/docs/userguide/introduction.html#overview-of-world-of-workflows",
     
     "relUrl": "/docs/userguide/introduction.html#overview-of-world-of-workflows"
-  },"94": {
+  },"92": {
     "doc": "Introduction",
     "title": "Key features and components of World of Workflows",
     "content": ". | Workflow Editor, a core component of World of Workflows, offers a flexible and user-friendly interface for building and customizing workflows. Some of the key features and components include: . | A wide range of pre-built activities that can be easily added, edited, and connected within your workflows. These activities can be extended using Plugins. | . | A user-configurable database for managing data and integrating with external databases or APIs. | A robust task management system that enables you to create, assign, and track tasks, as well as collaborate with your team members. | Workflow templates called Solutions for quickly implementing common processes and best practices. | Advanced features such as workflow automation with triggers, third-party application integration, and the ability to create custom activities. | Comprehensive security and permissions settings to ensure data protection and controlled access with business edition. | Plugins, which extend the capability of the system. | OData access which simplifies the process of reporting and dashboarding of your data. | Credential manager which allows you to securely connect to 3rd party APIs and systems, such as ChatGPT, Xero, Office 365 and many, many more. | . Our extensible database which can be accessed from the User Interface or within workflows provides the following features: . | Extremely high performance | Customizable tables (Types), Columns and Relationships | Custom views to see filtered and sorted database entries. | Flexible import | Full Export | Inline editing | Sort, Filter and paging | . Our detailed task system allows for the system to reach out to users and instruct them where manual tasks are required and includes the following features: . | Task Queues | Task Details formatted with Markdown | Update data in the database directly from a task | Custom outcomes which branch the workflow. | . ",
     "url": "/docs/userguide/introduction.html#key-features-and-components-of-world-of-workflows",
     
     "relUrl": "/docs/userguide/introduction.html#key-features-and-components-of-world-of-workflows"
-  },"95": {
+  },"93": {
     "doc": "Introduction",
     "title": "Examples of process automation with world of workflows.",
     "content": "Our customers have used world of workflows to automate a number of business processes. Here are some examples: . | A media company uses world of workflows integrated with ChatGPT to write draft articles on incoming press releases automatically. | A soccer club uses world of workflows to notify coaches and managers when it is their turn to put up or take down nets on a soccer field based on the draw in an external system. | An independent school uses world of workflows to manage their enrolment process. | A managed service provider users world of workflows to correctly bill customers for their telephone voice usage. | A sporting club uses world of workflows to automatically generate a weekly newsletter. | A not-for-profit uses world of workflows to manage their grants application process. | . ",
     "url": "/docs/userguide/introduction.html#examples-of-process-automation-with-world-of-workflows",
     
     "relUrl": "/docs/userguide/introduction.html#examples-of-process-automation-with-world-of-workflows"
-  },"96": {
+  },"94": {
     "doc": "Introduction",
     "title": "Getting Started",
     "content": "This chapter will guide you through the initial steps of setting up and using World of Workflows, including system requirements, installation, account creation, and navigation of the user interface. By the end of this chapter, you will be well-prepared to begin exploring the software’s features and functionalities. ",
     "url": "/docs/userguide/introduction.html#getting-started",
     
     "relUrl": "/docs/userguide/introduction.html#getting-started"
-  },"97": {
+  },"95": {
     "doc": "Introduction",
     "title": "System requirements",
     "content": "Before installing World of Workflows, ensure that your system meets the following minimum requirements: . | Requirement | Personal Edition | Business Edition | . | Operating System | Windows 10 or better | Windows 10 1607+, macOS 10.15 (Catalina) or later, or Linux (Ubuntu 18.04 or later). Includes Windows Server 2012 and above. | . | Processor | Intel Core i3 or equivalent | Intel Core i3, ARM processor or Apple M1, M2 | . | Memory | 4Gb RAM Recommended | 8Gb RAM Recommended | . | Disk Space | 512Mb Available Storage | 2Gb Available Storage | . | Internet Connection | Broadband Connection | Broadband Connection | . | Database | Included | Included or Microsoft SQL Server (Optional) | . Please note that better performance may be achieved with higher system specifications. ",
     "url": "/docs/userguide/introduction.html#system-requirements",
     
     "relUrl": "/docs/userguide/introduction.html#system-requirements"
-  },"98": {
+  },"96": {
     "doc": "Introduction",
     "title": "Installation process",
     "content": "Installing World of Workflows PE . To install World of Workflows PE for Windows, follow the steps below: . | Visit the World of Workflows website (www.worldofworkflows.com) and navigate to the Plans and Pricing section. | Choose the appropriate plan and then download the appropriate installer for your operating system (Windows, macOS, or Linux). | Download the installer and save it to your desired location. | Run the installer and follow the on-screen prompts to complete the installation process. | Once the installation is complete, launch World of Workflows using the desktop shortcut or by searching for it in your applications menu. | . Installing World of Workflows Business . As World of Workflows Business works with Azure Active Directory, the process for installation is a little more complex and requires additional work. Pre-requisites . In order to install world of workflows BE, you will need: . | Access to an Azure Active Directory Account and have the “Manage Applications” permission. | Access to the Microsoft Azure Portal and have access to application registrations and enterprise applications | Access to a server to run World of Workflows. This can be Windows, Linux or Mac, will need to have a SSL certificate and be available on the web on port 443 for SSL. | . Installation Process . | Download World of Workflows BE . | Once you have subscribed to World of Workflows BE, you will be granted access to the installation resources. Download your copy of World of Workflows BE for the platform you are installing to. The download will come as a zip file. | . | Prepare Azure Active Directory . | The process to install World of Workflows BE is complicated, but has been simplified for you through a simple powershell script. | Inside the zip file downloaded in section 1, above, you will find the file WOWFBEConfiguration.PS1 | From a powershell prompt, run as Administrator, run WOWFBEConfiguration.PS1 | The script will launch a browser for you to login as the admin account from the pre-requisites | the script will as for the name of the Client and Server Applications. These are for their registrations in Azure AD. Press Enter to accept the defaults or Enter your own entries. Note: The system creates two application registrations, one for the Client application and another for the server. | Next, enter the address of your instance in the format as shown. This will be the final URL of your World of Workflows Installation. | When complete, the powershell script will return you to the login prompt. | Navigate to App Registrations in the Azure Portal (https://portal.azure.com) -&gt; Azure Active Directory -&gt; App Registrations | Choose your Server Application named in step g above | Click API Permissions | Click Add a permission | Click Microsoft Graph | Choose Delegated Permissions | Search for User.Read.All | Select the checkbox and click Add Permissions | Click Grant Admin Consent | Navigate to Azure Active Directory -&gt; Enterprise Applications | Click the X on the filter saying Application type == Enterprise Applications X | Select your Server Application | Click Users and Groups | Grant the users who will administer World of Workflows Administrative Access | . | . ",
     "url": "/docs/userguide/introduction.html#installation-process",
     
     "relUrl": "/docs/userguide/introduction.html#installation-process"
-  },"99": {
+  },"97": {
     "doc": "Introduction",
     "title": "Installation of Business Edition",
     "content": "Installation on a Windows Server using IIS . This is the procedure to install on a Windows Server using IIS . | Create a new folder for World of Workflows | Extract the contents of the downloaded Zip File | Copy the appsettings.json file created above to that folder | In IIS, create a new WebSite, and point it at the folder | Download and install the ASP.NET Core Runtime Hosting bundle from https://dotnet.microsoft.com/en-us/download/dotnet/8.0 | . Installation on an Azure Web Application . The process for installation on an Azure Web Application. | Create a New Azure Web Application | Create a zip file with the root being the platform level (.e.g linux-x64) | Copy appsettings.json configured above to the zip file | In powershell, run the following commands: | . connect-AzAccount \\#Connect to Azure get-AzSubscription \\#Show Azure Subscriptions set-azContext -Subscription \\&lt;SubscriptionID\\&gt; \\#Connect to the correct subscription publish-AzWebApp -ResourceGroupName \\&lt;ResourceGroup\\&gt; -Name \\&lt;AppName\\&gt; -ArchivePath \\&lt;Path_to_Zip_File\\&gt; \\#publish the application . Navigating the user interface . The World of Workflows user interface is designed to be intuitive and user-friendly. Here are the main components to familiarize yourself with: . | Dashboard: The Dashboard provides a high-level overview of your projects, tasks, and workflows. From here, you can access the Task Management System, User Configurable Database, and Workflows editor. | Tasks: This section allows you to create, assign, and manage tasks, as well as collaborate with your team. | Views: Views you have created will show as menu options, beside Tasks | Admin: Accessible through the admin section in the top-right corner, this section allows you to manage . | Workflows: This is where you can create, edit, and manage your workflows, add and configure activities, and automate processes using triggers. | Types: Here you can create, modify, and manage your data tables, export data, and integrate with external databases or APIs. | Views: You can create, modify and manage collections of data types, called Views. | Tasks: You can view and manage all of the tasks in the system. | Import: Our intuitive import wizard allows you to import CSV data into the platform | Workflows University: Integrated training and solution content to help you get the most out of the platform | Documentor: Instantly create automatic documentation of your configuration including database and workflows. | Settings: your account settings, security, and permissions. | Plugins: Extend your system with plugins from our plugin library | Solutions: Import and export entire configurations to allow rapid prototyping and deployment. | . | . With your World of Workflows account set up and a basic understanding of the user interface, you are now ready to dive into the powerful features and functionalities of the software. The following chapters will provide in-depth guidance on using the User Configurable Database, Task Management System, and Workflows to optimize your business processes. ",
     "url": "/docs/userguide/introduction.html#installation-of-business-edition",
     
     "relUrl": "/docs/userguide/introduction.html#installation-of-business-edition"
-  },"100": {
+  },"98": {
     "doc": "Introduction",
     "title": "Introduction",
     "content": "Welcome to World of Workflows! World of Workflows is a software solution that allows anyone to automate business processes, be those simple processes for yourself or processes which encompass your entire business. ",
     "url": "/docs/userguide/introduction.html",
     
     "relUrl": "/docs/userguide/introduction.html"
+  },"99": {
+    "doc": "Introduction",
+    "title": "Introduction",
+    "content": "Liquid uses a combination of objects, tags, and filters inside template files to display dynamic content. Objects . Objects contain the content that Liquid displays on a page. Objects and variables are displayed when enclosed in double curly braces: {{ and }}. Input . {{ page.title }} . Output . In this case, Liquid is rendering the content of the title property of the page object, which contains the text Introduction. ### Tags Tags create the logic and control flow for templates. The curly brace percentage delimiters ```{%``` and ```%}``` and the text that they surround do not produce any visible output when the template is rendered. This lets you assign variables and create conditions or loops without showing any of the Liquid logic on the page. #### Input ```Liquid {% if user %} Hello {{ user.name }}! {% endif %} . Output . Hello Adam! . Tags can be categorized into various types: . | Control flow | Iteration | Template | Variable assignment | . You can read more about each type of tag in their respective sections. Filters . Filters change the output of a Liquid object or variable. They are used within double curly braces {{ }} and variable assignment, and are separated by a pipe character |. Input . {{ \"/my/fancy/url\" | append: \".html\" }} . Output . Multiple filters can be used on one output, and are applied from left to right. #### Input ```liquid {{ \"adam!\" | capitalize | prepend: \"Hello \" }} . Output . Hello Adam! . ",
+    "url": "/docs/liquid/introduction.html#introduction",
+    
+    "relUrl": "/docs/liquid/introduction.html#introduction"
+  },"100": {
+    "doc": "Introduction",
+    "title": "Introduction",
+    "content": " ",
+    "url": "/docs/liquid/introduction.html",
+    
+    "relUrl": "/docs/liquid/introduction.html"
   },"101": {
     "doc": "Iteration",
     "title": "Iteration",
