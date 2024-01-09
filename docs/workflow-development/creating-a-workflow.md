@@ -1,3 +1,9 @@
+---
+title: Creating a Workflow
+layout: default
+parent: Workflow Development
+---
+
 # Creating a Workflow
 
 To Work with your workflow definitions, you need to be an admin in the system. If you are an Admin, you will see the **Admin** tab in the top Menu. Click **Admin** the click **Workflows** to go to the Workflow Dashboard:

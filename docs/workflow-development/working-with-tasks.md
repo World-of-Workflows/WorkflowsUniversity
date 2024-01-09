@@ -1,3 +1,8 @@
+---
+title: Working with Tasks
+layout: default
+parent: Workflow Development
+---
 # Working with Tasks
 
 One of the most common activities in a workflow is to perform a task. A task is an activity that requires a user to perform some action. For example, a task could be to review a document, approve a purchase order, or to enter a customer's credit card information. A task can be assigned to a user or a group of users. A task can also be assigned to a user based on a capability. For example, a task could be assigned to a user with the capability of "Approve Purchase Orders".

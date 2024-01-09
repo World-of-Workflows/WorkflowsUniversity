@@ -4,20 +4,20 @@ layout: default
 parent: Activities
 ---
 
-### Read Line
+## Read Line
 Read text from standard in.
 
 **Category:** Console
 
 **There are no input parameters**
 
-#### Output Parameters
+### Output Parameters
 
 | Name | Type | Hint |
 | -- | -- | -- |
 | Output | System.String  |   |
 
 
-#### Outcomes
+### Outcomes
 
 - Done

@@ -1,3 +1,9 @@
+---
+title: Object Workflows
+layout: default
+parent: Workflow Development
+---
+
 # Object Workflows
 
 This guide shows how to create a workflow that can be executed from within the Object Editor Screen.

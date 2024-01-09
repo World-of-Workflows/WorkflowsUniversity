@@ -1,3 +1,10 @@
+---
+title: Workflow Development
+layout: default
+nav_order: 6
+has_children: true
+---
+
 # Workflow Development
 
 In order to work effectively with workflow development World of Workflows, it's important to understand its terminology. Below is a list of words that represent important concepts used in Elsa.

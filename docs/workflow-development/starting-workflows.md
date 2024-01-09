@@ -1,3 +1,8 @@
+---
+title: Starting Workflows
+layout: default
+parent: Workflow Development
+---
 # Starting Workflows
 
 There are three main ways to start a workflow:

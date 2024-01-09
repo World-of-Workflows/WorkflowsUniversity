@@ -1,3 +1,9 @@
+---
+title: Dual Triggers
+layout: default
+parent: Workflow Development
+---
+
 # Dual Triggers
 
 During the development of a workflow, it is common to have a workflow based on a timer that you want to run to test it. The following procedure achieves this:
