@@ -236,17 +236,26 @@ Liquid does not convert escape sequences into special characters.
 
 Numbers include floats and integers:
 
+```
 {% assign my_int = 25 %}
+```
 
+```
 {% assign my_float = -39.756 %}
+```
+
 
 ### Boolean
 
 Booleans are either true or false. No quotations are necessary when declaring a boolean:
 
+```
 {% assign foo = true %}
+```
 
+```
 {% assign bar = false %}
+```
 
 #### Nil
 
@@ -256,21 +265,21 @@ Booleans are either true or false. No quotations are necessary when declaring a 
 
 In the following example, if the user does not exist (that is, user returns nil), Liquid will not print the greeting:
 
+```
 {% if user %}
-
 Hello {{ user.name }}!
-
 {% endif %}
+```
 
 Tags or outputs that return *nil* will not print anything to the page.
 
 #### Input
 
-The current user is {{ user.name }}
+```The current user is {{ user.name }}```
 
 #### Output
 
-The current user is
+```The current user is```
 
 ### Array
 
@@ -282,41 +291,39 @@ To access all the items in an array, you can loop through each item in the array
 
 Input
 
-\<!-- if site.users = "Tobi", "Laura", "Tetsuro", "Adam" --\>
-
+```
+<!-- if site.users = "Tobi", "Laura", "Tetsuro", "Adam" -->
 {% for user in site.users %}
-
 {{ user }}
-
 {% endfor %}
+```
 
 Output
 
-Tobi Laura Tetsuro Adam
+```Tobi Laura Tetsuro Adam```
 
 #### Accessing specific items in arrays
 
-You can use square bracket **<span class="smallcaps">\[ \]</span>** notation to access a specific item in an array. Array indexing starts at zero. A negative index will count from the end of the array.
+You can use square bracket **<span class="smallcaps">[ ]</span>** notation to access a specific item in an array. Array indexing starts at zero. A negative index will count from the end of the array.
 
 #### Input
 
-\<!-- if site.users = "Tobi", "Laura", "Tetsuro", "Adam" --\>
-
+```
+<!-- if site.users = "Tobi", "Laura", "Tetsuro", "Adam" -->
 {{ site.users\[0\] }}
-
 {{ site.users\[1\] }}
-
 {{ site.users\[-1\] }}
+```
 
 #### Output
 
+```
 Tobi
-
 Laura
-
 Adam
+```
 
-### Initializing arrays
+### Initializing arays
 
 You cannot initialize arrays using only Liquid.
 
@@ -326,25 +333,23 @@ You can, however, use the split filter to break a string into an array of substr
 
 An EmptyDrop object is returned if you try to access a deleted object. In the example below, page_1, page_2 and page_3 are all EmptyDrop objects:
 
+```
 {% assign variable = "hello" %}
-
-{% assign page_1 = pages\[variable\] %}
-
-{% assign page_2 = pages\["does-not-exist"\] %}
-
+{% assign page_1 = pages[variable] %}
+{% assign page_2 = pages["does-not-exist"] %}
 {% assign page_3 = pages.this-handle-does-not-exist %}
+```
 
 #### Checking for emptiness
 
 You can check to see if an object exists or not before you access any of its attributes.
 
+```
 {% unless pages == empty %}
-
-\<h1\>{{ pages.frontpage.title }}\</h1\>
-
-\<div\>{{ pages.frontpage.content }}\</div\>
-
+<h1>{{ pages.frontpage.title }}</h1>
+<div>{{ pages.frontpage.content }}</div>
 {% endunless %}
+```
 
 Both empty strings and empty arrays will return *true* if checked for equivalence with *empty*.
 
@@ -358,79 +363,74 @@ The following Liquid expressions are supported:
 
 Use the following syntax to access a workflow variable:
 
-{{ Variables.*NameOfVariable* }}
+```{{ Variables.*NameOfVariable* }}```
 
 For example, given a workflow variable called **<span class="smallcaps">FirstName</span>** with a value of “Alice”, the expression
 
-Hello {{ Variables.FirstName }}.
+```Hello {{ Variables.FirstName }}.```
 
 will result in
 
-Hello Alice.
+```Hello Alice.```
 
 #### Input
 
 Input values can be accessed using the following syntax:
 
-{{ Input }}
+```{{ Input }}```
 
 #### Activity Output
 
 To access a named activity’s output, use the following syntax:
 
-{{ Activities.*SomeActivityName*.Output }}
+```{{ Activities.*SomeActivityName*.Output }}```
 
 #### CorrelationId
 
 Returns the correlation ID (if any) of the currently executing workflow.
 
-{{ CorrelationId }}
+```{{ CorrelationId }}```
 
 #### WorkflowInstanceId
 
 Returns the workflow instance ID of the currently executing workflow.
 
-{{ WorkflowInstanceId }}
+```{{ WorkflowInstanceId }}```
 
 #### WorkflowDefinitionId
 
 Returns the workflow definition ID of the currently executing workflow.
 
-{{ WorkflowDefinitionId }}
+```{{ WorkflowDefinitionId }}```
 
 #### WorkflowDefinitionVersion
 
 Returns the workflow definition version of the currently executing workflow.
 
-{{ WorkflowDefinitionVersion }}
+```{{ WorkflowDefinitionVersion }}```
 
 ### Configuration
 
 Provides access to a .NET configuration value. See Configuration for more details on available configuration items in World of Workflows.
 
-{{ Configuration.*SomeSection* }}
+```{{ Configuration.*SomeSection* }}```
 
 As an example, let’s say you have the following JSON in appsettings.json:
 
+```json
 {
-
-"Elsa": {
-
-"Smtp": {
-
-"Host": "localhost",
-
-"Port": 2525
-
+    "Elsa": {
+        "Smtp": {
+            "Host": "localhost",
+            "Port": 2525
+        }
+    }
 }
-
-}
-
-}
+```
 
 You can access the configured Port value using the following expression:
 
-{{ Configuration.Elsa.Smtp.Port }}
+```{{ Configuration.Elsa.Smtp.Port }}```
 
 ### Common Filters
 
@@ -438,25 +438,26 @@ You can access the configured Port value using the following expression:
 
 *json* is a liquid filter that renders the specified value as a JSON string.
 
-{{ Input \| json }}
+```{{ Input \| json }}```
 
 Example output:
 
+```json
 {
 
-"SomeDocument": {
+    "SomeDocument": {
 
-"Title": "About Elsa Workflows"
+         "Title": "About Elsa Workflows"
 
+         }
 }
-
-}
+``````
 
 #### base64
 
 A liquid filter that renders the specified value as a bas64 representation. The value is first converted to a string. If the value is an object, array, dictionary or datetime, it is first serialized using JsonConvert.SerializeObject before being encoded as base64.
 
-{{ "Some string value" \| base64 }}
+```{{ "Some string value" \| base64 }}```
 
 Example output:
 
@@ -470,9 +471,9 @@ U29tZSBzdHJpbmcgdmFsdWU=
 
 Usage:
 
-{{ "SomeWorkflowName" \| workflow_definition_id }}
+```{{ "SomeWorkflowName" | workflow_definition_id }}```
 
-{{ "SomeWorkflowTag" \| workflow_definition_id: tag }}
+```{{ "SomeWorkflowTag" | workflow_definition_id: tag }}```
 
 #### HTTP Variables
 
@@ -480,27 +481,27 @@ Usage:
 
 *request* provides access to various properties on the current HTTP Request object:
 
-{{ Request.QueryString }}
+```{{ Request.QueryString }}```
 
-{{ Request.ContentType }}
+```{{ Request.ContentType }}```
 
-{{ Request.ContentLength }}
+```{{ Request.ContentLength }}```
 
-{{ Request.Form }}
+```{{ Request.Form }}```
 
-{{ Request.Protocol }}
+```{{ Request.Protocol }}```
 
-{{ Request.Path }}
+```{{ Request.Path }}```
 
-{{ Request.PathBase }}
+```{{ Request.PathBase }}```
 
-{{ Request.Host }}
+```{{ Request.Host }}```
 
-{{ Request.IsHttps }}
+```{{ Request.IsHttps }}```
 
-{{ Request.Scheme }}
+```{{ Request.Scheme }}```
 
-{{ Request.Method }}
+```{{ Request.Method }}```
 
 #### HTTP Filters
 
@@ -510,16 +511,22 @@ Usage:
 
 Example:
 
+```
 {{ "MySignal" \| signal_url }}
+```
 
 Example output:
 
+```
 https://localhost:5001/signals/trigger/{some base64 token}
+```
 
 #### Markup
 
 *markup* is a liquid filter which provides the text as full html rather and htmlencoded data
 
+```
 {{“\<h1\>Hello\</h1\>” \| markup }}
+```
 
 {%endraw%}
