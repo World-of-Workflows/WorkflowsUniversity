@@ -38,9 +38,3 @@ This will result in the Confirm outcome of the compensable activity to be schedu
 
 Confirmed compensable activities can no longer compensate. Trying to do so will cause an exception.
 
-## Activities
-
-- [Compensable](compensation-compensable.md)
-- [Compensate](compensation-compensate.md)
-- [Confirm](compensation-confirm.md)
-

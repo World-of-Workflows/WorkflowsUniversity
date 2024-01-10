@@ -25,12 +25,7 @@ The Task Pane shows the details of a task and has 6 main areas:
 ## Working with Tasks
 End users are expected to use the task system as an advanced to-do list. They pick tasks from the task queue and work through them. The task pane shows the details of the task and allows them to enter data and perform actions.
 
-- [Opening the Task Pane](opening-the-task-pane.md)
-- [Pick a Task](pick-a-task.md)
-- [Working with a task](working-with-a-task.md)
-
-## Working with the All tasks View
-- [Opening the View](all-tasks.md)
+See the contents below to work with tasks in more detail.
 
 
 
