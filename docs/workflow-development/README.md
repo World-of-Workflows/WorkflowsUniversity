@@ -13,21 +13,20 @@ In order to work effectively with workflow development World of Workflows, it's 
 
 A workflow consists of a series of steps called **activities** that are connected to one another. A workflow maintains all sorts of information, such as the following:
 
-- Which activity is currently executing.
-- What variables are set.
-- What activities are blocking further execution.
+- Which activity is currently executing?
+- What variables are set?
+- What activities are blocking further execution?
 
 Once an activity is done executing, the workflow checks its outcome and if there's another activity connected to it. If so, that activity is scheduled for execution.
 
-This goes on until there are either no more activities to execute, or an activity is encountered that instructs the workflow runner to suspend the workflow.
+This goes on until there are either no more activities to execute or an activity is encountered that instructs the workflow runner to suspend the workflow.
 
 ## Activity
 
 An activity is an atomic building block that represents a single executable step on the workflow. Activities can do all sorts of things and take input from you and provide output.
 
 ## Starting Activity
-
-An activity which is the starting point of the workflow and does not have any inbound connections. They are the entry points to the workflow.
+An activity that is the starting point of the workflow and does not have any inbound connections. They are the entry points to the workflow.
 
 ## Blocking Activity
 When an activity runs, it returns an activity execution result. There are various possible results that can be returned, but the most commonly used ones are Done, Outcomes and Suspend.
@@ -86,13 +85,7 @@ A burst of execution refers to the execution of a sequence of activities one aft
 # Workflow Variables
 Every workflow instance can have a set of workflow variables.
 
-A workflow variable is a simple key/value pair stored as part of the workflow instance, and is useful to store information that can later be used by other activities.
+A workflow variable is a simple key/value pair stored as part of the workflow instance and is useful to store information that can later be used by other activities.
 
 ## Default Variables
 Although variables can be created on the fly within a workflow as it executes, you can declare variables up-front on the workflow definition itself.
-
-# In this section
-
-- [Creating a Workflow](creating-a-workflow.md)
-- [Editing a Workflow](editing-a-workflow.md)
-- [Starting Workflows](starting-workflows.md)
