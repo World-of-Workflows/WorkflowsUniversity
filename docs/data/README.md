@@ -13,15 +13,18 @@ Data is stored as types. These are like a spreadsheet. Rows are instances of the
 
 1. Navigate to **Admin** then **Types**
 2. Click **Add Type**
+   
    ![](2023-02-02-11-21-00.png)
-3. Give the Type a **Name** and **Description**
-4. Click **Save**
+4. Give the Type a **Name** and **Description**
+5. Click **Save**
 
 ## To Create a new Column
 1. Navigate to **Admin** then **Types**
 2. Click **Columns** on the type you wish to add a column for
 3. Click **Add Column**
+   
    ![](2023-02-02-11-22-46.png)
+   
    Enter the following information:
    1. **Column Name** - This should ideally have no spaces and use uppercase and lowercase letters only
    2. **Display Name** - This should be a human-readable name for the column

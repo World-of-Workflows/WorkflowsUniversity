@@ -218,21 +218,21 @@
   },"31": {
     "doc": "Working with Data",
     "title": "To create a new type",
-    "content": ". | Navigate to Admin then Types | Click Add Type | Give the Type a Name and Description | Click Save | . ",
+    "content": ". | Navigate to Admin then Types | Click Add Type . | Give the Type a Name and Description | Click Save | . ",
     "url": "/docs/data/README.html#to-create-a-new-type",
     
     "relUrl": "/docs/data/README.html#to-create-a-new-type"
   },"32": {
     "doc": "Working with Data",
     "title": "To Create a new Column",
-    "content": ". | Navigate to Admin then Types | Click Columns on the type you wish to add a column for | Click Add Column Enter the following information: . | Column Name - This should ideally have no spaces and use uppercase and lowercase letters only | Display Name - This should be a human-readable name for the column | Description - This should describe what you want to store in this column | Data Type - World of Workflows understands several data types, which ensure your data is formatted and stored correctly. Enter one of the following data types: . | Reference - This is a reference to another type. This is useful for creating relationships between types. | Big Integer - This is a whole number. It can be positive or negative and be between -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807. | Integer - This is a whole number. It can be positive or negative and be between -2,147,483,648 to 2,147,483,647. | Decimal 2 - This is a decimal number with 2 decimal places useful for storing currency values. | Decimal 5 - This is a decimal number with 5 decimal places useful for floating point numbers. | True/False - This is a boolean value. It can be either true or false. | String - This is a string of text. It can be any length. | DateTime - This is a date and time value, stored as UTC and presented in local time. | Url - This is a string that is presented as a hyperlink. | Embed - This is a string that is presented as an embedded object. | . | Display Order - This determines which order the fields are shown. | Visible - This determines whether or not the field will be visible in the data editor. | Indexed - This determines whether the system will index the field to make it quicker to search and filter. | . | . ",
+    "content": ". | Navigate to Admin then Types | Click Columns on the type you wish to add a column for | Click Add Column . Enter the following information: . | Column Name - This should ideally have no spaces and use uppercase and lowercase letters only | Display Name - This should be a human-readable name for the column | Description - This should describe what you want to store in this column | Data Type - World of Workflows understands several data types, which ensure your data is formatted and stored correctly. Enter one of the following data types: . | Reference - This is a reference to another type. This is useful for creating relationships between types. | Big Integer - This is a whole number. It can be positive or negative and be between -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807. | Integer - This is a whole number. It can be positive or negative and be between -2,147,483,648 to 2,147,483,647. | Decimal 2 - This is a decimal number with 2 decimal places useful for storing currency values. | Decimal 5 - This is a decimal number with 5 decimal places useful for floating point numbers. | True/False - This is a boolean value. It can be either true or false. | String - This is a string of text. It can be any length. | DateTime - This is a date and time value, stored as UTC and presented in local time. | Url - This is a string that is presented as a hyperlink. | Embed - This is a string that is presented as an embedded object. | . | Display Order - This determines which order the fields are shown. | Visible - This determines whether or not the field will be visible in the data editor. | Indexed - This determines whether the system will index the field to make it quicker to search and filter. | . | . ",
     "url": "/docs/data/README.html#to-create-a-new-column",
     
     "relUrl": "/docs/data/README.html#to-create-a-new-column"
   },"33": {
     "doc": "Getting Started",
     "title": "Getting Started",
-    "content": "Welcome to the Getting Started Guide for World of Workflows. This guide takes you through a simple installation of the Personal Edition, through to using an implemented Business Edition and solving real world workflows. ",
+    "content": "Welcome to the Getting Started Guide for “World of Workflows”. This guide takes you through a simple installation of the Personal Edition, through to using an implemented Business Edition and solving real-world workflows. ",
     "url": "/docs/getting-started/README.html",
     
     "relUrl": "/docs/getting-started/README.html"
@@ -610,7 +610,7 @@
   },"87": {
     "doc": "Home",
     "title": "Workflows University",
-    "content": "World of Workflows Version 1.7. Released 8 January 2024 . Welcome to Workflows University. This documentation and training set will help you get used to working with World of Workflows. World of Workflows is a software product designed to assist businesses automate business processes. Automating business processes can Save Time, Increase Efficiency and Remove Human Error. This collection of documents and training is designed to support advanced usees through detailed reference information and novice users through our getting started guidance. World of Workflows is available in two major editions: . | Personal Edition - | . ",
+    "content": "World of Workflows Version 1.7. Released 8 January 2024 . Welcome to Workflows University. This documentation and training set will help you get used to working with World of Workflows. World of Workflows is a software product designed to assist businesses automate business processes. Automating business processes can Save Time, Increase Efficiency and Remove Human Error. This collection of documents and training is designed to support advanced usees through detailed reference information and novice users through our getting started guidance. World of Workflows is available in two major editions: . | Personal Edition - Runs on a local workstation and provides the full set of features excluding security, multi user and access from the web (Personal edition can only be accessed from the device it is installed on). | Business Edition - Can run on any device or cloud platform and uses Microsoft Entra Id for Authentication and access control. It can be accessed from anyone on the web with appropriate security. | . ",
     "url": "/#workflows-university",
     
     "relUrl": "/#workflows-university"
