@@ -1660,35 +1660,35 @@
   },"237": {
     "doc": "Working with a Task",
     "title": "Header",
-    "content": "The Task header shows the Task Title and the Task Id. The Task Id is a number. ",
+    "content": ". The Task header shows the Task Title and the Task Id. The Task Id is a number. ",
     "url": "/docs/tasks/working-with-a-task.html#header",
     
     "relUrl": "/docs/tasks/working-with-a-task.html#header"
   },"238": {
     "doc": "Working with a Task",
     "title": "Description",
-    "content": "Below the task header is the task description. This is formatted text which can include links, images, tables and more. This is created by the workflow developer and contains instructions for you to complete the task. Every task can be different, so always read the instructions! . ",
+    "content": ". Below the task header is the task description. This is formatted text which can include links, images, tables and more. This is created by the workflow developer and contains instructions for you to complete the task. Every task can be different, so always read the instructions! . ",
     "url": "/docs/tasks/working-with-a-task.html#description",
     
     "relUrl": "/docs/tasks/working-with-a-task.html#description"
   },"239": {
     "doc": "Working with a Task",
     "title": "Details",
-    "content": "Directly below the description is a set of data for you to edit or complete. This is created by the workflow developer and can be anything from a simple text field to a complex form. Every task can be different, so always read the instructions! . | If you change the data, you must click Submit to save it. | If you make a mistake, click Cancel. | If you no longer want to work with this task, click Unassign to remove it from your queue. | . ",
+    "content": ". Directly below the description is a set of data for you to edit or complete. This is created by the workflow developer and can be anything from a simple text field to a complex form. Every task can be different, so always read the instructions! . | If you change the data, you must click Submit to save it. | If you make a mistake, click Cancel. | If you no longer want to work with this task, click Unassign to remove it from your queue. | . ",
     "url": "/docs/tasks/working-with-a-task.html#details",
     
     "relUrl": "/docs/tasks/working-with-a-task.html#details"
   },"240": {
     "doc": "Working with a Task",
     "title": "Task Choices",
-    "content": "Below this are the task choices. These are choices on how you wish to complete this task. These are chosen by the task developer. When you click one of these buttons, the task will dissapear and the process will continue. ",
+    "content": ". Below this are the task choices. These are choices on how you wish to complete this task. These are chosen by the task developer. When you click one of these buttons, the task will dissapear and the process will continue. ",
     "url": "/docs/tasks/working-with-a-task.html#task-choices",
     
     "relUrl": "/docs/tasks/working-with-a-task.html#task-choices"
   },"241": {
     "doc": "Working with a Task",
     "title": "Task Information",
-    "content": "Finally you can see information on this task. ",
+    "content": ". Finally you can see information on this task. ",
     "url": "/docs/tasks/working-with-a-task.html#task-information",
     
     "relUrl": "/docs/tasks/working-with-a-task.html#task-information"
