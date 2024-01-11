@@ -11,8 +11,8 @@ This guide shows how to create a workflow that can be executed from within the O
 The process is as follows
 1. Create a Data Type
 2. Create an Instance
-3. Create a Workflow with a specific name
-4. Execute and test the workflow.
+3. Create a Workflow with the Object Instance Trigger activity
+4. Execute and test the workflow
 
 The instructions below show how to do this:
 
@@ -34,35 +34,43 @@ The instructions below show how to do this:
 4. The example below shows the new instance.
    ![](2022-11-08-07-15-04.png)
 
-## 3. Create a Workflow with a specific name
+## 3. Create a Workflow with the Object Instance Trigger activity
 1. Navigate to Workflows - Workflow Definitions
 2. Click **Create Workflow**
 3. Click the Cog and enter details as follows:
-   1. Name is ```TypeName_Workflowname``` where the type name was chosen in step 1 above, in our case ```MyNewType``` Therefore our Name would be ```MyNewType_FirstWorkflow```
+   1. Enter an appropriate name name for the workflow, such as ```TypeName_Workflowname``` where the type name was chosen in step 1 above, in our case ```MyNewType``` Therefore our name would be ```MyNewType_FirstWorkflow```
    2. DisplayName is what you want to appear in the user interface. In our case I will use ```First Workflow for Testing```
-       ![](2022-11-08-07-17-57.png)
-    3. Click **Save**
-4. Click **Start** and add the Activity **Object Detail to Variable** from the **Data** Section
-   1. On Object Id, click the ... button and Choose ```JavaScript```. In the box, type ```input```
-   2. On State choose ```C``` for current state
-   3. On VariableName type ```ChosenObject```
-      ![](2022-11-08-07-20-14.png)
+      ![](2024-01-11-143010.png)
+   3. Click **Save**
+4. Click **Start** and add the Activity **Object Instance Trigger** from the **Data** Section
+   1. In the Object Type Id drop down, select the Type we have just created, in our case ```MyNewType```
+      ![](2024-01-11-142209.png)
+   2. In the Common tab, give the Activity a friendly name, in our case we will give it the same name as the workflow ```First Workflow for Testing```
+      ![](2024-01-11-145318.png)
+   3. Click **Save**
+5. Add a new activity **List Object Instances** from the **Data** Section
+   1. Select our object type from the Object Type drop down, in our case ```MyNewType```
+   2. Set the Limit to 1
+      ![](2024-01-11-143843.png)
+   3. In the Common tab, give the activity a name, in our case ```FirstObject```
+      ![](2024-01-11-143928.png)
    4. Click **Save**
-5. Click **Publish**
+   5. Add a link it to the **Object Instance Trigger** activity
+      ![](2024-01-11-144255.png)
+6. Click **Publish**
 
 ## 4. Execute and Test Workflow
 1. Navigate to Admin -> Data
 2. Click the Name of the New Type created in Step 1
 3. Click Edit in the FirstInstance
-4. Click Workflows
-   ![](2022-11-08-07-21-54.png)
-5. Click the 3 Vertical dots
-6. Navigate to Workflows -> Workflow Instances
-7. Choose the top instance
-8. Click the Object Detail to Variable Activity
-   ![](2022-11-08-07-23-00.png)
-9. Click **Variables**
-    ![](2022-11-08-07-23-39.png)
-10. Ensure the variable shows the object you chose
+4. Click Workflows, and click the Play icon
+   ![](2024-01-11-145856.png)
+5. Navigate to Admin -> Workflows -> Workflow Instances
+6. Choose the top instance
+7. Click the **List Object Instances** Activity
+   ![](2024-01-11-150632.png)
+8. Click **Journal** and scroll down to **List Object Instances**
+   ![](2024-01-11-150837.png)
+9. Ensure the details reflect the object you chose
 
 > Congratulations, you have created a workflow that can be executed from within the Object Editor Screen.

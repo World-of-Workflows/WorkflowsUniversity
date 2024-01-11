@@ -10,7 +10,7 @@ One of the most common activities in a workflow is to perform a task. A task is 
 Tasks allow you to display diagrams, instructions, receieve data from the end user and create custom buttons for the user to press which you can use to control the flow of the workflow.
 
 ## Creating a Task
-There are three ways to create a task in World of Workflows anbd tach of these are under the tasks activities.
+There are three ways to create a task in World of Workflows and each of these are under the tasks activities.
 
 These are:
 

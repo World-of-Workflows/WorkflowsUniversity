@@ -8,7 +8,7 @@ nav_order: 3
 {% raw %}
 # Filters
 
-The following table contains filters aavailable using Liquid.
+The following table contains filters available using Liquid.
 
 
 
