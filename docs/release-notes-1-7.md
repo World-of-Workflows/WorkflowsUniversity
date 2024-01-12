@@ -71,7 +71,6 @@ The following are known issues in this release
   **WORKAROUND:** None
 - #2941 - Display context-sensitive help
   **WORKAROUND:** None
-  **WORKAROUND:** None
 - #2943 - on a task that has Q&A, the hover-text is the column description on the database field
   **WORKAROUND:** None
 - #3165 - Task Due dates do not call the timeout outcome of the activity.
