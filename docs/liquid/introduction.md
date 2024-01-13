@@ -21,7 +21,9 @@ Objects contain the content that Liquid displays on a page. Objects and variable
 
 #### Output
 
-```Introduction```
+```liquid
+Introduction
+```
 
 In this case, Liquid is rendering the content of the title property of the page object, which contains the text Introduction.
 
@@ -30,7 +32,7 @@ Tags create the logic and control flow for templates. The curly brace percentage
 
 #### Input
 
-```Liquid
+```liquid
 {% if user %}
   Hello {{ user.name }}!
 {% endif %}
@@ -38,7 +40,9 @@ Tags create the logic and control flow for templates. The curly brace percentage
 
 Output
 
-```Hello Adam!```
+```liquid
+Hello Adam!
+```
 
 Tags can be categorized into various types:
 
@@ -60,7 +64,9 @@ Filters change the output of a Liquid object or variable. They are used within d
 
 #### Output
 
-```/my/fancy/url.html```
+```liquid
+/my/fancy/url.html
+```
 
 Multiple filters can be used on one output, and are applied from left to right.
 
@@ -72,7 +78,9 @@ Multiple filters can be used on one output, and are applied from left to right.
 
 #### Output
 
-```Hello Adam!```
+```liquid
+Hello Adam!
+```
 
 
 {% endraw %}
