@@ -7,7 +7,7 @@ nav_order: 1
 
 # Workflows University
 
-> World of Workflows Version 1.7. Released 8 January 2024
+> World of Workflows Version 1.7.467 Released 17 January 2024
 
 Welcome to **Workflows University**. This documentation and training set will help you get used to working with World of Workflows.
 
