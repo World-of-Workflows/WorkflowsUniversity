@@ -82,5 +82,6 @@ Multiple filters can be used on one output, and are applied from left to right.
 Hello Adam!
 ```
 
+[Home](README.html) | [Next](operators.html)
 
 {% endraw %}

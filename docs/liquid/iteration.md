@@ -2,7 +2,7 @@
 title: Iteration
 layout: default
 parent: Liquid Reference
-nav_order: 8
+nav_order: 9
 ---
 {% raw %}
 # Iteration
@@ -198,7 +198,7 @@ Information about a parent for loop.
 ```
 
 ### Use the forloop object
- #### Input
+#### Input
 
 ```liquid
 {% assign smoothie_flavors = "orange, strawberry, banana" | split: ", " %}
@@ -212,9 +212,12 @@ Information about a parent for loop.
 
 #### Output
 
-```orange-strawberry-banana```
+```
+orange-strawberry-banana
+```
 
 ### forloop (properties)
+
 | Property | Description | Returns |
 | --- | --- | --- |
 | length | The total number of iterations in the loop. | number
@@ -428,6 +431,7 @@ Information about a parent tablerow loop.
 
 
 ### tablerowloop (properties)
+
 | Property | Description | Returns |
 | --- | --- | --- |
 | col | The 1-based index of the current column. | number
@@ -443,5 +447,6 @@ Information about a parent tablerow loop.
 | rindex0 | The 0-based index of the current iteration, in reverse order. | number
 | row | The 1-based index of current row. | number
 
-[Previous](control-flow.md) | [Home](README.md) | [Next](template.md)
+[Previous](control-flow.html) | [Home](README.html) | [Next](template.html)
+
 {% endraw %}

@@ -75,4 +75,6 @@ In tags with more than one ```and``` or ```or``` operator, operators are checked
 {% endif %}
 ```
 
+[Previous](introduction.html) | [Home](README.html) | [Next](filters.html)
+
 {% endraw %}

@@ -177,7 +177,7 @@ This activity allows you to update the data in an instance and optionally clear 
 
 <img src="./media/image95.png" style="width:4.65302in;height:3.68769in" alt="Graphical user interface, text, application, email Description automatically generated" />
 
-First enterthe **Instance Id of the instance you wantg to update. This might have been returned when you used a** *Create Object Instance* **activity** Next you can choose to **Clear Omitted fields.** That means if this type has a column and you *do **not** include data for it**,** the data will be cleared.*
+First, enter the **Instance Id of the instance you wantg to update. This might have been returned when you used a** *Create Object Instance* **activity** Next you can choose to **Clear Omitted fields.** That means if this type has a column and you *do **not** include data for it**,** the data will be cleared.*
 
 You can enter columns and values or present this as JavaScript or a JSON file.
 
@@ -253,7 +253,7 @@ The activity has a single output property **Output** which includes the requeste
 
 First, select the *Object Type*
 
-Next, select a key field. This is used to identify if this is a new instance or udpate an existing one. If you are using something like JotForm, make this the submission_id.
+Next, select a key field. This is used to identify if this is a new instance or update an existing one. If you are using something like JotForm, make this the submission_id.
 
 Finally decide whether to clear omitted fields or not and insert the data, either as JSON or as Name Value entries.
 

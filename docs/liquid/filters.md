@@ -10,8 +10,6 @@ nav_order: 3
 
 The following table contains filters available using Liquid.
 
-
-
 | Filter | Description | Input | Output |
 | --- | --- | --- | --: |
 | abs | Returns the absolute value of a number. | ```{{ -17 | abs }}``` | 17 |
@@ -61,8 +59,7 @@ The following table contains filters available using Liquid.
 | url_encode | URL encodes a string. | ```{{ "hello world" | url_encode }}``` | ```hello%20world``` |
 | url_decode | URL decodes a string. | ```{{ "hello%20world" | url_decode }}``` | ```hello world``` |
 | where | Filters an array of objects by a specified property. | ```{{ site.posts | where: "title", "hello world" }}``` | ```[<Post title="hello world">]``` |
+
+[Previous](operators.html) | [Home](README.html) | [Next](truthy-and-falsy.html)
+
 {% endraw %}
-
-
-
-

@@ -2,7 +2,7 @@
 title: Variable
 layout: default
 parent: Liquid Reference
-nav_order: 10
+nav_order: 11
 ---
 {% raw %}
 # Variable
@@ -22,7 +22,10 @@ Creates a new named variable.
 
 ### Output
 
-```This statement is valid.```
+```
+This statement is valid.
+```
+
 Wrap a value in quotations ```"``` to save it as a string variable.
 
 ### Input
@@ -34,8 +37,9 @@ Wrap a value in quotations ```"``` to save it as a string variable.
 
 ### Output
 
-
-```bar```
+```
+bar
+```
 
 ## capture
 Captures the string inside of the opening and closing tags and assigns it to a variable. Variables created using capture are stored as strings.
@@ -49,7 +53,9 @@ Captures the string inside of the opening and closing tags and assigns it to a v
 
 ### Output
 
-```I am being captured.```
+```
+I am being captured.
+```
 
 Using capture, you can create complex strings using other variables created with assign.
 
@@ -68,7 +74,9 @@ I am {{ age }} and my favorite food is {{ favorite_food }}.
 
 ### Output
 
-```I am 35 and my favourite food is pizza.```
+```
+I am 35 and my favourite food is pizza.
+```
 
 ## increment
 Creates and outputs a new number variable with initial value 0. On subsequent calls, it increases its value by one and outputs the new value.
@@ -103,8 +111,7 @@ In the example below, a variable named “var” is created using assign. The in
 {{ var }}
 ```
 
-###
-Output
+### Output
 
 ```
 0
@@ -132,5 +139,7 @@ Creates and outputs a new number variable with initial value -1. On subsequent c
 ```
 
 Like increment, variables declared using decrement are independent from variables created using assign or capture.
+
+[Previous](template.html) | [Home](README.html)
 
 {% endraw %}

@@ -309,7 +309,7 @@ Value stored in the variable:
 
 This also works when setting variables using the *setVariable()* function. Because ultimately, both the *SetVariable* activity and *setVariable()* function use the same API under the cover to set a workflow variable.
 
-`## Activity Output
+## Activity Output
 
 A activity might provide some output which can then be accessed from any other activity using workflow expressions.
 
@@ -399,39 +399,53 @@ Generates a new GUID value and returns its string representation.
 
 This function is a thin wrapper around the following .NET code:
 
-```Guid.NewGuid().ToString().```
+```
+Guid.NewGuid().ToString().
+```
 
 ### parseGuid
 
 Parses a string into a GUID value.
 
-```parseGuid(value: string): Guid```
+```
+parseGuid(value: string): Guid
+```
 
 This function is a thin wrapper around the following .NET code:
 
-```Guid.Parse(value).```
+```
+Guid.Parse(value).
+```
 
 ### setVariable
 
 Sets a workflow variable to the specified value.
 
-```setVariable(name: string, value: object): void```
+```
+setVariable(name: string, value: object): void
+```
 
 This function is a thin wrapper around the following .NET code:
 
-```activityContext.SetVariable(name, value).```
+```
+activityContext.SetVariable(name, value).
+```
 
 ### getVariable
 
 Returns a workflow variable with the specified name.
 
-```getVariable(name: string): object```
+```
+getVariable(name: string): object
+```
 
 Instead of using getVariable(name: string), you can access workflow variables directly as described above in the Workflow Variables section.
 
 This function is a thin wrapper around the following .NET code:
 
-```activityContext.GetVariable(name).```
+```
+activityContext.GetVariable(name).
+```
 
 ### getConfig
 
