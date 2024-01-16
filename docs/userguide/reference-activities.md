@@ -156,7 +156,7 @@ The *For* Activity is a control flow activity in Elsa Workflows that allows you 
 
 2.  Set the **<span class="smallcaps">Start</span>** property to the initial value of the loop counter (usually 0 or 1, depending on your requirements).
 
-3.  Set the **<span class="smallcaps">End</span>** property to the value at which the loop counter should stop (exclusive). The loop will iterate as long as the loop counter is less than the **<span class="smallcaps">End'</span>**value.
+3.  Set the **<span class="smallcaps">End</span>** property to the value at which the loop counter should stop (exclusive). The loop will iterate as long as the loop counter is less than the **<span class="smallcaps">End</span>** value.
 
 4.  Optionally, set the **<span class="smallcaps">Step</span>** property to define the increment value for each iteration. By default, the 'Step' value is typically 1, meaning the loop counter will increment by 1 after each iteration.
 

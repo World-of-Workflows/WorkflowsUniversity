@@ -142,5 +142,6 @@ You can check to see if an object exists or not before you access any of its att
 
 Both empty strings and empty arrays will return true if checked for equivalence with empty.
 
+[Previous](truthy-and-falsy.html) | [Home](README.html) | [Next](expressions-in-workflows.html)
 
 {% endraw %}

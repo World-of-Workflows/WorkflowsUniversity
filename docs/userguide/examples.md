@@ -5,6 +5,7 @@ parent: User Guide
 nav_order: 13
 ---
 
+{% raw %}
 # Examples
 
 This section contains packaged examples of how to solve certain business problems. These are meant to be taken, modified and used by you to solve your own business problems.
@@ -76,7 +77,10 @@ Here are the activities in detail
     <img src="./media/image114.png" style="width:2.8731in;height:1.54064in" />  
     Note: we use JavaScript to get the value, using the **<span class="smallcaps">Name</span>** of the trigger activity to get the ObjectID, using this formula:
 
+```js
 activities.TriggerStaff.InstanceId()
+```
+
 
 4.  This is the *Run Workflow* activity:  
       
@@ -97,6 +101,7 @@ activities.TriggerStaff.InstanceId()
 
 > Note how the name of the *Run Workflow* activity is used in the *Run JavaScript*.
 
+```js
 var parameters = JSON.parse(activities.runDetailWorkflow.Output().workflowOutput)
 
 for(const property in parameters)
@@ -106,6 +111,7 @@ for(const property in parameters)
     setVariable(property.toString(),parameters\[property\]);
 
 }
+```
 
 6.  (Optional) Create a Task to allow you to stop the Overview workflow at will. Note the branches  
     <img src="./media/image119.png" style="width:2.63717in;height:1.78285in" />  
@@ -127,6 +133,7 @@ Create this as the first activity in your main workflow:
 
 Use this JavaScript to take the JSON passed from the Overview workflow and convert it to dot-notation variables.
 
+```js
 var parameters = JSON.parse(input)
 
 setVariable("Parameters",parameters)
@@ -138,14 +145,19 @@ If the JSON passed in is
 “ObjectId”:123
 
 }
+```
 
 This allows you to reference the passed in ObjectId in Liquid as
 
+```liquid
 {{Variables.Parameters.ObjectId}}
+```
 
 And in JavaScript as
 
+```js
 getVariable(“Parameters”).ObjectId
+```
 
 ###### Use Status fields as starting points of your main workflow
 
@@ -186,7 +198,7 @@ The first activity in the *SetupVariables* workflow is to get the database objec
 
 The rest of the variables are then set up
 
-The last 2 activities in the SetupVariables workflow are to set up send back the variables to the calling workflow
+The last 2 activities in the SetupVariables workflow are to set up and send back the variables to the calling workflow
 
 <img src="./media/image129.png" style="width:2.36636in;height:1.71121in" alt="A picture containing timeline Description automatically generated" />
 
@@ -197,3 +209,5 @@ The last 2 activities in the SetupVariables workflow are to set up send back the
 Another method of setting variables in the main workflow is to build up the variables from the known data. For example, in this case, if the Staff already has a SalaryPackage we can get the SalaryPackage object from the Staff object. Otherwise we can create the SalaryPackage object and save the relationship back to the Staff object
 
 <img src="./media/image132.png" style="width:6.26806in;height:2.83542in" />
+
+{%endraw%}

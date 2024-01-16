@@ -47,12 +47,12 @@ The cron format has five time and date fields separated by at least one blank. T
 </tr>
 <tr class="even">
 <td>Month</td>
-<td><p>1-12 where 1 is January,2 is February etc</p>
+<td><p>1-12 where 1 is January, 2 is February etc</p>
 <p>Uppercase, lowercase and mixed-case three character strings based on the English name of the month, for example jan, feb, mar, apr etc</p></td>
 </tr>
 <tr class="odd">
 <td>Day of week</td>
-<td><p>0-7 where 0 or 7 is Sunday, 1 mis Monday and so on</p>
+<td><p>0-7 where 0 or 7 is Sunday, 1 is Monday and so on</p>
 <p>Uppercase, lowercase or mixed case three character strings based on the English name of the day, mon, tue, wed, thu, fri, sat or sun</p></td>
 </tr>
 </tbody>

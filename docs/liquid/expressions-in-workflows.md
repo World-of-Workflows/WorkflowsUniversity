@@ -122,7 +122,9 @@ A liquid filter that renders the specified value as a bas64 representation. The 
 
 Example output:
 
-```U29tZSBzdHJpbmcgdmFsdWU=```
+```
+U29tZSBzdHJpbmcgdmFsdWU=
+```
 
 ## Workflow Filters
 
@@ -170,5 +172,7 @@ Example:
 Example output:
 
 ```https://localhost:5001/signals/trigger/{some base64 token}```
+
+[Previous](types.html) | [Home](README.html) | [Next](whitespace-control.html)
 
 {% endraw %}

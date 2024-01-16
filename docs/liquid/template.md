@@ -2,7 +2,7 @@
 title: Template
 layout: default
 parent: Liquid Reference
-nav_order: 9
+nav_order: 10
 ---
 {% raw %}
 # Template
@@ -179,5 +179,7 @@ Insert the rendered content of another template within the current template.
 The include tag works similarly to the render tag, but it allows the code inside of the rendered template to access and overwrite the variables within its parent template. It has been deprecated because the way that it handles variables reduces performance and makes Liquid code harder to both read and maintain.
 
 Note that when a template is rendered using the render tag, the include tag cannot be used within the template.
+
+[Previous](iteration.html) | [Home](README.html) | [Next](variable.html)
 
 {% endraw %}

@@ -60,4 +60,6 @@ The table below summarizes what is truthy or falsy in Liquid.
 | EmptyDrop | •	 
 
 
+[Previous](filters.html) | [Home](README.html) | [Next](types.html)
+
 {% endraw %}

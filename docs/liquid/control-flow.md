@@ -1,5 +1,5 @@
 ---
-title: Conmtrol Flow
+title: Control Flow
 layout: default
 parent: Liquid Reference
 nav_order: 8
@@ -72,9 +72,9 @@ Adds more conditions within an if or unless block.
 
 ## case/when
 
-Creates a switch statement to execute a particular block of code when a variable has a specified value. case initializes the switch statement, and when statements define the various conditions.
+Creates a switch statement to execute a particular block of code when a variable has a specified value. ```case``` initializes the switch statement, and ```when``` statements define the various conditions.
 
-A when tag can accept multiple values. When multiple values are provided, the expression is returned when the variable matches any of the values inside of the tag. Provide the values as a comma-separated list, or separate them using an or operator.
+A ```when``` tag can accept multiple values. When multiple values are provided, the expression is returned when the variable matches any of the values inside of the tag. Provide the values as a comma-separated list, or separate them using an or operator.
 
 An optional else statement at the end of the case provides code to execute if none of the conditions are met.
 
@@ -95,7 +95,6 @@ An optional else statement at the end of the case provides code to execute if no
 
 ```This is a cake```
 
-
-[Previous](expressions-in-workflows.md) | [Home](README.md) | [Next](iteration.md)
+[Previous](whitespace-control.html) | [Home](README.html) | [Next](iteration.html)
 
 {% endraw %}
