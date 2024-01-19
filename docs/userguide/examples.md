@@ -50,7 +50,7 @@ Here is how to design this workflow.
 
 1.  Create a workflow, give it a suitable name, such as *HR Overview.*
 
-2.  Implement a method to start your *HR Overview* workflow (eg from a data object (see **Implementing triggers<span class="smallcaps">),</span>** a timer (see Error! Reference source not found.) )
+2.  Implement a method to start your *HR Overview* workflow (eg from a data object or a timer)
 
 3.  Set up any variables you need to pass to the main workflow, such as the ObjectID of the triggering object instance
 
