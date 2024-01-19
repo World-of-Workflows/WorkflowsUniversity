@@ -51,7 +51,9 @@ You can create multi-line inline comments. However, each line must begin with a 
 
 #### Output
 
-
+```liquid
+1 2 3
+```
 
 ### Inline comments inside liquid tags
 You can use the inline comment tag inside liquid tags. The tag must be used for each line that you want to comment.

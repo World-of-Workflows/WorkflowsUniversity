@@ -103,7 +103,7 @@ You can then click *Columns* to see the list of columns and click *edit* to edit
 
 ### Deleting Types
 
-If you navigate to *Admin* then *Types* you can click **Delete** to delete a type. *Note: this only works if there are no data instances in the type.*
+If you navigate to *Admin* then *Types* you can click **Delete Type** icon under Actions to delete a type. *Note: this only works if there are no data instances in the type.*
 
 <img src="./media/image15.png" style="width:6.21494in;height:1.05729in" />
 
@@ -244,5 +244,3 @@ The following section describes how to import data into world of workflows.
 
 8.  Click **<span class="smallcaps">Import</span>** to copy the data from your CSV file into the database.  
     <img src="./media/image43.png" style="width:6.26806in;height:0.84236in" alt="Graphical user interface, application Description automatically generated" />
-
-9.  
