@@ -1,5 +1,5 @@
 ---
-title: Conmtrol Flow
+title: Control Flow
 layout: default
 parent: Liquid Reference
 nav_order: 8
