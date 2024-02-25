@@ -2,6 +2,7 @@
 title: Dual Triggers
 layout: default
 parent: Workflow Development
+nav_order: 8
 ---
 
 # Dual Triggers
