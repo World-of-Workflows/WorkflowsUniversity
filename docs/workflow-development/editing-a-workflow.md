@@ -2,6 +2,7 @@
 title: Editing a Workflow
 layout: default
 parent: Workflow Development
+order: 2
 ---
 
 # Editing a Workflow
