@@ -41,39 +41,72 @@ oData also provides a set of functions to perform operations on the data. These 
 
 - *substringof*: Checks if a substring is within a string.
 
+```substringof({search text}, {string})```
+
 - *length*: Returns the length of a string.
+
+```length({string})```
 
 - *indexof*: Returns the starting position of a substring in a string.
 
+```indexof({string}, {search text})```
+
 - *substring*: Returns a substring from a string.
+
+```substring({string}, {start}, {length})```
 
 - *tolower*: Converts a string to lowercase.
 
+```tolower({string})```
+
 - *toupper*: Converts a string to uppercase.
+
+```toupper({string})```
 
 - *trim*: Removes leading and trailing whitespace from a string.
 
+```trim({string})```
+
 - *concat*: Concatenates two strings.
+
+```concat({string1}, {string2})```
 
 ## Date Functions
 
 - *year*: Returns the year component of a date.
 
+```year({datetime})```
+
 - *month*: Returns the month component of a date.
+
+```month({datetime})```
 
 - *day*: Returns the day component of a date.
 
+```day({datetime})```
+
 - *hour*: Returns the hour component of a date.
+
+```hour({datetime})```
 
 - *minute*: Returns the minute component of a date.
 
+```minute({datetime})```
+
 - *second*: Returns the second component of a date.
+
+```second({datetime})```
 
 ### Math Functions
 
 - *round*: Rounds a number to the nearest integer.
 
+```round({number})```
+
 - *floor*: Rounds a number down to the nearest integer.
+
+```floor({number})```
 
 - *ceiling*: Rounds a number up to the nearest integer.
 
+```ceiling({number})```
