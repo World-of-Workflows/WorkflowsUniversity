@@ -8,6 +8,7 @@ These libraries must be digitally signed with the World of Workflows certificate
 The following Plugins are available:
 
 - [AzureAdmin](azureadmin.md) - This plugin provides tools for working with Azure
+- [OpenAI](openai.md) - This plugin provides tools for working with OpenAI
 
 
 
