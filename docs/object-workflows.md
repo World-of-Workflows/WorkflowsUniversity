@@ -9,17 +9,17 @@ parent: Workflow Development
 This guide shows how to create a workflow that can be executed from within the Object Editor Screen.
 
 The process is as follows
-1. Create a Data Type
+1. Create a Type
 2. Create an Instance
 3. Create a Workflow with the Object Instance Trigger activity
 4. Execute and test the workflow
 
 The instructions below show how to do this:
 
-## 1. Create a Data Type
+## 1. Create a Type
 1. Go To Workflows
 2. Login
-3. Navigate to Admin -> Data
+3. Navigate to Admin -> Types
 4. Click **Add Type**
 5. Type the Name and Description and click **Save**
    ![](2022-11-08-07-11-38.png)

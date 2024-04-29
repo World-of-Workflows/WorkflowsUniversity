@@ -25,23 +25,25 @@ The User Configurable Database offers a flexible and intuitive platform for mana
 
 ## Creating and managing tables
 
-<img src="./media/image11.png" style="width:2.13681in;height:1.71528in" />To create a new *Type* (table) in the User Configurable Database, follow these steps:
+To create a new *Type* (table) in the User Configurable Database, follow these steps:
 
 1.  Navigate to the User Configurable Database section in World of Workflows, by going to *Admin* then *Types*
 
-2.  Click on the **<span class="smallcaps">Add Types</span>** button.
+2.  Click on the **<span class="smallcaps">Add Types</span>** button.<br>
+<img src="./media/image11.png" style="width:2.13681in;height:1.71528in" />
 
 3.  Enter a name for the table and a brief description (optional).
 
 4.  Click **<span class="smallcaps">Save</span>** to confirm.
 
-<img src="./media/image12.png" style="width:2.64306in;height:4.35208in" />Once your *Type* is created, you can begin adding fields:
+Once your *Type* is created, you can begin adding fields:
 
 1.  In the list of types, identify the type or table you want to work with.
 
 2.  Click **<span class="smallcaps">Columns</span>**
 
-3.  Click on the **<span class="smallcaps">Add Column</span>** button.
+3.  Click on the **<span class="smallcaps">Add Column</span>** button.<br>
+<img src="./media/image12.png" style="width:2.64306in;height:4.35208in" />
 
 4.  Enter a name for the field and choose the Name, Display Name, Column Description and an appropriate data type (e.g., text, number, date, etc.).
 
@@ -101,7 +103,7 @@ You can then click *Columns* to see the list of columns and click *edit* to edit
 
 ### Deleting Types
 
-If you navigate to *Admin* then *Types* you can click **Delete** to delete a type. *Note: this only works if there are no data instances in the type.*
+If you navigate to *Admin* then *Types* you can click **Delete Type** icon under Actions to delete a type. *Note: this only works if there are no data instances in the type.*
 
 <img src="./media/image15.png" style="width:6.21494in;height:1.05729in" />
 
@@ -242,5 +244,3 @@ The following section describes how to import data into world of workflows.
 
 8.  Click **<span class="smallcaps">Import</span>** to copy the data from your CSV file into the database.  
     <img src="./media/image43.png" style="width:6.26806in;height:0.84236in" alt="Graphical user interface, application Description automatically generated" />
-
-9.  

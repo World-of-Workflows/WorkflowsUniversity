@@ -11,7 +11,7 @@ This section of the documentation covers the reporting features of Workflows PE.
 In a default configuration, this will be located in the following location:
 
 ```cmd
-C:\Windows\System32\App_data\worldofworkflows1_1.db
+C:\ProgramData\WorldOfWorkflows\worldofworkflows.db
 ```
 
 In that folder are also regular backups which are automatically taken every time the World of Workflows Service starts and stops.

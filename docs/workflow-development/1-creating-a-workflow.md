@@ -2,6 +2,7 @@
 title: Creating a Workflow
 layout: default
 parent: Workflow Development
+nav_order: 1
 ---
 
 # Creating a Workflow

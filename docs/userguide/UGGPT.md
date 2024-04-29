@@ -1730,7 +1730,7 @@ The *ForEach* Activity iterates over a collection of items, executing a set of a
 
 3.  Connect the **<span class="smallcaps">Iteration</span>** outcome to the activities that should be executed for each item in the collection.
 
-    1.  Use the **<span class="smallcaps">CurrentItem</span>** property within the iteration activities to access the current item in the collection.
+    1.  Use the **<span class="smallcaps">Output</span>** property within the iteration activities to access the current item in the collection.
 
     2.  Note that these activities may be executed many times. The last of these activities will normally have no outcome.
 

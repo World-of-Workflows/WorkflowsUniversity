@@ -25,9 +25,15 @@ Objects contain the content that Liquid displays on a page. Objects and variable
 
 #### Input
 
-```{{ page.title }}```
+```liquid
+{{ page.title }}
+```
 
 #### Output
+
+```liquid
+Introduction
+```
 
 In this case, Liquid is rendering the content of the title property of the page object, which contains the text Introduction.
 
@@ -37,7 +43,7 @@ Tags create the logic and control flow for templates. The curly brace percentage
 
 #### Input
 
-```
+```liquid
 {% if user %}
 Hello {{ user.name }}!
 {% endif %}
@@ -45,7 +51,9 @@ Hello {{ user.name }}!
 
 #### Output
 
+```liquid
 Hello Adam!
+```
 
 Tags can be categorized into various types:
 
@@ -65,19 +73,29 @@ Filters change the output of a Liquid object or variable. They are used within d
 
 #### Input
 
-```{{ "/my/fancy/url" | append: ".html" }}```
+```liquid
+{{ "/my/fancy/url" | append: ".html" }}
+```
 
 #### Output
+
+```liquid
+/my/fancy/url.html
+```
 
 Multiple filters can be used on one output, and are applied from left to right.
 
 #### Input
 
-```{{ "adam!" | capitalize | prepend: "Hello " }}```
+```liquid
+{{ "adam!" | capitalize | prepend: "Hello " }}
+```
 
 #### Output
 
+```liquid
 Hello Adam!
+```
 
 ##  Operators
 
@@ -106,7 +124,7 @@ These shoes are awesome!
 
 You can do multiple comparisons in a tag using the *and* & *or* operators:
 
-```
+```liquid
 {% if product.type == "Shirt" or product.type == "Shoes" %}
 This is a shirt or a pair of shoes.
 {% endif %}
@@ -116,7 +134,7 @@ This is a shirt or a pair of shoes.
 
 contains checks for the presence of a substring inside a string.
 
-```
+```liquid
 {% if product.title contains "Pack" %}
 This product's title contains the word Pack.
 {% endif %}
@@ -124,7 +142,7 @@ This product's title contains the word Pack.
 
 contains can also check for the presence of a string in an array of strings.
 
-```
+```liquid
 {% if product.tags contains "Hello" %}
 This product has been tagged with "Hello".
 {% endif %}
@@ -136,13 +154,13 @@ contains can only search strings. You cannot use it to check for an object in an
 
 In tags with more than one *and* or *or* operator, operators are checked in order from right to left. You cannot change the order of operations using parentheses — parentheses are invalid characters in Liquid and will prevent your tags from working.
 
-```
+```liquid
 {% if true or false and false %}
 This evaluates to true, since the 'and' condition is checked first.
 {% endif %}
 ```
 
-```
+```liquid
 {% if true and false and false or true %}
 This evaluates to false, since the tags are checked like this:
 true and (false and (false or true))
@@ -162,7 +180,7 @@ All values in Liquid are truthy except nil and false.
 
 In the example below, the text “Tobi” is not a boolean, but it is truthy in a conditional:
 
-```
+```liquid
 {% assign name = "Tobi" %}
 {% if name %}
 This text will always appear since "name" is defined.
@@ -174,7 +192,7 @@ Strings, even when empty, are truthy. The example below will create empty HTML t
 
 #### Input
 
-```
+```liquid
 {% if page.category %}
 <h1>{{ page.category }}</h1>
 {% endif %}
@@ -226,7 +244,7 @@ You can initialize Liquid variables using assign or capture tags.
 
 Strings are sequences of characters wrapped in single or double quotes:
 
-```
+```liquid
 {% assign my_string = "Hello World!" %}
 ```
 
@@ -236,11 +254,11 @@ Liquid does not convert escape sequences into special characters.
 
 Numbers include floats and integers:
 
-```
+```liquid
 {% assign my_int = 25 %}
 ```
 
-```
+```liquid
 {% assign my_float = -39.756 %}
 ```
 
@@ -249,11 +267,11 @@ Numbers include floats and integers:
 
 Booleans are either true or false. No quotations are necessary when declaring a boolean:
 
-```
+```liquid
 {% assign foo = true %}
 ```
 
-```
+```liquid
 {% assign bar = false %}
 ```
 
@@ -265,7 +283,7 @@ Booleans are either true or false. No quotations are necessary when declaring a 
 
 In the following example, if the user does not exist (that is, user returns nil), Liquid will not print the greeting:
 
-```
+```liquid
 {% if user %}
 Hello {{ user.name }}!
 {% endif %}
@@ -275,11 +293,15 @@ Tags or outputs that return *nil* will not print anything to the page.
 
 #### Input
 
-```The current user is {{ user.name }}```
+```liquid
+The current user is {{ user.name }}
+```
 
 #### Output
 
-```The current user is```
+```liquid
+The current user is
+```
 
 ### Array
 
@@ -291,7 +313,7 @@ To access all the items in an array, you can loop through each item in the array
 
 Input
 
-```
+```liquid
 <!-- if site.users = "Tobi", "Laura", "Tetsuro", "Adam" -->
 {% for user in site.users %}
 {{ user }}
@@ -300,7 +322,9 @@ Input
 
 Output
 
-```Tobi Laura Tetsuro Adam```
+```liquid
+Tobi Laura Tetsuro Adam
+```
 
 #### Accessing specific items in arrays
 
@@ -308,7 +332,7 @@ You can use square bracket **<span class="smallcaps">[ ]</span>** notation to ac
 
 #### Input
 
-```
+```liquid
 <!-- if site.users = "Tobi", "Laura", "Tetsuro", "Adam" -->
 {{ site.users\[0\] }}
 {{ site.users\[1\] }}
@@ -317,7 +341,7 @@ You can use square bracket **<span class="smallcaps">[ ]</span>** notation to ac
 
 #### Output
 
-```
+```liquid
 Tobi
 Laura
 Adam
@@ -333,7 +357,7 @@ You can, however, use the split filter to break a string into an array of substr
 
 An EmptyDrop object is returned if you try to access a deleted object. In the example below, page_1, page_2 and page_3 are all EmptyDrop objects:
 
-```
+```liquid
 {% assign variable = "hello" %}
 {% assign page_1 = pages[variable] %}
 {% assign page_2 = pages["does-not-exist"] %}
@@ -344,7 +368,7 @@ An EmptyDrop object is returned if you try to access a deleted object. In the ex
 
 You can check to see if an object exists or not before you access any of its attributes.
 
-```
+```liquid
 {% unless pages == empty %}
 <h1>{{ pages.frontpage.title }}</h1>
 <div>{{ pages.frontpage.content }}</div>
@@ -363,57 +387,77 @@ The following Liquid expressions are supported:
 
 Use the following syntax to access a workflow variable:
 
-```{{ Variables.*NameOfVariable* }}```
+```liquid
+{{ Variables.*NameOfVariable* }}
+```
 
 For example, given a workflow variable called **<span class="smallcaps">FirstName</span>** with a value of “Alice”, the expression
 
-```Hello {{ Variables.FirstName }}.```
+```liquid
+Hello {{ Variables.FirstName }}.
+```
 
 will result in
 
-```Hello Alice.```
+```liquid
+Hello Alice.
+```
 
 #### Input
 
 Input values can be accessed using the following syntax:
 
-```{{ Input }}```
+```liquid
+{{ Input }}
+```
 
 #### Activity Output
 
 To access a named activity’s output, use the following syntax:
 
-```{{ Activities.*SomeActivityName*.Output }}```
+```liquid
+{{ Activities.*SomeActivityName*.Output }}
+```
 
 #### CorrelationId
 
 Returns the correlation ID (if any) of the currently executing workflow.
 
-```{{ CorrelationId }}```
+```liquid
+{{ CorrelationId }}
+```
 
 #### WorkflowInstanceId
 
 Returns the workflow instance ID of the currently executing workflow.
 
-```{{ WorkflowInstanceId }}```
+```liquid
+{{ WorkflowInstanceId }}
+```
 
 #### WorkflowDefinitionId
 
 Returns the workflow definition ID of the currently executing workflow.
 
-```{{ WorkflowDefinitionId }}```
+```liquid
+{{ WorkflowDefinitionId }}
+```
 
 #### WorkflowDefinitionVersion
 
 Returns the workflow definition version of the currently executing workflow.
 
-```{{ WorkflowDefinitionVersion }}```
+```liquid
+{{ WorkflowDefinitionVersion }}
+```
 
 ### Configuration
 
 Provides access to a .NET configuration value. See Configuration for more details on available configuration items in World of Workflows.
 
-```{{ Configuration.*SomeSection* }}```
+```liquid
+{{ Configuration.*SomeSection* }}
+```
 
 As an example, let’s say you have the following JSON in appsettings.json:
 
@@ -430,7 +474,9 @@ As an example, let’s say you have the following JSON in appsettings.json:
 
 You can access the configured Port value using the following expression:
 
-```{{ Configuration.Elsa.Smtp.Port }}```
+```liquid
+{{ Configuration.Elsa.Smtp.Port }}
+```
 
 ### Common Filters
 
@@ -438,7 +484,9 @@ You can access the configured Port value using the following expression:
 
 *json* is a liquid filter that renders the specified value as a JSON string.
 
-```{{ Input \| json }}```
+```liquid
+{{ Input \| json }}
+```
 
 Example output:
 
@@ -451,17 +499,21 @@ Example output:
 
          }
 }
-``````
+```
 
 #### base64
 
 A liquid filter that renders the specified value as a bas64 representation. The value is first converted to a string. If the value is an object, array, dictionary or datetime, it is first serialized using JsonConvert.SerializeObject before being encoded as base64.
 
-```{{ "Some string value" \| base64 }}```
+```liquid
+{{ "Some string value" \| base64 }}
+```
 
 Example output:
 
+```liquid
 U29tZSBzdHJpbmcgdmFsdWU=
+```
 
 ## Workflow Filters
 
@@ -471,9 +523,13 @@ U29tZSBzdHJpbmcgdmFsdWU=
 
 Usage:
 
-```{{ "SomeWorkflowName" | workflow_definition_id }}```
+```liquid
+{{ "SomeWorkflowName" | workflow_definition_id }}
+```
 
-```{{ "SomeWorkflowTag" | workflow_definition_id: tag }}```
+```liquid
+{{ "SomeWorkflowTag" | workflow_definition_id: tag }}
+```
 
 #### HTTP Variables
 
@@ -481,27 +537,49 @@ Usage:
 
 *request* provides access to various properties on the current HTTP Request object:
 
-```{{ Request.QueryString }}```
+```liquid
+{{ Request.QueryString }}
+```
 
-```{{ Request.ContentType }}```
+```liquid
+{{ Request.ContentType }}
+```
 
-```{{ Request.ContentLength }}```
+```liquid
+{{ Request.ContentLength }}
+```
 
-```{{ Request.Form }}```
+```liquid
+{{ Request.Form }}
+```
 
-```{{ Request.Protocol }}```
+```liquid
+{{ Request.Protocol }}
+```
 
-```{{ Request.Path }}```
+```liquid
+{{ Request.Path }}
+```
 
-```{{ Request.PathBase }}```
+```liquid
+{{ Request.PathBase }}
+```
 
-```{{ Request.Host }}```
+```liquid
+{{ Request.Host }}
+```
 
-```{{ Request.IsHttps }}```
+```liquid
+{{ Request.IsHttps }}
+```
 
-```{{ Request.Scheme }}```
+```liquid
+{{ Request.Scheme }}
+```
 
-```{{ Request.Method }}```
+```liquid
+{{ Request.Method }}
+```
 
 #### HTTP Filters
 
@@ -511,13 +589,13 @@ Usage:
 
 Example:
 
-```
+```liquid
 {{ "MySignal" \| signal_url }}
 ```
 
 Example output:
 
-```
+```liquid
 https://localhost:5001/signals/trigger/{some base64 token}
 ```
 
@@ -525,7 +603,7 @@ https://localhost:5001/signals/trigger/{some base64 token}
 
 *markup* is a liquid filter which provides the text as full html rather and htmlencoded data
 
-```
+```liquid
 {{“\<h1\>Hello\</h1\>” \| markup }}
 ```
 

@@ -53,7 +53,7 @@ Our customers have used world of workflows to automate a number of business proc
 1.  A media company uses world of workflows integrated with ChatGPT to write draft articles on incoming press releases automatically.
 2.  A soccer club uses world of workflows to notify coaches and managers when it is their turn to put up or take down nets on a soccer field based on the draw in an external system.
 3.  An independent school uses world of workflows to manage their enrolment process.
-4.  A managed service provider users world of workflows to correctly bill customers for their telephone voice usage.
+4.  A managed service provider uses world of workflows to correctly bill customers for their telephone voice usage.
 5.  A sporting club uses world of workflows to automatically generate a weekly newsletter.
 6.  A not-for-profit uses world of workflows to manage their grants application process.
 
@@ -111,18 +111,18 @@ In order to install world of workflows BE, you will need:
     2.  Inside the zip file downloaded in section 1, above, you will find the file WOWFBEConfiguration.PS1
     3.  From a powershell prompt, run as Administrator, run WOWFBEConfiguration.PS1
     4.  The script will launch a browser for you to login as the admin account from the pre-requisites
-    5.  <img src="./media/image5.png" style="width:3.72919in;height:0.57292in" />  
-        the script will as for the name of the Client and Server Applications. These are for their registrations in Azure AD. Press Enter to accept the defaults or Enter your own entries. **Note:** The system creates two application registrations, one for the Client application and another for the server.
-    6.  <img src="./media/image6.png" style="width:4.88545in;height:0.76042in" alt="A screen shot of a computer Description automatically generated" />  
-        Next, enter the address of your instance in the format as shown. This will be the final URL of your World of Workflows Installation.
-    7.  <img src="./media/image7.png" style="width:5.1042in;height:1.20834in" alt="A computer screen with white text Description automatically generated" />  
-        When complete, the powershell script will return you to the login prompt.
+    5.  The script will ask for the name of the Client and Server Applications. These are for their registrations in Azure AD. Press Enter to accept the defaults or enter your own entries. **Note:** The system creates two application registrations, one for the Client application and another for the server.<br>
+    <img src="./media/image5.png" style="width:3.72919in;height:0.57292in" /> 
+    6.  Next, enter the address of your instance in the format as shown. This will be the final URL of your World of Workflows Installation.<br>
+    <img src="./media/image6.png" style="width:4.88545in;height:0.76042in" alt="A screen shot of a computer Description automatically generated" />  
+    7.  When complete, the powershell script will return you to the login prompt.<br>
+    <img src="./media/image7.png" style="width:5.1042in;height:1.20834in" alt="A computer screen with white text Description automatically generated" />  
     8.  Navigate to App Registrations in the Azure Portal (<https://portal.azure.com>) -\> Azure Active Directory -\> App Registrations
     9.  Choose your Server Application named in step g above
     10. Click **API Permissions**
     11. Click **Add a permission**
-    12. <img src="./media/image8.png" style="width:6.26806in;height:2.68889in" />  
-        Click **Microsoft Graph**
+    12. Click **Microsoft Graph**<br>
+    <img src="./media/image8.png" style="width:6.26806in;height:2.68889in" />  
     13. Choose **Delegated Permissions**
     14. Search for **User.Read.All**
     15. Select the checkbox and click Add Permissions  

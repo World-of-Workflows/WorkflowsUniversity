@@ -48,9 +48,8 @@ You can enter information into the Properties of *Activities* using either the d
 
 For example, here is the SetVariable activity. It asks for a *Variable Name* and a Value. You would enter the variable name as normal text.
 
-<img src="./media/image65.png" style="width:0.41667in;height:0.2in" />The Value can be entered as either JavaScript, Liquid or Default text. Click on the above the entry box to switch the type of input you need.
-
-<img src="./media/image66.png" style="width:4.16197in;height:2.11557in" alt="A screenshot of a computer Description automatically generated with medium confidence" />
+<img src="./media/image66.png" style="width:4.16197in;height:2.11557in" alt="A screenshot of a computer Description automatically generated with medium confidence" /><br>
+<img src="./media/image65.png" style="width:0.41667in;height:0.2in" />The Value can be entered as either JavaScript, Liquid or Default text. Click on the above entry box to switch the type of input you need.
 
 <img src="./media/image67.png" style="width:4.13205in;height:2.229in" />
 
@@ -122,14 +121,6 @@ The Break activity allows you to exit a loop (e.g., *For, For Each, While*) prem
 
 The break activity has no need for specific customisable attributes, apart from the standard common and storage sections.
 
-The For activity is a loop structure that iterates over a specific range of values. It requires an initial value, an end value, and an optional step value. The loop will continue to execute the activities within it until the end value is reached or a Break activity is encountered.
-
-<img src="./media/image68.png" style="width:2.48487in;height:1.94347in" alt="Graphical user interface, text, application, email Description automatically generated" />
-
-- The For activity allows you to set the following: **Start** – This is a number which defines the start counter for the loop. This can be entered directly into the activity or calculated using Javascript or Liquid. **End** – This is a number which defines the end comparison for the loop. This can be entered directly into the activity or calculated using Javascript or Liquid.
-
-For EachThe For Each activity is designed to iterate over a collection of items, such as an array or a list. It will execute the activities within the loop for each item in the collection. The loop will continue until all items have been processed or a Break activity is encountered.
-
 ### Fork
 
 The *Fork* activity allows you to create parallel branches in your workflow, running the branches one at a time. The workflow will continue once all branches have completed.
@@ -157,10 +148,6 @@ The *Join* activity can be used in conjunction with the *Fork* activity to synch
 > **<span class="smallcaps">WaitAny</span>** will continue execution of the workflow after the first branch completes. The other branches may continue execution, but the join operation will occur after just 1 branch completes.
 
 <img src="./media/image73.png" style="width:3.72245in;height:2.00474in" alt="A screenshot of a computer Description automatically generated with medium confidence" />
-
-### Parallel For Each
-
-The Parallel For Each activity is similar to the For Each activity but processes items in the collection concurrently. This can improve performance by parallelizing the processing of tasks.
 
 ### Switch
 

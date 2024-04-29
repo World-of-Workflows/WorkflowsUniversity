@@ -2,7 +2,7 @@
 title: Template
 layout: default
 parent: Liquid Reference
-nav_order: 9
+nav_order: 10
 ---
 {% raw %}
 # Template
@@ -51,7 +51,9 @@ You can create multi-line inline comments. However, each line must begin with a 
 
 #### Output
 
-
+```liquid
+1 2 3
+```
 
 ### Inline comments inside liquid tags
 You can use the inline comment tag inside liquid tags. The tag must be used for each line that you want to comment.
@@ -179,5 +181,7 @@ Insert the rendered content of another template within the current template.
 The include tag works similarly to the render tag, but it allows the code inside of the rendered template to access and overwrite the variables within its parent template. It has been deprecated because the way that it handles variables reduces performance and makes Liquid code harder to both read and maintain.
 
 Note that when a template is rendered using the render tag, the include tag cannot be used within the template.
+
+[Previous](iteration.html) | [Home](README.html) | [Next](variable.html)
 
 {% endraw %}

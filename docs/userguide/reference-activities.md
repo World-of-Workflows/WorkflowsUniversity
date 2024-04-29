@@ -114,7 +114,7 @@ The *ForEach* Activity iterates over a collection of items, executing a set of a
 
 3.  Connect the **<span class="smallcaps">Iteration</span>** outcome to the activities that should be executed for each item in the collection.
 
-    1.  Use the **<span class="smallcaps">CurrentItem</span>** property within the iteration activities to access the current item in the collection.
+    1.  Use the **<span class="smallcaps">Output</span>** property within the iteration activities to access the current item in the collection.
 
     2.  Note that these activities may be executed many times. The last of these activities will normally have no outcome.
 
@@ -156,7 +156,7 @@ The *For* Activity is a control flow activity in Elsa Workflows that allows you 
 
 2.  Set the **<span class="smallcaps">Start</span>** property to the initial value of the loop counter (usually 0 or 1, depending on your requirements).
 
-3.  Set the **<span class="smallcaps">End</span>** property to the value at which the loop counter should stop (exclusive). The loop will iterate as long as the loop counter is less than the **<span class="smallcaps">End'</span>**value.
+3.  Set the **<span class="smallcaps">End</span>** property to the value at which the loop counter should stop (exclusive). The loop will iterate as long as the loop counter is less than the **<span class="smallcaps">End</span>** value.
 
 4.  Optionally, set the **<span class="smallcaps">Step</span>** property to define the increment value for each iteration. By default, the 'Step' value is typically 1, meaning the loop counter will increment by 1 after each iteration.
 
