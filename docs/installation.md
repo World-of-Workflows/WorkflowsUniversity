@@ -7,6 +7,8 @@ nav_order: 3
 # Installation/Setup
 This document contains instructions on how to install and configure World of Workflows on your machine.
 
+
+
 ## World of Workflows Personal Edition
 
 ### Windows Installation
@@ -137,4 +139,5 @@ This document contains instructions on how to install and configure World of Wor
 
 World of Workflows Business Edition is available on the Azure Marketplace here:
 
-https://azuremarketplace.microsoft.com/en-us/marketplace/apps/worldofworkflows.wowbe?tab=Overview
+[Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/worldofworkflows.wowbe?tab=Overview)
+
