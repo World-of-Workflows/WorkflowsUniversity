@@ -152,7 +152,7 @@ World of Workflows Business Edition is available on the Azure Marketplace here:
 3. Search for **User Managed Identity**.
    ![User Managed Identity](image-9.png)
 4. Under User Managed Identity, click **Create**
-5. Create or choose a **Resource Group**, Set the Region to be your local region and give the Identity a name. We commony use **WOWBEInstaller**.
+5. Create or choose a **Resource Group**, Set the Region to be your local region and give the Identity a name. We commonly use **WOWBEInstaller**.
    ![Create Managed Identity](image-10.png)
 6. Click **Review + Create**
 7. Give your managed Identity Permissions as follows:
