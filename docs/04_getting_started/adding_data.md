@@ -43,4 +43,4 @@ In this section, we are going to add some lead statuses, and our first couple of
 5. The list of leads should look like the screen shot below. *Note in this case I modified a mistake, so the modified date is greater than the created date.*
    ![Created Lead](image-12.png)
 
-You have successfully created the data so can go to **[step 3, create workflow](./create-workflow.md)**
+You have successfully created the data so can go to **[step 3, create workflow](./create-workflow.html)**

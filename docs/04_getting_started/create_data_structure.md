@@ -73,4 +73,4 @@ We're going to create two types:
     ![Lead Columns](image-6.png)
 
 
-You have successfully created the data structure so can go to **[step 2, adding data](./adding_data.md)**
+You have successfully created the data structure so can go to **[step 2, adding data](./adding_data.html)**

@@ -15,6 +15,7 @@ In addition, we'll create several **views** so you can allow your users to easil
 
 Follow the steps below to complete this exercise.
 
-1. [Creating a data structure](./create_data_structure.md) - In this section, we create the structure for the data we are going to use. We commonly create solutions by working with data first.
-2. [Adding data](./adding_data.md) - In this section we add data for lead status and add our first lead.
-3. [Create Workflow](./create-workflow.md) - In this section, we create a workflow to follow up a lead with a task.
+1. [Creating a data structure](./create_data_structure.html) - In this section, we create the structure for the data we are going to use. We commonly create solutions by working with data first.
+2. [Adding data](./adding_data.html) - In this section we add data for lead status and add our first lead.
+3. [Create Workflow](./create-workflow.html) - In this section, we create a workflow to follow up a lead with a task.
+4. [Try it out](./try_it_out.html) - Try out the workflow and see the tasks you created
