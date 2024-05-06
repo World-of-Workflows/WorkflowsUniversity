@@ -52,7 +52,7 @@ nav_order: 3
 26. Click **Save**
 27. Click **Publish**
 
-**Congratulations.** You have created your first workflow. When you click the option on a lead it should create a task to update the lead.
+**Congratulations.** You have created your first workflow. When you click the option on a lead it should create a task to update the lead. You can now [Try it out](./try_it_out.html).
 
 **Note:** The **Liquid** system is a way of reading and writing data between activities. In World of Workflows, we support Liquid and JavaScript for this. 
 
