@@ -6,3 +6,5 @@ has_children: true
 ---
 
 # Reference
+
+This section contains reference material for completeness including detailed usage of oData, JavaScript and Liquid.

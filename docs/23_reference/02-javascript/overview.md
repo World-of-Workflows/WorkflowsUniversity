@@ -1,3 +1,11 @@
+---
+title: Javascript Primer
+layout: default
+nav_order: 1
+parent: Javascript
+grand_parent: Reference
+---
+
 # Javascript Primer
 
 JavaScript is a programming language that is commonly used to add interactivity and other dynamic features to websites. It is a relatively simple language to learn, and can be written directly in HTML and CSS files, or in separate .js files that are linked to HTML files.

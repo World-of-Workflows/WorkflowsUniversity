@@ -2,6 +2,7 @@
 title: Template
 layout: default
 parent: Liquid Reference
+grand_parent: Reference
 nav_order: 10
 ---
 {% raw %}

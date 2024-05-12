@@ -2,6 +2,7 @@
 title: Operators
 layout: default
 parent: Liquid Reference
+grand_parent: Reference
 nav_order: 2
 ---
 {% raw %}

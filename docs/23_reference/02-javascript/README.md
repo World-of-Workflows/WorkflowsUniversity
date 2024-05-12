@@ -1,3 +1,11 @@
+---
+title: Javascript
+layout: default
+nav_order: 2
+has_children: true
+parent: Reference
+---
+
 # Javascript
 
 This section details Javascript as used in Workflows. It starts with a primer on the language and then adds specific expression information used in this product.

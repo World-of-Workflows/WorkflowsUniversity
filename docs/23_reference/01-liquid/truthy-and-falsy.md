@@ -2,6 +2,7 @@
 title: Truthy and Falsy
 layout: default
 parent: Liquid Reference
+grand_parent: Reference
 nav_order: 4
 ---
 {% raw %}

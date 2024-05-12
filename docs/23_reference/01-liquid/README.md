@@ -1,8 +1,9 @@
 ---
 title: Liquid Reference
 layout: default
-nav_order: 17
+nav_order: 1
 has_children: true
+parent: Reference
 ---
 
 # Liquid Reference

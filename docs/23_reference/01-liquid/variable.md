@@ -2,6 +2,7 @@
 title: Variable
 layout: default
 parent: Liquid Reference
+grand_parent: Reference
 nav_order: 11
 ---
 {% raw %}

@@ -1,3 +1,11 @@
+---
+title: Javascript Expressions
+layout: default
+nav_order: 2
+parent: Javascript
+grand_parent: Reference
+---
+
 # JavaScript Expressions
 The following JavaScript expressions are supported:
 

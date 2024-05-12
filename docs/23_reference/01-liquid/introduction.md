@@ -2,6 +2,7 @@
 title: Introduction
 layout: default
 parent: Liquid Reference
+grand_parent: Reference
 nav_order: 1
 ---
 
