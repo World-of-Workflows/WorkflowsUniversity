@@ -36,7 +36,7 @@ nav_order: 3
 17. Right Click the **Task Create** activity and choose **Edit**
     ![Task Editor](image-24.png)
 18. To the right of the Title, click ![Elipsis](image-25.png) and choose **Liquid**
-19. In the Title Type ```Review Lead #{{Activities.LeadTrigger.InstanceId}}```
+19. In the Title Type ```Review Lead #{%raw%}{{Activities.LeadTrigger.InstanceId}}{%endraw%}```
 20. In the description, type 
     ```
     # Review Lead
@@ -45,7 +45,7 @@ nav_order: 3
 21. Leave the Severity, Priority and Due.
     ![Task Editor](image-27.png)
 22. In the related ObjectId, click ![Elipsis](image-25.png) and choose **Liquid**
-23. Enter ```{{Activities.LeadTrigger.ObjectId}}``` in the Related Object Id
+23. Enter ```{%raw%}{Activities.LeadTrigger.ObjectId}}{%endraw%}``` in the Related Object Id
 24. In the Data Questions Add ```Status``` for **Name** and ```Status``` for **Value**
 25. In Branches, add the text "Done" and click Enter.
     ![Task Editor 2](image-28.png)

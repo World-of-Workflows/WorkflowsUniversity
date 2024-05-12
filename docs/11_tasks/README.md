@@ -1,8 +1,8 @@
 ---
 title: Tasks
 layout: default
+nav_order: 12
 has_children: true
-nav_order: 21
 ---
 
 # Tasks
@@ -26,7 +26,3 @@ The Task Pane shows the details of a task and has 6 main areas:
 End users are expected to use the task system as an advanced to-do list. They pick tasks from the task queue and work through them. The task pane shows the details of the task and allows them to enter data and perform actions.
 
 See the contents below to work with tasks in more detail.
-
-
-
-
