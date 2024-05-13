@@ -1,6 +1,8 @@
 ---
 title: Common Properties
 description: Common Properties
+layout: default
+parent: Workflow Activities
 ---
 
 # Common Properties

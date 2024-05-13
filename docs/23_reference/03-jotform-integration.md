@@ -2,6 +2,7 @@
 title: JotForm Integration
 layout: default
 nav_order: 18
+parent: Reference
 ---
 
 # JotForm Integration
@@ -14,17 +15,17 @@ To start, build a form in Jotform.
 
 1. In World of Workflows, create a new workflow.
 2. Add a **HTTP Endpoint** activity configured as follows:
-   ![Http Activity Chooser](2022-11-16-07-25-09.png)
-   ![Http Activity](2022-10-03-13-10-38.png)
+   ![Http Activity Chooser](../2022-11-16-07-25-09.png)
+   ![Http Activity](../2022-10-03-13-10-38.png)
    Set the **Path** to be any path you want, but ensure **POST** and **Read Content** are both checked. Ensure you go to **Common** and set the **Technical Name** to be **JotFormPost**.
-3. [Optional] Add a **HTTP Response Activity** after this to show some feedback to the user. You could even add a [thank you page](thank-you-page.md).
+3. [Optional] Add a **HTTP Response Activity** after this to show some feedback to the user. You could even add a [thank you page](../thank-you-page.md).
 4. Go to Jotform and open your form.
 5. Click **SETTINGS**.
 6. Choose **Form Settings**.
 7. Click **Show More Options** to see more options.
-   ![Jotform Form Settings](2022-10-03-13-12-53.png)
+   ![Jotform Form Settings](../2022-10-03-13-12-53.png)
 8. Scroll down until you see **Send Post Data**. Ensure this is set to **Yes**.
-   ![Send Post Data](2022-10-03-13-14-09.png)
+   ![Send Post Data](../2022-10-03-13-14-09.png)
 9.  Still in Jotform, click **THANK YOU PAGE**.
 10. Select **Redirect to an external link after submission**.
 11. Enter the URL of your workflows instance followed by the **Path** from the Activity you created in step 1.
@@ -36,7 +37,7 @@ Workflows comes with a special Activity, **JSON Data Insert** which takes inform
 12. To make this work, go back to the workflow you created in step 1, above.
 13. At the end of the workflow, add the **JSON Data Insert** activity.
 
-    ![Json Data Insert Activity](2023-03-16-11-19-34.png)
+    ![Json Data Insert Activity](../2023-03-16-11-19-34.png)
 
     Enter the information as follows:
 
