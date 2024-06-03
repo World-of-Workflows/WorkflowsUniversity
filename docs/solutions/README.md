@@ -1,9 +1,4 @@
----
-title: Solutions
-layout: default
-nav_order: 20
-has_children: true
----
+
 # Solutions
 
 Solutions are unique packages that include workflows and configurations to ensure that you can run workflows.

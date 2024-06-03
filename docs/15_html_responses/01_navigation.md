@@ -38,8 +38,11 @@ Once that's complete, we'll add some extensions
    3. **Email**
    4. **Phone**
    5. **Company**
+
    ![Add Column](image-3.png)
+
 3. You should now have six columns as shown below:
+
    ![Lead Type](image-4.png)
 
 ## Create Form

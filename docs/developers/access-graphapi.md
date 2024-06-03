@@ -28,6 +28,7 @@ Before you start, you will need:
 ## Required Information
 
 Complete the following table:
+
 | Item | Example | Value |
 | -- | -- | -- |
 | Authorization Endpoint | ```https://login.microsoftonline.com/6a7e7118-0425-44ee-9f06-e11f0c970cda/oauth2/v2.0/authorize``` | |
