@@ -8,9 +8,12 @@ grand_parent: Workflow Activities
 
 # Delete File
 
-Delete file deletes a file. 
-## Input
-- **Path** - the path of the file to delete
-  - Default
-  - Javascript
-  - Liquid
+**Description:** Deletes file at specified location
+
+**Category:** File
+
+**Properties:**
+- **Path**: Path of the file to delete.
+
+**Input Properties:**
+- **Path**: Path of the file to delete.

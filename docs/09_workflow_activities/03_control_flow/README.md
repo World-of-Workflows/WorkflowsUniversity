@@ -86,3 +86,74 @@ When providing an expression using `Json` or `JavaScript`, make sure that the ex
 The scoped variables `CurrentValue` and `CurrentIndex` are set by the activity in each iteration to store the value and iteration index (0 based) respectively. The variables can be referred by activities in the scope of the Iterate outcome.
 
 The current value is also set as an output of the Iterate Outcome and can be accessed by the following activity by referring to the `input` variable.
+
+## Fork
+**Description:** Fork workflow execution into multiple branches.
+
+**Category:** Control Flow
+
+**Properties:**
+- **Branches**: Enter one or more branch names.
+
+**Input Properties:**
+- **Branches**: Enter one or more branch names.
+
+## If/Else
+**Description:** Evaluate a Boolean expression and continue execution depending on the result.
+
+**Category:** Control Flow
+
+**Properties:**
+- **Condition**: The condition to evaluate.
+
+**Input Properties:**
+- **Condition**: The condition to evaluate.
+
+## Join
+**Description:** Merge workflow execution back into a single branch.
+
+**Category:** Control Flow
+
+**Properties:**
+- **EagerJoin**: True if all blocking activities within the fork should be cleared.
+- **Mode**: WaitAll: wait for all incoming activities to have executed. WaitAny: continue execution as soon as any of the incoming activity has executed.
+
+**Input Properties:**
+- **EagerJoin**: True if all blocking activities within the fork should be cleared.
+- **Mode**: WaitAll: wait for all incoming activities to have executed. WaitAny: continue execution as soon as any of the incoming activity has executed.
+
+## Parallel for Each
+**Description:** Iterate over a collection in parallel.
+
+**Category:** Control Flow
+
+**Properties:**
+- **Items**: A collection of items to iterate over.
+
+**Input Properties:**
+- **Items**: A collection of items to iterate over.
+
+## Switch
+**Description:** Evaluate multiple conditions and continue execution depending on the results.
+
+**Category:** Control Flow
+
+**Properties:**
+- **Cases**: The conditions to evaluate.
+- **Mode**: The switch mode determines whether the first match should be scheduled, or all matches.
+
+**Input Properties:**
+- **Cases**: The conditions to evaluate.
+- **Mode**: The switch mode determines whether the first match should be scheduled, or all matches.
+
+## While
+**Description:** Execute while a given condition is true.
+
+**Category:** Control Flow
+
+**Properties:**
+- **Condition**: The condition to evaluate.
+
+**Input Properties:**
+- **Condition**: The condition to evaluate.
+

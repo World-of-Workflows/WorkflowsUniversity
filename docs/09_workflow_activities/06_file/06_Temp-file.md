@@ -7,3 +7,11 @@ grand_parent: Workflow Activities
 ---
 
 # Temp File
+
+**Description:** Created a temporary file and returns its path
+
+**Category:** File
+
+
+**Output Properties:**
+- **Path**: Path of the created temporary file.
