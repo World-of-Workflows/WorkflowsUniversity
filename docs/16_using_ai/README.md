@@ -237,14 +237,14 @@ jsonEncode(activities.ListTiers.Output())
 ```
 
 
-` Pro tip: use this formula to get the first entry in the list.  Very helpful if your filter is deiagned to produce just 1 entry
+> **Pro Tip** ` use this formula to get the first entry in the list.  Very helpful if your filter is deiagned to produce just 1 entry
 `
 
 ```js
 activities.ListTiers.Output()[0]
 ```
 
-` Pro tip: use this formula to get the ObjectId of the first entry in the list.  Use this in the instanceId of the ` *GetObject* ` activity if your filter is designed to produce just 1 entry
+> **Pro Tip** ` use this formula to get the ObjectId of the first entry in the list.  Use this in the instanceId of the ` *GetObject* ` activity if your filter is designed to produce just 1 entry
 `
 
 ```js
