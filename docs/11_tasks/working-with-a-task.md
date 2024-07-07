@@ -1,6 +1,7 @@
 ---
 title: Working with a Task
 layout: default
+nav_order: 4
 parent: Tasks
 ---
 
