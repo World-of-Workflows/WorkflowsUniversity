@@ -1,6 +1,7 @@
 ---
 title: Pick a Task
 layout: default
+nav_order: 3
 parent: Tasks
 ---
 
