@@ -6,4 +6,17 @@ parent: File
 grand_parent: Workflow Activities
 ---
 
-# Read file
+# Read File
+
+**Description:** Output input value to specified location
+
+**Category:** File
+
+**Properties:**
+- **Path**: Path to read content from.
+
+**Input Properties:**
+- **Path**: Path to read content from.
+
+**Output Properties:**
+- **Bytes**: Bytes of the file read.

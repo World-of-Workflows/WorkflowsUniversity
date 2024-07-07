@@ -6,5 +6,16 @@ parent: Primitives
 grand_parent: Workflow Activities
 ---
 
-# Set Context Id
+# Set Context ID
+
+**Description:** Set context ID on the workflow.
+
+**Category:** Primitives
+
+**Properties:**
+- **ContextId**: The context ID to set.
+
+**Input Properties:**
+- **ContextId**: The context ID to set.
+
 
