@@ -146,35 +146,8 @@ The **Grimoire** responds like this:
 
 So now you have a way of collecting data and sending it to your World of Workflows enbironment.  Let's ask ChatGPT what to do next:
 
-## Creating a dropdown HTML field 
-This example shows how to ask ChatGPT for some Liquid code to use within a Liquid HTML page.
-As you know from the Liquid reference, you can access a Variable from your workflow using ```{{Variables.<VariableName>}}```
 
-![](2024-07-06-16-25-11.png)
-
-Perhaps you want to know how to make a value pre-selected:
-![](2024-07-06-16-30-30.png)
-
-When the user selects a name, you want it to do something:
-![](2024-07-06-16-31-41.png)
-
-If you want a tooltip to display, but don't know how to do it, just ask:
-![](2024-07-06-16-33-26.png)
-
-Or enabling and disabling a control:
-![](2024-07-06-16-42-09.png)
-
-## Resolving logic and syntax problems
-
-This example shows how to ask a question related to a specific line of code to see if in fact does what you think it should do.  
-![](2024-07-06-16-34-11.png)
-
-You can paste a line of code into ChatGPT to find out what it does.  If there is a logic error in the code, ChatGPT will correct it for you:
-![](2024-07-06-16-37-57.png)
-
-(By the way, this example also shows the use of ```setVariable()``` as a debugging tool in World of Workflows JavaScript.  The variable will be displayed in the Instance Log on the Variables page.)
-
-## Write code to work with your data
+### Extended example: use AI to write code to work with your data
 
 You can very easily create a routine to use your World of Workflows data.
 In this example, we wanted to use 2 fields on a form to determine the value of a third field.  Here is the form we wanted to change:
@@ -185,6 +158,7 @@ Here is the data in the World of Workflows Type:
 
 Export the data from World of Workflows so we can upload it to ChatGPT.
 ![](2024-07-07-14-29-25.png)
+
 Upload this to ChatGPT and tell it what you want done:
 ![](2024-07-07-14-31-34.png)
 Here is the function that ChapGPT produced:
@@ -242,29 +216,35 @@ Here is the function that ChapGPT produced:
 
 ```
 
-We can paste this function ```selectTierObjectId``` into the HTTP Response activity in our workflow.  Note how the function uses the tiersData variable.  We can use this as-is, but it would be better to have the data dynamically retrieved from the World of Workflows database.  So we will create 2 activities to achieve this: ListObjectInstances and Set Variable.
+We can paste this function ```selectTierObjectId``` into the HTTP Response activity in our workflow.  Note how the function uses the `tiersData` variable.  We can use this as-is, but it would be better to have the data dynamically retrieved from the World of Workflows database.  So we will create 2 activities to achieve this: ListObjectInstances and Set Variable.
 
 First, create the ListObjectInstances activity, and set the Object Type to Tier, sorting it too:
 ![](2024-07-07-15-07-57.png)
+
+
+We set a variable called `Tiers` to collect the data so we can use it ion the HTTP Response.  Set the Value to JavaScript and use the inteliscript to fill in the value.  
+
+![](2024-07-07-14-55-18.png)
+
 ![](2024-07-07-14-54-22.png)
 
-Then set a variable called Tiers to collect the data so we can use it ion the HTTP Response.  Set the Value to JavaScript and use the inteliscript to fill in the value.  Because we want to use the data as a Liquid string,, not a Javascript Object, we will use a built-in function to turn it into a string. Both `JSON.stringify()` and `jsonEncode()` will do the trick.  The full formula will be 
+Because we want to use the data as a Liquid string,, not a Javascript Object, we will use a built-in function to turn it into a string. Both `JSON.stringify()` and `jsonEncode()` will do the trick.  The full formula will be 
+
 ```js
 // JSON.stringify(activities.ListTiers.Output())
 // or
 jsonEncode(activities.ListTiers.Output())
 ```
 
-![](2024-07-07-14-55-18.png)
 
-` Pro tip: use this formula to get the first entry in the list.  Very helpful if your filter is deisagned to produce just 1 entry
+` Pro tip: use this formula to get the first entry in the list.  Very helpful if your filter is deiagned to produce just 1 entry
 `
 
 ```js
 activities.ListTiers.Output()[0]
 ```
 
-` Pro tip: use this formula to get the ObjectId of in the list.  Use this in the instanceId of the GetObject activity if your filter is deisagned to produce just 1 entry
+` Pro tip: use this formula to get the ObjectId of the first entry in the list.  Use this in the instanceId of the ` *GetObject* ` activity if your filter is designed to produce just 1 entry
 `
 
 ```js
@@ -280,13 +260,12 @@ Here is the updated workflow:
 Now change the ```selectTierObjectId``` in the HTTP Response to use this Tiers variable.
 Replace this:
 ![](2024-07-07-15-04-16.png)
-with this Liquid. The `| raw` filter removes the html formattting.
+with this Liquid. The `| raw ` filter removes the html formattting.
 ![](![](2024-07-07-15-05-10.png).png)
 
-Now test it using 
-https://localhost:7063/ThreeFieldsTest
+Test your work using https://localhost:7063/ThreeFieldsTest
 
-Let's now have the Tier field displayed, instead of the alert.
+Let's now have the `Tier` field displayed, instead of the alert, and get it to select the correct value of `Tier` based on the 2 other fields.
 
 Back to ChatGPT. Remember we changed the const Tiers data for our variable, so tell ChatGPT:
 ```sh
@@ -296,7 +275,7 @@ now set a dropdown field for Tier.  use this code to get the tiersData:
 
 The value will be the ObjectId.  The text displayed will be the tier description.  Use Tailwinds CSS and instead of a submit button, set the Tier when either field is changed
 ```
-Here is the HTML, to replace the whole HTTP Response:   
+Here is the HTML, to replace the existing HTTP Response:   
 
 ```html
 <!DOCTYPE html>
@@ -382,4 +361,37 @@ Here is the working page:
 ![](2024-07-07-15-44-44.png)
 
 ```
-### ChatGPT 
+
+This demonstrates how we can build sophisticated World of Workflows workflows with little or no programming skills by leveraging ChatGPT. The ChatGPT responses build on each other and your workflows become more useful.
+
+## Creating a dropdown HTML field 
+This example shows how to ask ChatGPT for some Liquid code to use within a Liquid HTML page.
+As you know from the Liquid reference, you can access a Variable from your workflow using ```{{Variables.<VariableName>}}```
+
+![](2024-07-06-16-25-11.png)
+
+Perhaps you want to know how to make a value pre-selected:
+![](2024-07-06-16-30-30.png)
+
+When the user selects a name, you want it to do something:
+![](2024-07-06-16-31-41.png)
+
+If you want a tooltip to display, but don't know how to do it, just ask:
+![](2024-07-06-16-33-26.png)
+
+Or enabling and disabling a control:
+![](2024-07-06-16-42-09.png)
+
+## Resolving logic and syntax problems
+
+This example shows how to ask a question related to a specific line of code to see if in fact does what you think it should do.  
+![](2024-07-06-16-34-11.png)
+
+You can paste a line of code into ChatGPT to find out what it does.  If there is a logic error in the code, ChatGPT will correct it for you:
+![](2024-07-06-16-37-57.png)
+
+(By the way, this example also shows the use of ```setVariable()``` as a debugging tool in World of Workflows JavaScript.  The variable will be displayed in the Instance Log on the Variables page.)
+
+# ChatGPT activities in World of Workflows
+
+The OpenAI Plugin provides these activities
