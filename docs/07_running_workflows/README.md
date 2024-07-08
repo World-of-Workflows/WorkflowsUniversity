@@ -6,3 +6,5 @@ has_children: true
 ---
 
 # Running Workflows
+[What are Workflows?](workflow-details.md)
+
