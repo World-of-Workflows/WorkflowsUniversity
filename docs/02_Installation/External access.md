@@ -1,3 +1,11 @@
+---
+title: World of Workflows Business Edition - Authentication with Microsoft Entra ID for External users
+parent: Installation/Setup
+layout: default
+nav_order: 5
+has_children: false
+---
+
 # Authentication with Microsoft Entra ID for External users
 Each person who accesses your application needs permission.
 1. You can invite an **external user** in Micorosft Entra ID: 

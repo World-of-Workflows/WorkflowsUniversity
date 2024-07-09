@@ -287,9 +287,12 @@ There are two other options I don't recommend using. CommonMark and a few other 
 
 # Emphasis
 
-You can add emphasis by making text bold or italic.
+You can add extra emphasis by making text bold or italic.
+
 
 {% include syntax.html type="basic-sub" syntax-id="bold" %}
+
+
 
 {% include syntax.html type="basic-sub" syntax-id="italic" %}
 
@@ -468,9 +471,13 @@ For compatibility, put blank lines before and after blockquotes.
 
 You can organize items into ordered and unordered lists.
 
+``` liquid
 {% include syntax.html type="basic-sub" syntax-id="ordered-lists" %}
+```
 
+```liquid
 {% include syntax.html type="basic-sub" syntax-id="unordered-lists" %}
+```
 
 ### Adding Elements in Lists
 
@@ -493,12 +500,12 @@ To add another element in a list while preserving the continuity of the list, in
 
 The rendered output looks like this:
 
-* This is the first list item.
-* Here's the second list item.
+- This is the first list item.
+- Here's the second list item.
 
     I need to add another paragraph below the second list item.
 
-* And here's the third list item.
+- And here's the third list item.
 
 #### Blockquotes
 
@@ -513,12 +520,12 @@ The rendered output looks like this:
 
 The rendered output looks like this:
 
-* This is the first list item.
-* Here's the second list item.
+- This is the first list item.
+- Here's the second list item.
 
     > A blockquote would look great below the second list item.
 
-* And here's the third list item.
+- And here's the third list item.
 
 #### Code Blocks {#code-blocks-1}
 
@@ -807,9 +814,9 @@ To create an unordered list, add dashes (`-`), asterisks (`*`), or plus signs (`
     <tr>
       <td>
         <code class="highlighter-rouge">
-          * First item<br/>
+          *First item<br/>
           * Second item<br>
-          * Third item<br/>
+          *Third item<br/>
           * Fourth item
         </code>
       </td>
@@ -1166,7 +1173,7 @@ This means the following example formats are roughly equivalent for the first pa
 
 The second part of a reference-style link is formatted with the following attributes:
 
-1. The label, in brackets, followed immediately by a colon and at least one space (e.g., `[label]: `).
+1. The label, in brackets, followed immediately by a colon and at least one space (e.g., `[label]:`).
 2. The URL for the link, which you can optionally enclose in angle brackets.
 3. The optional title for the link, which you can enclose in double quotes, single quotes, or parentheses.
 
@@ -1214,7 +1221,7 @@ and the HTML for the link would be:
 
 ### Link Best Practices
 
-Markdown applications don't agree on how to handle spaces in the middle of a URL. For compatibility, try to URL encode any spaces with `%20`. Alternatively, if your Markdown application [supports HTML](#html), you could use the `a` HTML tag. 
+Markdown applications don't agree on how to handle spaces in the middle of a URL. For compatibility, try to URL encode any spaces with `%20`. Alternatively, if your Markdown application [supports HTML](#html), you could use the `a` HTML tag.
 
 <table class="table table-bordered">
   <thead class="thead-light">
@@ -1241,7 +1248,7 @@ Markdown applications don't agree on how to handle spaces in the middle of a URL
   </tbody>
 </table>
 
-Parentheses in the middle of a URL can also be problematic. For compatibility, try to URL encode the opening parenthesis (`(`) with `%28` and the closing parenthesis (`)`) with `%29`. Alternatively, if your Markdown application [supports HTML](#html), you could use the `a` HTML tag. 
+Parentheses in the middle of a URL can also be problematic. For compatibility, try to URL encode the opening parenthesis (`(`) with `%28` and the closing parenthesis (`)`) with `%29`. Alternatively, if your Markdown application [supports HTML](#html), you could use the `a` HTML tag.
 
 <table class="table table-bordered">
   <thead class="thead-light">
@@ -1404,5 +1411,3 @@ For security reasons, not all Markdown applications support HTML in Markdown doc
 Use blank lines to separate block-level HTML elements like `<div>`, `<table>`, `<pre>`, and `<p>` from the surrounding content. Try not to indent the tags with tabs or spaces — that can interfere with the formatting.
 
 You can't use Markdown syntax inside block-level HTML tags. For example, `<p>italic and **bold**</p>` won't work.
-
-
