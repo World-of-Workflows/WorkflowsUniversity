@@ -1,9 +1,9 @@
 ---
 title: Compensation
 layout: default
-nav_order: 1
+nav_order: 2
 parent: Workflow Activities
-has_children: true
+has_children: false
 ---
 
 # Compensation

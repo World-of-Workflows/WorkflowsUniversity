@@ -3,6 +3,7 @@ title: Timers
 layout: default
 nav_order: 10
 parent: Workflow Activities
+has_children: false
 ---
 
 ## Timer Activities

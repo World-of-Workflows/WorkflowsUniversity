@@ -1,6 +1,7 @@
 ---
 title: Common Properties
 description: Common Properties
+nav_order: 1
 layout: default
 parent: Workflow Activities
 ---
