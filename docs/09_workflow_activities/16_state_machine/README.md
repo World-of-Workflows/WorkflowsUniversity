@@ -3,6 +3,7 @@ title: State Machine
 layout: default
 nav_order: 16
 parent: Workflow Activities
+has_children: false
 ---
 
 # State

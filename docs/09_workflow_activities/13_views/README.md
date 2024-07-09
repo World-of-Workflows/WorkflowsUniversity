@@ -3,6 +3,7 @@ title: Views
 layout: default
 nav_order: 13
 parent: Workflow Activities
+has_children: false
 ---
 
 # Views Read

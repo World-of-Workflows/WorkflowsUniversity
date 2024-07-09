@@ -3,6 +3,7 @@ title: Solutions
 layout: default
 nav_order: 14
 parent: Workflow Activities
+has_children: false
 ---
 
 These activities are used by the Solution system. They are not designed for common use

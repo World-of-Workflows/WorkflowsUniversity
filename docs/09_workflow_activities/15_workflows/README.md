@@ -3,6 +3,7 @@ title: Workflows
 layout: default
 nav_order: 15
 parent: Workflow Activities
+has_children: false
 ---
 
 

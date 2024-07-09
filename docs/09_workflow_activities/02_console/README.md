@@ -1,9 +1,9 @@
 ---
 title: Console
 layout: default
-nav_order: 2
+nav_order: 3
 parent: Workflow Activities
-has_children: true
+has_children: false
 ---
 
 # Console

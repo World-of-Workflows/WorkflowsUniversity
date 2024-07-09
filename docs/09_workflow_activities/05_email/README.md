@@ -1,9 +1,9 @@
 ---
 title: Email
 layout: default
-nav_order: 5
+nav_order: 6
 parent: Workflow Activities
-has_children: true
+has_children: false
 ---
 
 # Email

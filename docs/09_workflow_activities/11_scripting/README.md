@@ -3,6 +3,7 @@ title: Scripting
 layout: default
 nav_order: 11
 parent: Workflow Activities
+has_children: false
 ---
 
 # Run JavaScript
