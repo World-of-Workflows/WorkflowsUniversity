@@ -1,5 +1,5 @@
 ---
-title: Documentation
+title: Self-writing Documentation
 layout: default
 parent: User Guide
 nav_order: 10

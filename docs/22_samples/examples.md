@@ -5,16 +5,15 @@ parent: Samples
 nav_order: 13
 ---
 
-{% raw %}
 # Examples
 
 This section contains packaged examples of how to solve certain business problems. These are meant to be taken, modified and used by you to solve your own business problems.
 
 ## Designing long-running workflows
 
-As you develop your workflows, you will have workflows in production which you need to change. It is easy to make these changes and they will apply to all future instances of your workflows. However, if you have a workflow that started before your change was made and has not yet completed, Workd Of Workflows will execute your old workflow.
+As you develop your workflows, you will have workflows in production which you need to change. It is easy to make these changes and they will apply to all future instances of your workflows. However, if you have a workflow that started before your change was made and has not yet completed, World Of Workflows will execute your old workflow.
 
-This diagram describes this scenario:
+This diagram describes this scenario: ![long-runningWorkflow](./media/image121.png)
 
 The workflow engine will continue to run your workflows as they were designed until they complete. This maintains the integrity of your design, and you can be confident that the workflow will continue to run the way you design it, even if changes are subsequently made to that workflow.
 
