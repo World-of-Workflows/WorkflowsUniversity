@@ -1,4 +1,12 @@
-# Changing Directory
+---
+title: Changing Azure Directory
+parent: Business Edition - Azure Installation
+grand_parent: Installation/Setup
+layout: default
+nav_order: 5
+has_children: false
+---
+# Changing Azure Directory
 
 Authentication in World of Workflows is performed using Azure Active Directory and this ensures security both through the client application and at the server side. To Change the directory for the application is simple yet slightly involved.
 
