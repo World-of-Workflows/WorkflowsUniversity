@@ -1,4 +1,12 @@
-# Backup
+---
+title: Setting up database backups
+parent: User Configurable Database
+layout: default
+nav_order: 15
+has_children: false
+---
+
+# Setting up database backups
 
 *This section details implementations using SQLite only. Implementations using SQL Server are expected to perform their own backups.*
 
