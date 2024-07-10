@@ -206,14 +206,18 @@ Possible directions are:
     </tr>
   </tbody>
 </table>
+
 ### 1.4 Subgraphs
 Syntax:
+
 ~~~markdown
 subgraph title
     graph definition
 end
 ~~~
+
 Example:
+
 ~~~markdown
 graph TB
     c1 -> a2
@@ -227,6 +231,7 @@ graph TB
     c1 -> c2
     end
 ~~~
+
 <div class="mermaid">
 graph TB;
     subgraph one;
@@ -242,9 +247,13 @@ graph TB;
 </div>
 
 ## 2. Sequence Diagrams
+
 A Sequence diagram is an interaction diagram that shows how processes operate with one another and in what order.
+
 ### 2.1 Participants
+
 The participants or actors are rendered in order of appearance in the diagram source text.
+
 ~~~markdown
 sequenceDiagram
     participant Alice
@@ -252,8 +261,11 @@ sequenceDiagram
     Alice ->> John: Hello John, how are you?
     John -->> Alice: Great!
 ~~~
+
 <div class="mermaid">sequenceDiagram;    participant Alice;    participant John;    Alice ->> John: Hello John, how are you?;    John -->> Alice: Great!</div>
+
 You can specify the actor's order of appearance to show the participants in a different order.
+
 ~~~markdown
 sequenceDiagram
     participant John
@@ -261,6 +273,7 @@ sequenceDiagram
     Alice ->> John: Hello John, how are you?
     John -->> Alice: Great!
 ~~~
+
 <div class="mermaid">
 sequenceDiagram;
     participant John;
@@ -268,19 +281,25 @@ sequenceDiagram;
     Alice ->> John: Hello John, how are you?;
     John -->> Alice: Great!;
 </div>
+
 The participants can be defined implicitly without specifying them with the `participant` keyword.
+
 ~~~markdown
 sequenceDiagram
     Alice ->> John: Hello John, how are you?
     John -->> Alice: Great!
 ~~~
+
 <div class="mermaid">
 sequenceDiagram;
     Alice ->> John: Hello John, how are you?
     John -->> Alice: Great!
 </div>
+
 ### 2.2 Aliases
+
 The participant can have a convenient identifier and a descriptive label.
+
 ~~~markdown
 sequenceDiagram
     participant A as Alice
@@ -288,6 +307,7 @@ sequenceDiagram
     A ->> J: Hello John, how are you?
     J -->> A: Great!
 ~~~
+
 <div class="mermaid">
 sequenceDiagram;
     participant A as Alice
@@ -295,11 +315,15 @@ sequenceDiagram;
     A ->> J: Hello John, how are you?
     J -->> A: Great!
 </div>
+
 ### 2.3 Messages
+
 Messages can be of two displayed either solid or with a dotted line.
-```raw
+
+~~~raw
 [Actor][Arrow][Actor]:Message text
-```
+~~~
+
 There are six types of arrows currently supported:
 
 Arrow Type | Description
@@ -312,7 +336,9 @@ Arrow Type | Description
 --x        | Dotted line with a cross at the end (async)
 
 ### 2.4 Activations
+
 Activate and deactivate an actor.
+
 ~~~markdown
 sequenceDiagram
     Alice ->> John: Hello John, how are you?
@@ -320,6 +346,7 @@ sequenceDiagram
     John -->> Alice: Great!
     deactivate John
 ~~~
+
 <div class="mermaid">
 sequenceDiagram;
     Alice ->> John: Hello John, how are you?
@@ -327,18 +354,23 @@ sequenceDiagram;
     John -->> Alice: Great!
     deactivate John
 </div>
+
 Shortcut notation by appending `+/-` suffix to the message arrow.
+
 ~~~markdown
 sequenceDiagram
     Alice ->>+ John: Hello John, how are you?
     John -->>- Alice: Great!
 ~~~
+
 <div class="mermaid">
 sequenceDiagram;
     Alice ->>+ John: Hello John, how are you?
     John -->>- Alice: Great!
 </div>
+
 Activations can be stacked for same actor:
+
 ~~~markdown
 sequenceDiagram
     Alice ->>+ John: Hello John, how are you?
@@ -346,6 +378,7 @@ sequenceDiagram
     John -->>- Alice: Hi Alice, I can hear you!
     John -->>- Alice: I feel great!
 ~~~
+
 <div class="mermaid">
 sequenceDiagram;
     Alice ->>+ John: Hello John, how are you?
@@ -353,39 +386,51 @@ sequenceDiagram;
     John -->>- Alice: Hi Alice, I can hear you!
     John -->>- Alice: I feel great!
 </div>
+
 ### 2.5 Notes
+
 Add notes to a sequence diagram by the notation `Note`.
-```raw
+
+~~~raw
 Note [ right of | left of | over ] [Actor]: Text in note content
-```
+~~~
+
 1) Right Side
+
 ~~~markdown
 sequenceDiagram
     participant John
     Note right of John: Text in note
 ~~~
+
 <div class="mermaid">
 sequenceDiagram;
     participant John;
     Note right of John: Text in note;
 </div>
+
 2) Left Side
+
 ~~~markdown
 sequenceDiagram
     participant John
     Note left of John: Text in note
 ~~~
+
 <div class="mermaid">
 sequenceDiagram;
     participant John;
     Note left of John: Text in note;
 </div>
+
 3) Over
+
 ~~~markdown
 sequenceDiagram
     participant John
     Note over John: Text in note
 ~~~
+
 <div class="mermaid">sequenceDiagram;    participant John;    Note over John: Text in note;</div>
 4) Create notes spanning two participants
 ~~~markdown
@@ -393,18 +438,23 @@ sequenceDiagram
     Alice ->> John: Hello John, how are you?
     Note over Alice,John: A typical interaction
 ~~~
+
 <div class="mermaid">
 sequenceDiagram;
     Alice ->> John: Hello John, how are you?
     Note over Alice,John: A typical interaction
 </div>
+
 ### 2.6 Loops
+
 Express loops in a sequence diagram by the notation `loop`.
-```raw
+
+~~~raw
 loop Loop text
 ... statements ...
 end
-```
+~~~
+
 ~~~markdown
 sequenceDiagram
     Alice -> John: Hello John, how are you?
@@ -412,6 +462,7 @@ sequenceDiagram
         John --> Alice: Great!
     end
 ~~~
+
 <div class="mermaid">
 sequenceDiagram
     Alice -> John: Hello John, how are you?
@@ -419,8 +470,11 @@ sequenceDiagram
         John --> Alice: Great!
     end
 </div>
+
 ### 2.7 Alt
+
 Express alternative paths in a sequence diagram by the notation `alt`.
+
 ~~~markdown
 alt Describing text
 ... statements ...
@@ -428,13 +482,17 @@ else
 ... statements ...
 end
 ~~~
+
 Or, if there is sequence that is optional (if without else).
+
 ~~~markdown
 opt Describing text
 ... statements ...
 end
 ~~~
+
 Example:
+
 ~~~markdown
 sequenceDiagram
     Alice ->> John: Hello John, how are you?
@@ -447,8 +505,9 @@ sequenceDiagram
         John ->> Alice: Thanks for asking
     end
 ~~~
+
 <div class="mermaid">
-sequenceDiagram
+sequenceDiagram;
     Alice ->> John: Hello John, how are you?
     alt is sick
         John ->> Alice: Not so good :(
@@ -461,7 +520,9 @@ sequenceDiagram
 </div>
 
 ## 3. Gantt Diagrams
+
 A Gantt chart is a type of bar chart, first developed by Karol Adamiecki in 1896, and independently by Henry Gantt in the 1910s, that illustrates a project schedule. Gantt charts illustrate the start and finish dates of the terminal elements and summary elements of a project.
+
 ~~~markdown
 gantt
   title A Gantt Diagram
@@ -471,14 +532,6 @@ gantt
     Another Task     :after a1, 20d
 
 ~~~
-<!--<div class="mermaid">
-gantt    
-    title 1A Gantt Diagram
-    dateFormat  YYYY-MM-DD
-      section Section
-        First Task  a1   
-</div>
-
 
 <div class="mermaid">
 gantt    
@@ -491,9 +544,8 @@ gantt
         Second Task      :2018-07-12, 12d
         Third Task       : 24d
 </div>
--->
 
-```raw
+~~~raw
 gantt
        dateFormat  YYYY-MM-DD
        title Adding GANTT diagram functionality to mermaid
@@ -521,8 +573,9 @@ gantt
        Describe gantt syntax               :after doc1, 3d
        Add gantt diagram to demo page      :20h
        Add another diagram to demo page    :48h
-```
-<!-- <div class="mermaid">
+~~~
+
+<div class="mermaid">
 gantt;
        dateFormat  YYYY-MM-DD
        title Adding GANTT diagram functionality to mermaid
@@ -551,27 +604,33 @@ gantt;
        Add gantt diagram to demo page      :20h
        Add another diagram to demo page    :48h
 </div>
--->
+
 
 ## 4. Demos
+
 ### 4.1 Basic Flowchart
-```raw
+
+~~~raw
 graph LR
     A[Square Rect] -- Link text --> B((Circle))
     A --> C(Round Rect)
     B --> D{Rhombus}
     C --> D
-```
+~~~
+
 <div class="mermaid">graph LR;    A[Square Rect] -- Link text --> B((Circle));    A --> C(Round Rect);    B --> D{Rhombus};    C --> D;</div>
+
 ### 4.2 Flowchart with Decision
-```raw
+
+~~~raw
 graph TD
     A[Christmas] -->|Get money| B(Go shopping)
     B --> C{Let me think}
     C -->|One| D[Laptop]
     C -->|Two| E[iPhone]
     C -->|Three| F[fa:fa-car Car]
-```
+~~~
+
 <div class="mermaid">
 graph TD;
     A[Christmas] -->|Get money| B(Go shopping);
@@ -582,7 +641,8 @@ graph TD;
 </div>
 
 ### 4.3 Larger Flowchart with Some Styling
-```raw
+
+~~~raw
 graph TB
     sq[Square shape] --> ci((Circle shape))
 
@@ -604,11 +664,12 @@ graph TB
      classDef orange fill:#f96,stroke:#333,stroke-width:4px
      class sq,e green
      class di orange
-```
+~~~
 
 
 ### 4.4 Basic Sequence Diagram
-```raw
+
+~~~raw
 sequenceDiagram
     Alice ->> Bob: Hello Bob, how are you?
     Bob-->>John: How about you John?
@@ -618,7 +679,8 @@ sequenceDiagram
 
     Bob-->Alice: Checking with John...
     Alice->John: Yes... John, how are you?
-```
+~~~
+
 <div class="mermaid">
 sequenceDiagram;
     Alice ->> Bob: Hello Bob, how are you?;
@@ -626,13 +688,13 @@ sequenceDiagram;
     Bob--x Alice: I am good thanks!;
     Bob-x John: I am good thanks!;
     Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.;
-
     Bob-->Alice: Checking with John...
     Alice->John: Yes... John, how are you?
 </div>
 
 ### 4.5 Message to Self in Loop
-```raw
+
+~~~raw
 sequenceDiagram
     participant Alice
     participant Bob
@@ -644,7 +706,8 @@ sequenceDiagram
     John-->>Alice: Great!
     John->>Bob: How about you?
     Bob-->>John: Jolly good!
-```
+~~~
+
 <div class="mermaid">
 sequenceDiagram;
     participant Alice;
@@ -660,6 +723,8 @@ sequenceDiagram;
 </div>
 
 ## 5. References
+
 * [Mermaid Flowcharts - Basic Syntax](https://mermaidjs.github.io/#/flowchart)
 * [Mermaid Sequence diagrams](https://mermaidjs.github.io/#/sequenceDiagram)
-* [Mermaid Gant diagrams](https://mermaidjs.github.io/#/gantt)
+* [Mermaid Gantt diagrams](https://mermaidjs.github.io/#/gantt)
+* [Mermaid Live Editor](https://mermaid.live/)
