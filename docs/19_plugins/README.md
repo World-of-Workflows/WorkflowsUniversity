@@ -7,7 +7,7 @@ has_children: true
 
 # Plugins in World of Workflows
 
-Plugins are libraries of activities which can be dynamically added to World of Workflows.
+Plugins are libraries of activities which can be dynamically added to an instance of World of Workflows.
 
 These libraries must be digitally signed with the World of Workflows certificate, to ensure that malicious code does not get into customers hands, however library authors can create libraries and submit them for approval.
 
@@ -34,7 +34,7 @@ The following Plugins are available:
 - [PowerShell](powershell.md) - A Plugin that allows running of Powershell scripts from within World of Workflows
 - [OpenAI](openai.md) - A Plugin that provides access to ChatGPT. Users will need to have registered with OpenAI and will need an API Key
 
-# Plugin Developmnent
 
+## Plugin Developmnent
 
-[Plugin Development](plugin_development.md) describes getting started with developing your own plugin.  You are invited to write your own World of Workflows plugins to extend the functionality of your workflows.  
+World of Workflows is actvely creating new Plugins, so watch [this space](https://github.com/World-of-Workflows/WorkflowsUniversity/releases).  You can make your own too.  [Plugin Development](plugin_development.md) describes getting started with developing your own plugin.  You are invited to write your own World of Workflows plugins to extend the functionality of your workflows.  

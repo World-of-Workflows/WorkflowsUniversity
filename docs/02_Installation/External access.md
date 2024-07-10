@@ -1,5 +1,5 @@
 ---
-title: World of Workflows Business Edition - Authentication with Microsoft Entra ID for External users
+title: Business Edition - Authentication with Microsoft Entra ID for External users
 parent: Installation/Setup
 layout: default
 nav_order: 5

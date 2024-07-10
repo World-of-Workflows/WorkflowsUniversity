@@ -23,3 +23,5 @@ Every *Activity* in *Workflows* allows you to set the following:
 - **Description** – Use this to show other workflow developers how this activity is used and what it is for.
 
 <img src="./media/image64.png"  />
+
+See [Activity Input and Output](../24_reference/ActivityInputOutput.html) for a list of Activities

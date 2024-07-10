@@ -1,5 +1,5 @@
 ---
-title: World of Workflows Personal Edition - Windows Installation
+title: Personal Edition - Windows Installation
 parent: Installation/Setup
 layout: default
 nav_order: 1

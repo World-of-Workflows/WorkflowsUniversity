@@ -1,7 +1,7 @@
 ---
 title: Plugin Development
 layout: default
-parent: User Guide
+parent: Plugins
 nav_order: 11
 ---
 

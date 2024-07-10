@@ -1,5 +1,5 @@
 ---
-title: World of Workflows Business Edition - Azure Installation
+title: Business Edition - Azure Installation
 parent: Installation/Setup
 layout: default
 nav_order: 3
