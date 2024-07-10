@@ -48,4 +48,4 @@ Using this icon, <img style="vertical-align:middle" src="./media/image65.png" />
 `Liquid` is often simpler to use.  It also allows the creation of strings from other variables.
 
 
-
+> **Remember** World of Workflows is Case Sensitive.  Ensure you use a consistent case when referring to variable and field names.

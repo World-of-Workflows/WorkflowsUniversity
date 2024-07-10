@@ -9,11 +9,10 @@ parent: Tasks
 
 From the Dashboard, click **Tasks** or chose **Tasks** from the top Menu bar.
 
-![](2022-12-30-14-53-18.png)
+![](2024-07-10-09-52-41.png)
 
 The Task Queue will be displayed.
-
-![](2022-12-30-15-02-51.png)
+![](2024-07-10-09-53-02.png)
 
 The left hand column contains the tasks the user has chosen and is working on.
 

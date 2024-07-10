@@ -3,6 +3,7 @@ title: Starting Workflows
 layout: default
 parent: Basic Workflows
 nav_order: 10
+has_children: true
 ---
 
 # Starting Workflows
