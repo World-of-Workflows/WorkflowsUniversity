@@ -216,29 +216,29 @@ end
 Example:
 ~~~markdown
 graph TB
-    c1 --> a2
+    c1 -> a2
     subgraph one
-    a1 --> a2
+    a1 -> a2
     end
     subgraph two
-    b1 --> b2
+    b1 -> b2
     end
     subgraph three
-    c1 --> c2
+    c1 -> c2
     end
 ~~~
 <div class="mermaid">
 graph TB;
     subgraph one;
-       a1 --> a2;
+       a1 -> a2;
     end;
     subgraph two;
-      b1 --> b2;
+      b1 -> b2;
     end;
     subgraph three;
-      c1 --> c2;
+      c1 -> c2;
     end;
-    c1 --> a2;
+    c1 -> a2;
 </div>
 
 ## 2. Sequence Diagrams
