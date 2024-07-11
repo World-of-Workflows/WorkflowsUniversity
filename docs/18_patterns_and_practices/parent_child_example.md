@@ -26,14 +26,18 @@ The main workflow has these elements:
 - A ```RunWorkflow``` Activity as follows:
   - WorkflowDefinition: ```Liquid```
     ```liquid
+    {% raw %}
     {{"<STUB WORKFLOW NAME" | workflow_definition_id}}
+    {% endraw %}
     ```
   - Input - ```Liquid```
     ```liquid
+    {% raw %}
     {
-        "Variable Name":"{{Varisbles.VariableName1}}",
+        "Variable Name":"{{Variables.VariableName1}}",
         "Variable Name 2":"{{Variables.VariableName2}}"
     }
+  {% endraw %}
     ```
    - Possible Outcomes:
      - Continue
