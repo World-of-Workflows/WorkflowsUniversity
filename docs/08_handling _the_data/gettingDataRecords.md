@@ -12,7 +12,6 @@ To retrieve a specific record from the database, you can use the `ObjectInstance
 
 1. **Add the `ObjectInstanceGet` Activity:**
    - Drag and drop the `ObjectInstanceGet` activity into your workflow.
-   - Specify the `Type` from which to retrieve the record.
    - Define the ObjectId to select the record.
 
 2. **Example Configuration:**
