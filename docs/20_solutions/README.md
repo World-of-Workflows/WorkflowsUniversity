@@ -1,56 +1,60 @@
 ---
 title: Solutions
 layout: default
-nav_order: 21
+nav_order: 20
 has_children: true
 ---
 
-# Solutions
+# Solutions: Export and Import your work
+
+Any World of Workflows instance will be a collection of Types, Views, Data, Workflows and possibly Plugins.  
+
+An important feature of World of Workflows is that these are portable between World of Workflows instances.  Development is usually performed on your own copy of Personal Edition.  When the time comes to add this to your Business Edition instance you will use Solutions Export and Import.
 
 Solutions are packaged collections of Types, Views and Workflows. Using the Solutions feature of world of workflows, you can export these items and re-import them into another system.
 
 **Note:** Solutions are compressed into Zip files. Solution Authors can open the zip file and edit the files within prior to sending a solution to someone else.
 
-## Exporting Solutions
+## Creating a Solution
 
-Navigate to Admin -\> Solutions and click the Export button <img src="./media/image104.png" style="width:0.27378in;height:0.28473in" alt="A blue square with white arrow Description automatically generated" />.
+1. Navigate to `Admin` -> `Solutions` in your source instance (eg Personal Edition)  
+<img src="2024-07-11-13-50-46.png" alt="Import button graphic" style="width: 350px; height: auto; border-radius: 10px; box-shadow: 2px 2px 5px grey;" />
+2. Select `Create Solution Export`  
+<img src="2024-07-11-13-53-20.png" alt="Import button graphic" style="width: 350px; height: auto; border-radius: 10px; box-shadow: 2px 2px 5px grey;" />
+3. Enter a name (or take the default), a version if relevant, and an icon (to brand your solution) and a description to indicate the contents of your Solution.
+4. Choose the Types, Workflows and Views
+   ![](2024-07-11-14-00-34.png)
 
-Give the solution a name, version, and optional description and icon,
+5. When you select a Type, you can choose to also copy some of the data within the type.  This can be helpful when setting up a Production environment from yoru Development environment, to copy items such as the list of Statuses used in a dropdown menu
+   ![](2024-07-11-14-03-53.png)
+6. Types which reference other Types are noted in blue.  Selecting one (eg Contacts in this example wil automatically select the referenced types.  You can unselect these as appropriate.
+   ![](2024-07-11-14-05-54.png)
+7. Select any desired Workflows  
+   ![](2024-07-11-14-08-41.png)
+   Any Plugins required by your workflows will be automatically included in the solution.'
+8. Select any desired Views   
+   ![](2024-07-11-14-11-33.png)
 
-<img src="./media/image105.png" style="width:6.26806in;height:1.70972in" alt="A screenshot of a computer Description automatically generated" />
+> Note that Search text on this page is Case Sensitive
 
-Next, expand **Types, Workflows** and **Views** and select the items you want to include in the solution.
+A summary is displayed.  Use the button to export the solution
+![](2024-07-11-14-12-33.png)
+A Zip file will be created in your browser's download folder.
 
-<img src="./media/image106.png" style="width:6.26806in;height:2.70625in" alt="A screenshot of a computer Description automatically generated" />
+### Modifying a Solution
 
-When complete, click **Export Solution.**
+World of Workflows is an open, extensible environment.  This applies to Solutions as well. 
+A Solution is a carefully-crafted World of Workflows workflow.  Like any workflow, it can be altered using World of Workflows graphical interface.  
+Here is an example of the contents of a Solution:  
+![](2024-07-11-14-18-47.png)  
+You can import any of the SETUPxxx_WF.json files to modify what the workflow will do when the solution is impoerted.  This might be useful if you wanted to run a proprietary workflow once when a solution is imported.
+Note that the Utilities plugin is included in this solution.
 
-The system will download a zip file.
+## Importing a solution
 
-In this zip file are several files:
-
-- **SOLUTION_DETAILS** is a file which contains information on your solution in **JSON** format.
-
-- **SETUP_WF** is a workflow that is run when the solution in imported. It creates all the types, and views. You can modify this workflow to do anything you wish by importing it into World of Workflows, editing it and exporting it.
-
-- **The remaining files** are the workflows you wish to import.
-
-## To import a solution
-
-Navigate to Admin -\> Solutions and click the green import button <img src="./media/image107.png" style="width:0.35174in;height:0.33795in" />.
-
-Click to upload the solution or drag and drop.
-
-<img src="./media/image108.png" style="width:6.26806in;height:1.87222in" alt="A screenshot of a computer Description automatically generated" />
-
-Check the Name, Version, Icon and Description are what you expect:
-
-<img src="./media/image109.png" style="width:6.26806in;height:1.70347in" alt="A computer screen shot of a computer screen Description automatically generated" />
-
-Verify (or deselect) the types, workflows and views.
-
-<img src="./media/image110.png" style="width:6.26806in;height:3.11806in" alt="A screenshot of a computer Description automatically generated" />
-
-Finally, check whether you want to delete the setup workflow after run and click **Confirm Import Solution.**
-
-**Important:** Importing solutions is at your own risk. Solutions can contain destructive workflows so ensure you check the solution source and setup workflow before importing.
+To add a Solution to a World of Workflows instance:
+1. Navigate to `Admin` -> `Solutions`
+2. Click `Import Solution`
+3. Select the solution's .Zip file
+4. Confirm the actions before importing the solution.
+   ![](2024-07-11-14-22-23.png)
