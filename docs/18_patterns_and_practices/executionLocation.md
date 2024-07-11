@@ -14,9 +14,11 @@ When you send an HTTP Response to a browser it will often contain HTML, CSS and 
 
 ## HTTP Responses written in Liquid
 
-The Liquid processor in World of Workflows creates the text for the HTTP Response on the server and sends the full page to the browser client.  This can include data from variables, using syntax such as ``` {{Variables.Company.Title}}``` for the company Title field, or using a more complex loop to iterate through an array of data:
+The Liquid processor in World of Workflows creates the text for the HTTP Response on the server and sends the full page to the browser client.  This can include data from variables, using syntax such as  
+```{ { Variables.Company.Title } }```  for the company Title field, or using a more complex loop to iterate through an array of data:
 
 ```html
+{% raw %}
 {% assign companies = Variables.Companies %}
 <table>
   <thead>
@@ -29,14 +31,14 @@ The Liquid processor in World of Workflows creates the text for the HTTP Respons
   <tbody>
     {% for company in companies %}
     <tr>
-      <td>{{ company.Title }}</td>
-      <td>{{ company.Address }}</td>
-      <td>{{ company.Website }}</td>
+      <td> {{ company.Title }}</td>
+      <td> {{ company.Address }}</td>
+      <td> {{ company.Website }}</td>
     </tr>
     {% endfor %}
   </tbody>
 </table>
-
+{% endraw %}
 ```
 
 The variable `Companies` will have been created earlier in the workflow.  When the browser receives the HTTP Response, the table will have been composed, and the browser just displays that on the page.
@@ -44,10 +46,12 @@ The variable `Companies` will have been created earlier in the workflow.  When t
 Any `<script>` to be passed to the browser will be built the same way.  for example
 
 ```
+{% raw %}
 <script>
     const companyName = '{{Variables.Company.Title}}'
     alert (companyName)
 </script>
+{% endraw %}
 ```
 
 When this script is recveived by the client, it might look like this:
