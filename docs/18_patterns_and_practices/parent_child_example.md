@@ -1,3 +1,11 @@
+---
+title: Managing Long Running Workflows
+parent: Patterns & Practices
+layout: default
+nav_order: 11
+has_children: false
+---
+
 # Managing Long Running Workflows
 
 Essentially: a stub workflow calls the main workflow.

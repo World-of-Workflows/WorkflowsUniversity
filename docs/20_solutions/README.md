@@ -21,7 +21,7 @@ Solutions are packaged collections of Types, Views and Workflows. Using the Solu
 <img src="2024-07-11-13-50-46.png" alt="Import button graphic" style="width: 350px; height: auto; border-radius: 10px; box-shadow: 2px 2px 5px grey;" />
 2. Select `Create Solution Export`  
 <img src="2024-07-11-13-53-20.png" alt="Import button graphic" style="width: 350px; height: auto; border-radius: 10px; box-shadow: 2px 2px 5px grey;" />
-3. Enter a name (or take the default), a version if relevant, and an icon (to brand your solution) and a description to indicate the contents of your Solution.
+3. Enter a name (or take the default), a version if relevant, an icon (to brand your solution) and a description to indicate the contents of your Solution.
 4. Choose the Types, Workflows and Views
    ![](2024-07-11-14-00-34.png)
 
