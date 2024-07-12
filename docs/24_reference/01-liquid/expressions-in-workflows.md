@@ -23,7 +23,28 @@ For example, given a workflow variable called FirstName with a value of "Alice",
 ```liquid
 Hello {{ Variables.FirstName }}
 ``` 
-will result in ```Hello Alice```.
+will result in ```Hello Alice```
+
+## Using JSON variables
+If your workflow variable is a JSON object, use this syntax:
+
+```liquid
+{{ Variables.NameOfVariable | json | raw}}
+```
+
+For example:
+You have an API that returns a list of companies in JSON.
+You create an HTTP Request activity that calls the API, returning JSON.
+You can use this JavaScript to create your variable Companies:
+`activities.getCompanies.ResponseContent()`
+
+In this case you will use this syntax in your HTTP Response to use the variable `Companies`:
+```liquid
+{{ Variables.Companies | json | raw}}
+```
+
+
+
 
 ### Input
 Input values can be accessed using the following syntax:
