@@ -19,6 +19,10 @@ Now click on the workflow you wish to edit
 
 The Workflow designer will open. You can now start to edit your workflow.
 
-![](2024-07-08-09-07-09.png)
+Add activities with the ![alt text](image-6.png) button.
 
-When done, click **Publish** to publish the new version of your workflow definition. The designer saves automatically, so you don't need to worry about losing your work.
+Copy activities with the stanadard copy (`ctrl-c`) and paste (`ctrl-v`) keyboard keystrokes.
+
+![alt text](image-7.png)
+
+When done, click **Publish** to publish the new version of your workflow definition. The designer saves every change automatically, so you don't need to worry about losing your work.
