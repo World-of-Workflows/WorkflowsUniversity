@@ -12,7 +12,7 @@ Task Management activities in *Workflows* enable the creation, deletion, modific
 
 ## Task Create
 
-The Task Create activity is the central component for creating tasks in Workflows. It allows you to configure various properties for the task, including Title, Description, Severity, Priority, Due Date, Related Object ID, Data Questions, Variable Name, and Branches.  See [here](../05_tasks/task-workflows.md#) for a worked example of using `Task Create`.
+The `Task Create` activity is the central component for creating tasks in Workflows. It allows you to configure various properties for the task, including Title, Description, Severity, Priority, Due Date, Related Object ID, Data Questions, Variable Name, and Branches.  See [here](../05_tasks/task-workflows.html#) for a worked example of using `Task Create`.
 
 - **Title**: The task's title, providing a brief and informative description.
 
@@ -24,9 +24,9 @@ The Task Create activity is the central component for creating tasks in Workflow
 
 - **Due Date**: The number of days from when the task is created to when the task is due.
 
-- **Related Object ID**: A reference to a row in any *type* within the *User Configurable Database*.
+- **Related Object ID**: A reference to a row in any **Type** within the *User Configurable Database*.
 
-- **Data Questions**: Allows you to add fields from the *Type* of the *Related Object ID* and prompt the user to complete them within the task.
+- **Data Questions**: Allows you to add fields from the **Type** of the *Related Object ID* and prompt the user to complete them within the task.
 
 - **Variable Name**: Assigns the updated row to a *Variable* for further use within the workflow.
 
@@ -34,19 +34,19 @@ The Task Create activity is the central component for creating tasks in Workflow
 
 ## Task Delete
 
-The *Task Delete* activity allows you to remove a task from the system. It requires the task's unique identifier as input and permanently deletes the specified task.
+The `Task Delete` activity allows you to remove a task from the system. It requires the task's unique identifier as input and permanently deletes the specified task.
 
 ## Task Detail Create
 
-The *Task Detail Create* activity enables you to add additional information or properties to an existing task. This can be useful for providing more context, instructions, or metadata for the task. It requires the task's unique identifier as input and saves the new details to the task.
+The `Task Detail Create` activity enables you to add additional information or properties to an existing task. This can be useful for providing more context, instructions, or metadata for the task. It requires the task's unique identifier as input and saves the new details to the task.
 
 ## Task Update
 
-The *Task Update* activity allows you to modify an existing task's properties, such as its **<span class="smallcaps">title, description, severity, priority, due date,</span>** and **<span class="smallcaps">related object ID</span>**. It requires the *Task's* unique identifier as input and saves the updated properties to the *Task*.
+The `Task Update` activity allows you to modify an existing task's properties, such as its **<span class="smallcaps">title, description, severity, priority, due date,</span>** and **<span class="smallcaps">related object ID</span>**. It requires the *Task's* unique identifier as input and saves the updated properties to the *Task*.
 
 ## Task Details Read
 
-The *Task Details Read* activity retrieves the details of a task, including its **<span class="smallcaps">title, description, severity, priority, due date, related object ID,</span>** and **<span class="smallcaps">data questions</span>**. It requires the task's unique identifier as input and outputs the task details as Variables, which can be used later in the workflow.
+The `Task Details Read` activity retrieves the details of a task, including its **<span class="smallcaps">title, description, severity, priority, due date, related object ID,</span>** and **<span class="smallcaps">data questions</span>**. It requires the task's unique identifier as input and outputs the task details as *Variables*, which can be used later in the workflow.
 
 By using these Task Management activities in Workflows, you can seamlessly integrate task-related operations into your business processes, ensuring that your team stays organized and efficient. Understanding these activities will help you better design your workflows and effectively manage tasks in World of Workflows.
 

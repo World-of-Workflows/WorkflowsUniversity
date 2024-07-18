@@ -9,17 +9,17 @@ has_children: false
 
 # HTTP Activities in Workflows
 
-HTTP activities in Workflows enable seamless integration with external web services and APIs, as well as handling incoming HTTP requests within your workflows.
+**HTTP activities** in Workflows enable seamless integration with external web services and APIs, as well as handling incoming HTTP requests within your workflows.
 
-*Note: While we call these HTTP activities, they almost always run over https.*
+> *Note: While we call these HTTP activities, they almost always run over https.*
 
-This chapter will provide an overview of the three primary HTTP activities: *HTTP Endpoint, Send HTTP Request,* and *HTTP Response*, along with the *Redirect* activity.
+This chapter will provide an overview of the three primary HTTP activities: `HTTP Endpoint`, `Send HTTP Request`, and `HTTP Response`, along with the `Redirect` activity.
 
 <img src="./media/image76.png" style="width:4.53503in;height:2.35142in" />
 
 ## HTTP Endpoint
 
-The *HTTP Endpoint* activity allows you to handle incoming HTTP requests within your workflow. It supports various HTTP methods, including GET, POST, PUT, DELETE, PATCH, OPTIONS, and HEAD.
+The `HTTP Endpoint` activity allows you to handle incoming HTTP requests within your workflow. It supports various HTTP methods, including GET, POST, PUT, DELETE, PATCH, OPTIONS, and HEAD.
 
 Key features of the HTTP Endpoint activity include:
 
@@ -40,7 +40,7 @@ Key features of the HTTP Endpoint activity include:
 
 ## HTTP Response
 
-The *HTTP Response* activity allows you to send an HTTP response to an HTTP Endpoint within your workflow. It provides options for customizing the response, including the status code, headers, and content.
+The `HTTP Response` activity allows you to send an HTTP response to an HTTP Endpoint within your workflow. It provides options for customizing the response, including the status code, headers, and content.
 
 Key features of the HTTP Response activity include:
 
@@ -56,7 +56,7 @@ Key features of the HTTP Response activity include:
 
 ## Send HTTP Request
 
-The *Send HTTP Request* activity enables your workflows to interact with external web services and APIs by sending HTTP requests and processing the responses.
+The `Send HTTP Request` activity enables your workflows to interact with external web services and APIs by sending HTTP requests and processing the responses.
 
 Key features of the Send HTTP Request activity include:
 
@@ -68,7 +68,7 @@ Key features of the Send HTTP Request activity include:
 
 - **Request Body**: Provide the request body content, if applicable.
 
-- **Authorisation:** Use **<span class="smallcaps">Credential Manager</span>** to store and manage *OAuth* and other authorization credentials for secure access to external services, then select the Authorisation here.
+- **Authorisation:** Use **<span class="smallcaps">[Credential Manager](../20_solutions/sample%20solutions/AIProspector/README.html#3-create-credentials)</span>** to store and manage *OAuth* and other authorization credentials for secure access to external services, then select the Authorisation here.
 
 <img src="./media/image80.png" style="width:3.41715in;height:3.64506in" alt="A screenshot of a computer Description automatically generated with low confidence" />
 
@@ -76,7 +76,7 @@ Key features of the Send HTTP Request activity include:
 
 ## Redirect
 
-The *Redirect* activity writes an HTTP Redirect response, allowing you to redirect the client to a different URL within your workflow. This can be useful for scenarios such as user authentication or navigation between different pages in a web application.
+The `Redirect` activity writes an HTTP Redirect response, allowing you to redirect the client to a different URL within your workflow. This can be useful for scenarios such as user authentication or navigation between different pages in a web application.
 
 Key features of the Redirect activity include:
 
