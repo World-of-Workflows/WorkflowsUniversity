@@ -24,8 +24,8 @@ At the bottomn of every workflow there is a `Publish` button.  use the arrow bes
 <img src="2024-07-11-13-09-11.png" alt="Import button graphic" style="width: 250px; height: auto; border-radius: 10px; box-shadow: 2px 2px 5px grey;" />
 1. Save your worklflow to disk by Exporting it  
    This creates a `<workflowname>.json` file in your browser's downloads folder 
-2. Delete your workflow 
-   Don't worry: all your work is saved in the `<workflowname>.json` file!
+2. Delete your workflow.  
+>   Don't worry: all your work is saved in the `<workflowname>.json` file!
 3. Create a new workflow  
 <img src="2024-07-11-12-59-23.png" alt="Import button graphic" style="width: 150px; height: auto; border-radius: 10px; box-shadow: 2px 2px 5px grey;" />
    
