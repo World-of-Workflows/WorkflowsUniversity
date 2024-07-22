@@ -1,7 +1,7 @@
 @import url("search.css");
 
 h1, h2, h3, h4, h5, h6 {
-    color: #FFFFFF;
+    color: #ee0e0e;
 }
 
 .mdg-nav {
@@ -113,6 +113,6 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 20px;
   margin-top: 20px;
   margin-bottom: -27px;
-  color: #99979c;
+  color: #9c9997;
   background-color: #dbdbdb;
 }

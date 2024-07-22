@@ -25,8 +25,9 @@ This example proves a point, but you normally do not know the Instance Id when d
 
 `ObjectInstanceList` returns an array of JSON objects.  This means you need to decide how to access this data in an efficient way.
 
-If you only expect 1 result, perhaps because you have used a specific filter, you can access that result directly.  
+{: .key }
 
+If you only expect 1 result, perhaps because you have used a specific filter, you can access that result directly.  
 If you are not certain that the results will be only 1 record, you should loop through the results.  
 
 Let's examine both methods.
@@ -40,7 +41,8 @@ You can use this syntax to complete the InstanceID of `ObjectInstanceGet`:
     activities.<NameOfObjectInstanceList>.Output()[0].ObjectId
 ~~~
 
-> Note that in JavaScript the first entry of an array is the [0] entry.
+> {: .key }
+Note that in JavaScript the first entry of an array is the [0] entry.
 
 If the name you chose in your `ObjectInstanceList` is `ListContacts`:
 
