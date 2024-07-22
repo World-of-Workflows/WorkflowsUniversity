@@ -10,7 +10,13 @@ has_children: true
 
 This chapter describes how to use workflows in World of Workflows. It also discusses best practices for configuring and setting up your workflows. These best practices have been developed by the World of Workflows Customer Success team following several successful implementations with customers.
 
+
+{: .key }
+
 Workflows can be very simple, and can be very in-depth - the sky is the limit. 
+
+
+{: .key }
 
 You can write whole business applications in World of Workflows.
 

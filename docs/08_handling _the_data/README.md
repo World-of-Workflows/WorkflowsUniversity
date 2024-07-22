@@ -29,7 +29,7 @@ By following these steps and best practices, you can effectively work with data 
 ## Worked example
 
 Go to `Admin` -> `Workflows` -> `Create Workflow`  
-Click the arrow beside Publish and import this workflow file:  <a href="./working-with-data-examples.json" download>Example workflow file</a>
+Click the arrow beside Publish and `import` this workflow file:  <a href="./working-with-data-examples.json" download>Example workflow file</a>
 
 <img src="2024-07-11-13-09-11.png" alt="Import button graphic" style="width: 250px; height: auto; border-radius: 10px; box-shadow: 2px 2px 5px grey;" />
 

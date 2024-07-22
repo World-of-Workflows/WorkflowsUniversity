@@ -2,8 +2,8 @@
 title: HTTP Responses and the execution location
 parent: Patterns & Practices
 layout: default
-nav_order: 3
-has_children: flase
+nav_order: 15
+has_children: false
 ---
 
 # HTTP Responses and the execution location
@@ -173,8 +173,18 @@ document.body.innerHTML = generateCompanyTable(companies);
 `
 ```
 
-We added a backtick (`) at the beginning and end of the JavaScript, and then changed this line so that it executes on the server before passing the resulting data to the client browser.
+{: .key }
 
-```JavaScript
+We added a backtick (`) at the beginning and end of the JavaScript, and then changed this line so that it executes on the server before passing the resulting data to the client browser.
+```
     var companies = `+getVariable("Companies")+`;
+```
+
+In essence, follow this format to use JavaScript to display your `HTTP Response`  
+
+```
+`JavaScript_that_will_execute_in_the_client_browser`+  
+JavaScript_that_executes_on_the_server  
++`more_JavaScript_that_will_execute_in_the_client_browser`
+
 ```

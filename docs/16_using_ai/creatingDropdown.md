@@ -9,7 +9,13 @@ has_children: false
 
 ## Creating a dropdown HTML field 
 This example shows how to ask ChatGPT for some Liquid code to use within a Liquid HTML page.
-As you know from the Liquid reference, you can access a Variable from your workflow using ```{{Variables.<VariableName>}}```
+As you know from the Liquid reference, you can access a Variable from your workflow using 
+```
+{%raw%}{{Variables.<VariableName>}}{%endraw%}
+```
+
+{: .key }
+Ask ChatGPT to build you a dropdown element for your HTML form, telling it to use your variable as the data source:
 
 ![](2024-07-06-16-25-11.png)
 

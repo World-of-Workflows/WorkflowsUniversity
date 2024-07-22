@@ -5,11 +5,13 @@ theme: just-the-docs
 url: https://world-of-workflows.github.io/WorkflowsUniversity/
 
 aux_links:
-  Template Repository: https://github.com/world-of-workflows/WorkflowsUniversity
+#  Template Repository: https://github.com/world-of-workflows/WorkflowsUniversity
 
 # Enable or disable the site search
 # Supports true (default) or false
 search_enabled: true
+
+enable_copy_code_button: true
 
 search:
   # Split pages into sections that can be searched individually
@@ -33,7 +35,7 @@ search:
   rel_url: true
   # Enable or disable the search button that appears in the bottom right corner of every page
   # Supports true or false (default)
-  button: false
+  button: true
 
 mermaid:
   # Version of mermaid library
@@ -56,7 +58,7 @@ last_edit_timestamp: true # show or hide edit time - page must have `last_modifi
 last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
 
 # Footer "Edit this page on GitHub" link text
-gh_edit_link: true # show or hide edit this page link
+gh_edit_link: false # show or hide edit this page link
 gh_edit_link_text: "Edit this page on GitHub."
 gh_edit_repository: "https://github.com/world-of-workflows/WorkflowsUniversity" # the github URL for your repo
 gh_edit_branch: "main" # the branch that your docs is served from
@@ -67,6 +69,10 @@ callouts:
   warning:
     title: warning
     color: yellow
+
+  key:
+    title: Key Point
+    color: purple
 
 ga_tracking: G-V6MVZNN4NV
 

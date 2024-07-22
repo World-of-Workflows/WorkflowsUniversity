@@ -11,7 +11,9 @@ has_children: false
 
 The `Run Workflow` activity allows chaining between workflows.  You can think of this like calling a function or subroutine if you are familiar with some programming languages.
 
-> We refer to the *calling* workflow as the **Parent**.  The *called* workflow is referred to as the **Child**.
+
+{: .key }
+We refer to the *calling* workflow as the **Parent**.  The *called* workflow is referred to as the **Child**.
 
 To identify the child workflow, we use the **Name** parameter of the Child Workflow.  
 ![cog](image-2.png) -->> ![alt text](image-3.png)
@@ -80,7 +82,9 @@ To store data outside of the context of a workflow we use the [User Configurable
 
 Use [List Object Instances](..\12_workflow_activities/04_data/README.html#list-object-instances), [Get Object Instance](..\12_workflow_activities/04_data/README.html#get-object-instance), [Update Object Instance](..\12_workflow_activities/04_data/README.html#update-object-instance), [Delete Object Instance](..\12_workflow_activities/04_data/README.html#delete-object-instance) to interact with the User Configurable Database.
 
-> **Remember**: `Get Object Instance` accesses the data record in the database at that moment in time.  You will then treat that data as a `variable` in your workflow. If your workflow then changes the `variable` you might want to write that change back to the database, using `Update Object Instance`.
+
+{: .key }
+`Get Object Instance` accesses the data record in the database at that moment in time.  You will then treat that data as a `variable` in your workflow. If your workflow then changes the `variable` you might want to write that change back to the database, using `Update Object Instance`.
 
 For more details, see [Working with Data](..\08_handling%20_the_data/README.html)
 

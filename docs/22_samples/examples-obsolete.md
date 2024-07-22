@@ -1,5 +1,5 @@
 ---
-title: Examples
+xxtitle: Examples
 layout: default
 parent: Samples
 nav_order: 13

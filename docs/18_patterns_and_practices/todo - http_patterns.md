@@ -1,5 +1,5 @@
 ---
-XXtitle: Other Patterns and Practices
+xxtitle: pull out some useful Patterns and Practices
 parent: Patterns & Practices
 layout: default
 nav_order: 4

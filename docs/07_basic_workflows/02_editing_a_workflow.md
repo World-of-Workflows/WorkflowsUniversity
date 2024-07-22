@@ -25,4 +25,6 @@ Copy activities with the stanadard copy (`ctrl-c`) and paste (`ctrl-v`) keyboard
 
 ![alt text](image-7.png)
 
+{: .key }
+
 When done, click **Publish** to publish the new version of your workflow definition. The designer saves every change automatically, so you don't need to worry about losing your work.
