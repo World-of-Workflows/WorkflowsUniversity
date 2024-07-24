@@ -1,8 +1,8 @@
 ---
-title: Access Token Refresh
+title: Refreshing an Access Token
 parent: Samples
 layout: default
-nav_order: 23
+nav_order: 1
 has_children: false
 ---
 
@@ -28,7 +28,7 @@ The architecture for managing a changing access token involves:
 2. Checking if it is expired, and if so getting a new token and storing it  
    - There will be a credential required to obtain the access token from an authentication server, and these credentials need to be stored as well. 
 
-## Build your getChangingAccessToken workflow
+## Build your `getChangingAccessToken` workflow
 
 Here is a <a href="./get-changing-access-token-authentication.json" download>sample workflow </a> that can be imported and tailored to your needs.  
 
@@ -154,3 +154,16 @@ The "CallMyAPI" workflow interacts with the "GetChangingAccessTokenAuthenticatio
 This design ensures that the API call is always made with a valid access token, refreshing the token as necessary and handling any errors appropriately. The interaction between the two workflows is crucial for maintaining the validity of the access token and ensuring successful API calls.
 
 ## Using an access token to secure your own HTTP APIs
+
+An access token can be passed between your own HTTP workflows.  This ensures that the HTTP endpoint will be secure.
+
+### Setting up the calling HTTP Request
+
+Add your access token like this to the HTTP Request:
+![alt text](image-1.png)
+
+### Setting up the HTTP Endpoint
+
+Create the same access_token variable (with the same value) in your workflow with the HTTP Endpoint, and set it like this:
+![alt text](image-2.png)
+
