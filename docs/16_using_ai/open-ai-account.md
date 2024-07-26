@@ -11,7 +11,7 @@ OpenAI has several licencing models, which are subject to change.  To use it eff
 
 > *Note: this is a 3rd party website and its processes and screenshots are subject to change*
 
-1. Navigate to https://platform.openai.com/docs/overview and click **Sign Up**  
+1. Navigate to [platform.openai.com](https://platform.openai.com/docs/overview){:target="_blank"} and click **Sign Up**  
    ![Open AI Login](2023-03-06-07-53-48.png)
 2. Enter your email address and click **Continue**  
    ![Enter Password](2023-03-06-07-54-42.png)
@@ -26,3 +26,12 @@ OpenAI has several licencing models, which are subject to change.  To use it eff
    ![Questions](2023-03-06-08-00-19.png)
 9. Congratulations, you have an OpenAI Account.  
    ![Open AI HomePage](2023-03-06-08-01-00.png)
+
+
+You can now use ChatGPT interactively.
+
+## API access
+
+In order to use the OpenAPI plugin, you will also need a ChatGPT API Key. (These are now called Project Keys, with more granular control over your resources).
+
+Navigate to [api-keys](https://platform.openai.com/api-keys){:target="_blank"} to create a key.  Use it [here](../19_plugins//OpenAIPlugin.html).
