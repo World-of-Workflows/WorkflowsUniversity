@@ -1,0 +1,71 @@
+"Object Id","Key","Data1","Data2","UserModifyable","OriginalVersion","Created","Modified","ModificationReason","Version"
+"887","WFDocumentorChatCredentialName","My ChatGPT Creds","","","","2024-07-26T04:53:03.2059077Z","2024-07-26T04:53:03.4619106Z","Merged new current state.","1"
+"886","WFDocumentorHost","https://yourhost.azurewebsites.net/","","","","2024-07-26T04:35:07.9227095Z","2024-07-26T04:35:08.2815873Z","Merged new current state.","1"
+"885","WFDocumentorPreMermaidHeader","","<meta charset=""UTF-8"">
+<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+<title>Mermaid Diagrams</title>
+<style>
+    body {
+        max-width: 100%;
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+</style>
+<script type=""module"">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+</script>
+<script>
+document.addEventListener(""DOMContentLoaded"", function() {
+    document.querySelectorAll('code').forEach((block) => {
+        const pre = block.parentElement;
+        const mermaidContainer = document.createElement('div');
+        mermaidContainer.classList.add('mermaid');
+        mermaidContainer.innerHTML = block.textContent;
+        pre.parentElement.replaceChild(mermaidContainer, pre);
+    });
+    
+});
+</script>
+
+
+","True","","2024-07-17T02:48:47.7032923Z","2024-07-17T04:47:26.7106722Z","Overwrote current state.","5"
+"884","WFDocumentorOutputLocation","/data/docs","","True","","2024-07-16T05:33:53.4099596Z","2024-07-16T05:33:53.7474267Z","Merged new current state.","1"
+"881","WFDocumentorSystemPromptAnalysis","You are a business analyst with World of Workflows.  you understand Elsa workflows.  You always produce output in markdown.  Do not include a mermaid diagram.  Do not include a conclusion paragraph.
+
+Do include: 
+1. 2 paragraphs to describe what the workflow is designed to achieve.  
+2: a table with the sequence flow, using activity names and the purpose, 
+3: a table of Workflow Activities showing displayName , properties.values and the purpose of any JavaScript.
+4: a table of variables and how they are used.  check for the setVariable and getVariable commands in any JavaScript and include these in this table
+5: a table of javascript functions and what calls them. ","","","","2024-07-16T02:06:44.9106177Z","2024-07-16T02:30:24.0879047Z","Overwrote current state.","4"
+"883","WFDocumentorStyle","h1, h2, h3, h4, h5, h6 {
+        font-size: larger;
+        text-decoration: underline;
+        font-weight: bold;
+        background-color: lightsteelblue;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+    p {
+       padding-block: 20px;
+     } 
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 10px;
+        border: 1px solid #cbd5e0; /* Tailwind's border-gray-300 */
+    }
+    thead {
+        background-color: #aeb7c1; /* Tailwind's bg-gray-300 */
+    }
+    tbody tr:nth-child(even) {
+        background-color: #edf2f7; /* Tailwind's bg-gray-200 */
+    }
+    tbody tr:nth-child(odd) {
+        background-color: #ffffff; /* Tailwind's bg-white */
+    }","","","","2024-07-16T02:06:45.3567803Z","2024-07-16T02:11:04.6745346Z","Overwrote current state.","2"
+"882","WFDocumentorSystemPromptMermaid","You are a skilled business analyst with World of Workflows. respond with only a mermaid diagram. be careful that it is correct","","","","2024-07-16T02:06:45.1059339Z","2024-07-16T02:06:45.2343631Z","Merged new current state.","1"
