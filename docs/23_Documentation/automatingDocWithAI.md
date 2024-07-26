@@ -37,3 +37,14 @@ See [here](./automatingDocCredentials.html) for details
    - WFDocumentorHost => Your fully-qualified host name, such as `https://wowcrm.worldofworkflows.com`
    - WFDocumentorOutputLocation => where you want the intermediate markdown files created on your server.  eg `/data/docs`
 
+## Run the workflow
+
+This workflow demonstrates starting the workflow by HTTP call.
+You will run it via 
+https://yourhost.azurewebsites.net/documentWorkfow  
+or   
+https://localhost:7063/documentWorkfow
+
+This will use the 'single' functionality of the workflow.
+
+You can also include a url parameter `/?action=multi` to work on all of the workflows in your instance.

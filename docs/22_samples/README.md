@@ -11,10 +11,17 @@ has_children: true
 
 - HTTP requests, 
 - Open AI, 
+- multiple triggers
 - Saving files, 
 - Downloading files, 
 - Credentials, 
 - Variables from Settings Type
+- Web UI features such as
+  - checkboxes
+  - submitting on change 
+  - submitting on button press 
+  - Tailwinds CSS 
+
 
 
 [Refreshing an Access Token](./accessToken.html) show how to use these concepts:
