@@ -1,3 +1,10 @@
+---
+title: Azure Administration (WIP)
+layout: default
+parent: Plugins
+nav_order: 8
+---
+
 # Azure Administration
 This plugin library provides activities for working with Azure Resource Group.s
 
