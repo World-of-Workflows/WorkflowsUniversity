@@ -88,8 +88,8 @@ This activity allows an image to use used to guide ChatGPT.  The image must be a
 
 {: .key }
 If you want to use your own World of Workflows server to host the image, you will create another workflow to 'serve' that image.  
-  
-For example, your workflow would be run via an HTTP Endpoint, answering to '/getImage?id=1234' or 'getImage?name=flyingPig'.  The workflow would use the ReadFile activity to get the file from disk (the output is a byte array) which is then sent using the `Http Response` activity.  The `Content` would be the output from the ReadFile activity.  Set the `Content-Type` to the appropriate MIME type (image/png, application/pdf, etc.).
+
+> For example, your workflow would be run via an HTTP Endpoint, answering to '/getImage?id=1234' or 'getImage?name=flyingPig'.  The workflow would use the ReadFile activity to get the file from disk (the output is a byte array) which is then sent using the `Http Response` activity.  The `Content` would be the output from the ReadFile activity.  Set the `Content-Type` to the appropriate MIME type (image/png, application/pdf, etc.).
 
 
 [Fine tuning example jsonl](../finetuning/wow16.jsonl){:target="_blank"}
