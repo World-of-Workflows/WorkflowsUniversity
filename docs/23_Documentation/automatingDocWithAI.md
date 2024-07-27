@@ -25,7 +25,7 @@ This sample workflow uses these [Plugins](../19_plugins/README.md)
 Additionally, you need 
 - Credentials to your World of Workflows instance  
 See [here](./automatingDocCredentials.html) for details
-- Credentials for ChatGPT
+- [Credentials for ChatGPT](../19_plugins/OpenAIPluginAPIKey.html)
 - several  <a href="./Settings-AutomatedDocumentor.csv" download>Settings </a> created
 
 ## Implement the sample workflow
