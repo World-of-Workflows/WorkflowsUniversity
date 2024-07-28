@@ -1,8 +1,9 @@
 ---
 title: Reporting
 layout: default
+parent: Getting Started
 nav_order: 22
-has_children: true
+has_children: false
 ---
 
 # Reporting in World of Workflows

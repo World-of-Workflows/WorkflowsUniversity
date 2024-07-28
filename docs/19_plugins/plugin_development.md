@@ -2,6 +2,7 @@
 title: Plugin Development
 layout: default
 parent: Plugins
+grand_parent: Getting Started
 nav_order: 11
 ---
 

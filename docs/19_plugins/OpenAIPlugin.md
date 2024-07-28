@@ -2,6 +2,7 @@
 title: OpenAI Plugin
 layout: default
 parent: Plugins
+grand_parent: Getting Started
 nav_order: 8
 
 has_children: true

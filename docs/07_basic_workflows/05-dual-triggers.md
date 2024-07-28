@@ -1,7 +1,8 @@
 ---
 title: Dual Triggers
 layout: default
-parent: Basic Workflows
+parent: Building Workflows
+grand_parent: Beginner's Guide to Workflows
 nav_order: 15
 ---
 

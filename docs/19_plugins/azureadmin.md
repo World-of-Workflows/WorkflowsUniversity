@@ -2,6 +2,7 @@
 title: Azure Administration (WIP)
 layout: default
 parent: Plugins
+grand_parent: Getting Started
 nav_order: 8
 ---
 

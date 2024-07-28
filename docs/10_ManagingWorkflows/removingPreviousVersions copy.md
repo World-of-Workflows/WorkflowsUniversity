@@ -1,6 +1,7 @@
 ---
 title: Removing Previous Versions of a workflow
 parent: Managing Workflows
+grand_parent: Beginner's Guide to Workflows
 layout: default
 nav_order: 5
 has_children: false

@@ -2,7 +2,7 @@
 title: Simple Form
 layout: default
 nav_order: 1
-parent: Custom HTML and Forms
+parent: Web UI
 has_children: false
 ---
 
@@ -203,11 +203,11 @@ If we exampine the following line in our HTML, we can see the text ```<form acti
 
 ## Testing our Form
 
-1. Navigate to https://localhost:7063/contactus
+1. Navigate to https://localhost:7063/contactus  
    ![Contact us](image-12.png)
-2. Enter your details and click **Submit**
+2. Enter your details and click **Submit**  
    ![Submitted](image-13.png)
 3. Navigate to Types in World of Workflows (**Admin --> Types**)
-4. Click **Lead**
+4. Click **Lead**  
    ![Leads List](image-14.png)
-5. You can now see the new lead in the system.
+5. You can now see the new lead in the system.  

@@ -1,3 +1,9 @@
+---
+title: Register an Office 365 Application
+grand_parent: Patterns & Practices
+parent: Sample Workflows
+layout: default
+---
 # Register an Office 365 Application
 
 > **Note:** These steps need to be performed by an administrator of your office 365 environment. If you are not an administrator, send this document to your administrator and ask for the table below to be filled in:

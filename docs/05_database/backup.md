@@ -1,6 +1,7 @@
 ---
 title: Setting up database backups
 parent: User Configurable Database
+grand_parent: Getting Started
 layout: default
 nav_order: 15
 has_children: false

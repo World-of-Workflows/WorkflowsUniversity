@@ -1,8 +1,8 @@
 ---
 title: OpenAI API Keys
-parent: OpenAI Plugin
 layout: default
-grand_parent: Plugins
+parent: Plugins
+grand_parent: Getting Started
 nav_order: 8
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Calling other workflows
-parent: Basic Workflows
+parent: Building Workflows
+grand_parent: Beginner's Guide to Workflows
 layout: default
 nav_order: 15
 has_children: false

@@ -1,6 +1,7 @@
 ---
 title: Refreshing an Access Token
-parent: Samples
+parent: Sample Workflows
+grand_parent: Patterns & Practices
 layout: default
 nav_order: 1
 has_children: false

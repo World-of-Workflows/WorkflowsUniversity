@@ -1,8 +1,8 @@
 ---
 title: Data Instance based workflows example
 layout: default
-parent: Starting Workflows
-grand_parent: Basic Workflows
+parent: Building Workflows
+grand_parent: Beginner's Guide to Workflows
 ---
 
 # Data Instance based workflows example

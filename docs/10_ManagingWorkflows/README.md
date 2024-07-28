@@ -1,7 +1,8 @@
 ---
 title: Managing Workflows
+parent: Beginner's Guide to Workflows
 layout: default
-nav_order: 10
+nav_order: 130
 has_children: true
 ---
 

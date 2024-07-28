@@ -1,7 +1,8 @@
 ---
 title: Pass data to a Workflow
 layout: default
-parent: Basic Workflows
+parent: Building Workflows
+grand_parent: Beginner's Guide to Workflows
 nav_order: 20
 ---
 # Pass data to a Workflow

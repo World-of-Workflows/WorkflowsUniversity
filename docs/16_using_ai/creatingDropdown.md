@@ -1,6 +1,6 @@
 ---
 title: Creating a dynamic dropdown
-parent: Using AI to help
+parent: AI in World of Workflows
 layout: default
 nav_order: 2
 has_children: false

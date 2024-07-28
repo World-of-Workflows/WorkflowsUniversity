@@ -1,6 +1,7 @@
 ---
 title: Copying Workflows between instances
 parent: Managing Workflows
+grand_parent: Beginner's Guide to Workflows
 layout: default
 nav_order: 10
 has_children: false
