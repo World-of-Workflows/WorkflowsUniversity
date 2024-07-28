@@ -121,7 +121,7 @@ Now change the ```selectTierObjectId``` in the HTTP Response to use this Tiers v
 Replace this:
 ![](2024-07-07-15-04-16.png)
 with this Liquid. The `| raw ` filter removes the html formattting.
-![](![](2024-07-07-15-05-10.png).png)
+![](2024-07-07-15-05-10-1.png)
 
 Test your work using https://localhost:7063/ThreeFieldsTest
 
