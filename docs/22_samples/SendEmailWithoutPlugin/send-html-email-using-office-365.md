@@ -1,8 +1,17 @@
+---
+title: Send html email using Office 365
+parent: Sample Workflows
+grand_parent: Patterns & Practices
+layout: default
+nav_order: 10
+has_children: false
+---
+
 # Send html email using Office 365
 
-World of Workflows can easly send HTML Email using Office 365 with a simple workflow, as follows:
+World of Workflows can easily send HTML Email using Office 365 with a simple workflow, as follows:
 
-*Please esure you have established Office 365 credentials. See [here](../solutions/AIProspector/register-office365-application.md)*
+*Please esure you have established Office 365 credentials. See [here](../../20_solutions/sample solutions/AIProspector/register-office365-application.html)*
 
 ## Step 1:
 > Activity: **SetVariable**

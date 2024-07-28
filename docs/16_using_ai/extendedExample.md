@@ -1,7 +1,7 @@
 ---
 title: use AI to write code to work with your data
 parent: Website example - upload a CSV file
-grand_parent: Using AI to help
+grand_parent: AI in World of Workflows
 layout: default
 nav_order: 4
 has_children: false

@@ -1,9 +1,9 @@
 ---
 title: Sample 'Thank you' page
-parent: Custom HTML and Forms
+parent: Web UI
 layout: default
 nav_order: 16
-has_children: true
+has_children: false
 ---
 # Thank you page
 

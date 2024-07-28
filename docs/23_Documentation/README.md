@@ -1,7 +1,7 @@
 ---
-title: Documentor
+title: Self-writing Documentation
 layout: default
-nav_order: 10
+nav_order: 15
 has_children: true
 ---
 
@@ -10,7 +10,8 @@ has_children: true
 World of Workflows includes comprehensive documentation features that help you maintain an organized and well-documented system. By automatically generating crucial documentation such as data diagrams, data dictionaries, views dictionaries, and detailed workflow information, World of Workflows ensures that your team can easily understand and manage your processes.
 
 This chapter will cover the key aspects of documentation in World of Workflows.  You will find a link to the Documentor in the `Admin` page of your instance.
-![alt text](image.png)
+
+![alt text](image-11.png)
 
 
 ## Data (ERD) Diagram

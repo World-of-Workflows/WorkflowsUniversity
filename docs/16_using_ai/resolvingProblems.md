@@ -1,6 +1,6 @@
 ---
 title: Resolving logic and syntax problems
-parent: Using AI to help
+parent: AI in World of Workflows
 layout: default
 nav_order: 3
 has_children: false

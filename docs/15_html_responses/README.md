@@ -1,13 +1,13 @@
 ---
-title: Custom HTML and Forms
+title: Web UI
 layout: default
 nav_order: 16
 has_children: true
 ---
 
-# Custom HTML and Forms
+# Web User Interface, Custom HTML and Forms
 
-World of Workflows gives us, as you would have seen, a significant number of tools to view and edit data. However, we have found it very common that a custom user interface is required, whether this be a form for the public to complete, to custom and interactive interfaces, World of Workflows is capable of this too.
+World of Workflows gives us tools to view and edit data. However, we have found it very common that a custom user interface is required, whether this be a form for the public to complete, to custom and interactive interfaces, World of Workflows is capable of this too.
 
 Using the HTTP activities, one can design interfaces to do whatever you want.
 
@@ -17,7 +17,7 @@ Examine the following workflow:
 
 ![SecureNav](image.png)
 
-## Benefits of Using This Method to Create Custom UI
+## Benefits of Using This Method to Create a Custom Web UI
 
 1. **Seamless Integration**: Using workflows to generate custom UI elements allows seamless integration with backend processes. The workflows can handle business logic and data processing while dynamically generating the necessary UI.
 

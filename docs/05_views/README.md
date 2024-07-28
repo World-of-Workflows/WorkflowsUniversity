@@ -1,8 +1,9 @@
 ---
 title: Views
+parent: Getting Started
 layout: default
 nav_order: 6.5
-has_children: true
+has_children: false
 ---
 # Views
 

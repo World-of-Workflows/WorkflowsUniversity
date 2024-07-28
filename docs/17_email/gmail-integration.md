@@ -1,6 +1,7 @@
 ---
 title: GMAIL Integration
 parent: Email
+grand_parent: Getting Started
 layout: default
 nav_order: 18
 has_children: false
@@ -9,7 +10,7 @@ has_children: false
 # Gmail Integration
 
 ## Overview
-Workflows contains a system to send emails witghout using any Plugiuns or HTTP calls. To do this it needs a compatible email server and the appropriate configuration. This document describes how to configure Workflows to send emails via gmail.
+Workflows contains a system to send emails without using any Plugins or HTTP calls. To do this it needs a compatible email server and the appropriate configuration. This document describes how to configure Workflows to send emails via gmail.
 
 ## 1. Get an Application Password
 To send emails via gmail, you need to get an application password. This is a password that is specific to the application you are using. This is required because gmail has a security feature that prevents applications from sending emails. To get an application password, follow these steps:

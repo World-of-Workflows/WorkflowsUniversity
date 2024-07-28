@@ -1,6 +1,7 @@
 ---
 title: Accessing data
-parent: Basic Workflows
+parent: Building Workflows
+grand_parent: Beginner's Guide to Workflows
 layout: default
 nav_order: 20
 has_children: false

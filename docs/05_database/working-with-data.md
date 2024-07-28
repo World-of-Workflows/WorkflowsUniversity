@@ -1,6 +1,7 @@
 ---
 title: Adding and Editing Data
 parent: User Configurable Database
+grand_parent: Getting Started
 layout: default
 nav_order: 4
 ---

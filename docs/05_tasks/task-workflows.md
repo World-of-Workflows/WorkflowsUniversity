@@ -3,6 +3,7 @@ title: Tasks in Workflows
 layout: default
 nav_order: 5
 parent: Tasks
+grand_parent: Getting Started
 ---
 
 # Tasks in Workflows

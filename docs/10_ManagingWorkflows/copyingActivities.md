@@ -1,6 +1,7 @@
 ---
 title: Selecting and Copying Activities
 parent: Managing Workflows
+grand_parent: Beginner's Guide to Workflows
 layout: default
 nav_order: 1
 has_children: false

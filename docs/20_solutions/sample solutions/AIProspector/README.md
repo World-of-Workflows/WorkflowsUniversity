@@ -1,7 +1,7 @@
 ---
 title: AI Prospector
 parent: Sample Solutions
-grand_parent: Solutions
+grand_parent: Getting Started
 layout: default
 ---
 # AI prospector

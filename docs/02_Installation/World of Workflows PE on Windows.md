@@ -20,3 +20,5 @@ has_children: false
 
 
 **World of Workflows PE (Windows Installation)** is complete
+
+To run World of Workflows, go to [https://localhost:7063/admin](https://localhost:7063/admin){:target="_blank"}

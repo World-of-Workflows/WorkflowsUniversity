@@ -1,6 +1,7 @@
 ---
 title: Importing and exporting data
 parent: User Configurable Database
+grand_parent: Getting Started
 layout: default
 nav_order: 6
 ---

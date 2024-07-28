@@ -1,6 +1,7 @@
 ---
 title: User Configurable Database
 layout: default
+parent: Getting Started
 nav_order: 6
 has_children: true
 ---

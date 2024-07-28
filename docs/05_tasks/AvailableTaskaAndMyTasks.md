@@ -3,6 +3,7 @@ title: Available Tasks and My Tasks
 layout: default
 nav_order: 2
 parent: Tasks
+grand_parent: Getting Started
 ---
 
 # Opening the task Pane

@@ -1,6 +1,7 @@
 ---
 title: Creating and Managing Tables
 parent: User Configurable Database
+grand_parent: Getting Started
 layout: default
 nav_order: 1
 ---

@@ -1,7 +1,8 @@
 ---
-title: Basic Workflows
+title: Building Workflows
+parent: Beginner's Guide to Workflows
 layout: default
-nav_order: 8
+nav_order: 38
 has_children: true
 ---
 

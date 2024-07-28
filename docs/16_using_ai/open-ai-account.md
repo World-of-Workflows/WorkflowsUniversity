@@ -1,6 +1,6 @@
 ---
 title: Sign up for OpenAI
-parent: Using AI to help
+parent: AI in World of Workflows
 layout: default
 nav_order: 1
 has_children: false
