@@ -17,12 +17,11 @@ This section describes the differences between the `Personal Edition` and the `B
 | Feature | Personal Edition | Business Edition |  
 | --- | --- | --- | --- |  
 | SQLLite Support | Yes | Yes |   
-| SQL Server Support | - | Yes |   
-| Azure SQL Server Support | - | Yes |   
-| Local Installation | Yes | - |   
+| SQL Server Support | - | - |   
+| Azure SQL Server Support | - | - |   
+| Local Installation | Yes | Yes |   
 | Users | - | Yes |   
 | Groups | - | Yes |   
-| Capabilities | - | Yes |   
 | Single Sign On | - | Yes |  
 | Azure Active Directory | - | Yes |  
 | Tasks | Yes | Yes |   
@@ -44,11 +43,10 @@ This section describes the differences between the `Personal Edition` and the `B
 | Feature | Personal Edition | Business Edition |   
 | --- | --- | --- | --- |   
 | Compensation | Yes | Yes |   
-| Console | Yes | - |  
+| Console | Yes | Yes |  
 | Flow Control | Yes | Yes |   
 | Data | Yes | Yes |   
-| Users | - | Yes |   
-| Capabilities | - | Yes |   
+| Users | - | Yes |      
 | Email | Yes | Yes |   
 | File | Yes | Yes |   
 | HTTP | Yes | Yes |   
@@ -62,4 +60,4 @@ This section describes the differences between the `Personal Edition` and the `B
 | Timers | Yes | Yes |   
 | Views | Yes | Yes |   
 
-> Note in Personal Edition, the database is stored in ```C:\ProgramData\WorldOfWorkflows``` and backups are stored in ```C:\ProgramData\WorldOfWorkflowsPE\Backup```.
+> Note in Personal Edition, the database is stored in ```C:\ProgramData\WorldOfWorkflows``` and backups are stored in ```C:\ProgramData\WorldOfWorkflows\Backup```.
