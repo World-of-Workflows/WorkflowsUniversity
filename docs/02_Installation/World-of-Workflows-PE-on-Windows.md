@@ -12,13 +12,13 @@ has_children: false
 2. Download the Windows Version of PE for either ARM or X64
    >There is an ARM version to run on ARM processors, and x64 version to run on Intel processors.  The ARM versin will also run well in a VM on MacOS on an M1 or later porocessor.
 3. Run the downloaded application
-   ![WOW PE Installer Screen 1](image.png)
+   ![WOW PE Installer Screen 1](../images/02_image.png)
 4. Click **Next >**
-   ![WOW PE Installer Screen 2](image-1.png)
+   ![WOW PE Installer Screen 2](../images/02_image-1.png)
 5. Accept or change the folder and click **Next >**
-   ![WOW PE Installer Screen 3](image-2.png)
+   ![WOW PE Installer Screen 3](../images/02_image-2.png)
 4. Click **Install**
-   ![WOW PE Installer Screen 4](image-3.png)
+   ![WOW PE Installer Screen 4](../images/02_image-3.png)
 6. Click **Finish**
 
 
