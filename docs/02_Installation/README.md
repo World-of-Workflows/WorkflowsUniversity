@@ -6,13 +6,4 @@ has_children: true
 ---
 
 # Installation/Setup
-This document contains instructions on how to install and configure World of Workflows on your machine.
-
-
-
-## World of Workflows Personal Edition
-
-### Apple M1 or M2 Installation
-
-*Coming Soon*
-
+This section contains instructions on how to install and configure World of Workflows on your machine.
