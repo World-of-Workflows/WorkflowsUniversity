@@ -7,3 +7,7 @@ pandoc -t markdown -o 01_about.md ./docs/01_about/readme.md ./docs/01_about/vers
 
 # Installation
 pandoc -t markdown -o 02_Installation.md ./docs/02_Installation/README.md './docs/02_Installation/World of Workflows PE on Windows.md'
+
+# Navigation
+
+# GettingStarted

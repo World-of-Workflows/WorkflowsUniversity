@@ -13,4 +13,4 @@ In order to support high performance and high avaiability scenarios, World of Wo
 
 Configuration is performed by installing and configuring four additional components and altering the world of workflows configuration file.
 
-Contact your account manager or support@worldofworkflows.com for assistance sett8ing up clusters.
+Contact your account manager or support@worldofworkflows.com for assistance setting up clusters.
