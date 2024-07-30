@@ -72,3 +72,32 @@ Response Content Parser: ```Auto Select```
 Supported Status Codes: ```202```
 
 On the ```Advanced``` tab, select the M365 credentials under ```Authorization```
+
+## Other ideas to set the content
+
+Here is another example of setting a variable to hold the data to be sent in the email.
+
+First, we set up our standard Setting to contain Key and Data1 fields. The `Key` will be to 'EmailBody', the text we want in the email will go in `Data1`.
+
+![alt text](image-6.png)
+
+
+Then we get the data from the database:
+![alt text](image-3.png)
+
+![alt text](image-4.png)
+
+and add it to a variable.
+![alt text](image-5.png)
+
+{: .key }
+Note the use of `.Output[0]` in the formula.  `ObjectInstanceList` returns an array of entries.  The first entry will be `[0]`, the 2nd will be `[1]` and so on.  We know that we will have only one entry returned, so we don't need to loop through the results: we can confidently access the Data1 field from the first entry.
+
+We can use replaceable values in the `Data1` field and substitute these using this type of JavaScript:
+![alt text](image.png)
+
+This example uses a JavaScript activity and the `setVariable` command.  It can also be achieved using a **SetVariable** activity:
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
