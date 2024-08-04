@@ -64,7 +64,7 @@ Models a looping construct that is similar to C#'s `for` statement where the loo
 | Iterate 	| Scheduled for each iteration of the loop. When an iteration ends, the activity will automatically determine if another iteration should be scheduled. 	|
 | Done    	| Scheduled when the loop has finished.                                                                                                                    	|
 
-The scoped variable `CurrentValue` is set by the activity in each iteration to stor the iteration index and can be referred by activities in the scope of the Iterate outcome.
+The scoped variable `Output` is set by the activity in each iteration to store the iteration index and can be referred by activities in the scope of the Iterate outcome.
 
 ## For Each
 
