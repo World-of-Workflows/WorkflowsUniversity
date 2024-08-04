@@ -12,9 +12,9 @@ nav_order: 2
 In this section, we are going to add some lead statuses, and our first couple of leads.
 
 1. Navigate to **Admin** -> **Types** -> **LeadStatus**
-   ![LeadStatusClear](image-7.png)
+   ![LeadStatusClear](../images/04_image-7.png)
 2. Click **+** to add a new Lead Status
-   ![Add Lead Status](image-8.png)
+   ![Add Lead Status](../images/04_image-8.png)
 3. Add details as follows:
    1. **Title:** New
 4. Click **Save & Add Another**
@@ -25,14 +25,14 @@ In this section, we are going to add some lead statuses, and our first couple of
    1. **Title:** Closed
 8. Click **Save**
 9. LeadStatus will look like the screen shot below. Click on the Id of items to change or delete them.
-    ![Lead Statuses](image-9.png)
+    ![Lead Statuses](../images/04_image-9.png)
 
 ## Leads
 
 1. Navigate to **Admin** -> **Types** -> **Lead**
-   ![LeadsClear](image-10.png)
+   ![LeadsClear](../images/04_image-10.png)
 2. Click **+** to add a new Lead
-   ![Add New Lead](image-11.png)
+   ![Add New Lead](../images/04_image-11.png)
 3. Add details as follows:
    1. **Title:** World of Workflows
    2. **Full Name:** Nick Beaugeard
@@ -41,6 +41,6 @@ In this section, we are going to add some lead statuses, and our first couple of
    5. **Status:** New
 4. Click **Save**
 5. The list of leads should look like the screen shot below. *Note in this case I modified a mistake, so the modified date is greater than the created date.*
-   ![Created Lead](image-12.png)
+   ![Created Lead](../images/04_image-12.png)
 
 You have successfully created the data so can go to **[step 3, create workflow](./create-workflow.html)**

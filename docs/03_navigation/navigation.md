@@ -6,7 +6,7 @@ nav_order: 4
 # Navigation
 
 ## Home Page
-![Home Page](2024-07-10-09-20-03.png)
+![Home Page](../images/03_2024-07-10-09-20-03.png)
 
 The home page has a number of **tiles** that show various statistics of your World of Workflows installation.  You can use these tiles to navigate to these icons.
 
@@ -16,13 +16,13 @@ The top navigation includes the **Dashboard** or home page. **Tasks** take you t
 
 ## Tasks
 
-![Tasks Page](2024-07-10-09-22-21.png)
+![Tasks Page](../images/03_2024-07-10-09-22-21.png)
 
 The tasks page consists of two columns. The left-hand column shows tasks you have picked and are in your queue. The right-hand column shows the current available tasks to pick.
 
 ## Admin
 
-![Admin Page](2024-07-10-09-23-25.png)
+![Admin Page](../images/03_2024-07-10-09-23-25.png)
 
 The admin page allows you to navigate between the various aspects of the system and manipulate data, workflows, tasks and more.
 

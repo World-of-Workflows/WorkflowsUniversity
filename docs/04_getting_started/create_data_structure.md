@@ -16,22 +16,22 @@ We're going to create two types:
 ## Creating Types
 
 1. Navigate to Admin -> Types
-   ![Types](image.png)
+   ![Types](../images/04_image.png)
 2. Click **+** to create a New Type
-   ![New Lead](image-1.png)
+   ![New Lead](../images/04_image-1.png)
 3. Enter the Name as **Lead** and the Description as **A Lead**. Click **Save**.
 4. Click **+** to create another new Type
 5. Enter the Name as **LeadStatus** and the Description as **Status of a Lead**
 6. Types should look like the screenshot below. If not, use the delete or edit buttons to make the relevant amendments.
-   ![Created Types](image-2.png)
+   ![Created Types](../images/04_image-2.png)
 
 ## Creating Columns
 
-1. Click the ![Edit Type Columns](image-3.png) button next to the **Lead** Type.
+1. Click the ![Edit Type Columns](../images/04_image-3.png) button next to the **Lead** Type.
 2. As you can see, we have an existing column, the Title Column. *Title columns are important but you can change their name, display name, description, display order and whether they are visible.*
-   ![Initial Columns](image-4.png)
+   ![Initial Columns](../images/04_image-4.png)
 3. Click **+** to add a new Column
-   ![Add Column](image-5.png)
+   ![Add Column](../images/04_image-5.png)
 4. Enter details as follows:
    1. **Column Name:** FullName
    2. **Display Name:** Full Name
@@ -70,7 +70,7 @@ We're going to create two types:
     8. **Indexed:** Not Checked
  11. Click **Save**
  12. Your Lead Columns should look like the screenshot below. If not, use the edit and delete buttons to fix it.
-    ![Lead Columns](image-6.png)
+    ![Lead Columns](../images/04_image-6.png)
 
 
 You have successfully created the data structure so can go to **[step 2, adding data](./adding_data.html)**

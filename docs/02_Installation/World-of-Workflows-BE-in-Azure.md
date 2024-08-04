@@ -17,14 +17,14 @@ World of Workflows Business Edition is available on the Azure Marketplace here:
 ### Installing Pre-requisites
 
 1. Navigate to the [Azure Portal](https://portal.azure.com/#home)
-   ![Azure Portal](image-7.png)
+   ![Azure Portal](../images/02_image-7.png)
 2. Click **[+ Create a resource](https://portal.azure.com/#create/hub)**
-   ![Create Resource](image-8.png)
+   ![Create Resource](../images/02_image-8.png)
 3. Search for **User Managed Identity**.
-   ![User Managed Identity](image-9.png)
+   ![User Managed Identity](../images/02_image-9.png)
 4. Under User Managed Identity, click **Create**
 5. Create or choose a **Resource Group**, Set the Region to be your local region and give the Identity a name. We commonly use **WOWBEInstaller**.
-   ![Create Managed Identity](image-10.png)
+   ![Create Managed Identity](../images/02_image-10.png)
 6. Click **Review + Create**
 7. Give your managed Identity Permissions as follows:
    - for the subscription where you will install World of Workflows, make the managed Identity an **Owner**.
@@ -35,31 +35,31 @@ World of Workflows Business Edition is available on the Azure Marketplace here:
 ### Installing World of Workflows
 
 1. Navigate to the [Azure Portal](https://portal.azure.com/#home)
-   ![Azure Portal](image-7.png)
+   ![Azure Portal](../images/02_image-7.png)
 2. Click **[+ Create a resource](https://portal.azure.com/#create/hub)**
-   ![Create Resource](image-8.png)
+   ![Create Resource](../images/02_image-8.png)
 3. Search for **User World of Workflows** or click the link to the [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/worldofworkflows.wowbe?tab=Overview).
 4. Choose your plan and click **Create**
 5. Complete the form as follows:
    1. **Project Details**
-   ![Project Details](image-11.png)
+   ![Project Details](../images/02_image-11.png)
       - Enter the subscription where you would like to install world of Workflows and create a new **Resource Group** by clicking **Create new**
    2. **Instance Details**
-   ![Instance details](image-12.png)
+   ![Instance details](../images/02_image-12.png)
        - Choose the region where you want to install Wold of Workflows and choose a **Site Name** and **Server Plan Name**.
        - **Site Name**: This is the name of the application. It can be anything you want, must be unique and will become ```https://<sitename>.azurewebsites.net``` when deployment is complete.
        - **Server Plan Name**: This can be anything you want and is the plan the server sits under. You use this for scaling your instance up and down.
    3. **User assigned managed identity**
-   ![User Assigned Managed Identity](image-13.png)
+   ![User Assigned Managed Identity](../images/02_image-13.png)
        - Choose the user assigned managed identity created in pre-requisites above. Identities need Owner Access to the subscription and Application Administrator access to Entra Id. This identity can be deleted after deployment is complete.
    4. **Single Selector**
-   ![Single Selector](image-14.png)
+   ![Single Selector](../images/02_image-14.png)
        - Create a new **storage account** for World of Workflows by clicking **Create New**.
-       ![Storage Account](image-15.png)
+       ![Storage Account](../images/02_image-15.png)
        - Ensure the storage account has a unique name and is configured for **File Shares** as the account kind. When done click **Ok**
        - Enter the name for the Client Application and Server Application in Entra Id. This will create the applications we will use to assign permissions and access the World of Workflows API from other applications.
    5. **Managed Application Details**
-   ![Managed Application Details](image-16.png)
+   ![Managed Application Details](../images/02_image-16.png)
        - Enter the Application Name (for example **World of Workflows**)
        - Edit the Managed Resource Group if required .
 6. Click **Review and Create**
@@ -78,7 +78,7 @@ Granting permissions in World of Workflows requires you first to configure the S
    3. Click **All Applications**
    4. Search for the Server application configured in step iv. above.
    5. Click **API Permissions**
-   ![API Permissions](image-17.png)
+   ![API Permissions](../images/02_image-17.png)
    6. Click **Add a permission**
    7. Click **Microsoft Graph**
    8. Click **Delegated Permissions**
@@ -91,15 +91,15 @@ Granting permissions in World of Workflows requires you first to configure the S
 2. **Granting Permissions**
    1. Navigate to [Azure Portal --> Entra Id --> Enteprrise Applications](https://portal.azure.com/#view/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/~/AppAppsPreview/menuId~/null) 
    2. Click **X** next to Application type == Enteprrise Applications.
-   ![Search Apps](image-18.png)
+   ![Search Apps](../images/02_image-18.png)
    3. Search for and select the server applcation congfigured in step iv above.
    4. Under **Manage**, choose **Users and Groups**
-   ![Users and Groups](image-19.png)
+   ![Users and Groups](../images/02_image-19.png)
    5. Click **Add user/group**
-   ![Add Assignment](image-20.png)
+   ![Add Assignment](../images/02_image-20.png)
    6. Click **None Selected**
    7. Search for and select the User you want to grant permissions to
-   ![Seelct User](image-21.png)
+   ![Seelct User](../images/02_image-21.png)
    8. Click **Select**
    9. Click **Assign**. *Administrator is the only role available in this version*
 
