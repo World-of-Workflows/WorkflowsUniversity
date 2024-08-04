@@ -12,25 +12,25 @@ To create a new *Type* (table) in the User Configurable Database, follow these s
 
 1.  Navigate to the User Configurable Database section in World of Workflows, by going to *Admin* then *Types*
 2.  Click on the **Add Types** button.<br>
-    ![Add New Type](./image.png)
+    ![Add New Type](../images/05a_image.png)
 3.  Enter a name for the table and a brief description (optional).
 4.  Click **Save** to confirm.
 
 Once your *Type* is created, you can begin adding fields:
 
 1.  In the list of types, identify the type or table you want to work with.
-2.  Click ![Edit Columns](image-1.png)
+2.  Click ![Edit Columns](../images/05a_image-1.png)
 3.  Click on the **Add Column** button.<br>
-    ![Add Column](image-2.png)
+    ![Add Column](../images/05a_image-2.png)
 4.  Enter a name for the column and choose the Name, Display Name, Column Description and an appropriate data type (e.g., text, number, date, etc.).
 5.  Configure additional column properties, such as display order, visible and indexed.
 6.  Click **Save** to confirm or **Save & Add Another** to save and add another.
 
 To manage existing tables, you can:
 
-- Edit table names, descriptions, and field properties by clicking on the corresponding ![Edit](image-3.png) button.
+- Edit table names, descriptions, and field properties by clicking on the corresponding ![Edit](../images/05a_image-3.png) button.
 
-- Delete tables or fields by clicking on the ![Delete](image-4.png) button (be cautious, as this action is irreversible and is designed to work only if you don’t have any entries for this *Type*).
+- Delete tables or fields by clicking on the ![Delete](../images/05a_image-4.png) button (be cautious, as this action is irreversible and is designed to work only if you don’t have any entries for this *Type*).
 
 ## A word about data types
 
@@ -70,16 +70,16 @@ Imagine we have Type A and Type B
 
 To edit a column, Navigate to the type itself by going to *Admin* then *Types* and then clicking the type.
 
-![Types](./image13.png)
+![Types](../images/05a_image13.png)
 
 You can then click *Columns* to see the list of columns and click **Edit** to edit each one.
 
-![Columns](./image14.png)
+![Columns](../images/05a_image14.png)
 
 ## Deleting Types
 
 If you navigate to *Admin* then *Types* you can click **Delete Type** icon under Actions to delete a type. *Note: this only works if there are no data instances in the type.*
 
-![Delete Type](./image15.png)
+![Delete Type](../images/05a_image15.png)
 
 Clicking **Delete** will immediately delete the type. If you have done this in error, you can easily recreate the type.

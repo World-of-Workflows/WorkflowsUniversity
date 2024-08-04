@@ -11,7 +11,7 @@ World of Workflows offers sorting, filtering, inline editing and bulk editing of
 
 Clicking on *Admin* then *Types* then clicking the name of the type you want to work with takes you to the data editing screen
 
-![Edit Type](./image16.png)
+![Edit Type](../images/05a_image16.png)
 
 This screen allows you to manipulate your data as follows:
 
@@ -25,71 +25,71 @@ Columns can be re-ordered by clicking a column header and dragging it to a new l
 
 To sort your data by column, click the **^** icon in the column header. When sorted the **^** icon in the column header will be highlighted as shown below:
 
-![Sort](./image17.png)
+![Sort](../images/05a_image17.png)
 
-To filter your data, click the ![Filter Icon](./image18.png) icon in any column header. This will bring up the filter window.
+To filter your data, click the ![Filter Icon](../images/05a_image18.png) icon in any column header. This will bring up the filter window.
 
-![Filter](./image19.png)
+![Filter](../images/05a_image19.png)
 
 Either type into the filter window or click the null or not-null radio buttons to create your filter.
 
 When a column is filtered, the filter button will be shown as highlighted
 
-![Filtered](./image20.png)
+![Filtered](../images/05a_image20.png)
 
-To clear all filters, click the <img src="./image21.png" width="24"/> button on the top of the data table, and to edit filters, click the Filters dropdown at the top of the table.
+To clear all filters, click the <img src="../images/05a_image21.png" width="24"/> button on the top of the data table, and to edit filters, click the Filters dropdown at the top of the table.
 
 ## Add Columns
 
-To add a column, click the <img src="./image23.png" width="24"/> button on top of the data table. You will see the same interface as in add column, above.
+To add a column, click the <img src="../images/05a_image23.png" width="24"/> button on top of the data table. You will see the same interface as in add column, above.
 
 ## Edit Columns
 
-To edit columns, click the <img src="./image24.png" width="24" /> button on top of the data table. You will then be navigated to the column editing screen.
+To edit columns, click the <img src="../images/05a_image24.png" width="24" /> button on top of the data table. You will then be navigated to the column editing screen.
 
-![Edit Columns](./image25.png)
+![Edit Columns](../images/05a_image25.png)
 
 ## Add Item
 
-To add an item, click the <img src="./image26.png" width="24" /> button. The same slide-in will appear as in *add an item* above.
+To add an item, click the <img src="../images/05a_image26.png" width="24" /> button. The same slide-in will appear as in *add an item* above.
 
 ## Inline edit
 
-Clicking <img src="./image27.png" width="24"/> will change the mode to Inline Edit. From here, you can individually edit all the items.
+Clicking <img src="../images/05a_image27.png" width="24"/> will change the mode to Inline Edit. From here, you can individually edit all the items.
 
-![Inline Edit](./image28.png)
+![Inline Edit](../images/05a_image28.png)
 
-Click <img src="./image29.png" width="24" /> to exit inline edit.
+Click <img src="../images/05a_image29.png" width="24" /> to exit inline edit.
 
 ## Bulk Delete
 
-To bulk delete, enter inline edit mode, select several items by clicking the checkboxes and click the <img src="./image30.png" width="24"/> button.
+To bulk delete, enter inline edit mode, select several items by clicking the checkboxes and click the <img src="../images/05a_image30.png" width="24"/> button.
 
-![Bulk Delete](./image31.png)
+![Bulk Delete](../images/05a_image31.png)
 
 ## Bulk Edit
 
-To bulk Edit, enter inline edit mode, select a number of items and click <img src="./image32.png" width="24" />. By entering data in the slide-in, you will be able to edit multiple rows at once.
+To bulk Edit, enter inline edit mode, select a number of items and click <img src="../images/05a_image32.png" width="24" />. By entering data in the slide-in, you will be able to edit multiple rows at once.
 
-![Bulk Edit](./image33.png)
+![Bulk Edit](../images/05a_image33.png)
 
 ## Refresh data
 
-To refresh the data, click the <img src="./image34.png" width="24" /> button on the top right which will reload the data for you.
+To refresh the data, click the <img src="../images/05a_image34.png" width="24" /> button on the top right which will reload the data for you.
 
 ## To Choose the number of rows shown
 
 To choose the number of rows shown, click the page size dropdown, bottom left.
 
-![Page Size](./image35.png)
+![Page Size](../images/05a_image35.png)
 
 ## Move between pages
 
 To move between pages, click the **\<** or **\>** buttons on the bottom middle of the data editor.
 
-![Page Navigation](./image36.png)
+![Page Navigation](../images/05a_image36.png)
 
 ## Export
 
-To export your data, click the <img src="./image22.png" width="24"/> button at the top of the data table. Your browser will automatically download a CSV of that data. `Export` respects any `Filter` you have applied.
+To export your data, click the <img src="../images/05a_image22.png" width="24"/> button at the top of the data table. Your browser will automatically download a CSV of that data. `Export` respects any `Filter` you have applied.
 

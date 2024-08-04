@@ -35,7 +35,7 @@ We're going to create two types:
 
 ## Creating Types
 
-1.  Navigate to Admin -\> Types ![Types](image.png)
+1.  Navigate to Admin -\> Types ![Types](../images/04_image.png)
 2.  Click **+** to create a New Type ![New
     Lead](../images/04_image-1.png)
 3.  Enter the Name as **Lead** and the Description as **A Lead**. Click
