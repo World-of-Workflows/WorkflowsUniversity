@@ -1,5 +1,5 @@
 ---
-title: Sign up for OpenAI
+title: Sign Up for OpenAI
 parent: AI in World of Workflows
 layout: default
 nav_order: 1

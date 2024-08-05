@@ -1,5 +1,5 @@
 ---
-title: Resolving logic and syntax problems
+title: Resolving Logic & Syntax Problems
 parent: AI in World of Workflows
 layout: default
 nav_order: 3

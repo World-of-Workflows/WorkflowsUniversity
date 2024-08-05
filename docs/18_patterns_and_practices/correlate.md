@@ -1,5 +1,5 @@
 ---
-title: Using Correlate as an aid to debugging
+title: Using Correlate as a Debugging Aid
 parent: Patterns & Practices
 layout: default
 nav_order: 1

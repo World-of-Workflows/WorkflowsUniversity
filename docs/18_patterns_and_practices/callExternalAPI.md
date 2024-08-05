@@ -1,5 +1,5 @@
 ---
-title: Call an external API
+title: Call External APIs
 parent: Patterns & Practices
 layout: default
 nav_order: 3

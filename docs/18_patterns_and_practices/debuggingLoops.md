@@ -1,5 +1,5 @@
 ---
-title: Debugging variables in a loop
+title: Debugging Variables in a Loop
 parent: Patterns & Practices
 layout: default
 nav_order: 5
