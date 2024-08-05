@@ -134,7 +134,7 @@ If the form did not display as expected, try the following:
    1. [ ] Did you change the Content Type to text/html?
 
 ## Form Post Target
-If we exampine the following line in our HTML, we can see the text ```<form action="/contactuspost" method="POST">```. This means when we click **Submit**, the form will ```POST``` the data to the endpoint ```/contactuspost```. This section shows you how to make workflows understand and handle this response.
+If we examine the following line in our HTML, we can see the text ```<form action="/contactuspost" method="POST">```. This means when we click **Submit**, the form will ```POST``` the data to the endpoint ```/contactuspost```. This section shows you how to make workflows understand and handle this response.
 
 1. If not open, navigate back to your workflow. **Admin --> Workflows --> Workflow Definitions --> Lead Form**.
 2. Click **Add Activity**, Choose HTML and choose **HTTP Endpoint**
