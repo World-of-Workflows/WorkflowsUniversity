@@ -35,7 +35,7 @@ Tags create the logic and control flow for templates. The curly brace percentage
 
 ```liquid
 {% if user %}
-  Hello {{ user.name }}!
+  Hello {{ Variables.user.name }}!
 {% endif %}
 ```
 
