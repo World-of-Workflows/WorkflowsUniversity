@@ -41,3 +41,10 @@ To confirm a compensable activity, the user can use the Confirm activity by spec
 This will result in the ```Confirm``` outcome of the compensable activity to be scheduled for execution.
 
 Confirmed compensable activities can no longer be compensated. Trying to do so will cause an exception.
+
+## Example Use case
+A Compensation activity which ensures the Redirect activity is scheduled regardless of the type of failure occurs in the RunWorkflow activity.
+
+![Use case](image.png)
+
+In this instance, only the ```Body``` and ```Cancel``` branches are required. Any exceptions thrown in the ```Body``` branch will cause the Workflow to proceed down the ```Cancel``` branch.
