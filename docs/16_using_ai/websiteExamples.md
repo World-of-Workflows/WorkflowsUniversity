@@ -1,5 +1,5 @@
 ---
-title: Website example - upload a CSV file
+title: Website Example - Upload a CSV File
 parent: AI in World of Workflows
 layout: default
 nav_order: 4

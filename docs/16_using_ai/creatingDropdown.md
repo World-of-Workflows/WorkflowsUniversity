@@ -1,5 +1,5 @@
 ---
-title: Creating a dynamic dropdown
+title: Creating a Dynamic Dropdown
 parent: AI in World of Workflows
 layout: default
 nav_order: 2

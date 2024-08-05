@@ -1,5 +1,5 @@
 ---
-title: Using Write Line to aid debugging
+title: Using Write Line to Aid debugging
 parent: Patterns & Practices
 layout: default
 nav_order: 2
