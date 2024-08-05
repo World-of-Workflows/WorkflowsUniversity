@@ -22,7 +22,7 @@ The tasks page consists of two columns. The left-hand column shows tasks you hav
 
 ## Admin
 
-![Admin Page](2024-07-10-09-23-25.png)
+![Admin page](image.png)
 
 The admin page allows you to navigate between the various aspects of the system and manipulate data, workflows, tasks and more.
 
@@ -60,9 +60,9 @@ The documentor automatically creates a document of the database, data dictionary
 
 This is the World of Workflows Privacy Policy
 
-### Settings
+### Service
 
-The Settings area allows you to back up the database, restart the service and check if the service is running.
+The Service area allows you to back up the database, restart the service and check if the service is running.
 
 ### Plugins
 
@@ -78,6 +78,7 @@ This shows API Definitions as it applies to your own World of Workflows installa
 
 ### Account
 
-This shows the information on your account, license key and more.
+This tile is available in Personal Edition.  It shows the information on your account, license key and more.
+
 
 
