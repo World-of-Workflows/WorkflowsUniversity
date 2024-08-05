@@ -10,49 +10,49 @@ grand_parent: Reference
 The following JavaScript expressions are supported:
 
 ## Contents
-- [JavaScript Expressions](#javascript-expressions)
-  - [Contents](#contents)
-- [Variables](#variables)
-  - [Workflow Variables](#workflow-variables)
-  - [Activity Output](#activity-output)
-  - [SendHttpRequest Activity](#sendhttprequest-activity)
-    - [input](#input)
-    - [workflowInstanceId](#workflowinstanceid)
-    - [workflowDefinitionId](#workflowdefinitionid)
-    - [workflowDefinitionVersion](#workflowdefinitionversion)
-    - [correlationId](#correlationid)
-    - [currentCulture](#currentculture)
-    - [workflowContext](#workflowcontext)
-    - [currentCulture](#currentculture-1)
-  - [Common Functions](#common-functions)
-    - [guid](#guid)
-    - [parseGuid](#parseguid)
-    - [setVariable](#setvariable)
-    - [getVariable](#getvariable)
-    - [getTransientVariable](#gettransientvariable)
-    - [getConfig](#getconfig)
-    - [isNullOrWhiteSpace](#isnullorwhitespace)
-    - [isNullOrEmpty](#isnullorempty)
-  - [Workflow Functions](#workflow-functions)
-    - [getWorkflowDefinitionIdByName](#getworkflowdefinitionidbyname)
-    - [getWorkflowDefinitionIdByTag](#getworkflowdefinitionidbytag)
-  - [HTTP Functions](#http-functions)
-    - [queryString](#querystring)
-    - [absoluteUrl](#absoluteurl)
-    - [signalUrl](#signalurl)
-  - [Date/Time Functions](#datetime-functions)
-    - [instantFromDateTimeUtc](#instantfromdatetimeutc)
-    - [currentInstant](#currentinstant)
-    - [currentYear](#currentyear)
-    - [startOfMonth](#startofmonth)
-    - [endOfMonth(instant: Instant?)](#endofmonthinstant-instant)
-    - [startOfPreviousMonth](#startofpreviousmonth)
-    - [plus](#plus)
-    - [minus](#minus)
-    - [durationFromDays](#durationfromdays)
-    - [formatInstant](#formatinstant)
-    - [localDateFromInstant](#localdatefrominstant)
-    - [instantFromLocalDate](#instantfromlocaldate)
+1. [JavaScript Expressions](#javascript-expressions)
+   1. [Contents](#contents)
+2. [Variables](#variables)
+   1. [Workflow Variables](#workflow-variables)
+   2. [Activity Output](#activity-output)
+   3. [SendHttpRequest Activity](#sendhttprequest-activity)
+      1. [input](#input)
+      2. [workflowInstanceId](#workflowinstanceid)
+      3. [workflowDefinitionId](#workflowdefinitionid)
+      4. [workflowDefinitionVersion](#workflowdefinitionversion)
+      5. [correlationId](#correlationid)
+      6. [currentCulture](#currentculture)
+      7. [workflowContext](#workflowcontext)
+      8. [currentCulture](#currentculture-1)
+   4. [Common Functions](#common-functions)
+      1. [guid](#guid)
+      2. [parseGuid](#parseguid)
+      3. [setVariable](#setvariable)
+      4. [getVariable](#getvariable)
+      5. [getTransientVariable](#gettransientvariable)
+      6. [getConfig](#getconfig)
+      7. [isNullOrWhiteSpace](#isnullorwhitespace)
+      8. [isNullOrEmpty](#isnullorempty)
+   5. [Workflow Functions](#workflow-functions)
+      1. [getWorkflowDefinitionIdByName](#getworkflowdefinitionidbyname)
+      2. [getWorkflowDefinitionIdByTag](#getworkflowdefinitionidbytag)
+   6. [HTTP Functions](#http-functions)
+      1. [queryString](#querystring)
+      2. [absoluteUrl](#absoluteurl)
+      3. [signalUrl](#signalurl)
+   7. [Date/Time Functions](#datetime-functions)
+      1. [instantFromDateTimeUtc](#instantfromdatetimeutc)
+      2. [currentInstant](#currentinstant)
+      3. [currentYear](#currentyear)
+      4. [startOfMonth](#startofmonth)
+      5. [endOfMonth(instant: Instant?)](#endofmonthinstant-instant)
+      6. [startOfPreviousMonth](#startofpreviousmonth)
+      7. [plus](#plus)
+      8. [minus](#minus)
+      9. [durationFromDays](#durationfromdays)
+      10. [formatInstant](#formatinstant)
+      11. [localDateFromInstant](#localdatefrominstant)
+      12. [instantFromLocalDate](#instantfromlocaldate)
 
 
 # Variables
@@ -74,13 +74,13 @@ Any activity might provide some output, which is accessible from any other activ
 
 > Notice that you must invoke the property as if it were a method. This is due to the way workflow storage providers work, which are potentially asynchronous in nature (such as Azure Blob Storage).
 
-For example, if you have an activity named ```MyActivity```, you can access its output as follows: ```activities.MyActivity.Output()```.
+For example, if you have an activity named `MyActivity`, you can access its output as follows: `activities.MyActivity.Output()`.
 
-If the output is an object, you can access its properties too. For instance, the HTTP Endpoint activity returns the HTTP request as its output which is of type ```HttpRequestModel```. When you name this activity ```"MyHttpEndpoint"```, you can access the HTTP request body like this:
+If the output is an object, you can access its properties too. For instance, the HTTP Endpoint activity returns the HTTP request as its output which is of type `HttpRequestModel`. When you name this activity `"MyHttpEndpoint"`, you can access the HTTP request body like this:
 
-```activities.MyHttpEndpoint.Output().Body```
+`activities.MyHttpEndpoint.Output().Body`
 
-If you happened to post a JSON document to your HTTP endpoint that looks like this:
+If you happened to post a JSON document to your HTTP endpoint that looks like this:  
 
 ```json
 {
@@ -92,9 +92,9 @@ If you happened to post a JSON document to your HTTP endpoint that looks like th
 
 Then you can access the "Title" field like this:
 
-```activities.MyHttpEndpoint.Output().Body.SomeDocument.Title```
+`activities.MyHttpEndpoint.Output().Body.SomeDocument.Title`
 
-> If your activity is a direct child of an HTTP Endpoint activity, you can access its output directly via the ```input``` variable, which will be an instance of ```HttpRequestModel```.
+> If your activity is a direct child of an HTTP Endpoint activity, you can access its output directly via the `input` variable, which will be an instance of `HttpRequestModel`.
 
 ## SendHttpRequest Activity
 
@@ -104,9 +104,11 @@ The SendHttpRequest activity has two output properties:
     [ActivityOutput] public HttpResponseModel? Response { get; set; }
     [ActivityOutput] public object? ResponseContent { get; set; }
 ``` 
-To access a **SendHttpRequest** activity with name ```SampleRequest1```'s response content, use ```activities.SampleRequest1.ResponseContent()```.
+
+To access a **SendHttpRequest** activity with name `SampleRequest1`'s response content, use `activities.SampleRequest1.ResponseContent()`.
 
 ### input
+
 Contains the input value that was received as output from the previously executed activity, if any.
 
 ```
@@ -151,7 +153,7 @@ Contains the current culture.
 currentCulture: CultureInfo
 ```
 
-Currently, this value is always set to ```CultureInfo.InvariantCulture```.
+Currently, this value is always set to `CultureInfo.InvariantCulture`.
 
 ### workflowContext
 
@@ -179,7 +181,7 @@ Generates a new GUID value and returns its string representation.
 guid(): string
 ```
 
-*This function is a thin wrapper around the following .NET code: ```Guid.NewGuid().ToString()```.*
+*This function is a thin wrapper around the following .NET code: `Guid.NewGuid().ToString()`.*
 
 ### parseGuid
 Parses a string into a GUID value.
@@ -188,7 +190,7 @@ Parses a string into a GUID value.
 parseGuid(value: string): Guid
 ```
 
-*This function is a thin wrapper around the following .NET code: Guid.Parse(value).*
+*This function is a thin wrapper around the following .NET code: `Guid.Parse(value)`.*
 
 ### setVariable
 Sets a workflow variable to the specified value.
@@ -197,7 +199,7 @@ Sets a workflow variable to the specified value.
 setVariable(name: string, value: object): void
 ```
 
-*This function is a thin wrapper around the following .NET code: activityContext.SetVariable(name, value).*
+*This function is a thin wrapper around the following .NET code: `activityContext.SetVariable(name, value)`.*
 
 ### getVariable
 Returns a workflow variable with the specified name.
@@ -208,7 +210,7 @@ getVariable(name: string): object
 
 > Instead of using getVariable(name: string), you can access workflow variables directly as described above in the Workflow Variables section.
 
-*This function is a thin wrapper around the following .NET code: ```activityContext.GetVariable(name)```.*
+*This function is a thin wrapper around the following .NET code: `activityContext.GetVariable(name)`.*
 
 ### getTransientVariable
 Returns a transient workflow variable with the specified name.
@@ -217,7 +219,7 @@ Returns a transient workflow variable with the specified name.
 getTransientVariable(name: string): object
 ```
 
-*This function is a thin wrapper around the following .NET code: activityContext.GetTransientVariable(name)*.
+*This function is a thin wrapper around the following .NET code: `activityContext.GetTransientVariable(name)`*.
 
 ### getConfig
 Provides access to a .NET configuration value.
@@ -225,7 +227,8 @@ Provides access to a .NET configuration value.
 ```js
 getConfig(name: string): string
 ```
-This is a security-sensitive function and is therefore not available by default. You need to enable this function through a setting. To enable this function, Enable it in Admin -> Settings -> Config Access.
+
+This is a security-sensitive function and is therefore not available by default. You need to enable this function through a setting. To enable this function, Enable it in `Admin -> Settings -> Config Access`.
 
 As an example, let's say you have the following JSON in appsettings.json:
 
@@ -245,7 +248,8 @@ You can access the configured Port value using the following expression:
 ```js
 getConfig("Elsa:Smtp:Port") // returns '2525'
 ```
-*This function is a thin wrapper around the following .NET code: ```configuration.GetSection(name).Value``` where configuration is an instance of ```IConfiguration```*.
+
+*This function is a thin wrapper around the following .NET code: `configuration.GetSection(name).Value` where configuration is an instance of `IConfiguration`*.
 
 ### isNullOrWhiteSpace
 
@@ -255,7 +259,7 @@ Returns true if the specified string is null, empty or consists of white space o
 isNullOrWhiteSpace(value: string): boolean
 ```
 
-*This function is a thin wrapper around the following .NET code: ```string.IsNullOrWhiteSpace(value)```*.
+*This function is a thin wrapper around the following .NET code: `string.IsNullOrWhiteSpace(value)`*.
 
 ### isNullOrEmpty
 Returns true if the specified string is null or empty, false otherwise.
@@ -264,7 +268,7 @@ Returns true if the specified string is null or empty, false otherwise.
 isNullOrEmpty(value: string): boolean
 ```
 
-*This function is a thin wrapper around the following .NET code: string.IsNullOrEmpty(value)*.
+*This function is a thin wrapper around the following .NET code: string.`IsNullOrEmpty(value)`*.
 
 ## Workflow Functions
 
@@ -283,6 +287,7 @@ getWorkflowDefinitionIdByTag(tag: string): string?
 ```
 
 ## HTTP Functions
+
 ### queryString
 Returns the value of the specified query string parameter.
 
@@ -309,7 +314,7 @@ signalUrl(signal: string): string
 ### instantFromDateTimeUtc
 Returns a new Instant object from the specified DateTime value.
 
-Make sure that the DateTime value's Kind property is ```DateTimeKind.Utc```.
+Make sure that the DateTime value's Kind property is `DateTimeKind.Utc`.
 
 ### currentInstant
 Returns the current date/time value in the form of a NodaTime's Instant object.
@@ -368,7 +373,7 @@ durationFromDays(days: number): Duration
 ```
 
 ### formatInstant
-Formats the specified Instant using the specified format string and CultureInfo. If no culture info is provided, ```CultureInfo.InvariantCulture``` is used.
+Formats the specified Instant using the specified format string and CultureInfo. If no culture info is provided, `CultureInfo.InvariantCulture` is used.
 
 ```js
 formatInstant(instant: Instant, format: string, cultureInfo: CultureInfo?): string
