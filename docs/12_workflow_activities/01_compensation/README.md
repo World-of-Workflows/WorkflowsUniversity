@@ -43,7 +43,7 @@ This will result in the ```Confirm``` outcome of the compensable activity to be 
 Confirmed compensable activities can no longer be compensated. Trying to do so will cause an exception.
 
 ## Example Use case
-A Compensation activity which ensures the Redirect activity is scheduled regardless of the type of failure occurs in the RunWorkflow activity.
+A Compensation activity which ensures the Redirect activity is scheduled regardless of the type of failure which may occur in the RunWorkflow activity.
 
 ![Use case](image.png)
 
