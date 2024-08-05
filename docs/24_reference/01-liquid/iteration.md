@@ -17,7 +17,7 @@ Repeatedly executes a block of code. For a full list of attributes available wit
 ### Input
 
 ```liquid
-{% for product in collection.products %}
+{% for product in Variables.products %}
   {{ product.title }}
 {% endfor %}
 ```
@@ -33,7 +33,7 @@ Specifies a fallback case for a for loop which will run if the loop has zero len
 ### Input
 
 ```liquid
-{% for product in collection.products %}
+{% for product in Variables.products %}
   {{ product.title }}
 {% else %}
   The collection is empty.
