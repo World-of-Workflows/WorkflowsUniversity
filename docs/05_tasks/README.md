@@ -41,5 +41,5 @@ A `task` may contain this information:
 - Default Actions
 - Custom Actions
 - Additional Information
-- 
+  
 See the contents below to work with tasks in more detail.

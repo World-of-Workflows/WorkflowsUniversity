@@ -13,7 +13,7 @@ The Admin / Tasks function allows you to work directly with every task created b
 
 From the Admin menu, choose tasks
 
-![](2024-07-09-12-25-42.png)
+![](../images/2024-07-09-12-25-42.png)
 
 
 The Tasks function shows the summary information about a task, including
@@ -23,7 +23,7 @@ The Tasks function shows the summary information about a task, including
 - Status - a task have a Status of 'Available', 'Picked' 'Complete' or 'Error'
 - Current User - the name of the user assigned to the task, if any
 - Related Object - if a task is designed to update an object in the User Configurable Database, this will show the ObjectId of that object.
-- Choice - If the task is designed to allo wthe user to select froma range of choices (or branches) and the task is Complete, this will show the choice made by the user.
+- Choice - If the task is designed to allow the user to select from a range of choices (or branches) and the task is Complete, this will show the choice made by the user.
 - Workflow Instance - a link to the Instance of the workflow that created the task. 
 
-![](2024-07-09-12-33-57.png)
+![](../images/2024-07-09-12-33-57.png)

@@ -25,11 +25,11 @@ This activity takes the following information
 The workflow will wait once a task has been created for a user to complete it.
 
 Here is an example task:
-![](2024-07-09-14-01-31.png)
+![](../images/2024-07-09-14-01-31.png)
 
 Once the workflow generates the task, it is available for a user to pick.
 
-![](2024-07-09-14-07-55.png)
+![](../images/2024-07-09-14-07-55.png)
 
 Once a user PICKs the task, they can display it and perform the requested action:
-![](2024-07-09-14-06-58.png)
+![](../images/2024-07-09-14-06-58.png)
