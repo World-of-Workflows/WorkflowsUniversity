@@ -10,11 +10,11 @@ nav_order: 3
 
 To Work with your workflow definitions, you need to be an admin in system. If you are an Admin, you will see the **Admin** tab in the top Menu. Click **Admin** the click **Workflows** to go to the Workflow Dashboard:
 
-![](2023-02-02-09-48-20.png)
+![](../images/2023-02-02-09-48-20.png)
 
 This will open the **Workflow Dashboard** in the **Workflow Definitions Page**
 
-![](2024-07-08-09-03-49.png)
+![](../images/2024-07-08-09-03-49.png)
 
 Now click on the workflow you wish to edit
 
@@ -22,7 +22,7 @@ The Workflow designer will open. You can now start to edit your workflow.
 
 Add activities with the ![alt text](image-6.png) button.
 
-Copy activities with the stanadard copy (`ctrl-c`) and paste (`ctrl-v`) keyboard keystrokes.
+Copy activities with the standard copy (`ctrl-c`) and paste (`ctrl-v`) keyboard keystrokes.
 
 ![alt text](image-7.png)
 

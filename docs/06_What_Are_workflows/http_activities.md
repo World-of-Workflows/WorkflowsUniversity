@@ -15,7 +15,7 @@ has_children: false
 
 This chapter will provide an overview of the three primary HTTP activities: `HTTP Endpoint`, `Send HTTP Request`, and `HTTP Response`, along with the `Redirect` activity.
 
-<img src="./media/image76.png" style="width:4.53503in;height:2.35142in" />
+<img src="../images/image76.png" style="width:4.53503in;height:2.35142in" />
 
 ## HTTP Endpoint
 
@@ -31,11 +31,11 @@ Key features of the HTTP Endpoint activity include:
 
 - **Security**: Secure the endpoint by enabling the **<span class="smallcaps">Authorize</span>** option in the **<span class="smallcaps">Security</span>** tab, which restricts access to authorized users.
 
-<img src="./media/image77.png" style="width:3.32602in;height:3.02091in" />
+<img src="../images/image77.png" style="width:3.32602in;height:3.02091in" />
 
-<img src="./media/image78.png" style="width:3.31213in;height:2.74775in" />
+<img src="../images/image78.png" style="width:3.31213in;height:2.74775in" />
 
-<img src="./media/image79.png" style="width:3.36391in;height:1.66518in" alt="A screenshot of a computer Description automatically generated with medium confidence" />
+<img src="../images/image79.png" style="width:3.36391in;height:1.66518in" alt="A screenshot of a computer Description automatically generated with medium confidence" />
 
 
 ## HTTP Response
@@ -50,9 +50,9 @@ Key features of the HTTP Response activity include:
 
 - **Content**: Provide the response content, which can be in various formats such as JSON, XML, or plain text.
 
-<img src="./media/image82.png" style="width:2.78844in;height:1.54591in" alt="A screenshot of a computer Description automatically generated with medium confidence" />
+<img src="../images/image82.png" style="width:2.78844in;height:1.54591in" alt="A screenshot of a computer Description automatically generated with medium confidence" />
 
-<img src="./media/image83.png" style="width:2.77377in;height:1.92959in" alt="A screenshot of a computer Description automatically generated with medium confidence" />
+<img src="../images/image83.png" style="width:2.77377in;height:1.92959in" alt="A screenshot of a computer Description automatically generated with medium confidence" />
 
 ## Send HTTP Request
 
@@ -70,9 +70,9 @@ Key features of the Send HTTP Request activity include:
 
 - **Authorisation:** Use **<span class="smallcaps">[Credential Manager](../20_solutions/sample%20solutions/AIProspector/README.html#3-create-credentials)</span>** to store and manage *OAuth* and other authorization credentials for secure access to external services, then select the Authorisation here.
 
-<img src="./media/image80.png" style="width:3.41715in;height:3.64506in" alt="A screenshot of a computer Description automatically generated with low confidence" />
+<img src="../images/image80.png" style="width:3.41715in;height:3.64506in" alt="A screenshot of a computer Description automatically generated with low confidence" />
 
-<img src="./media/image81.png" style="width:3.73961in;height:2.09377in" />
+<img src="../images/image81.png" style="width:3.73961in;height:2.09377in" />
 
 ## Redirect
 
@@ -84,7 +84,7 @@ Key features of the Redirect activity include:
 
 - **Permanent**: Select for the redirection to be 301 / permanent redirect, deselect for 302 / temporary redirect.
 
-<img src="./media/image84.png" style="width:3.3515in;height:1.62674in" alt="A screenshot of a computer Description automatically generated with low confidence" />
+<img src="../images/image84.png" style="width:3.3515in;height:1.62674in" alt="A screenshot of a computer Description automatically generated with low confidence" />
 
 By leveraging these HTTP activities in Elsa Workflows, you can create powerful and flexible workflows that interact with external web services and APIs, as well as handle incoming HTTP requests efficiently. Understanding these HTTP activities will help you better design and optimize your workflows to meet the unique requirements of your organization in World of Workflows.
 

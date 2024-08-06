@@ -28,7 +28,7 @@ To create a new view, follow these steps:
 1.  Navigate to **<span class="smallcaps">Admin -\> Views</span>** in World of Workflows.
 
 2.  Click on the **<span class="smallcaps">Add View</span>** button.  
-    <img src="./media/image44.png" style="width:1.83935in;height:2.92642in" alt="Graphical user interface, text, application, email Description automatically generated" />
+    <img src="../images/image44.png" style="width:1.83935in;height:2.92642in" alt="Graphical user interface, text, application, email Description automatically generated" />
 
 3.  Enter a name and a brief description for the view (optional).
 
@@ -40,10 +40,10 @@ To create a new view, follow these steps:
 
     2.  Use the **<span class="smallcaps">=</span>** handle to drag the fields to the correct order.
 
-    3.  Use the <img src="./media/image45.png" style="width:0.13195in;height:0.16668in" /> to remove this field from the view.
+    3.  Use the <img src="../images/image45.png" style="width:0.13195in;height:0.16668in" /> to remove this field from the view.
 
 6.  Choose the fields to order the view by clicking the **<span class="smallcaps">+</span>** next to the field name. Use the up and down arrows to select the direction of sorting.  
-    <img src="./media/image46.png" style="width:3.09044in;height:5.46556in" alt="Graphical user interface, text, application Description automatically generated" />
+    <img src="../images/image46.png" style="width:3.09044in;height:5.46556in" alt="Graphical user interface, text, application Description automatically generated" />
 
 7.  Create a query for the View, using *oData Query Syntax*
 
@@ -87,7 +87,7 @@ The data editor is where you can view data, edit fields, run workflows, view tas
 
 Clicking any instance of a type or in a view brings up the data editor.
 
-<img src="./media/image47.png" style="width:6.26806in;height:1.43472in" />
+<img src="../images/image47.png" style="width:6.26806in;height:1.43472in" />
 
 ### View Data
 
@@ -97,13 +97,13 @@ The first tab is called view and here you can view all the data in an instance, 
 
 The Edit data tab allows you to edit data associated with this object
 
-<img src="./media/image48.png" style="width:6.26806in;height:1.54653in" alt="A screenshot of a computer Description automatically generated with low confidence" />
+<img src="../images/image48.png" style="width:6.26806in;height:1.54653in" alt="A screenshot of a computer Description automatically generated with low confidence" />
 
 ### Workflows
 
 The Workflows tab allows you to run any workflow which contains the **Object Instance Trigger** activity which is associated with the type of the object you are viewing.
 
-<img src="./media/image49.png" style="width:6.26806in;height:1.77569in" alt="A screenshot of a computer Description automatically generated with low confidence" />
+<img src="../images/image49.png" style="width:6.26806in;height:1.77569in" alt="A screenshot of a computer Description automatically generated with low confidence" />
 
 The **Workflows** section shows workflows you can run using this object as reference and the **Workflow Instances** section shows workflows you can resume using this object as a reference.
 
@@ -111,10 +111,10 @@ The **Workflows** section shows workflows you can run using this object as refer
 
 Tasks can be associated with an object instance and the Tasks tab shows all of the tasks associated with this object.
 
-<img src="./media/image50.png" style="width:6.26806in;height:1.44861in" />
+<img src="../images/image50.png" style="width:6.26806in;height:1.44861in" />
 
 ### History
 
 The History tab shows all the different modifications to this object over time.
 
-<img src="./media/image51.png" style="width:6.26806in;height:1.41875in" alt="A close-up of a computer screen Description automatically generated with low confidence" />
+<img src="../images/image51.png" style="width:6.26806in;height:1.41875in" alt="A close-up of a computer screen Description automatically generated with low confidence" />

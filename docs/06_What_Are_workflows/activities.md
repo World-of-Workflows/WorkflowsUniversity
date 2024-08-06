@@ -8,7 +8,7 @@ has_children: false
 
 # Activities
 
-As discussed, Workflows are made up of a series of Activities, linked together on a drag-and-drop palette. [Review this chapter](../04_getting_started/README.html#getting-started--my-first-workflow) for instructions on how to craete a workflow and activities.  
+As discussed, Workflows are made up of a series of Activities, linked together on a drag-and-drop palette. [Review this chapter](../04_getting_started/README.html#getting-started--my-first-workflow) for instructions on how to create a workflow and activities.  
 
 Every *Activity* in *Workflows* allows you to set the following:
 
@@ -22,6 +22,6 @@ Every *Activity* in *Workflows* allows you to set the following:
 
 - **Description** – Use this to show other workflow developers how this activity is used and what it is for.
 
-<img src="./media/image64.png"  />
+<img src="../images/image64.png"  />
 
 See [Activity Input and Output](../24_reference/ActivityInputOutput.html) for a list of Activities

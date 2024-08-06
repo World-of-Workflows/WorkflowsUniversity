@@ -37,10 +37,10 @@ You can enter information into the Properties of *Activities* using either the d
 
 For example, here is the `SetVariable` activity. It asks for a *Variable Name* and a *Value*. You would enter the variable name as normal text.
 
-<img src="./media/image66.png" /><br>
-Using this icon, <img style="vertical-align:middle" src="./media/image65.png" /> the *Value* can be entered as either **JavaScript**, **Liquid** or **Default** text. 
+<img src="../images/image66.png" /><br>
+Using this icon, <img style="vertical-align:middle" src="../images/image65.png" /> the *Value* can be entered as either **JavaScript**, **Liquid** or **Default** text. 
 
-<img src="./media/image67.png"  />
+<img src="../images/image67.png"  />
 
 <span class="smallcaps">An example of setting a variable with JavaScript.</span>
 

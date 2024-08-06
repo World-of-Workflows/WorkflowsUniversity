@@ -17,11 +17,11 @@ The `Run Workflow` activity allows chaining between workflows.  You can think of
 We refer to the *calling* workflow as the **Parent**.  The *called* workflow is referred to as the **Child**.
 
 To identify the child workflow, we use the **Name** parameter of the Child Workflow.  
-![cog](image-2.png) -->> ![alt text](image-3.png)
+![cog](../images/bw-image-2.png) -->> ![alt text](../images/bw-image-3.png)
 {% raw %}
 
 In the parent workflow, you set the *Workflow Definition* field to the ID of the child workflow:
-![runworkflow](image-4.png)
+![runworkflow](../images/bw-image-4.png)
 In JavaScript we use `getWorkflowDefinitionIdByName("<<ChildWorkflowname>>")`  
 
 In Liquid we use 
@@ -32,7 +32,7 @@ In Liquid we use
 
 
 
-The child workflow will likely need some context, such as some of the variuables in the parent workflow. In the example above, we passed 2 variables as JSON. [here is another example of how to pass the contents of the variables](./041-InputToWorkflow.html) from the Parent workflow in the `Run Workflow` activity.
+The child workflow will likely need some context, such as some of the variables in the parent workflow. In the example above, we passed 2 variables as JSON. [here is another example of how to pass the contents of the variables](./041-InputToWorkflow.html) from the Parent workflow in the `Run Workflow` activity.
 
 
 
@@ -50,26 +50,26 @@ In addition to knowing that the child workflow has finished, you can also progra
 
 1. passing back an `outcome`  
     In the **Parent** workflow, set the field *Possible Outcomes** to the alternatives (as text)you expect the child to pass back to the parent
-    ![](2024-07-18-15-02-01.png)
+    ![](../images/2024-07-18-15-02-01.png)
     This will create branches in the workflow for you.  eg:  
-    ![alt text](image.png)
+    ![alt text](../images/bw-image.png)
     > We often link the `Not Found` branch to the `Fault` activity because you want to know when the child workflow cannot be found.
 2. passing back **Data**  
    You can also pass data **from** the child to the parent in the similar fashion as passing data **to** the child.  
    You will give the `Run Workflow` activity a name to later use the outtcome.  
-   ![alt text](image-5.png) 
+   ![alt text](../images/bw-image-5.png) 
 
    The outcome of the `Run Workflow` activity can be obtained with the JavaScript command  
        ```activities.<<RunWorkflowActivityName>>.Output().workflowOutput```  
    
    For example, this will get the data passed back from our `EmailCustomer` workflow:  
-   ![](2024-07-18-15-26-54.png)
+   ![](../images/2024-07-18-15-26-54.png)
      
 
 #### Setting up the Child workflow
 
    In the Child workflow, you will use the `Finish` activity to communicate with the Parent workflow.
-    ![](2024-07-18-15-34-37.png)
+    ![](../images/2024-07-18-15-34-37.png)
 
 The data returned in `Activity Output` will be available in the parent workflow with this JavaScript:  
        ```activities.<<RunWorkflowActivityName>>.Output().workflowOutput```  

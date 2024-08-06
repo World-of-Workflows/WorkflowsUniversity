@@ -16,7 +16,7 @@ This chapter will provide an overview of the core Flow Control activities, inclu
 
 The *If/Else* activity provides conditional branching based on a specified condition. If the condition is met, this Activity will run the **<span class="smallcaps">True</span>** branch; otherwise, the activities in the **<span class="smallcaps">False</span>** branch will be executed.
 
-<img src="./media/image72.png"  />
+<img src="../images/image72.png"  />
 ### Loops
 
 We often want computers and workflows to repeat themselves. For example we might want the same process to occur for every row of a spreadsheet or every lead in a database. For this we use loops. In workflows we have a several types of loops:
@@ -31,7 +31,7 @@ We often want computers and workflows to repeat themselves. For example we might
 >
 > The `For` activity requires an initial value, an end value, and an optional step value. The loop will continue to execute the activities within it until the end value is reached or a Break activity is encountered.
 
-<img src="./media/image68.png" />
+<img src="../images/image68.png" />
 
 > The `For` activity allows you to set the following:
 
@@ -71,7 +71,7 @@ The `While` activity is a loop structure that executes activities within the loo
 
 The `Break` activity allows you to exit a loop (e.g., *For, For Each, While*) prematurely when a certain condition is met. By implementing the `Break` activity, you can optimize your workflows and prevent unnecessary iterations.
 
-<img src="./media/image69.png"  />
+<img src="../images/image69.png"  />
 
 The `Break` activity has no need for specific customisable attributes, apart from the standard common and storage sections.
 
@@ -79,11 +79,11 @@ The `Break` activity has no need for specific customisable attributes, apart fro
 
 The `Fork` activity allows you to create parallel branches in your workflow, running the branches one at a time. The workflow will continue once all branches have completed.
 
-<img src="./media/image70.png" />
+<img src="../images/image70.png" />
 
 This could be represented in a *Workflow* like this:
 
-<img src="./media/image71.png" />
+<img src="../images/image71.png" />
 
 The sequence that the forks are executed are non-determinative - so you cannot be sure in which order the forks will be run.
 
@@ -97,7 +97,7 @@ The `Join` activity can be used in conjunction with the `Fork` activity to synch
 >
 > **<span class="smallcaps">WaitAny</span>** will continue execution of the workflow after the first branch completes. The other branches may continue execution, but the join operation will occur after just 1 branch completes.  Ensure that your workflow logic is valid whilst the rest of your workflow continues. 
 
-<img src="./media/image73.png" />
+<img src="../images/image73.png" />
 
 ## Switch
 
@@ -105,9 +105,9 @@ The `Switch` activity provides multi-way branching based on the value of a speci
 
 It allows you to define multiple cases, each with a set of activities that will be executed when the expression matches the case value.
 
-<img src="./media/image74.png" />
+<img src="../images/image74.png" />
 
 This could be represented in a *Workflow* like this:
 
-<img src="./media/image75.png" style="width:3.44337in;height:0.9648in" alt="A screen shot of a graph Description automatically generated with low confidence" />
+<img src="../images/image75.png" style="width:3.44337in;height:0.9648in" alt="A screen shot of a graph Description automatically generated with low confidence" />
 
