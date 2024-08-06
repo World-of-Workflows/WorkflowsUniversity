@@ -2,7 +2,7 @@
 title: Sample Workflows
 parent: Patterns & Practices
 layout: default
-nav_order: 23
+nav_order: 230
 has_children: true
 ---
 
