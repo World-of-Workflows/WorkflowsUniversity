@@ -11,16 +11,16 @@ has_children: false
 
 You can very easily create a routine to use your World of Workflows data.
 In this example, we wanted to use 2 fields on a form to determine the value of a third field.  Here is the form we wanted to change:
-![](2024-07-06-16-47-17.png)
+![](../images/2024-07-06-16-47-17.png)
 We want the *OC Tier* field to be set based on the value of the *Lots* field and the *FirePanel* field.  
 Here is the data in the World of Workflows Type:
-![](2024-07-06-16-50-28.png)
+![](../images/2024-07-06-16-50-28.png)
 
 Export the data from World of Workflows so we can upload it to ChatGPT.
-![](2024-07-07-14-29-25.png)
+![](../images/2024-07-07-14-29-25.png)
 
 Upload this to ChatGPT and tell it what you want done:
-![](2024-07-07-14-31-34.png)
+![](../images/2024-07-07-14-31-34.png)
 Here is the function that ChapGPT produced:
 ```html
 <!DOCTYPE html>
@@ -79,14 +79,14 @@ Here is the function that ChapGPT produced:
 We can paste this function ```selectTierObjectId``` into the HTTP Response activity in our workflow.  Note how the function uses the `tiersData` variable.  We can use this as-is, but it would be better to have the data dynamically retrieved from the World of Workflows database.  So we will create 2 activities to achieve this: ListObjectInstances and Set Variable.
 
 First, create the ListObjectInstances activity, and set the Object Type to Tier, sorting it too:
-![](2024-07-07-15-07-57.png)
+![](../images/2024-07-07-15-07-57.png)
 
 
 We set a variable called `Tiers` to collect the data so we can use it ion the HTTP Response.  Set the Value to JavaScript and use the inteliscript to fill in the value.  
 
-![](2024-07-07-14-55-18.png)
+![](../images/2024-07-07-14-55-18.png)
 
-![](2024-07-07-14-54-22.png)
+![](../images/2024-07-07-14-54-22.png)
 
 Because we want to use the data as a Liquid string,, not a Javascript Object, we will use a built-in function to turn it into a string. Both `JSON.stringify()` and `jsonEncode()` will do the trick.  The full formula will be 
 
@@ -119,9 +119,9 @@ Here is the updated workflow:
 
 Now change the ```selectTierObjectId``` in the HTTP Response to use this Tiers variable.
 Replace this:
-![](2024-07-07-15-04-16.png)
+![](../images/2024-07-07-15-04-16.png)
 with this Liquid. The `| raw ` filter removes the html formattting.
-![](2024-07-07-15-05-10-1.png)
+![](../images/2024-07-07-15-05-10-1.png)
 
 Test your work using https://localhost:7063/ThreeFieldsTest
 
@@ -215,11 +215,10 @@ Here is the HTML, to replace the existing HTTP Response:
 
 </body>
 </html>
-
-Here is the working page:
-![](2024-07-07-15-44-33.png)
-![](2024-07-07-15-44-44.png)
-
 ```
+Here is the working page:
+![](../images/2024-07-07-15-44-33.png)
+![](../images/2024-07-07-15-44-44.png)
+
 
 This demonstrates how we can build sophisticated World of Workflows workflows with little or no programming skills by leveraging ChatGPT. The ChatGPT responses build on each other and your workflows become more useful.

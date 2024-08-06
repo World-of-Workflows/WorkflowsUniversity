@@ -23,7 +23,7 @@ I want to
 use Tailwind CSS for formatting.
 ```
 
-**Grimoire** will produce all of the elements for your web page.  Now you just need to copy and paste them into the appropriate activitities in your workflow.  
+**Grimoire** will produce all of the elements for your web page.  Now you just need to copy and paste them into the appropriate activities in your workflow.  
 
 ### HTML structure
 
@@ -104,16 +104,16 @@ The first part produced by Grimoire is the HTML.  Here is an example output:
 ```
 
 You will put this code directly into your **HTTP Response** activity:
-![http response](2024-07-06-15-11-13.png)
+![http response](../images/2024-07-06-15-11-13.png)
 Edit the activity, set the Content to **Liquid**, and paste the HTML:
-![paste a html](2024-07-06-15-13-14.png)
+![paste a html](../images/2024-07-06-15-13-14.png)
 Select the `Content Type` as `text/HTML`, and set the activity name as usual under the *Common* tab.
 
 Create another activity, `HTTP Endpoint`, like this:
-![](2024-07-06-15-24-14.png)
+![](../images/2024-07-06-15-24-14.png)
 and use an appropriate path.  In this case we use /uploadTest.  It can be anything logical, just make it unique.
 Join the two activities, like this:
-![](2024-07-06-15-26-11.png)
+![](../images/2024-07-06-15-26-11.png)
 Now you can run the workflow and see your web page, as built by **Grimoire**
 Go to another browswer window, and go to  
 
@@ -123,7 +123,7 @@ Go to another browswer window, and go to
 
 or whatever endpoint name you used.
 
-![](2024-07-06-16-14-04.png)
+![](../images/2024-07-06-16-14-04.png)
 
 ### Changing the template file
 
@@ -136,9 +136,9 @@ const csvContent = "data:text/csv;charset=utf-8,Column1,Column2,Column3\n";
 You will doubtless have a template with your own fields, and a row of example data.  Instead of doing the work to alter code yourself (and perhaps making a typo along the way), let's use ChatGPT:
 
 Upload your template directly to ChatGPT Grimoire, with a prompt like this:
-![](2024-07-06-16-20-50.png)
+![](../images/2024-07-06-16-20-50.png)
 The **Grimoire** responds like this:
-![](2024-07-06-16-21-48.png)
+![](../images/2024-07-06-16-21-48.png)
 
 
 ### Receiving the file into your Workflow
