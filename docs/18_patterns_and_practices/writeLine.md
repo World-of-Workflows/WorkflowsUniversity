@@ -2,7 +2,7 @@
 title: Using Write Line to Aid debugging
 parent: Patterns & Practices
 layout: default
-nav_order: 2
+nav_order: 30
 has_children: false
 ---
 

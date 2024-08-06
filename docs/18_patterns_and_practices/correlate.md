@@ -2,7 +2,7 @@
 title: Using Correlate as a Debugging Aid
 parent: Patterns & Practices
 layout: default
-nav_order: 1
+nav_order: 20
 has_children: false
 ---
 

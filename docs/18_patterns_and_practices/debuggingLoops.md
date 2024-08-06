@@ -2,7 +2,7 @@
 title: Debugging Variables in a Loop
 parent: Patterns & Practices
 layout: default
-nav_order: 5
+nav_order: 50
 has_children: false
 ---
 
