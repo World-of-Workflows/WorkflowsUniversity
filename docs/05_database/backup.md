@@ -11,7 +11,7 @@ has_children: false
 
 *This section details implementations using SQLite only. Implementations using SQL Server are expected to perform their own backups.*
 
-World of Workflows can be configured to take a backup of the full database including all workflows, activities, variables, etc. This is done using the Backup feature. The backup feature is configured in the appsettings.json file as follows:
+World of Workflows can be configured to take a backup of the full database including all workflows, activities, variables, etc. This is done using the Backup feature. The backup feature is configured in the `appsettings.json` file as follows:
 
 ```json
 {
