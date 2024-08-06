@@ -21,7 +21,7 @@ To list data from the database, you can use the `ObjectInstanceList` activity. T
    - **Sort By:** `LastName asc`
    - **Limit:** `100`
 
-   ![](2024-07-10-15-44-08.png)
+   ![](../images/2024-07-10-15-44-08.png)
 
 
 ### Advanced Options
@@ -50,5 +50,5 @@ You should always set an activity `Name` for *ObjectInstanceList* so you can eas
 
 Set the activity's `Display Name` for *ObjectInstanceList* because this shows in the workflow.
 
-![](2024-07-11-08-27-24.png)
+![](../images/2024-07-11-08-27-24.png)
 

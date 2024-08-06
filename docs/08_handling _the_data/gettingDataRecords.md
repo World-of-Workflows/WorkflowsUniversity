@@ -17,7 +17,7 @@ To retrieve a specific record from the database, you can use the `ObjectInstance
 2. **Example Configuration:**
    - **ID:** `12345`
 
-![](2024-07-11-08-29-02.png)
+![](../images/2024-07-11-08-29-02.png)
 
 This example proves a point, but you normally do not know the Instance Id when developing a workflow.  Let's examine how to combine `ObjectInstanceGet` with `ObjectInstanceList`
 
@@ -48,7 +48,7 @@ If the name you chose in your `ObjectInstanceList` is `ListContacts`:
 
 
 
-![](2024-07-11-08-20-55.png)
+![](../images/2024-07-11-08-20-55.png)
 
 you will use this JavaScript syntax:
 
@@ -56,10 +56,10 @@ you will use this JavaScript syntax:
     activities.ListContacts.Output()[0].ObjectId
 ~~~
 
-![](2024-07-11-08-22-22.png)
+![](../images/2024-07-11-08-22-22.png)
 You can also use `SetVariable` to access the result.  
 
-![](2024-07-11-09-13-42.png)
+![](../images/2024-07-11-09-13-42.png)
 
 #### When to use `ObjectInstanceGet` vs when to use `SetVariable`?
 
@@ -67,10 +67,10 @@ You can also use `SetVariable` to access the result.
 
 The `For each` activity is a simple way to loop (or iterate) through the results from `ObjectInstanceList`.  Each *iteration* of `For each` returns a JSON representation of a row, and branches to *Done* when all the rows are processed.
 
-![](2024-07-11-09-20-35.png)
+![](../images/2024-07-11-09-20-35.png)
 
 Putting this all together:
 
-![](2024-07-11-09-22-02.png)
+![](../images/2024-07-11-09-22-02.png)
 
   
