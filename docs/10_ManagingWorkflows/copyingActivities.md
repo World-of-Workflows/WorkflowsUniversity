@@ -10,11 +10,11 @@ has_children: false
 # Selecting Activities
 
 Right-click on an activity to bring up the context menu:
-![alt text](image.png)
+![alt text](../images/md-image.png)
 
 Draw a marquee around several activities to select multiple activities.  
-![alt text](image-1.png)
-![alt text](image-2.png)
+![alt text](../images/md-image-1.png)
+![alt text](../images/md-image-2.png)
 The selected activities now have a dotted orange border.
 
 # Copying Activities
