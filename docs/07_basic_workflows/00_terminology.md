@@ -25,7 +25,7 @@ This goes on until there are either no more activities to execute or an activity
 An activity is an atomic building block that represents a single executable step on the workflow. Activities can do all sorts of things and take input from you and provide output.
 
 ## Starting Activity
-An activity that is the starting point of the workflow and does not have any inbound connections. They are the entry points to the workflow.  An activity without any preceding activity is a starting acttivity.  `Note that you can accidentally create an entry point by creating an unconnected activity.  `
+An activity that is the starting point of the workflow and does not have any inbound connections. They are the entry points to the workflow.  An activity without any preceding activity is a starting activity.  `Note that you can accidentally create an entry point by creating an unconnected activity.  `
 
 `HTTP Endpoint` is a common starting activity, and a workflow can have one or many of these. 
 
@@ -57,7 +57,7 @@ This means we need the following three connections:
 - Source: **If Activity**
 - Outcome: **True**
 - Destination: **Set Variable Activity 1**
-- 
+  
 **Connection 2**
 
 - Source: **If Activity**
@@ -71,13 +71,13 @@ This means we need the following three connections:
 - Destination: **List Contacts**
 
 Visually, this would look like this:
-![](2024-07-08-08-32-14.png)
+![](../images/2024-07-08-08-32-14.png)
 
 The number and labels of the branches of activities depend on the type of activity.  As you can see, `If` has True/False/Done branches, `Set Variable` has 1 branch.
 
 For some activities, such as `Switch` and `Task Create`, you can create your own branches:
-![Switch branches](2024-07-08-08-37-34.png)
-![Task Create branches](2024-07-08-08-42-15.png)
+![Switch branches](../images/2024-07-08-08-37-34.png)
+![Task Create branches](../images/2024-07-08-08-42-15.png)
 
 ## Long Running Workflows
 
