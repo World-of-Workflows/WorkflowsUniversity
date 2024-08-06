@@ -15,7 +15,7 @@ This chapter takes you through from creating initial navigation to more complex 
 
 Examine the following workflow:
 
-![SecureNav](image.png)
+![SecureNav](../images/html-image.png)
 
 ## Benefits of Using This Method to Create a Custom Web UI
 
