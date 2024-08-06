@@ -26,7 +26,7 @@ return `Hello ${FirstName}`
  ```
 Value returned will be:
 
-"Hello Luke"
+`Hello Luke`
 
 This also works when setting variables using the setVariable() function. Because ultimately, both the SetVariable activity and setVariable() function use the same API under the cover to set a workflow variable.
 
@@ -36,15 +36,28 @@ JavaScript and Liquid are case sensitive.
 
 ## Activity Output
 A activity might provide some output which can then be accessed from any other activity using workflow expressions. 
-For example, to access an activity's output property called OUTPUT using a JavaScript expression, you can do so by specifying activities, then the activity name followed by .Output().
+For example, to access an activity's output property called OUTPUT using a JavaScript expression, you can do so by specifying activities, then the activity name followed by `.Output()`.
 
-> Notice that you must put `()` at the end 
+{: .key }
+You must put `()` at the end of a `method`, and not at the end of a `property`.
+
+### Methods and properties
 
 For example, if you have an activity named `MyActivity`, you can access its output as follows: 
 
 ```
 activities.MyActivity.Output()
 ```
+
+Note that the Intelisense prompts you to include () when you see `(method)` in the description.  For example
+![](2024-08-06-11-00-21.png)
+
+See the difference when intellisense shows a `property` is needed:
+![](2024-08-06-11-37-35.png)
+In this case you do not include the () at the end:
+![](2024-08-06-11-38-27.png)
+
+
 
 If the output is an object, you can access its properties too. For instance, the HTTP Endpoint activity returns the HTTP request as its output which is of type HTTPREQUESTMODEL. When you name this activity `MyHttpEndpoint`, you can access the HTTP request Body like this:
 
