@@ -1,4 +1,3 @@
-
 ---
 title: License
 layout: default
