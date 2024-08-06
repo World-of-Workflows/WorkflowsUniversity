@@ -12,7 +12,7 @@ World of Workflows is an OpenAPI platform.  All of the functionality of World of
 
 Navigate to **Swagger** from the **Admin** page.
 
-![alt text](image.png)
+![](../images/2024-08-06-16-17-10.png)
 
 In World of Workflows, Swagger can be used to expose and document the API endpoints of the workflow system, making it easier for developers to integrate and interact with the workflow functionalities programmatically.
 

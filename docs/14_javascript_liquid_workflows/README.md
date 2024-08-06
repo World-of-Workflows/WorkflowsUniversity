@@ -13,7 +13,7 @@ This chapter discusses some of the more common techniques for using JavaScript a
 
 On almost every field of all activities in World of Workflows there is a little 3-dot menu.  This allows you to choose the language to be used to set up that field.
 
-![alt text](image.png)
+![](../images/2024-08-06-16-09-12.png)
 
 {: .key }
 After you switch between languages be sure to click **Save** on the activity before entering the formula for the other language.
