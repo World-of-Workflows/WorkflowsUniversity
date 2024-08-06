@@ -120,14 +120,15 @@ Here is the updated workflow:
 Now change the ```selectTierObjectId``` in the HTTP Response to use this Tiers variable.
 Replace this:
 ![](../images/2024-07-07-15-04-16.png)
-with this Liquid. The `| raw ` filter removes the html formattting.
+with this Liquid. The `| raw ` filter removes the html formatting.
 ![](../images/2024-07-07-15-05-10-1.png)
 
-Test your work using https://localhost:7063/ThreeFieldsTest
+Test your work using `https://localhost:7063/ThreeFieldsTest`
 
 Let's now have the `Tier` field displayed, instead of the alert, and get it to select the correct value of `Tier` based on the 2 other fields.
 
 Back to ChatGPT. Remember we changed the const Tiers data for our variable, so tell ChatGPT:
+{% raw %}
 ```sh
 now set a dropdown field for Tier.  use this code to get the tiersData:
 
@@ -136,6 +137,7 @@ now set a dropdown field for Tier.  use this code to get the tiersData:
 The value will be the ObjectId.  The text displayed will be the tier description.  Use Tailwinds CSS and instead of a submit button, set the Tier when either field is changed
 ```
 Here is the HTML, to replace the existing HTTP Response:   
+{% endraw %}
 
 ```html
 <!DOCTYPE html>
