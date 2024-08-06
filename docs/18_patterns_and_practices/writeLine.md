@@ -30,9 +30,9 @@ return r
 ## Comment
 
 The `Display Name` field in the `Write Line` activity can be used to carry comments that are easily seen in the workflow.  For example:  
-![alt text](image-32.png)
+![alt text](../images/ppp-image-32.png)
 
 ## Linking branches 
 
-Another helpful use of WriteLine is to bring branches of your workflow together.  Perhaps an if/else path needs to join up, and you need a 'holding' activity to make the graphical representation of your worklfow easier to understand.  Feed as many branches into WriteLine as you need, and have a single exit point to your next activity.  You can give it a meaningful comment too.
+Another helpful use of WriteLine is to bring branches of your workflow together.  Perhaps an if/else path needs to join up, and you need a 'holding' activity to make the graphical representation of your workflow easier to understand.  Feed as many branches into WriteLine as you need, and have a single exit point to your next activity.  You can give it a meaningful comment too.
 

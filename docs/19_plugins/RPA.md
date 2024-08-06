@@ -14,20 +14,20 @@ One of the features of the RPA plugin is that it allows the simple conversion of
 
 This example shows how it can be used.  
 
-![alt text](image-4.png)
+![alt text](../images/plugins-image-4.png)
 
 1. ### Set up your HTML.  
    This can be in a variable, or maybe use the `Markdown to HTML` activity in the Utilities plugin.
 2. ### Create the OpenABrowser activity:
-   ![alt text](image-1.png)
+   ![alt text](../images/plugins-image-1.png)
    > You will always choose `Headless`.  Also note the extended timeout.  
      This has the name of `OpenBrowser`, for use in the next activity.  
 3. ### Create and link the `OpenAPage` activity
-   ![alt text](image-2.png)
+   ![alt text](../images/plugins-image-2.png)
    The Browser will be the output from the OpenABrowser activity.
    The Name of this activity could be `Page`
 4. ### Create and link the `HTMLToPDF` activity
-   ![alt text](image-3.png)
+   ![alt text](../images/plugins-image-3.png)
    Supply the output of the OpenAPage activity and the HTML from your variable in step 1.  
    The Name of this activity could be `CreatePDF`
 5. ### To use the PDF, either 
@@ -49,4 +49,4 @@ This example shows how it can be used.
       }
       ```
     
-      ![alt text](image-5.png)
+      ![alt text](../images/plugins-image-5.png)

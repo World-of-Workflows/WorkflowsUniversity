@@ -22,8 +22,8 @@ Navigate to [api-keys](https://platform.openai.com/api-keys){:target="_blank"} t
 ![alt text](image-9.png)
 6. Add your secret API key value in `Authorization` and save the new credential.
 7. Use this credential when you create an OpenAI activity.  eg 
-    ![alt text](image-10.png)
+    ![alt text](../images/plugins-image-10.png)
     ...
-    ![alt text](image-11.png)
+    ![alt text](../images/plugins-image-11.png)
 
 [Fine tuning example jsonl](../finetuning/wow16.jsonl){:target="_blank"}

@@ -54,7 +54,7 @@ Any `<script>` to be passed to the browser will be built the same way.  for exam
 {% endraw %}
 ```
 
-When this script is recveived by the client, it might look like this:
+When this script is received by the client, it might look like this:
 ```
 <script>
     const companyName = 'Acme Co'
@@ -113,14 +113,14 @@ var companies = getVariable("Companies");
 document.body.innerHTML = generateCompanyTable(companies);
 ```
 
-Written like this, the World of Workflows JavaScript processor will attempt to execute this on the server, which is not what we intend: it should be passed down to the client browser to be exected in there.  However, the line  
+Written like this, the World of Workflows JavaScript processor will attempt to execute this on the server, which is not what we intend: it should be passed down to the client browser to be expected in there.  However, the line  
 ```JavaScript
     var companies = getVariable("Companies");
 ```
 
 cannot be executed in the client browser and must be executed on the server.
 
-To resolve this issue, we can use the backtick (`) escape sequence.  Anything written within a two backticks will be passed to the browser client to be execiuted there.  Everything else will be executed on the server and the result will be included in the the text sent to the browser.
+To resolve this issue, we can use the backtick (`) escape sequence.  Anything written within a two backticks will be passed to the browser client to be executed there.  Everything else will be executed on the server and the result will be included in the the text sent to the browser.
 
 This is how to add the backticks to the routine :
 
