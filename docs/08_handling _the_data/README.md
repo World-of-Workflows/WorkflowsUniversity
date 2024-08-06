@@ -11,8 +11,8 @@ World of Workflows provides robust capabilities for working with data stored in 
 
 ## Relevant Activities
 
-When you want manipulate data in the User Configurtable Database in World of Workflows you will use the `Data` activities.  Here are the most commonly used:  
-![Data activities](2024-07-10-15-37-54.png)
+When you want manipulate data in the User Configurable Database in World of Workflows you will use the `Data` activities.  Here are the most commonly used:  
+![Data activities](../images/2024-07-10-15-37-54.png)
 
 
 ## Considerations for Data Activities 
@@ -31,5 +31,5 @@ By following these steps and best practices, you can effectively work with data 
 Go to `Admin` -> `Workflows` -> `Create Workflow`  
 Click the arrow beside Publish and `import` this workflow file:  <a href="./working-with-data-examples.json" download>Example workflow file</a>
 
-<img src="2024-07-11-13-09-11.png" alt="Import button graphic" style="width: 250px; height: auto; border-radius: 10px; box-shadow: 2px 2px 5px grey;" />
+<img src="../images/2024-07-11-13-09-11.png" alt="Import button graphic" style="width: 250px; height: auto; border-radius: 10px; box-shadow: 2px 2px 5px grey;" />
 

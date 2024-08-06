@@ -23,20 +23,20 @@ To update existing data in the database, you can use the `ObjectInstanceUpdate` 
    ```
 
 Using default for Values
-![](2024-07-11-09-26-00.png)
+![](../images/2024-07-11-09-26-00.png)
 
 Using JSON representation for Values
-![](2024-07-11-09-26-58.png)
+![](../images/2024-07-11-09-26-58.png)
 
 Using JavaScript for Values
-![](2024-07-11-09-28-00.png)
+![](../images/2024-07-11-09-28-00.png)
 
 Using Liquid for the Instance Id
-![](2024-07-11-09-30-34.png)
+![](../images/2024-07-11-09-30-34.png)
 
 ## Adding JSON data 
 
 The `JSON Data Insert` activity is another way to add data to the database.  This activity is especially useful when the data might contain more fields than exist in the database: `JSON Data Insert` will create any missing fields. 
 
-![](2024-07-11-09-35-28.png)
+![](../images/2024-07-11-09-35-28.png)
 

@@ -17,9 +17,9 @@ To delete a record from the database, you can use the `DeleteObjectInstance` act
 2. **Example Configuration:**
    - **ObjectId:** `54321`
 
-![](2024-07-11-09-40-08.png)
+![](../images/2024-07-11-09-40-08.png)
 
-Note that the object cannot bve retrieved once this activity succeeds.
+Note that the object cannot be retrieved once this activity succeeds.
 
 
 {: .key }
