@@ -34,7 +34,7 @@ Navigate to `Admin` -> `Plugins`
    - Markdown to HTML - Converts Markdown to HTML
    - PDF to Text - Extracts the text from a PDF file with OCR or text overlay
    - Byte Array to Base64 - Converts a byte array to a base64 string
-   - JWT Decoder - decodes a JWT into consitituent parts 
+   - JWT Decoder - decodes a JWT into constituent parts 
    - JWT Decoder - validates a JWT 
    - Parse Multipart form data from an HTML Endpoint
    - Base64 to Byte array - reads a Base64 data string and outputs a Byte array  

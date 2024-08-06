@@ -38,21 +38,21 @@ To report on a database, we **strongly** recommend you take a copy of your datab
 ## Configure your DSN
 To configure the connection, click Start and type ODBC. For x86 machines, choose ODBC Data Sources (32-bit). For x64 machines, choose ODBC Data Sources (64-bit).
 
-![](2023-02-17-17-04-11.png)
+![](../images/2023-02-17-17-04-11.png)
 
 Click **Add**
 
-![](2023-02-17-17-04-43.png)
+![](../images/2023-02-17-17-04-43.png)
 
 Choose **SQLite3 ODBC Driver** and click **Finish**
 
-![](2023-02-17-17-05-34.png)
+![](../images/2023-02-17-17-05-34.png)
 
 In the **Data Source Name** field, enter a name for your connection. This can be anything you like, but we recommend you use WowF.
 
 Click **Browse** and navigate to the database file you saved earlier. When done, click **Ok**.
 
-![](2023-02-17-17-06-31.png)
+![](../images/2023-02-17-17-06-31.png)
 
 ## Reporting in PowerBI
 If you don't have PowerBI, you can download it for free from [here](https://powerbi.microsoft.com/en-us/desktop/).
@@ -62,13 +62,13 @@ Once you have PowerBI installed, you can connect to your database using the DSN 
 1. Open PowerBI
 2. Click **Get Data**
 3. Choose **ODBC**
-   ![](2023-02-17-17-08-34.png)
+   ![](../images/2023-02-17-17-08-34.png)
 4. Select your DSN Created above
-   ![](2023-02-17-17-09-17.png)
+   ![](../images/2023-02-17-17-09-17.png)
 5. Enter any username and click **Connect**
-   ![](2023-02-17-17-10-09.png)
+   ![](../images/2023-02-17-17-10-09.png)
 6. Choose the tables you want to report on and click **Load**
-   ![](2023-02-17-17-10-42.png)
+   ![](../images/2023-02-17-17-10-42.png)
 
 You can now report on World of Workflows using PowerBI. All relationships will be preserved.
 

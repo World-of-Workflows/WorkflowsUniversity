@@ -17,16 +17,16 @@ Workflows should be written with portability in mind.  Do not hard-code values t
 4. (optional) Add additional string field called `Data2`
 
 Add data to your Settings:
-![](2024-08-06-13-37-16.png)
+![](../images/2024-08-06-13-37-16.png)
 
 Add these two activities to your workflow to retrieve the Settings from the database into workflow variables of the same name:
 
 - Object Instance List
-![](2024-08-06-13-33-44.png)
-![](2024-08-06-13-34-10.png)
+![](../images/2024-08-06-13-33-44.png)
+![](../images/2024-08-06-13-34-10.png)
 
 - JavaScript
-![](2024-08-06-13-39-29.png)
+![](../images/2024-08-06-13-39-29.png)
     ```js
     function getSettingsAsVariables(settingsData) {
         for (let item of settingsData) {

@@ -26,13 +26,13 @@ The rest of the workflow continues to execute, and so could alter the values of 
 
 ### Add a temporary `Fault` activity
 
-You can stop a loop using the `Failt` activity.  This will halt the workflow at that point, and you can review the variables as at the Fault.  You can also set a custom fault message to assist with your debugging.  
+You can stop a loop using the `Fault` activity.  This will halt the workflow at that point, and you can review the variables as at the Fault.  You can also set a custom fault message to assist with your debugging.  
 
 ### Add variables with loop-based names
 
 Variables can be created with a name that is unique for each iteration of the loop.  
 
-For example, imaginge a loop through a list of Companies.  If you need to know why there is a logic error in your code you could set a variable inside the loop.  This JavaScript will create a variable name based on the ObjectId of each company.  Give this variable the data that will help you debug your workflow.
+For example, imagine a loop through a list of Companies.  If you need to know why there is a logic error in your code you could set a variable inside the loop.  This JavaScript will create a variable name based on the ObjectId of each company.  Give this variable the data that will help you debug your workflow.
 
 ```js
 
