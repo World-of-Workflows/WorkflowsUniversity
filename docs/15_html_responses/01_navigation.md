@@ -27,39 +27,39 @@ Once that's complete, we'll add some extensions
 1. Navigate to **Admin --> Types**
 2. Click **+**
 3. Name the Type **Lead**, with the description **A Lead** and click **Save**
-   ![Create Lead Type](image-1.png)
+   ![Create Lead Type](../images/html-image-1.png)
 
 ## Create Columns
 
-1. Click ![Edit Columns](image-2.png) **Edit Columns**
+1. Click ![Edit Columns](../images/html-image-2.png) **Edit Columns**
 2. Click **+** to add columns and add the following string columns:
    1. **FirstName**
    2. **LastName**
    3. **Email**
    4. **Phone**
    5. **Company**
-   ![Add Column](image-3.png)
+   ![Add Column](../images/html-image-3.png)
 3. You should now have six columns as shown below:
-   ![Lead Type](image-4.png)
+   ![Lead Type](../images/html-image-4.png)
 
 ## Create Form
 
 1. Navigate to **Admin->Workflows**
 2. Click **Create Workflow**
-3. Click the cog ![Cog](image-5.png) and name the Workflow **Lead Form** and click **Save**
+3. Click the cog ![Cog](../images/html-image-5.png) and name the Workflow **Lead Form** and click **Save**
 4. Click **Add Activity** and choose **HTTP** on the left and click **HTTP Endpoint**
-   ![HTTP Endpoint](image-6.png)
+   ![HTTP Endpoint](../images/html-image-6.png)
 5. Right Click the HTTP Endpoint activity on the Design Surface and choose **Edit**
 6. Make the Path ```/contactus``` and leave the Method as **Get**.
-   ![HTTP Endpoint Propeties](image-7.png)
+   ![HTTP Endpoint Propeties](../images/html-image-7.png)
 7. Click the **Common** tab and change the Display Name to ```GET /contactus```
-   ![HTTP Endpoint Common](image-8.png)
+   ![HTTP Endpoint Common](../images/html-image-8.png)
 8. Click **Save**
 9. Click **Add Activity** and choose **HTTP** on the left and click **HTTP Response**
-10. Drag the **HTTP Repsonse** activity across to the right and slightly down.
+10. Drag the **HTTP Respsonse** activity across to the right and slightly down.
 11. Connect the two activities by dragging from the blue dot on the right of the HTTPEndpoint activity to the blue circle on the left of the WriteHTTPResponse activity
 12. Right Click the HTTP Response Activity and choose **Edit**
-13. Click the ellipsis ![ellipsis](image-9.png) to the top right of the textbox under Content and choose **Liquid**
+13. Click the ellipsis ![ellipsis](../images/html-image-9.png) to the top right of the textbox under Content and choose **Liquid**
 14. Paste in the following text
     ```html
     <!DOCTYPE html>
@@ -112,7 +112,7 @@ Once that's complete, we'll add some extensions
     </html>
     ```
 15. Change the **Content Type** to text/html.
-    ![HTTP Response](image-10.png)
+    ![HTTP Response](../images/html-image-10.png)
 16. Click **Save**
 17. Click **Publish** *On the bottom right of the design surface*
 
@@ -143,7 +143,7 @@ If we examine the following line in our HTML, we can see the text ```<form actio
 5. Make the path ```/contactuspost```
 6. Make the Method ```POST```
 7. Check **Read Content**
-   ![HTTP Endpoint POST - Properties](image-11.png)
+   ![HTTP Endpoint POST - Properties](../images/html-image-11.png)
 8. Click the **Common** Tab
 9. Change the DisplayName to be ```POST /contactuspost```
 10. Change the Name to be ```PostContactUs```
@@ -152,7 +152,7 @@ If we examine the following line in our HTML, we can see the text ```<form actio
 13. Drag this slightly below and to the right of the HTTP Endpoint above
 14. Connect the two workflows by dragging from the blue disk on the right of the POST /contactuspost activity to the blue circle on the left of the ObjectInstanceCreate activity.
 15. Right Click the CreateObjectInstance Activity and choose **edit**
-16. Make the Object Type **Lead**. Click the ![ellipsis](image-9.png) to the top right of values and choose **JavaScript**.
+16. Make the Object Type **Lead**. Click the ![ellipsis](../images/html-image-9.png) to the top right of values and choose **JavaScript**.
 17. Paste the following
     ```js
     var result = 
@@ -172,7 +172,7 @@ If we examine the following line in our HTML, we can see the text ```<form actio
 21. Choose **HTTP** and **HTTP Response**
 22. Drag the new activity to the right and slightly below the ObjectInstanceCreate Activity
 23. Right click the new HTTP Response activity and choose edit
-24. Click the ![ellipsis](image-9.png) on the top right of content and choose **Liquid**.
+24. Click the ![ellipsis](../images/html-image-9.png) on the top right of content and choose **Liquid**.
 25. Paste the following into the content box:
     ```html
     <!DOCTYPE html>
@@ -204,10 +204,10 @@ If we examine the following line in our HTML, we can see the text ```<form actio
 ## Testing our Form
 
 1. Navigate to https://localhost:7063/contactus  
-   ![Contact us](image-12.png)
+   ![Contact us](../images/html-image-12.png)
 2. Enter your details and click **Submit**  
-   ![Submitted](image-13.png)
+   ![Submitted](../images/html-image-13.png)
 3. Navigate to Types in World of Workflows (**Admin --> Types**)
 4. Click **Lead**  
-   ![Leads List](image-14.png)
+   ![Leads List](../images/html-image-14.png)
 5. You can now see the new lead in the system.  
