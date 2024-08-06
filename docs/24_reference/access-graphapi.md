@@ -35,7 +35,7 @@ Before you start, you will need:
 
 ## Required Information
 
-1. Open the Microsoft Entra Id Poral [here](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/Overview){:target="_blank"}.
+1. Open the Microsoft Entra Id Portal [here](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/Overview){:target="_blank"}.
 2. Navigate to **App Registrations** or click [here](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps){:target="_blank"}.
 3. Click `All Applications`
 4. Search for `World of Workflows`
@@ -55,7 +55,7 @@ Complete the following table:
 ### Authorization and Token Endpoints
 
 1. In the application registration, Navigate to **Overview** and click **Endpoints**.
- ![alt text](image-1.png)
+ ![](../images/2024-08-06-14-31-00.png)
 2. The **OAuth 2.0 authorization endpoint (v2)** is the Authorization endpoint
 3. The **OAuth 2.0 token endpoint (v2)** is the Token Endpoint.
 
@@ -63,16 +63,16 @@ Complete the following table:
 
 1. In the Application registration, navigate to **Overview**
 2. The **Client Id** is the **Application (client) ID**
-![alt text](image-2.png)
+![](../images/2024-08-06-14-31-46.png)
 
 ### Secret
 
 1. In the application registration, navigate to **Certificates and Secrets**
 2. Click **+ New Client Secret**
 3. Give your secret a name and choose and expiry date.
-![alt text](image-3.png)
+![](../images/2024-08-06-14-32-12.png)
 4. Copy the **Value**. This is the Secret
-![alt text](image-4.png)
+![](../images/2024-08-06-14-32-28.png)
 
 {: .key }
 You will only get once chance to save this secret.  If you later need the secret value, you will need to create another secret.

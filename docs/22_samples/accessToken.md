@@ -12,7 +12,7 @@ has_children: false
 ## Passing an Access Token to an HTTP API
 Some APIs require an access token to be supplied in the header.  That is simple enough:  we just add it to thre `HTTP Request` activity, like this:
 
-![alt text](image.png)
+![](../images/2024-08-06-14-52-48.png)
 
 In this case we have set up our variable `access_token` to have a value, and prefixed it with the text 'Bearer '
 
@@ -161,10 +161,11 @@ An access token can be passed between your own HTTP workflows.  This ensures tha
 ### Setting up the calling HTTP Request
 
 Add your access token like this to the HTTP Request:
-![alt text](image-1.png)
+![](../images/2024-08-06-14-52-48.png)
 
 ### Setting up the HTTP Endpoint
 
 Create the same access_token variable (with the same value) in your workflow with the HTTP Endpoint, and set it like this:
-![alt text](image-2.png)
+
+![](../images/2024-08-06-14-54-29.png)
 
