@@ -11,7 +11,7 @@ World of Workflows includes comprehensive documentation features that help you m
 
 This chapter will cover the key aspects of documentation in World of Workflows.  You will find a link to the Documentor in the `Admin` page of your instance.
 
-![alt text](image-11.png)
+![](../images/2024-08-06-14-40-40.png)
 
 
 ## Data (ERD) Diagram
@@ -22,28 +22,28 @@ An Entity Relationship Diagram (ERD) is a visual representation of the tables an
 You will need Internet access for the first time you open the documentor.  
 
 Here is an example:
-![alt text](image-3.png)
+![](2024-08-06-14-41-47.png)
 
 ## Data Dictionary
 
 The data dictionary is a comprehensive reference of all tables and columns within your User Configurable Database. It includes information such as table and column names, data types, descriptions, and any constraints or relationships. World of Workflows generates a data dictionary to facilitate a clear understanding of the database structure and enable efficient management and development of your data.
 
 Here is an example:
-![alt text](image-1.png)
+![](../images/2024-08-06-14-42-18.png)
 
 ## Views Details
 
 The views details is a catalog of all the views defined within World of Workflows. It includes information such as view names, descriptions, parent views, and associated fields. The views dictionary aids in managing and understanding the different perspectives and hierarchies of your data, allowing you to create more effective views and improve overall user experience.
 
 Here is an example:
-![alt text](image-2.png)
+![](../images/2024-08-06-14-43-07.png)
 
 ## Workflow Diagrams
 
 A visual representation of the workflow's structure, displaying the flow of activities and branching logic. This diagram helps users understand the workflow's design and execution path, making it easier to optimize and maintain.
 
 Here is an example:
-![alt text](image-4.png)
+![](2024-08-06-14-43-45.png)
 
 ## Workflow Details
 

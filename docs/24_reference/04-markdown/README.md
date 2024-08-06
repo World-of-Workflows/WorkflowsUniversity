@@ -17,7 +17,7 @@ Using Markdown is different than using a WYSIWYG editor. In an application like 
 
 For example, to denote a heading, you add a number sign before it (e.g., ```# Heading One```). Or to make a phrase bold, you add two asterisks before and after it (e.g., ```**this text is bold**```). It may take a while to get used to seeing Markdown syntax in your text, especially if you’re accustomed to WYSIWYG applications. The screenshot below shows a Markdown file displayed in the Visual Studio Code text editor.
 
-![VS Code Markdown](image.png)
+![VS Code Markdown](../../images/2024-08-06-14-36-24.png)
 
 You can add Markdown formatting elements to a plaintext file using a text editor application. Or you can use one of the many Markdown applications for macOS, Windows, Linux, iOS, and Android operating systems. There are also several web-based applications specifically designed for writing in Markdown.
 
@@ -39,7 +39,7 @@ The best way to get started with Markdown is to use it. That’s easier than eve
 
 You don’t even need to download anything. There are several online Markdown editors that you can use to try writing in Markdown. [Dillinger](https://dillinger.io/) is one of the best online Markdown editors. Just open the site and start typing in the left pane. A preview of the rendered document appears in the right pane.
 
-![Dillinger](image-1.png)
+![Dillinger](../../images/2024-08-06-14-38-32.png)
 
 You’ll probably want to keep the Dillinger website open as you read through this guide. That way you can try the syntax as you learn about it. After you’ve become familiar with Markdown, you may want to use a Markdown application that can be installed on your desktop computer or mobile device.
 
@@ -54,7 +54,7 @@ Markdown applications use something called a *Markdown processor* (also commonly
 
 > **Note:** The Markdown application and processor are two separate components. For the sake of brevity, I've combined them into one element ("Markdown app") in the figure below.
 
-![Markdown Process](image-2.png)
+![Markdown Process](../../images/2024-08-06-14-39-15.png)
 
 To summarize, this is a four-part process:
 
