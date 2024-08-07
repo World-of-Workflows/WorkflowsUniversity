@@ -26,7 +26,8 @@ To set this up, you will
    
 4. Create a new workflow, called `Create Background Task`.  
    You can <a href="./create-backgound-task.json" download> download </a>this sample workflow.
-   
+   ![](../images/2024-08-07-13-59-08.png)
+
 5. Adjust the functionality as needed. If you need to ask the human questions, you will also want to pass the ObjectId of the related object to the child workflow.
 
 
