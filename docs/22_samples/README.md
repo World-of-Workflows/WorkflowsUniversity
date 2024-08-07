@@ -17,6 +17,12 @@ has_children: true
 - running 'child' workflows and passing data
 - securing your own HTTP APIs
 
+[Send an Email using MS Graph without a plugin](./SendEmailWithoutPlugin/send-html-email-using-office-365.html) shows these concepts:
+- setting Variables
+- substituting values in Variables
+- sending an HTTP Request to the MS Graph API 'SendMail'
+- using credentials set in Credential Manager
+
 [Using Google API for address lookups](./googleMaps.html) shows these concepts:
 - display a form using HTTP Response
 - linking to the Google API via single `<script>` statement
