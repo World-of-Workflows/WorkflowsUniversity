@@ -1,9 +1,9 @@
 ---
 title: Send html email using Office 365
 parent: Sample Workflows
-grand_parent: Patterns & Practices
+xgrand_parent: Patterns & Practices
 layout: default
-nav_order: 10
+nav_order: 5
 has_children: false
 ---
 

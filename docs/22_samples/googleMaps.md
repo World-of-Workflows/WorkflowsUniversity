@@ -1,11 +1,12 @@
 ---
-title: Google Address Lookuo
-parent: Web UI
+title: Google Address Lookup
+parent: Sample Workflows
 layout: default
-nav_order: 16
+nav_order: 15
 has_children: false
 ---
 
+{$ raw %}
 # Using Google Address lookup in a Web UI
 
 This chapter will show you how to build a Web UI to help users enter an accurate address using Google Maps API. 
@@ -26,6 +27,7 @@ You will use your own Google API key in the URL call to Google.   This will norm
 Create a HTTP Response activity and set the language to 'Liquid'.  Paste this code into the 'Content' field.  Set the 'Content type' to 'text/html'
 
 
+You can <a href="./property-test.json" download> download </a>this sample workflow
 
 
 ```html
@@ -464,3 +466,5 @@ This line of the code submits the form to your next workflow:
 ```
 
 You will create another workflow (or add another http endpoint to your other workflow) with the Endpoint of /someURL
+
+{$ endraw %}

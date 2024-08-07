@@ -3,7 +3,7 @@ title: Automating documentation with OpenAI
 parent: Self-writing Documentation
 layout: default
 nav_order: 10
-has_children: false
+has_children: true
 ---
 
 # Automating the Extended Documentation with OpenAI

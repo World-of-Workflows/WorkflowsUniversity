@@ -1,12 +1,40 @@
 ---
 title: Sample Workflows
-parent: Patterns & Practices
+xparent: Patterns & Practices
 layout: default
-nav_order: 230
+nav_order: 22
 has_children: true
 ---
 
 # Sample Workflows
+
+
+[Refreshing an Access Token](./accessToken.html) shows how to use these concepts:
+
+- calling an HTTP API with authorization
+- logic flows (if/else)
+- saving data to the database
+- running 'child' workflows and passing data
+- securing your own HTTP APIs
+
+[Using Google API for address lookups](./googleMaps.html) shows these concepts:
+- display a form using HTTP Response
+- linking to the Google API via single `<script>` statement
+- passing the API key
+- retrieving values into specific fields on the form
+  
+
+[Using Google Maps to calculate time & distance](./CallGoogleMaps.html) shows these concepts:
+
+- self-documenting workflow, with helpful activity names
+- calling an HTTP API with authorization
+- logic flows (if/else)
+- use of try/catch in JavaScript, setting Outcomes
+- efficiently retrieving a single entry from the Settings Type 
+- running 'child' workflows and passing data
+- creating a task asynchronously (in the background)
+- returning data to the 'parent' workflow
+
 
 [Automated Documentor with AI](../23_Documentation/automatingDocCredentials.html) shows how to use these concepts:
 
@@ -23,12 +51,3 @@ has_children: true
   - submitting on button press 
   - Tailwinds CSS 
 
-
-
-[Refreshing an Access Token](./accessToken.html) show how to use these concepts:
-
-- calling an HTTP API with authorization
-- logic flows (if/else)
-- saving data to the database
-- running 'child' workflows and passing data
-- securing your own HTTP APIs
