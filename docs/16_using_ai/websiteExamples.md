@@ -3,10 +3,12 @@ title: Website Example - Upload a CSV File
 parent: AI in World of Workflows
 layout: default
 nav_order: 4
-has_children: true
+has_children: false
 ---
 
 ## Website example
+
+{% raw %}
 
 When you want to build a website, we have used the ChatGPT Grimoire GPT with great success.  Open ChatPGT, select Explore GPTs and find **Grimoire**.
 
@@ -144,3 +146,5 @@ The **Grimoire** responds like this:
 ### Receiving the file into your Workflow
 
 So now you have a way of collecting data and sending it to your World of Workflows environment.  Let's ask ChatGPT what to do next:
+
+{% endraw %}

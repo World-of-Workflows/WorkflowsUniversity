@@ -1,6 +1,6 @@
 ---
 title: Create the credentials
-parent: Automating documentation with OpenAi
+parent: Automating documentation with OpenAI
 grand_parent: Self-writing Documentation
 layout: default
 nav_order: 10
