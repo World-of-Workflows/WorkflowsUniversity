@@ -20,11 +20,11 @@ Now click on the workflow you wish to edit
 
 The Workflow designer will open. You can now start to edit your workflow.
 
-Add activities with the ![alt text](image-6.png) button.
+Add activities with the ![alt text](../images/bw-image-6.png) button.
 
 Copy activities with the standard copy (`ctrl-c`) and paste (`ctrl-v`) keyboard keystrokes.
 
-![alt text](image-7.png)
+![alt text](../images/bw-image-7.png)
 
 {: .key }
 

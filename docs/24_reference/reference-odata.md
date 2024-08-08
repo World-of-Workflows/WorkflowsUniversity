@@ -16,11 +16,10 @@ The Open Data Protocol (oData) is an open standard that defines a set of best pr
 
 System query options are used to specify the data requested from an oData service. These options can be combined to create complex queries. The following system query options are available:
 
-### Filer
+### Filter
 
-The *\$filter* option is used to filter the data returned the databse based on specified criteria. It supports a range of logical, arithmetic, and comparison operators.
+The *\$filter* option is used to filter the data returned the database based on specified criteria. It supports a range of logical, arithmetic, and comparison operators.
 
-``filter_expression```
 
 Examples:
 
@@ -31,6 +30,11 @@ Examples:
 - Filter orders with a **<span class="smallcaps">Status</span>** of 'Shipped':
 
 ```Status eq 'Shipped'```
+
+- Filter orders with a **<span class="smallcaps">OrderDate</span>** after midday 20 November 2024 UTC :  
+  > Note that the format needs be be in UTC Z datetime format, and ***not*** surrounded by quotes.
+
+```OrderDate gt 2024-11-20T12:00:00Z```
 
 
 
