@@ -104,3 +104,12 @@ Variables can be created several ways:
 2. Using the JavaScript command `SetVariable()`
 3. Declare variables up-front on the workflow definition itself, called `Default Variables`
 
+## Singleton Workflow
+
+A workflow can be marked as 'Singleton'  This prevents more than 1 copy of the workflow running at a time.  
+
+This setting is visible in the Workflow Settings.
+Click the cog icon <img src="../images/2024-07-11-13-36-53.png" alt="Import button graphic" style="width: 70px; height: auto; border-radius: 10px; box-shadow: 2px 2px 5px grey; vertical-align: middle;" /> and navigate to the Advanced page:
+![](../images/2024-08-08-14-37-16.png)
+
+> Note that a Singleton workflow triggered by an HTTP Endpoint can only have a single copy running: attempting to trigger a Singleton workflow twice will result in a 404 error.
