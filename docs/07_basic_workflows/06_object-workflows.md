@@ -41,18 +41,18 @@ The instructions below show how to do this:
 3. Click the Cog and enter details as follows:
    1. Enter an appropriate name name for the workflow, such as ```TypeName_Workflowname``` where the type name was chosen in step 1 above, in our case ```MyNewType``` Our name could be ```MyNewType_FirstWorkflow```
    2. DisplayName is what you want to appear in the user interface. In our case I will use ```First Workflow for Testing```
-      ![](2024-01-11-143010.png)
+      ![](../images/2024-01-11-143010.png)
    3. Click **Save**
 4. Click **Start** and add the Activity **Object Instance Trigger** from the **Data** Section
    1. In the `Object Type Id` drop down, select the Type we have just created, in our case ```MyNewType```
       ![](../images/2024-01-11-142209.png)
    2. In the **Common** tab, give the Activity a friendly name, in our case we will give it the same name as the workflow ```First Workflow for Testing```
-      ![](2024-01-11-145318.png)
+      ![](../images/2024-01-11-145318.png)
    3. Click **Save**
 5. Add a new activity `List Object Instances` from the **Data** Section
    1. Select our object type from the `Object Type` drop down, in our case ```MyNewType```
    2. Set the Limit to 1
-      ![](../images/4-01-11-143843.png)
+      ![](../images/2024-01-11-143843.png)
    3. In the **Common** tab, give the activity a name, in our case ```FirstObject```
       ![](../images/2024-01-11-143928.png)
    4. Click **Save**

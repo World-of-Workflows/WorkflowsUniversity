@@ -22,7 +22,7 @@ An Entity Relationship Diagram (ERD) is a visual representation of the tables an
 You will need Internet access for the first time you open the documentor.  
 
 Here is an example:
-![](2024-08-06-14-41-47.png)
+![](../images/2024-08-06-14-41-47.png)
 
 ## Data Dictionary
 
@@ -43,7 +43,7 @@ Here is an example:
 A visual representation of the workflow's structure, displaying the flow of activities and branching logic. This diagram helps users understand the workflow's design and execution path, making it easier to optimize and maintain.
 
 Here is an example:
-![](2024-08-06-14-43-45.png)
+![](../images/2024-08-06-14-43-45.png)
 
 ## Workflow Details
 

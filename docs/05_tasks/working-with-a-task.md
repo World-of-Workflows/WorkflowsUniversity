@@ -21,7 +21,7 @@ The Task header shows the Task Title and the Task Id. The Task Id is a number.
 
 ## Description
 
-![](2024-07-10-09-59-12.png)
+![](../images/2024-07-10-09-59-12.png)
 ![Task Description](../images/2023-04-06-09-36-35.png)
 
 

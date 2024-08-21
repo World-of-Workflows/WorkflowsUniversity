@@ -6,8 +6,11 @@ grand_parent: Getting Started
 nav_order: 8
 ---
 
-# Azure Administration
-This plugin library provides activities for working with Azure Resource Group.s
+# Azure Administration - Work in progress
+This plugin library provides activities for working with Azure Resource Group.
+
+{: .key}
+This plugin is in development.  Contact us for details.
 
 ## Getting Started
 To Get started, you will need to generate some authentication values for your azure environment.

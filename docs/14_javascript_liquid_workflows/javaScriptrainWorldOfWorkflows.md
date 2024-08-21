@@ -49,13 +49,13 @@ For example, if you have an activity named `MyActivity`, you can access its outp
 activities.MyActivity.Output()
 ```
 
-Note that the Intelisense prompts you to include () when you see `(method)` in the description.  For example
-![](2024-08-06-11-00-21.png)
+Note that the Intellisense prompts you to include () when you see `(method)` in the description.  For example
+![](../images/2024-08-06-11-00-21.png)
 
-See the difference when intellisense shows a `property` is needed:
-![](2024-08-06-11-37-35.png)
+See the difference when Intellisense shows a `property` is needed:
+![](../images/2024-08-06-11-37-35.png)
 In this case you do not include the () at the end:
-![](2024-08-06-11-38-27.png)
+![](../images/2024-08-06-11-38-27.png)
 
 
 
