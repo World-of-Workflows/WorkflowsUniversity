@@ -8,10 +8,10 @@ nav_order: 4
 
 # Reverting a Workflow
 
-World of Workflows maintains a backup copy of every change you make to your workflows.  This version control system allows you to confidently make changes, knowing that you can revert to a previous version if you change yoru mind.
+World of Workflows maintains a backup copy of every change you make to your workflows.  This version control system allows you to confidently make changes, knowing that you can revert to a previous version if you change your mind.
 
 The Workflow Definitions page shows the Version Number of the workflow.
-The verison number is incremented whenever you `publish` your workflow.
+The version number is incremented whenever you `publish` your workflow.
 
 In this example, we have published the `Order to Cash` workflow 18 times, and made another edit to the workflow without publishing it.
 
@@ -21,5 +21,5 @@ If we want to revert our changes, we open the workflow, click the `<<` icon and 
 ![](../images/2024-07-08-09-16-46.png)
 
 Select the version and then click `Revert to version xx`  to go back to your earlier version.  A new version (20 in this case) will be created, so you can go back to version 19 if you need to.  
-![](../images/22024-07-08-09-18-25.png)
+![](../images/2024-07-08-09-18-25.png)
 

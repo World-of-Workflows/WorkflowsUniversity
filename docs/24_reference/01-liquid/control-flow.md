@@ -98,4 +98,28 @@ An optional else statement at the end of the case provides code to execute if no
 
 [Previous](whitespace-control.html) | [Home](README.html) | [Next](iteration.html)
 
+
+## Blank or non-existent values
+
+This syntax allows you to manage blank and non-existent variables:
+
+```liquid
+{% if Variables.<variableName> == blank}
+ <value for non-blank>
+ {% else %}
+ <value for blank>
+{% endif %}
+```
+
+Example:
+```liquid
+{% if Variables.JobNumber == blank}
+  Job: {{Variables.JobNumber}}
+ {% else %}
+  Job is undefined
+{% endif %}
+```
+
+
+
 {% endraw %}

@@ -54,6 +54,7 @@ The following table contains filters available using Liquid.
 | strip_html | Removes HTML tags from a string. | ```{{ "<p>hello world</p>" | strip_html }}``` | ```hello world``` |
 | strip_newlines | Removes newlines from a string. | ```{{ "hello \n world" | strip_newlines }}``` | ```hello world``` |
 | times | Multiplies a number by another number. | ```{{ 100 | times: 2 }}``` | ```200``` |
+| to_i | Converts a floating point to an integer | ```{{ 100.34 | to_i}}``` | ```100```|
 | truncate | Truncates a string to a specified length. | ```{{ "hello world" | truncate: 5 }}``` | ```hello...``` |
 | truncatewords | Truncates a string to a specified number of words. | ```{{ "hello world" | truncatewords: 1 }}``` | ```hello...``` |
 | uniq | Removes duplicate elements from an array. | ```{{ [1, 2, 3, 2, 1] | uniq }}``` | ```[1, 2, 3]``` |
