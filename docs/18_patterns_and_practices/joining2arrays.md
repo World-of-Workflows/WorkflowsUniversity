@@ -30,7 +30,7 @@ Setting the expanded variable:
 
 The resulting variables might look like this:  
 
-```
+```js
 {
   "simpleVariable": {
     "$type": "System.Object[], System.Private.CoreLib",
@@ -75,7 +75,7 @@ The details of the referenced Type, Features, is included in the 'expandedVariab
 In addition to this built-in functionality, you may have a data structure that has two Types with common (or even just similar) data columns, that you want to programmatically bring into one array.
 
 
-```JavaScript
+```js
 
 function join2Tables(Primaries,Secondaries) {
 
