@@ -8,9 +8,9 @@ has_children: false
 
 # Create a task in the 'background'
 
-World of Workflows has an advanced mechanism for interactoing with humand, called [Tasks](../05_tasks/README.html).  Normally when you create a task the workflow waits (technical term is 'suspends') until the task is dealt with by a human.  This is often the required business process, because the information required from the human will influence the rest of the workflow.
+World of Workflows has an advanced mechanism for interacting with humans, called [Tasks](../05_tasks/README.html). Normally when you create a task the workflow waits (technical term is 'suspends') until the task is dealt with by a human. This is often the required business process, because the information required from the human will influence the rest of the workflow.
 
-Sometimes you might want to create a task and *not* wait for a human response.  This might be because you are in a loop and each iteration in the loop can be dealt with separately.
+Sometimes you might want to create a task and *not* wait for a human response. This might be because you are in a loop and each iteration in the loop can be dealt with separately.
 
 ## Mechanism
 
