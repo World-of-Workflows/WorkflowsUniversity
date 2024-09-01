@@ -1,5 +1,5 @@
 ---
-title: Calling other workflows
+title: Calling Other Workflows
 parent: Building Workflows
 grand_parent: Beginner's Guide to Workflows
 layout: default
@@ -8,7 +8,7 @@ has_children: false
 ---
 
 
-## Calling other workflows
+## Calling Other Workflows
 
 The `Run Workflow` activity allows chaining between workflows.  You can think of this like calling a function or subroutine if you are familiar with some programming languages.
 
