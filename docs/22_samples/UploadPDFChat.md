@@ -23,7 +23,7 @@ The original scope for this workflow was to use it to analyse a phone bill, henc
 {: .key }
 The Chat prompt is contained in a *Settings* variable called `ChatPrompt`.  The value for this prompt will depend on the purpose to which you adapt this sample.
 
-This workflow uses the **Granular Access Control** mechanism to ensure the user has rights to the functionality.  A sample of this mechanism will shortly be available on the University; contact us for more detail in the meantime.
+This workflow uses the [**Granular Web Authentication**](../22_samples/GranualWebAuthentication.html) solution to ensure the user has rights to the functionality.
 
 ### Recommended Enhancements
 This sample workflow can be enhanced with additional error checking.  
