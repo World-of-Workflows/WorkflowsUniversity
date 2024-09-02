@@ -75,9 +75,9 @@ Either add yourself to the users table, or navigate to https://localhost:7063/ho
 
 Add an entry to the permission table:
 
-**user** - `Your email address`  
-**Feature** - `Customers`  
-**Permission** - `Read` set to True
+    **user** - `Your email address`  
+    **Feature** - `Customers`  
+    **Permission** - `Read` set to True
 
 ## Access now works
 
