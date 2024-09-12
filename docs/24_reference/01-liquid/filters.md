@@ -21,7 +21,7 @@ The following table contains filters available using Liquid.
 | ceil | Rounds a number up to the nearest integer. | ```{{ 4.2 | ceil }}``` | ```5``` |
 | compact | Removes any ```nil``` values from an array. | ```{{ [1, 2, 3, "", nil, false] | compact }}``` | ```[1, 2, 3]``` |
 | concat | Concatenates two strings. | ```{{ "hello" | concat: " world" }}``` | ```hello world``` |
-| date | Formats a date. | ```{{ "2016-01-01" | date: "%Y" }}``` | ```2016``` |
+| date | Formats a [date](https://www.strfti.me/).   | ```{{ "2016-01-01" | date: "%Y" }}``` | ```2016``` |
 | default | Returns the specified value if the input is ```nil```, false or an empty string. | ```{{ nil | default: "hello" }}``` | ```hello``` |
 | divided_by | Divides a number by another number. | ```{{ 100 | divided_by: 2 }}``` | ```50``` |
 | downcase | Converts a string to lowercase. | ```{{ "Hello World" | downcase }}``` | ```hello world``` |
