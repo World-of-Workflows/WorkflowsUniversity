@@ -10,7 +10,7 @@ has_children: false
 
 1. Navigate to the [latest release](https://github.com/World-of-Workflows/WorkflowsUniversity/releases)
 2. Download the Windows Version of PE for either ARM or X64
-   >There is an ARM version to run on ARM processors, and x64 version to run on Intel processors.  The ARM versin will also run well in a VM on MacOS on an M1 or later porocessor.
+   >There is an ARM version to run on ARM processors, and x64 version to run on Intel processors.  The ARM version will also run well in a VM on MacOS on an M1 or later proocessor.
 3. Run the downloaded application
    ![WOW PE Installer Screen 1](../images/02_image.png)
 4. Click **Next >**
