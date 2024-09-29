@@ -38,11 +38,44 @@ You create an HTTP Request activity that calls the API, returning JSON.
 You can use this JavaScript to create your variable Companies:
 `activities.getCompanies.ResponseContent()`
 
+The equivalent command in Liquid is {{Activities.getCompanies.ResponseContent}}
+
 In this case you will use this syntax in your HTTP Response to use the variable `Companies`:
 ```liquid
 {{ Variables.Companies | json | raw}}
 ```
 
+### Iterating through liquid variables in JavaScript
+See also [Iteration](./iteration.html) for details.
+
+Your web page will very likely use JavaScript to improve the user experience.  You will want to build up JavaScript variables from the variables created with [Set Variables](../../12_workflow_activities/09_Primitives/06_set-variable.html) or [ObjectInstanceList](../../08_handling%20_the_data/listingData.html) activities, which you include in the workflow prior to displaying the HTML page.
+
+For example, let's say we have a `ObjectInstanceList` activity with the Name of 'GetJobItems'.  We want to write JavaScript for our web page that manipulates this data somehow, maybe filtering it based on a value on the page.  JavaScript is needed because we want changes to be dynamic, and we don't want to go back to the server for these UI changes.
+
+Here is a sample, which uses a jobId set elsewhere on the page and filters data from the 'GetJobItems' activity:
+
+```js
+<script>
+
+        const jobItemsData = [
+        {% for item in Activities.GetJobItems.ExpandedOutput %}
+            { "objectId": {{item.ObjectId}}, "title": "{{item.Title}}", "jobId": {{item.Job.ObjectId}} },
+        {% endfor %}
+        ]; 
+
+        function getJobItemsOptions(jobId, selectedJobItem) {
+            const thisJobsItems = jobItemsData.filter(item => item.jobId === jobId);
+
+            let jobItemOptions = '';
+            thisJobsItems.forEach(item => {
+                const isSelected = item.objectId == selectedJobItem ? 'selected' : '';
+                jobItemOptions += `<option value="${item.objectId}" ${isSelected}>${item.title}</option>`;
+            });
+            return jobItemOptions;
+        }
+
+</script>
+```
 
 
 
