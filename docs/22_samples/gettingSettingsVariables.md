@@ -20,6 +20,8 @@ The <a href="./get-settings.json" download>**Get Settings** </a> snippet workflo
 
 These two activities provide a simple mechanism for dynamically retrieving and managing configuration settings within an application. Its structured approach combines data retrieval and processing through JavaScript, allowing for a flexible and adaptable solution that can respond to changes in settings and requirements efficiently. This makes it a crucial component in environments where configuration management is essential for operational success.
 
+![getHistory](../images/2024-09-30-08-30-43.png)
+
 ## Overview of the Workflow
 
 1. **Purpose**:
