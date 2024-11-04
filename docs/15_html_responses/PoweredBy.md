@@ -8,6 +8,7 @@ has_children: false
 # Adding our 'Powered By' logo to your web pages
 
 Our **Powered By** logo gives users confidence in the system you have written that it based on the award-winning World Of Workflows software.
+{% raw %}
 
 ![PoweredBy](../images/PoweredByWoW.png)
 
@@ -94,3 +95,5 @@ If you plan to use the PoweredBy logo on many pages, it makes sense to take a mo
 
 See [The Settings Type](../18_patterns_and_practices/SettingsType.html) for details.
 
+
+{% endraw %}

@@ -1,6 +1,6 @@
 ---
 title: HTTP Responses  - Execution Location
-parent: Web UI
+parent: Patterns & Practices
 layout: default
 nav_order: 150
 has_children: false
@@ -8,7 +8,7 @@ has_children: false
 
 # HTTP Responses and the `Execution Location` 
 
-World of Workflow makes an excelent HTTPS server.  You can quickly generate Call/Respnse workflows to build simple or complex web sites.  See [Building Web Pages with AI](../16_using_ai/websiteExamples.html) for help with this.
+World of Workflow makes an excellent HTTPS server.  You can quickly generate Call/Response workflows to build simple or complex web sites.  See [Building Web Pages with AI](../16_using_ai/websiteExamples.html) for help with this.
 
 When you send an HTTP Response to a browser it will often contain HTML, CSS and Script.
 
