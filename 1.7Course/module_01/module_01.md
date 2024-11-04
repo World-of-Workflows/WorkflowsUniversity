@@ -23,3 +23,6 @@ World of Workflows is a comprehensive software solution designed to help busines
 - **Enhanced Customer Service:** Faster and more accurate responses to customer inquiries improve overall satisfaction.
 
 By leveraging World of Workflows, businesses can optimise their operations, leading to improved productivity and growth. 
+
+## Labs
+There is a single lab for this module, [Lab 1: Configure Windows Sandbox](./lab_01_Windows_Sandbox.md). Please complete the lab before moving to module 2.
