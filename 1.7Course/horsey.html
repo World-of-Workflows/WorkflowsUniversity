@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Workflows Horseys</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        #raceTrack {
+            position: relative;
+            width: 800px;
+            height: 400px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            overflow: hidden;
+        }
+        .horse {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            top: 0;
+            transition: transform 0.5s ease-out;
+        }
+        #bettingArea {
+            text-align: center;
+            margin: 20px;
+        }
+        #bettingArea select, #bettingArea button {
+            font-size: 16px;
+            padding: 5px 10px;
+        }
+        #result {
+            text-align: center;
+            font-size: 20px;
+            margin: 20px;
+            display: none;
+        }
+        h1 {
+            text-align: center;
+        }
+        .shooter {
+            position: absolute;
+            width: 50px;
+            height: 100px;
+            bottom: 0;
+            left: -50px;
+            transition: left 1s;
+        }
+        .horse-shot {
+            transform: rotate(180deg) translateY(-20px);
+        }
+        .horse-inactive {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Workflows Melbourne Cup</h1>
+    <div id="bettingArea">
+        <label for="horseSelect">Choose your horse:</label>
+        <select id="horseSelect">
+            <option value="0">Red Horse</option>
+            <option value="1">Blue Horse</option>
+            <option value="2">Green Horse</option>
+            <option value="3">Orange Horse</option>
+            <option value="4">Purple Horse</option>
+        </select>
+        <button id="startRaceBtn">Start Race</button>
+    </div>
+    <div id="raceTrack">
+        <div class="horse" id="horse0">
+            <!-- Red Horse SVG -->
+            <svg width="60" height="60" viewBox="0 0 60 60">
+                <g>
+                    <!-- Body -->
+                    <ellipse cx="30" cy="35" rx="15" ry="10" fill="red"/>
+                    <!-- Head -->
+                    <circle cx="45" cy="25" r="7" fill="red"/>
+                    <!-- Legs -->
+                    <rect x="20" y="45" width="3" height="10" fill="red"/>
+                    <rect x="25" y="45" width="3" height="10" fill="red"/>
+                    <rect x="32" y="45" width="3" height="10" fill="red"/>
+                    <rect x="37" y="45" width="3" height="10" fill="red"/>
+                </g>
+            </svg>
+        </div>
+        <div class="horse" id="horse1">
+            <!-- Blue Horse SVG -->
+            <svg width="60" height="60" viewBox="0 0 60 60">
+                <g>
+                    <!-- Body -->
+                    <ellipse cx="30" cy="35" rx="15" ry="10" fill="blue"/>
+                    <!-- Head -->
+                    <circle cx="45" cy="25" r="7" fill="blue"/>
+                    <!-- Legs -->
+                    <rect x="20" y="45" width="3" height="10" fill="blue"/>
+                    <rect x="25" y="45" width="3" height="10" fill="blue"/>
+                    <rect x="32" y="45" width="3" height="10" fill="blue"/>
+                    <rect x="37" y="45" width="3" height="10" fill="blue"/>
+                </g>
+            </svg>
+        </div>
+        <div class="horse" id="horse2">
+            <!-- Green Horse SVG -->
+            <svg width="60" height="60" viewBox="0 0 60 60">
+                <g>
+                    <!-- Body -->
+                    <ellipse cx="30" cy="35" rx="15" ry="10" fill="green"/>
+                    <!-- Head -->
+                    <circle cx="45" cy="25" r="7" fill="green"/>
+                    <!-- Legs -->
+                    <rect x="20" y="45" width="3" height="10" fill="green"/>
+                    <rect x="25" y="45" width="3" height="10" fill="green"/>
+                    <rect x="32" y="45" width="3" height="10" fill="green"/>
+                    <rect x="37" y="45" width="3" height="10" fill="green"/>
+                </g>
+            </svg>
+        </div>
+        <div class="horse" id="horse3">
+            <!-- Orange Horse SVG -->
+            <svg width="60" height="60" viewBox="0 0 60 60">
+                <g>
+                    <!-- Body -->
+                    <ellipse cx="30" cy="35" rx="15" ry="10" fill="orange"/>
+                    <!-- Head -->
+                    <circle cx="45" cy="25" r="7" fill="orange"/>
+                    <!-- Legs -->
+                    <rect x="20" y="45" width="3" height="10" fill="orange"/>
+                    <rect x="25" y="45" width="3" height="10" fill="orange"/>
+                    <rect x="32" y="45" width="3" height="10" fill="orange"/>
+                    <rect x="37" y="45" width="3" height="10" fill="orange"/>
+                </g>
+            </svg>
+        </div>
+        <div class="horse" id="horse4">
+            <!-- Purple Horse SVG -->
+            <svg width="60" height="60" viewBox="0 0 60 60">
+                <g>
+                    <!-- Body -->
+                    <ellipse cx="30" cy="35" rx="15" ry="10" fill="purple"/>
+                    <!-- Head -->
+                    <circle cx="45" cy="25" r="7" fill="purple"/>
+                    <!-- Legs -->
+                    <rect x="20" y="45" width="3" height="10" fill="purple"/>
+                    <rect x="25" y="45" width="3" height="10" fill="purple"/>
+                    <rect x="32" y="45" width="3" height="10" fill="purple"/>
+                    <rect x="37" y="45" width="3" height="10" fill="purple"/>
+                </g>
+            </svg>
+        </div>
+        <!-- Shooter SVG -->
+        <div class="shooter" id="shooter">
+            <svg width="50" height="100" viewBox="0 0 50 100">
+                <g>
+                    <!-- Body -->
+                    <rect x="20" y="30" width="10" height="30" fill="brown"/>
+                    <!-- Head -->
+                    <circle cx="25" cy="20" r="10" fill="#f1c27d"/>
+                    <!-- Arms -->
+                    <rect x="10" y="35" width="30" height="5" fill="brown"/>
+                    <!-- Gun -->
+                    <rect x="0" y="35" width="10" height="3" fill="gray"/>
+                </g>
+            </svg>
+        </div>
+    </div>
+    <div id="result"></div>
+
+    <script>
+        const horses = [
+            { id: 0, name: "Red Horse", element: document.getElementById('horse0'), position: 0, active: true },
+            { id: 1, name: "Blue Horse", element: document.getElementById('horse1'), position: 0, active: true },
+            { id: 2, name: "Green Horse", element: document.getElementById('horse2'), position: 0, active: true },
+            { id: 3, name: "Orange Horse", element: document.getElementById('horse3'), position: 0, active: true },
+            { id: 4, name: "Purple Horse", element: document.getElementById('horse4'), position: 0, active: true },
+        ];
+
+        const raceTrackWidth = document.getElementById('raceTrack').offsetWidth;
+        const horseSelect = document.getElementById('horseSelect');
+        const startRaceBtn = document.getElementById('startRaceBtn');
+        const resultDiv = document.getElementById('result');
+        const shooter = document.getElementById('shooter');
+
+        let userBet = null;
+        let raceInterval = null;
+        let raceInProgress = false;
+        let horseShot = null;
+
+        startRaceBtn.addEventListener('click', () => {
+            if (raceInProgress) return; // Prevent starting multiple races
+            userBet = parseInt(horseSelect.value);
+            resetRace();
+            raceInProgress = true;
+            startRace();
+        });
+
+        function resetRace() {
+            // Reset positions and states
+            horses.forEach((horse, index) => {
+                horse.position = 0;
+                horse.active = true;
+                horse.element.style.left = '0px';
+                horse.element.style.top = (index * 70 + 20) + 'px'; // Space the horses vertically
+                horse.element.style.opacity = 1;
+                horse.element.classList.remove('horse-shot', 'horse-inactive');
+            });
+            shooter.style.left = '-50px';
+            resultDiv.style.display = 'none';
+            resultDiv.innerHTML = '';
+            horseShot = null;
+        }
+
+        function startRace() {
+            // Randomly decide the winner
+            let activeHorses = horses.filter(horse => horse.active);
+            const winnerId = activeHorses[Math.floor(Math.random() * activeHorses.length)].id;
+            const finishLine = raceTrackWidth - 80; // Account for horse width
+            const raceDuration = 8000; // Total race duration in milliseconds
+            const startTime = Date.now();
+
+            // Random time to shoot a horse
+            const shootTime = Math.random() * (raceDuration * 0.6) + raceDuration * 0.2; // Between 20% and 80% of race duration
+
+            raceInterval = setInterval(() => {
+                const elapsedTime = Date.now() - startTime;
+                const raceProgress = elapsedTime / raceDuration;
+
+                if (elapsedTime >= shootTime && !horseShot) {
+                    shootHorse();
+                }
+
+                if (raceProgress >= 1) {
+                    endRace(winnerId);
+                    clearInterval(raceInterval);
+                    raceInProgress = false;
+                    return;
+                }
+
+                horses.forEach((horse) => {
+                    if (!horse.active) return; // Skip if horse is out
+                    // Calculate position
+                    let randomFactor = Math.random() * 0.02; // Randomness to make the race exciting
+                    let progress = raceProgress + randomFactor;
+
+                    // Keep progress between 0 and 1
+                    if (progress > 1) progress = 1;
+
+                    // Winner accelerates at the end
+                    if (horse.id === winnerId && raceProgress > 0.8) {
+                        progress += 0.05;
+                        if (progress > 1) progress = 1;
+                    }
+
+                    horse.position = progress * finishLine;
+                    horse.element.style.left = horse.position + 'px';
+                });
+            }, 50);
+        }
+
+        function shootHorse() {
+            // Randomly select a horse to remove (excluding the winner)
+            const availableHorses = horses.filter(horse => horse.active && horse.id !== userBet);
+            if (availableHorses.length === 0) return;
+            const targetHorse = availableHorses[Math.floor(Math.random() * availableHorses.length)];
+            horseShot = targetHorse.id;
+
+            // Position shooter near the horse
+            const horseElement = targetHorse.element;
+            const shooterY = parseInt(horseElement.style.top) + 10;
+            shooter.style.top = shooterY + 'px';
+
+            // Animate shooter entering
+            shooter.style.left = '0px';
+
+            setTimeout(() => {
+                // "Shoot" the horse
+                targetHorse.active = false;
+                horseElement.classList.add('horse-shot'); // Rotate the horse
+                horseElement.classList.add('horse-inactive'); // Fade out to indicate it's out of the race
+
+                // Animate shooter exiting
+                shooter.style.left = '-50px';
+            }, 1000);
+        }
+
+        function endRace(winnerId) {
+            // Move all horses to their final positions
+            horses.forEach((horse) => {
+                horse.position = horse.element.offsetLeft;
+            });
+            resultDiv.style.display = 'block';
+            if (userBet === winnerId) {
+                resultDiv.innerHTML = `<strong>Congratulations!</strong> Your horse (${horses[userBet].name}) won the race! 🎉`;
+            } else if (userBet === horseShot) {
+                resultDiv.innerHTML = `Oh no! Your horse (${horses[userBet].name}) was taken out of the race. Better luck next time.`;
+            } else {
+                resultDiv.innerHTML = `Sorry, your horse (${horses[userBet].name}) lost. The winner is ${horses[winnerId].name}.`;
+            }
+        }
+    </script>
+</body>
+</html>
