@@ -13,7 +13,7 @@ Plugins are libraries of activities which can be dynamically added to an instanc
 These libraries must be digitally signed with the World of Workflows certificate, to ensure that malicious code does not get into customers hands, however library authors can create libraries and submit them for approval.
 
 
-Plugins are available in [this GitHub repository](https://github.com/World-of-Workflows/Plugins/releases){:target="_blank"}.  Download the .zip file and add to your instance of World of Workflows, using Plugin Manager:
+Plugins are available in [this GitHub repository](https://github.com/World-of-Workflows/WorkflowsUniversity/releases/tag/plugins-1.7){:target="_blank"}.  Download the .zip file and add to your instance of World of Workflows, using Plugin Manager:
 Navigate to `Admin` -> `Plugins`
 
 ![alt text](image-7.png)
