@@ -105,3 +105,126 @@ Granting permissions in World of Workflows requires you first to configure the S
 
 Now you can navigate to your new server and login.
 
+## Appendix: Installing SQlite3
+
+Below are detailed instructions for installing the SQLite3 command-line utilities on Windows, macOS, and Linux. These steps should help you get up and running so you can interact directly with SQLite databases on the command line.
+
+
+
+### Windows
+
+**Method 1: Download Pre-compiled Binaries**
+
+1. **Visit the SQLite Downloads Page**: Go to the official SQLite website at [https://www.sqlite.org/download.html](https://www.sqlite.org/download.html).
+2. **Select the Windows Binary**: Under the "Precompiled Binaries for Windows" section, locate the download link for the `sqlite-tools-win32-x86-*` zip file. Even if you have a 64-bit machine, the 32-bit version works fine.
+3. **Download and Extract**: Save the ZIP file to your computer. Once downloaded, right-click on the ZIP file and select “Extract All…” to extract the contents into a folder of your choice. You should now have `sqlite3.exe` in that folder.
+4. **Add to Path (Optional)**: To run `sqlite3` from any directory in the command prompt, add the folder containing `sqlite3.exe` to your system’s PATH:
+   - Press **Windows + R**, type `sysdm.cpl` and hit Enter.
+   - Go to the **Advanced** tab and click **Environment Variables**.
+   - Under **System variables**, find the `Path` variable, select it, then click **Edit**.
+   - Click **New**, then type the path of the folder containing `sqlite3.exe`, and click **OK**.
+   - Open a new Command Prompt and type `sqlite3` to ensure it runs correctly.
+
+**Method 2: Using a Package Manager (e.g., Chocolatey)**
+
+1. **Install Chocolatey** (if you haven’t already):  
+   - Open PowerShell as Administrator.
+   - Run:  
+     ```powershell
+     Set-ExecutionPolicy Bypass -Scope Process -Force; `
+     [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; `
+     Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+     ```
+2. **Install SQLite3**:  
+   ```powershell
+   choco install sqlite
+   ```
+3. **Verify Installation**: Open a new Command Prompt or PowerShell window and run:  
+   ```powershell
+   sqlite3 --version
+   ```
+
+---
+
+### macOS
+
+**Method 1: Using Homebrew**
+
+1. **Install Homebrew** (if you haven’t yet): In Terminal, run:  
+   ```bash
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   ```
+2. **Install SQLite3**: Once Homebrew is installed, run:  
+   ```bash
+   brew install sqlite
+   ```
+3. **Verify Installation**:  
+   ```bash
+   sqlite3 --version
+   ```
+
+**Method 2: Using MacPorts**
+
+1. **Install MacPorts**: If you prefer MacPorts, first install it from [https://www.macports.org/install.php](https://www.macports.org/install.php).
+2. **Install SQLite3**:  
+   ```bash
+   sudo port install sqlite3
+   ```
+3. **Verify Installation**:  
+   ```bash
+   sqlite3 --version
+   ```
+
+**Note**: SQLite may already be included on macOS by default. You can simply open Terminal and type `sqlite3`. If it’s already installed, it will open the SQLite prompt. If not, use one of the methods above.
+
+---
+
+### Linux
+
+On most Linux distributions, SQLite3 is readily available via the default package manager.
+
+**For Debian/Ubuntu-Based Distributions**:
+
+1. **Update Package Lists**:  
+   ```bash
+   sudo apt update
+   ```
+2. **Install SQLite3**:  
+   ```bash
+   sudo apt install sqlite3
+   ```
+3. **Verify Installation**:  
+   ```bash
+   sqlite3 --version
+   ```
+
+**For Fedora/CentOS/RHEL**:
+
+1. **Install SQLite3**:  
+   ```bash
+   sudo dnf install sqlite
+   ```
+   *(On older distributions, you may need `yum` instead of `dnf`.)*
+2. **Verify Installation**:  
+   ```bash
+   sqlite3 --version
+   ```
+
+**For Arch Linux**:
+
+1. **Install via Pacman**:  
+   ```bash
+   sudo pacman -S sqlite
+   ```
+2. **Verify Installation**:  
+   ```bash
+   sqlite3 --version
+   ```
+
+**For Other Distributions**: Consult your distribution’s package manager or software repositories. Typically, a command like `sudo zypper install sqlite3` (for openSUSE) or similar will work.
+
+
+### Conclusion
+
+After following the above instructions for your operating system, you should have the SQLite3 command-line tool installed. You can verify a successful installation by opening your terminal or command prompt and running `sqlite3 --version`. If it returns a version number rather than an error, you’re all set!
+
