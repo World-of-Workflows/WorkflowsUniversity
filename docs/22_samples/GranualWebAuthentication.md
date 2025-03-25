@@ -110,6 +110,43 @@ Repeat for all `ObjectGetList` Activities in all workflows
 
 # Workflows Diagrams
 
+## Overview of the solution's workflows
+
+```mermaid
+flowchart TD
+     625c86ce-bff1-412a-a9b8-7c62461320df[workflow:-main-nav-url:-/-or-/home]
+     c4e73dd3-1a04-439f-ab6c-8296c9dffe1c[user-goes-to-/-or-/home]
+     9864ca6a-393b-4444-ae18-d5d7d64053d4[workflow:-secure-nav-url:-/secure]
+     1b82bef0-2bbb-4668-995f-a7a1f6f964f7[auto-redirect-to-login-page]
+     c06781e3-33d3-4394-9176-48614528c363[workflow:-Azure-Ad-Auth-Flow-url:-/secure]
+     8b707749-2a5b-4b77-aa93-e40c55837003[user-clicks-'login'-button]
+     3aa52a99-9fd4-454f-814f-6030e0d020ad[Microsoft-Azure-AD-login]
+     fea130a6-5aec-42dd-ab00-187fbb928b79[workflow:-Azure-Ad-Auth-Flow-url:-/callback]
+     d1352d37-414d-465d-8a52-cbb1512c85f1[workflow:-SecurePage-url:-/securenav]
+     93108ac2-c7c6-4a72-bfbd-4becdc3a3cad[workflow:-AuthGetUserPermissions-which-features-can-user-access?]
+     61e6592e-33df-457b-82e1-f140e2a94128[workflow:-CustomerPage-url:-/customers]
+     fc2ec69f-b0ec-4b04-aaae-4e71129b2266[user-clicks-'Customers'-button]
+     fc2405fc-0bc1-4220-88e9-7027bfc6f562[workflow:-~Another~.url:-/~Another~.URL]
+     4746c540-098b-4569-884a-3d26a31601bd[user-clicks-'<other>'-button]
+     67114e25-3d09-460d-9cce-d799c8f31c94[user-clicks-'logoff'-button]
+     8e7ecaf0-9cbc-400a-9333-67e440cd0f05[workflow:-Azure-Ad-Auth-Flow-url:-/azLogoff]
+     c4e73dd3-1a04-439f-ab6c-8296c9dffe1c ---> |Done| 625c86ce-bff1-412a-a9b8-7c62461320df
+     1b82bef0-2bbb-4668-995f-a7a1f6f964f7 ---> |Done| 9864ca6a-393b-4444-ae18-d5d7d64053d4
+     625c86ce-bff1-412a-a9b8-7c62461320df ---> |Done| 1b82bef0-2bbb-4668-995f-a7a1f6f964f7
+     8b707749-2a5b-4b77-aa93-e40c55837003 ---> |Done| c06781e3-33d3-4394-9176-48614528c363
+     9864ca6a-393b-4444-ae18-d5d7d64053d4 ---> |Done| 8b707749-2a5b-4b77-aa93-e40c55837003
+     3aa52a99-9fd4-454f-814f-6030e0d020ad ---> |Done| fea130a6-5aec-42dd-ab00-187fbb928b79
+     c06781e3-33d3-4394-9176-48614528c363 ---> |Done| 3aa52a99-9fd4-454f-814f-6030e0d020ad
+     fea130a6-5aec-42dd-ab00-187fbb928b79 ---> |Done| d1352d37-414d-465d-8a52-cbb1512c85f1
+     fc2ec69f-b0ec-4b04-aaae-4e71129b2266 ---> |Done| 61e6592e-33df-457b-82e1-f140e2a94128
+     67114e25-3d09-460d-9cce-d799c8f31c94 ---> |Done| 8e7ecaf0-9cbc-400a-9333-67e440cd0f05
+     d1352d37-414d-465d-8a52-cbb1512c85f1 ---> |Done| 67114e25-3d09-460d-9cce-d799c8f31c94
+     d1352d37-414d-465d-8a52-cbb1512c85f1 ---> |Done| 93108ac2-c7c6-4a72-bfbd-4becdc3a3cad
+     93108ac2-c7c6-4a72-bfbd-4becdc3a3cad ---> |Done| fc2ec69f-b0ec-4b04-aaae-4e71129b2266
+     4746c540-098b-4569-884a-3d26a31601bd ---> |Done| fc2405fc-0bc1-4220-88e9-7027bfc6f562
+     93108ac2-c7c6-4a72-bfbd-4becdc3a3cad ---> |Done| 4746c540-098b-4569-884a-3d26a31601bd
+```
+
 ## Workflow: Auth - GetUserPermissions
 
 ```mermaid
@@ -202,6 +239,9 @@ flowchart TD
 ```
 
 * * *
+## Workflow: Auth - AuthGetUserPermissionsAnyFeatures
+This returns the permissions that a user has permissions to, and the user name.  If no permissions, it returns false
+
 ## Workflow: AuthenticationJS
 
 ```mermaid
@@ -256,7 +296,7 @@ flowchart TD
 ```
 
 * * *
-## Workflow: CustomerPage
+## Workflow: Sample CustomerPage
 
 ```mermaid
 flowchart TD
@@ -275,7 +315,7 @@ flowchart TD
 ```
 
 * * *
-## Workflow: Main Navigation Page
+## Workflow: Sample Main Navigation Page
 
 ```mermaid
 flowchart TD
@@ -312,43 +352,6 @@ flowchart TD
 ```
 
 * * *
-## Workflow: overview
-
-```mermaid
-flowchart TD
-     625c86ce-bff1-412a-a9b8-7c62461320df[workflow:-main-nav-url:-/-or-/home]
-     c4e73dd3-1a04-439f-ab6c-8296c9dffe1c[user-goes-to-/-or-/home]
-     9864ca6a-393b-4444-ae18-d5d7d64053d4[workflow:-secure-nav-url:-/secure]
-     1b82bef0-2bbb-4668-995f-a7a1f6f964f7[auto-redirect-to-login-page]
-     c06781e3-33d3-4394-9176-48614528c363[workflow:-Azure-Ad-Auth-Flow-url:-/secure]
-     8b707749-2a5b-4b77-aa93-e40c55837003[user-clicks-'login'-button]
-     3aa52a99-9fd4-454f-814f-6030e0d020ad[Microsoft-Azure-AD-login]
-     fea130a6-5aec-42dd-ab00-187fbb928b79[workflow:-Azure-Ad-Auth-Flow-url:-/callback]
-     d1352d37-414d-465d-8a52-cbb1512c85f1[workflow:-SecurePage-url:-/securenav]
-     93108ac2-c7c6-4a72-bfbd-4becdc3a3cad[workflow:-AuthGetUserPermissions-which-features-can-user-access?]
-     61e6592e-33df-457b-82e1-f140e2a94128[workflow:-CustomerPage-url:-/customers]
-     fc2ec69f-b0ec-4b04-aaae-4e71129b2266[user-clicks-'Customers'-button]
-     fc2405fc-0bc1-4220-88e9-7027bfc6f562[workflow:-<other>.Title-url:-/<other>.URL]
-     4746c540-098b-4569-884a-3d26a31601bd[user-clicks-'<other>'-button]
-     67114e25-3d09-460d-9cce-d799c8f31c94[user-clicks-'logoff'-button]
-     8e7ecaf0-9cbc-400a-9333-67e440cd0f05[workflow:-Azure-Ad-Auth-Flow-url:-/azLogoff]
-     c4e73dd3-1a04-439f-ab6c-8296c9dffe1c ---> |Done| 625c86ce-bff1-412a-a9b8-7c62461320df
-     1b82bef0-2bbb-4668-995f-a7a1f6f964f7 ---> |Done| 9864ca6a-393b-4444-ae18-d5d7d64053d4
-     625c86ce-bff1-412a-a9b8-7c62461320df ---> |Done| 1b82bef0-2bbb-4668-995f-a7a1f6f964f7
-     8b707749-2a5b-4b77-aa93-e40c55837003 ---> |Done| c06781e3-33d3-4394-9176-48614528c363
-     9864ca6a-393b-4444-ae18-d5d7d64053d4 ---> |Done| 8b707749-2a5b-4b77-aa93-e40c55837003
-     3aa52a99-9fd4-454f-814f-6030e0d020ad ---> |Done| fea130a6-5aec-42dd-ab00-187fbb928b79
-     c06781e3-33d3-4394-9176-48614528c363 ---> |Done| 3aa52a99-9fd4-454f-814f-6030e0d020ad
-     fea130a6-5aec-42dd-ab00-187fbb928b79 ---> |Done| d1352d37-414d-465d-8a52-cbb1512c85f1
-     fc2ec69f-b0ec-4b04-aaae-4e71129b2266 ---> |Done| 61e6592e-33df-457b-82e1-f140e2a94128
-     67114e25-3d09-460d-9cce-d799c8f31c94 ---> |Done| 8e7ecaf0-9cbc-400a-9333-67e440cd0f05
-     d1352d37-414d-465d-8a52-cbb1512c85f1 ---> |Done| 67114e25-3d09-460d-9cce-d799c8f31c94
-     d1352d37-414d-465d-8a52-cbb1512c85f1 ---> |Done| 93108ac2-c7c6-4a72-bfbd-4becdc3a3cad
-     93108ac2-c7c6-4a72-bfbd-4becdc3a3cad ---> |Done| fc2ec69f-b0ec-4b04-aaae-4e71129b2266
-     4746c540-098b-4569-884a-3d26a31601bd ---> |Done| fc2405fc-0bc1-4220-88e9-7027bfc6f562
-     93108ac2-c7c6-4a72-bfbd-4becdc3a3cad ---> |Done| 4746c540-098b-4569-884a-3d26a31601bd
-```
-
 * * *
 
 
