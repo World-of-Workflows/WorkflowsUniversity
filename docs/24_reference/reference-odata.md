@@ -42,9 +42,6 @@ oData also provides a set of functions to perform operations on the data. These 
 
 ### String Functions
 
-- *substringof*: Checks if a substring is within a string.
-
-```substringof({search text}, {string})```
 
 - *length*: Returns the length of a string.
 
