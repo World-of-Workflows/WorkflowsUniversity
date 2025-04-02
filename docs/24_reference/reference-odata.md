@@ -42,7 +42,6 @@ oData also provides a set of functions to perform operations on the data. These 
 
 ### String Functions
 
-
 - *length*: Returns the length of a string.
 
 ```length({string})```
