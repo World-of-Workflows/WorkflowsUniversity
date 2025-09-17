@@ -51,17 +51,17 @@ Every time you create a column, it needs to have a data type. This tells World o
 
 ## Relationships
 
-You can create relationships between types in World of Workflows. You do this by adding a column with the data type **Reference** and choosing the type you would like to relate to.
+You can create relationships between types in World of Workflows. You do this by adding a column with the data type **Reference** and choosing the table you would like to relate to.
 
 Relationships allow you to define how objects are related to each other.
 
 However, World of Workflows offers a single way to create relationships, but you can implement the three types of relationships by following the guide below:
 
-Imagine we have Table A and Table B
+Imagine we have Table_A and Table_B
 
-- A one-to-one (1:1) relationship is easily established by adding a column in Object A with data type Relationship and Table the type of Object B.
-- A one-to-many (1:∞) relationship between A and B is established by adding a column in Object B with data type reference and Table the type of Object A.
-- A many-to-many (∞:∞) relationship between objects A and B is created by creating a new type (Table C). This has two columns, one is a relationship with the type of Object A and the other is a relationship with the type of Object B.
+- A one-to-one (1:1) relationship is easily established by adding a column in Table_A with data type Reference set to Table_B.
+- A one-to-many (1:∞) relationship between A and B is established by adding a column in Table_B with data type reference set to Table_A.
+- A many-to-many (∞:∞) relationship between Table_A and Table_B is created by creating a new Table (Table C). This has two columns, one is a reference set to Table_A and the other is a reference set to Table_B.
 
 {: .highlight }
 > Whilst the first two types will appear in the user interface, the interface does not understand many to many relationships, however it is possible to develop a workflow that understands this structure, and therefore a custom web UI that is able to work with and manipulate it..
