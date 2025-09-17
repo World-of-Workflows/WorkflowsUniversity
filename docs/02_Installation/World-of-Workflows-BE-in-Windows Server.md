@@ -49,7 +49,7 @@ On your Windows Server:
 3.	Reboot the server after installation.  
 
 
-### Installing World of Workflows
+### Install World of Workflows
 
 1. Download World of Workflows Business Edition  
 
@@ -84,8 +84,8 @@ On your Windows Server:
          Note: the Site name is also used by IIS to create an Application Pool.  
          A `local` user is created called `IIS AppPool\<sitename>`.  This is the user you will need to grant access to `C:\inetpub\wwwroot\WorldOfWorkflows` and the database folder. 
   
-5. Verify Web.Config
-   The World fo Workflows Business Edition .zip should already include a web.config with an ```< aspNetCore />``` section.
+5. Verify/update Web.Config
+   The World of Workflows Business Edition .zip should already include a web.config with an ```< aspNetCore />``` section.
    If you need to, update the logging to be enabled, like this:
 
    ```
@@ -94,7 +94,7 @@ On your Windows Server:
       <location path="." inheritInChildApplications="false">
          <system.webServer>
             <handlers>
-            <add name="aspNetCore" path="*" verb="*" modules="AspNetCoreModuleV2" resourceType="Unspecified" />
+               <add name="aspNetCore" path="*" verb="*" modules="AspNetCoreModuleV2" resourceType="Unspecified" />
             </handlers>
             <aspNetCore processPath=".\HubOneWorkflowsApp.Server.exe" stdoutLogEnabled="true" stdoutLogFile=".\logs\stdout" hostingModel="inprocess" />
          </system.webServer>
@@ -109,7 +109,7 @@ On your Windows Server:
    
 7. Grant read/write access to the logs folder for the user `IIS AppPool\WorldOfWorkflows`
 
-8. Update appsettings.json  
+#### Update appsettings.json  
    Here is a <a href="./appsettings.json" download>sample `appsessings.json` </a> file.
    There are a number of items you will need to update:  
 
@@ -122,25 +122,50 @@ On your Windows Server:
             "WorldOfWorkflows": "Data Source=D:\\Data\\WoWData.db;cache=shared"  
          },  
       ```
-   2. The ClientConfiguration contains details on how authentication is set up within AzureAD.
-      The `Authority` will need to be set with your Azure Subscriptions Tenant Id.  
-      The `ClientId` will need to be changed to your App Registration's Client Id
+
+      {: .key }  
+      A note on SQLite database settings.  
+
+      You may improve performance slightly by enabling 'wal' mode on a database, but only of the database is on a local disk.  
+      
+      {: .key }  
+      You must not enable 'wal' mode on a database located on a network drive.
+
+      {: .key }  
+      To alter the journal_mode on a database, use a SQLite database editor, or a SQLite cli.  The commands to change the journal_mode are:
+         - Check the current journal_mode:  
+         ``sqlite3 {filename}.db "pragma journal_mode;"``
+         - Enable 'wal' mode:   
+         ``sqlite3 {filename}.db "pragma journal_mode=wal;"``
+         - Disable 'wal' mode:  
+         ``sqlite3 {filename}.db "pragma journal_mode=delete;"``
+      
+      {: .key }  
+      Use `;cache=shared;` on the connection string to a SQLite database when the journal_mode of the database is set to 'delete'.  If you change the database journal_mode to 'wal' you must remove `;cache=shared;` from the connection string.
+      
+
+
+
+   2. The ClientConfiguration contains details on how authentication is set up within Entra AD.
+      The `Authority` must be set with your Azure Subscriptions Tenant Id.  
+      The `ClientId` must be changed to your App Registration's Client Id.  
       ```
       "WorldOfWorkflows": {
-      "ClientConfiguration": {
-         "WorldOfWorkflows": {
-         "Server": {
-            "Scopes": {
-               "Default": [
-               "api://xxxxxxxx-xxxx-xxxx-xxxx-xxxx/.default"
-               ]
+         "ClientConfiguration": {
+            "WorldOfWorkflows": {
+               "Server": {
+                  "Scopes": {
+                     "Default": [
+                        "api://xxxxxxxx-xxxx-xxxx-xxxx-xxxx/.default"
+                     ]
+                  }
+               }
+            },
+            "AzureAd": {
+               "Authority": "https://login.microsoftonline.com/xxxxxxxx-xxxx-xxxx-xxxx-xxxx",
+               "ValidateAuthority": true,
+               "ClientId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxx"
             }
-         }
-         },
-         "AzureAd": {
-         "Authority": "https://login.microsoftonline.com/xxxxxxxx-xxxx-xxxx-xxxx-xxxx",
-         "ValidateAuthority": true,
-         "ClientId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxx"
          }
       }
       ```
@@ -217,4 +242,10 @@ Now you can navigate to your new server and login.
 
 ### Install a SQLite database tool  
 
-eg http://sqlitebrowser.org/dl
+To maintain the database you might need a SQLite database editor.  This is an example application:  
+http://sqlitebrowser.org/dl
+
+{: .key }  
+To avoid database corruption, stop the IIS Service before making any changes to the SQLite databases, or even opening them in write mode.  
+
+It is generally safe to open the SQLite databases in ReadOnly mode while the IIS Service is running.
