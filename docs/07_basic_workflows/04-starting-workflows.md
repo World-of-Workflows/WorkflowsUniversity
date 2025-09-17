@@ -19,8 +19,8 @@ These are described below:
 
 ## Timer Based Workflow
 
-1. Start by creating a New workflow
-2. Click Start and choose the **Timers** category and the `Cron` activity.
+1. Start by creating a New workflow. 
+2. Click Start and choose the **Timers** category and the `Cron` activity.  
    ![](../images/2023-02-02-11-10-30.png)
 3. Configure the `Cron` activity to run at the time you want the workflow to run. This is done using a Cron Expression. You can find examples of these [here](https://www.freeformatter.com/cron-expression-generator-quartz.html)
    ![](../images/2023-02-02-11-12-01.png)

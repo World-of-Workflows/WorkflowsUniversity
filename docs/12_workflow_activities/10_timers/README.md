@@ -112,11 +112,11 @@ The timer activity triggers at a specific timeout. It could run every 10 minutes
 
 To specify the timeout, you need to use a duration object, expressed as time.
 
-| Interval | Meaning         |
-|----------|-----------------|
-| 00:00:05 | Every 5 seconds |
-| 00:02:00 | Every 2 minutes |
-| 01:00:00 | Every hour      |
+The simplest is to use JavaScript 
+```Duration.Fromxxx```
+![](2025-06-12-21-46-17.png)
+
+This is NodaTime notation.
 
 Unlike Cron which runs when the system time matches a specific time and date, timer when started runs the duration after the previous run.
 
