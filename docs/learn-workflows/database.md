@@ -80,7 +80,7 @@ You access the database by clicking **types** from the Admin Page.
 
 Unless you have already created some types or installed a **Solution**, there will be no types in your system
 
-You can create a new Type by clicking the ![ ](image.png)**Add Type** button
+You can create a new Table by clicking the ![ ](image.png)**Add Table** button
 
 A type is like a table of data which includes **rows** and **columns**, just like a spreadsheet.
 
@@ -116,7 +116,7 @@ To add a column to this type, click **Add column** and enter the data as follows
 - The **Column Name** is the internal name of the column. It's a good idea to make this meaningful and have no spaces. You can use underscores or hyphens to separate words.
 - The **Display Name** is used to show to the user in lists and forms. This can be any text and needs to be meaningful to your users.
 - The Column **Description** is a description you can use to understand the column in the future so you know what it was for.
-- The **Data Type** is the type of data that will be stored in this column. You can choose from a number of different types. We'll cover these in the next section.
+- The **Data Table** is the Table of data that will be stored in this column. You can choose from a number of different types. We'll cover these in the next section.
 - **Visible** chooses whether the column is visible or invisible to the end user. Invisible columns can be used by workflows to store data but are not shown to the user.
 - **Indexed** means that the column will be indexed for faster searching. This is useful for columns that are used to search for data.
 

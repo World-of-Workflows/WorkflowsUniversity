@@ -453,7 +453,7 @@ Creates a new object of the specified type with the specified values.
 
 | Name | Type | Label | Hint | ReadOnly | Browsable |
 | -- | -- | -- | -- | -- | -- |
-| ObjectType | HubOneWorkflows.Models.ObjectTypeIdOrName | Object Type | The Object Type | False | True |
+| ObjectType | HubOneWorkflows.Models.ObjectTypeIdOrName | Object Type | The Table | False | True |
 | Values | HubOneWorkflows.Models.ImmutableUserPropertiesCollection | Values | The data to create the new object with. | False | True |
 | VariableName | System.String | Variable Name | The Output Variable Name | False | True |
 
@@ -747,8 +747,8 @@ Adds an Index to an Object Type Column.
 
 - Success
 
-### Type Create
-Creates a new Type.
+### Table Create
+Creates a new Table.
 
 **Category:** Data
 
@@ -756,8 +756,8 @@ Creates a new Type.
 
 | Name | Type | Label | Hint | ReadOnly | Browsable |
 | -- | -- | -- | -- | -- | -- |
-| TypeName | System.String | Type Name | The Name of the Type | False | True |
-| TypeDescription | System.String | Type Description | The description of the type | False | True |
+| TableName | System.String | Table Name | The Name of the Table | False | True |
+| TableDescription | System.String | Table Description | The description of the table | False | True |
 
 #### Output Parameters
 
@@ -772,16 +772,16 @@ Creates a new Type.
 - Success
 - Faulted
 
-### Type Delete
+### Table Delete
 Deletes a type.
 
 **Category:** Data
 
 #### Input Parameters
 
-| Name | Type | Label | Hint | ReadOnly | Browsable |
+| Name | Table | Label | Hint | ReadOnly | Browsable |
 | -- | -- | -- | -- | -- | -- |
-| TypeId | System.Int64 | Type Id | The ID of the type. | False | True |
+| TableId | System.Int64 | Table Id | The ID of the type. | False | True |
 
 **There are no Output parameters**
 
@@ -789,7 +789,7 @@ Deletes a type.
 
 - Done
 
-### Columns Read by Type
+### Columns Read by Table
 Gets the columns for a type.
 
 **Category:** Data
@@ -829,8 +829,8 @@ Gets a List of All Tables.
 
 - Success
 
-### Type Get Id
-Gets a Type Id by Name.
+### Table Get Id
+Gets a Table Id by Name.
 
 **Category:** Data
 
@@ -838,7 +838,7 @@ Gets a Type Id by Name.
 
 | Name | Type | Label | Hint | ReadOnly | Browsable |
 | -- | -- | -- | -- | -- | -- |
-| TypeName | System.String | Type Name |  | False | True |
+| TableName | System.String | Table Name |  | False | True |
 
 #### Output Parameters
 
@@ -882,7 +882,7 @@ Quickly inserts the provided data into a specified type and upgrades if required
 
 | Name | Type | Label | Hint | ReadOnly | Browsable |
 | -- | -- | -- | -- | -- | -- |
-| ObjectType | HubOneWorkflows.Models.ObjectTypeIdOrName | Object Type | The Object Type | False | True |
+| ObjectType | HubOneWorkflows.Models.ObjectTypeIdOrName | Object Type | The Table | False | True |
 | KeyField | System.String | Key Field | The Key Field. Use this to update a record based on a field | False | True |
 | ClearOmittedFields | System.Boolean | Clear Omitted Fields | When this option is set (ie: true) any fields defined on the type that are missing from the specified valus are set to null. Otherwise, those fields are not updated. Note: Fields that are set to null are NOT considered missing. | False | True |
 | Values | HubOneWorkflows.Models.ImmutableUserPropertiesCollection | Values | The data to save. | False | True |
@@ -896,7 +896,7 @@ Quickly inserts the provided data into a specified type and upgrades if required
 #### Outcomes
 
 - Done
-- Type Not Found
+- Table Not Found
 - No Data
 - Invalid Data
 
@@ -973,8 +973,8 @@ Generates a psuedorandom number. This should not be used for cryptography
 
 - Success
 
-### Solutions Type Create
-Creates a new Type for Solutions.
+### Solutions Table Create
+Creates a new Table for Solutions.
 
 **Category:** Solutions
 
@@ -1041,7 +1041,7 @@ Adds a column to a type and returns outcomes required by solutions
 | ColumnDisplayName | System.String | Column Display Name | The Display Name of the Column | False | True |
 | ColumnDescription | System.String | Column Description | The Description of the Column | False | True |
 | ColumnTypeId | System.Int32 | The Column Type Id |  | False | True |
-| PrincipalType | System.Nullable`1[HubOneWorkflows.Models.ObjectTypeIdOrName] | The Type Id of any relationship |  | False | True |
+| PrincipalType | System.Nullable`1[HubOneWorkflows.Models.ObjectTypeIdOrName] | The Table Id of any relationship |  | False | True |
 | DisplayOrder | System.Nullable`1[System.Int32] | Display Order | The DisplayOrder | False | True |
 | Visible | System.Boolean | Visible | Visible | False | True |
 | Indexed | System.Boolean | Indexed | Visible | False | True |

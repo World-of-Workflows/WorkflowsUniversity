@@ -13,7 +13,7 @@ This activity writes a HTTP response back to the calling client.
 
 - Properties
   - **Content** - The HTTP Content to Write
-  - **Content Type** - The HTTP Contnet Type Header to write
+  - **Content Type** - The HTTP Content Type Header to write
 - Advanced
   - **Status Code** - The HTT Status code to write
   - **Char Set** - The Character Set to use when writing the response

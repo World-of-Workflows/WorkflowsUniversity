@@ -12,7 +12,7 @@ In this example, we will create a simple Contact-Us form for a Website. This for
 
 The process is as follows:
 
-1. **Create Type** - Create any types in the database you require
+1. **Create Table** - Create any types in the database you require
 2. **Create Columns** - Create columns that are required
 3. **Create Form** - Create a simple form
 4. **Create For POST Target** - Create somewhere to handle when a user clicks **Submit**
@@ -22,12 +22,12 @@ Once that's complete, we'll add some extensions
 5. **Handling Reference Columns** - How to handle columns that reference another type.
 6. **Handling UPSERT** - How to handle "duplicate" entries using UPSERT (Update or Insert)
 
-## Create Type
+## Create Table
 
 1. Navigate to **Admin --> Tables**
 2. Click **+**
-3. Name the Type **Lead**, with the description **A Lead** and click **Save**
-   ![Create Lead Type](../images/html-image-1.png)
+3. Name the Table **Lead**, with the description **A Lead** and click **Save**
+   ![Create Lead Table](../images/html-image-1.png)
 
 ## Create Columns
 
@@ -40,7 +40,7 @@ Once that's complete, we'll add some extensions
    5. **Company**
    ![Add Column](../images/html-image-3.png)
 3. You should now have six columns as shown below:
-   ![Lead Type](../images/html-image-4.png)
+   ![Lead Table](../images/html-image-4.png)
 
 ## Create Form
 

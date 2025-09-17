@@ -12,7 +12,7 @@ has_children: false
 
 The `List Object Instances` activity has an 'Expand' option, which allows you to collect, in one array, the details of two Tables, linked by a Reference field.
 
-Consider a Type (called `Permissions`) which has a reference field called `Feature`.
+Consider a Table (called `Permissions`) which has a reference field called `Feature`.
 
 In this example we have created two variables,  `simpleVariable` using .Output() and `expandedVariable` using .ExpandedObject() 
 
@@ -68,7 +68,7 @@ The resulting variables might look like this:
 ```
 
 {: .key }
-The details of the referenced Type, Features, is included in the 'expandedVariable' variable.  This allows easy access to all of the fields of the referenced type.
+The details of the referenced Table, Features, is included in the 'expandedVariable' variable.  This allows easy access to all of the fields of the referenced type.
 
 ## JavaScript function
 

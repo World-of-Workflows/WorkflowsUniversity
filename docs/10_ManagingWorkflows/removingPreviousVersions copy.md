@@ -15,7 +15,7 @@ This should be a regular task you perform when developing new workflows to maint
 
 ## Procedure:  
 
-At the bottom of every workflow there is a `Publish` button.  use the arrow beside the button to expose this menu  
+At the top of every workflow there is a `Publish` button.  use the arrow beside the button to expose this menu  
 <img src="../images/2024-07-11-13-09-11.png" alt="Import button graphic" style="width: 250px; height: auto; border-radius: 10px; box-shadow: 2px 2px 5px grey;" />
 1. Save your worklflow to disk by Exporting it  
    This creates a `<workflowname>.json` file in your browser's downloads folder 

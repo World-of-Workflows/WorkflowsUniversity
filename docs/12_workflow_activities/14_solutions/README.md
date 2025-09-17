@@ -8,8 +8,8 @@ has_children: false
 
 These activities are used by the Solution system. They are not designed for common use
 
-# Solutions Type Create
-**Description:** Creates a new Type for Solutions.
+# Solutions Table Create
+**Description:** Creates a new Table for Solutions.
 
 **Category:** Solutions
 
@@ -131,15 +131,15 @@ These activities are used by the Solution system. They are not designed for comm
 **Category:** Solutions
 
 **Properties:**
-- **ObjectType**: The Object Type
+- **ObjectType**: The Table
 - **Values**: The data to create the new object with.
-- **PrincipalTypeColumns**: The Instance Principal Type Columns
+- **PrincipalTypeColumns**: The Instance Principal Table Columns
 - **VariableName**: The Input Variable Name
 
 **Input Properties:**
-- **ObjectType**: The Object Type
+- **ObjectType**: The Table
 - **Values**: The data to create the new object with.
-- **PrincipalTypeColumns**: The Instance Principal Type Columns
+- **PrincipalTypeColumns**: The Instance Principal Table Columns
 - **VariableName**: The Input Variable Name
 
 **Output Properties:**

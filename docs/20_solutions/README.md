@@ -26,7 +26,7 @@ Solutions are packaged collections of Tables, Views and Workflows. Using the Sol
 4. Choose the Tables, Workflows and Views
    ![](../images/2024-07-11-14-00-34.png)
 
-5. When you select a Type, you can choose to also copy some of the data within the type.  This can be helpful when setting up a Production environment from your Development environment, to copy items such as the list of Statuses used in a dropdown menu
+5. When you select a Table, you can choose to also copy some of the data within the type.  This can be helpful when setting up a Production environment from your Development environment, to copy items such as the list of Statuses used in a dropdown menu
    ![](../images/2024-07-11-14-03-53.png)
 6. Tables which reference other Tables are noted in blue.  Selecting one (eg Contacts in this example will automatically select the referenced types.  You can unselect these as appropriate.
    ![](../images/2024-07-11-14-05-54.png)

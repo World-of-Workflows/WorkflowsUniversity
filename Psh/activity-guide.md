@@ -559,7 +559,7 @@ Creates a new object of the specified type with the specified values.
 
 | Name | Type | Label | Hint | ReadOnly | Browsable |
 | -- | -- | -- | -- | -- | -- |
-| ObjectType | HubOneWorkflows.Models.ObjectTypeIdOrName | Object Type | The Object Type | False | True |
+| ObjectType | HubOneWorkflows.Models.ObjectTypeIdOrName | Object Type | The Table | False | True |
 | Values | HubOneWorkflows.Models.ImmutableUserPropertiesCollection | Values | The data to create the new object with. | False | True |
 | VariableName | System.String | Variable Name | The Output Variable Name | False | True |
 
@@ -988,7 +988,7 @@ Quickly inserts the provided data into a specified type and upgrades if required
 
 | Name | Type | Label | Hint | ReadOnly | Browsable |
 | -- | -- | -- | -- | -- | -- |
-| ObjectType | HubOneWorkflows.Models.ObjectTypeIdOrName | Object Type | The Object Type | False | True |
+| ObjectType | HubOneWorkflows.Models.ObjectTypeIdOrName | Object Type | The Table | False | True |
 | KeyField | System.String | Key Field | The Key Field. Use this to update a record based on a field | False | True |
 | ClearOmittedFields | System.Boolean | Clear Omitted Fields | When this option is set (ie: true) any fields defined on the type that are missing from the specified valus are set to null. Otherwise, those fields are not updated. Note: Fields that are set to null are NOT considered missing. | False | True |
 | Values | HubOneWorkflows.Models.ImmutableUserPropertiesCollection | Values | The data to save. | False | True |

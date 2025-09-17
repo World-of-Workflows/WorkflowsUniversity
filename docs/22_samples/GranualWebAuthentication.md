@@ -91,9 +91,9 @@ Navigate to https://localhost:7063/home and navigate to customers successfully..
 
 # Troubleshooting
 
-There may have been conflict between the types imported as part of this solution and your existing types. Resolve this by editing each workflow and reviewing the `ObjectGetList` Activities.  Ensure they point to the correct Type.  
+There may have been conflict between the Tables imported as part of this solution and your existing Tables. Resolve this by editing each workflow and reviewing the `ObjectGetList` Activities.  Ensure they point to the correct Table.  
 
-If in doubt, use this [documentation](#workflow-details) to select the correct `Type`.  For example, `Main Navigation Page` documentation shows this:
+If in doubt, use this [documentation](#workflow-details) to select the correct `Table`.  For example, `Main Navigation Page` documentation shows this:
 
 >**List Settings**:  
     - **Activity Type**: ObjectInstanceList  

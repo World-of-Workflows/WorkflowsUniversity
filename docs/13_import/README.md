@@ -19,9 +19,9 @@ Select a CSV file and select Next.
 The first few lines of the file are displayed.
 ![alt text](../images/import-image-2.png)
 
-In the *Type* field, either create a new Type and enter a name for the new type, or select an existing Type into which you want the data created.  In this example we want to create a new Type, called **WFDSettings**
+In the *Table* field, either create a new Table and enter a name for the new Table, or select an existing Table into which you want the data created.  In this example we want to create a new Table, called **WFDSettings**
 
-Step 3 is to map your data fields.  For a new Type, you will create new fields.
+Step 3 is to map your data fields.  For a new Table, you will create new fields.
 
 ![alt text](../images/import-image-4.png)
 

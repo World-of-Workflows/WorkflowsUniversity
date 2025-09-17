@@ -36,7 +36,7 @@ has_children: true
 - calling an HTTP API with authorization
 - logic flows (if/else)
 - use of try/catch in JavaScript, setting Outcomes
-- efficiently retrieving a single entry from the Settings Type 
+- efficiently retrieving a single entry from the Settings Table 
 - running 'child' workflows and passing data
 - creating a task asynchronously (in the background)
 - returning data to the 'parent' workflow
@@ -50,7 +50,7 @@ has_children: true
 - Saving files, 
 - Downloading files, 
 - Credentials, 
-- Variables from Settings Type
+- Variables from Settings Table
 - Web UI features such as
   - checkboxes
   - submitting on change 

@@ -9,9 +9,9 @@ nav_order: 4
 
 World of Workflows offers sorting, filtering, inline editing and bulk editing of your data. These features make it incredibly simple to manipulate your data in the system to ensure you have the correct data ready to work with.
 
-Clicking on *Admin* then *Tables* then clicking the name of the type you want to work with takes you to the data editing screen
+Clicking on *Admin* then *Tables* then clicking the name of the Table you want to work with takes you to the data editing screen
 
-![Edit Type](../images/05a_image16.png)
+![Edit Table](../images/05a_image16.png)
 
 This screen allows you to manipulate your data as follows:
 
@@ -19,7 +19,9 @@ This screen allows you to manipulate your data as follows:
 
 Columns can be resized and reordered. You can resize columns by hovering over the vertical separator between the column headers, clicking and dragging left and right.
 
-Columns can be re-ordered by clicking a column header and dragging it to a new location.
+Columns can be re-ordered by editing the order of the column.
+
+Columns can be hidden/shown with the hide/show columns button.
 
 ## Sort and Filter
 

@@ -24,7 +24,7 @@ __Author:__ Nick Beaugeard
 ![Step 4 screenshot](https://images.tango.us/public/screenshot_7fd0a3aa-27f9-458e-bd86-9e9094bdf408.png?crop=focalpoint&fit=crop&fp-x=0.9323&fp-y=0.1401&fp-z=2.9382&w=1200&ar=1920%3A942)
 
 
-#### 5. Type **Developer**.
+#### 5. Table **Developer**.
 ![Step 5 screenshot](https://images.tango.us/public/screenshot_e6c37dad-4ca4-4aaf-84b9-0a7665934731.png?crop=focalpoint&fit=crop&fp-x=0.8833&fp-y=0.1773&fp-z=2.9382&w=1200&ar=1920%3A942)
 
 

@@ -88,7 +88,7 @@ layout: default
 5. Find the Activity **Runs when a lead is selected in the UI**
 6. Right Click and Choose **Edit**
    ![](2023-03-06-09-06-30.png)
-7. Ensure the object Type Id is Lead
+7. Ensure the object Table Id is Lead
 8. Click **Save**
 9. Find the Activity **Send Request to ChatGPT**
 10. Right Click and Choose **Edit**

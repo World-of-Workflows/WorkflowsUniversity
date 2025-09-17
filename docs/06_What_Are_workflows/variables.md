@@ -12,7 +12,7 @@ Variables are temporary places to store information. It’s common to want to st
 
 Variables are created with the *Set Variable* activity. They can also be created in *JavaScript* using a *SetVariable()* command. Variables are read using a *JavaScript* command *GetVariable()* or with *Liquid* using a command such as ``` { { Variables.variableName } } ```
 
-> *Variables exist only while the workflow is running.* To keep the data permanently you will need to write variable to a field in a Type using an activity such as `Create Object Instance` or `Update Object Instance`  
+> *Variables exist only while the workflow is running.* To keep the data permanently you will need to write variable to a field in a Table using an activity such as `Create Object Instance` or `Update Object Instance`  
 
 
 

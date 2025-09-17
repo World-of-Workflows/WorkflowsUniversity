@@ -49,11 +49,11 @@ Now, whenever you navigate to the URL you specified, the workflow will run.
 2. Click **Add Activity** and choose the **Data** category and the `Object Instance Trigger` activity
 3. Right Click and Choose Edit
    ![](../images/2023-04-06-09-44-20.png)
-4. Select the **Type** you wish to trigger the workflow from.  This could be a Customer type if your database contains a list of customers.
+4. Select the **Table** you wish to trigger the workflow from.  This could be a Customer type if your database contains a list of customers.
 5. Click **Save**
 
-Now, whenever you open an instance of the Type specified, this workflow will appear in the workflow tabs.
+Now, whenever you open an instance of the Table specified, this workflow will appear in the workflow tabs.
 
-`Admin`-> `Tables` -> *`[Type Name]`* -> *`[Instance Name]`* -> `Workflows`
+`Admin`-> `Tables` -> *`[Table Name]`* -> *`[Instance Name]`* -> `Workflows`
 
 ![](../images/2023-02-02-11-18-18.png)

@@ -26,7 +26,7 @@ Note that the object cannot be retrieved once this activity succeeds.
 > This activity will fail if the data object cannot be deleted.  This might occur if another data object is dependent on it.
 
 > #### Consider this example:  
-   > An application might have Contacts and Addresses.  Each Contact could have 0 or more Addresses defined, with a `Reference` field in the Contact type pointing to the Address type.  
+   > An application might have Contacts and Addresses.  Each Contact could have 0 or more Addresses defined, with a `Reference` field in the Contact table pointing to the Address table.  
    >  
-   > Attempting to delete a Contact that has one or more Addresses defined wil fail.  
-   This concept is commonly called `Referencial Integrity`.
+   > Attempting to delete a Contact that has one or more Addresses defined will fail.  
+   This concept is commonly known as `Referencial Integrity`.

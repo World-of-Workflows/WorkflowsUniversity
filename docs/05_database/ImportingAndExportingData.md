@@ -36,17 +36,17 @@ The following section describes how to import data into World of workflows.
     ![Import2](../images/05a_image39.png)
 4.  When you see the correct details for your CSV file, click **Next.**
     ![Import3](../images/05a_image40.png)
-5.  If you are creating a new Type with this import, under the **Type** dropdown choose **New** and name the new type. If you are importing data to an existing *Type*, select the type name in the dropdown and click **Next.**
+5.  If you are creating a new Table with this import, under the **Table** dropdown choose **New** and name the new type. If you are importing data to an existing *Table*, select the type name in the dropdown and click **Next.**
     ![Import4](../images/05a_image41.png)
 6.  The system will automatically suggest fields for your import. You can change these and choose:
     1.  **Skip** - This column will be ignored
-    2.  **New** - A new Column in your Type will be created in the database from the data in your CSV file. You can enter a Name, Data Type, Display Name, Description, Display Order, whether the column should be Visible and whether it will be a Title column.
+    2.  **New** - A new Column in your Table will be created in the database from the data in your CSV file. You can enter a Name, Data Table, Display Name, Description, Display Order, whether the column should be Visible and whether it will be a Title column.
     
-        >What is a `Title` column?  Every Type has 1 Title column.  By default it is called Title, but you can rename it. 
+        >What is a `Title` column?  Every Table has 1 Title column.  By default it is called Title, but you can rename it. 
         
-        >The 'title' column in a Type typically represents a key attribute or identifier that provides a descriptive or meaningful name for each record or entry within that Type. This column is often used to display a readable and user-friendly name or label for the items, making it easier for users to understand and manage the data associated with that Type.  
+        >The 'title' column in a Table typically represents a key attribute or identifier that provides a descriptive or meaningful name for each record or entry within that Table. This column is often used to display a readable and user-friendly name or label for the items, making it easier for users to understand and manage the data associated with that Table.  
         
-        >It will be used in the dropdown when another Type uses this Type as a Reference field.
+        >It will be used in the dropdown when another Table uses this Table as a Reference field.
     3.  \<Column name\> – choose an existing column name and your CSV data will be added to this column.
     4.  **Id** - This is the match to the ObjectId or Instance Id and will update records with the same Id if they exist in the database.
 7.  Click **Next** when your fields are correct  

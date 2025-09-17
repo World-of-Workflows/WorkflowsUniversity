@@ -93,7 +93,7 @@ If you are using JavaScript to specify your form, use this example:
 
 If you plan to use the PoweredBy logo on many pages, it makes sense to take a moment to set up a Settings object to hold your PoweredBy Logo.
 
-See [The Settings Type](../18_patterns_and_practices/SettingsType.html) for details.
+See [The Settings Table](../18_patterns_and_practices/SettingsType.html) for details.
 
 
 {% endraw %}

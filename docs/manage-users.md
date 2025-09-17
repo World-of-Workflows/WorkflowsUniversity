@@ -24,15 +24,15 @@ __Source:__ [Tango](https://app.tango.us/app/workflow/831bf5cb-4ce0-415a-a77a-49
 ![Step 4 screenshot](https://images.tango.us/public/screenshot_2cff7907-bd3e-41aa-b5ba-6882b8e62a5d.png?crop=focalpoint&fit=crop&fp-x=0.9354&fp-y=0.1069&fp-z=3.0233&w=1200&ar=1718%3A1235)
 
 
-#### 5. Type **John**.
+#### 5. Table **John**.
 ![Step 5 screenshot](https://images.tango.us/public/screenshot_135339a2-5659-45fa-96e9-3e49c6191a08.png?crop=focalpoint&fit=crop&fp-x=0.8696&fp-y=0.1352&fp-z=3.0233&w=1200&ar=1718%3A1235)
 
 
-#### 6. Type **Smith**.
+#### 6. Table **Smith**.
 ![Step 6 screenshot](https://images.tango.us/public/screenshot_f98f1189-fcd8-405f-b81b-1ac931454d4a.png?crop=focalpoint&fit=crop&fp-x=0.8696&fp-y=0.2016&fp-z=3.0233&w=1200&ar=1718%3A1235)
 
 
-#### 7. Type **john@tribetech.com.au**.
+#### 7. Table **john@tribetech.com.au**.
 ![Step 7 screenshot](https://images.tango.us/public/screenshot_eb7a872b-dbba-4860-a703-44e900f632c5.png?crop=focalpoint&fit=crop&fp-x=0.8696&fp-y=0.2680&fp-z=3.0233&w=1200&ar=1718%3A1235)
 
 

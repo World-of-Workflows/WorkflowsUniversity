@@ -53,7 +53,7 @@ If your left operand, the field, is a date, or number then use the following syn
 
 Here is an example of a number of views:
 
-| View Id | Name | Description | Fields | Type | Query | Parent |
+| View Id | Name | Description | Fields | Table | Query | Parent |
 |---------|------|-------------|--------|------|--------|-------|
 | 1 | Customers | All Customers | Title | 1 |  | 0 | 
 | 2 | Active Customers | All active Customers | Title,City,State,MyDate | 1 | Status eq 2 | 1 | 
