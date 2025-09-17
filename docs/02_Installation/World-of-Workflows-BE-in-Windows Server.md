@@ -3,7 +3,7 @@ title: Business Edition - Windows Server Installation
 parent: Installation/Setup
 layout: default
 nav_order: 3
-has_children: true
+has_children: false
 ---
 
 # World of Workflows Business Edition
