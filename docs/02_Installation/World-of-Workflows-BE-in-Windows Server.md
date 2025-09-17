@@ -38,21 +38,23 @@ These instructions assume that you have administrative rights to your Windows Se
 
 On your Windows Server:  
 
-	1.	Download the .NET 8 Hosting Bundle from Microsoft:  [ Download .NET 8 Hosting Bundle](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)  
+1.	Download the .NET 8 Hosting Bundle from Microsoft:  
+       [ Download .NET 8 Hosting Bundle](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)  
    ![Choose Windows ==> Hosting Bundle](2025-09-12-05-15-17.png)   
 
-	2.	Run the installer — it will:  
-	•	Install the .NET Runtime.  
-	•	Install the ASP.NET Core Module for IIS (so IIS can reverse-proxy to Kestrel).  
-	•	Register the module automatically with IIS.  
-	3.	Reboot the server after installation.  
+2.	Run the installer — it will:  
+      •	Install the .NET Runtime.  
+      •	Install the ASP.NET Core Module for IIS (so IIS can reverse-proxy to Kestrel).  
+      •	Register the module automatically with IIS.  
+3.	Reboot the server after installation.  
 
 
 ### Installing World of Workflows
 
 1. Download World of Workflows Business Edition  
 
-   Download the latest code from here: [latest release](https://github.com/World-of-Workflows/WorkflowsUniversity/releases).  Choose the file WorldOfWorkflowsBE-`<version >`-win-x64.zip
+   Download the latest code from here: [latest release](https://github.com/World-of-Workflows/WorkflowsUniversity/releases).  
+   Choose the file WorldOfWorkflowsBE-`<version >`-win-x64.zip
 
 2. Extract the .zip contents to a permanent folder, e.g.:  
    ```C:\inetpub\wwwroot\WorldOfWorkflows  ```
@@ -61,25 +63,26 @@ On your Windows Server:
 
 4. Configure IIS Site
 	1.	Open IIS Manager → Right-click Sites → Add Website.  
-	•	Site name: WorldOfWorkflows  
-	•	Physical path: C:\inetpub\wwwroot\WorldOfWorkflows  
-   ![](2025-09-17-12-58-45.png)
-	•	Binding: http on port 80 (or another port if 80 is used). 
-   •	HostName: set the server's hostname - eg wow.yourdomain.com. 
-    
+      •	Site name: WorldOfWorkflows  
+      •	Physical path: C:\inetpub\wwwroot\WorldOfWorkflows  
+      ![](2025-09-17-12-58-45.png)
+      •	Binding: http on port 80 (or another port if 80 is used). 
+      •	HostName: set the server's hostname - eg wow.yourdomain.com. 
+      
 	2.	IIS will create an Application Pool:  
-	•	Set .NET CLR Version to No Managed Code  
-(ASP.NET Core doesn’t run on the IIS CLR — it runs on Kestrel).  
-![](2025-09-17-12-57-18.png)
-	3.	Ensure the Identity of the App Pool (ApplicationPoolIdentity by default) has Read/Write access to the app folder if the app logs or writes files.
+      •	Set .NET CLR Version to No Managed Code  
+         (ASP.NET Core doesn’t run on the IIS CLR — it runs on Kestrel).  
+      ![](2025-09-17-12-57-18.png) 
+
+   3.	Ensure the Identity of the App Pool (ApplicationPoolIdentity  by default) has Read/Write access to the app folder if the app logs or writes files.  
    Grant read/write access to `C:\inetpub\wwwroot\WorldOfWorkflows` folder for the user `IIS AppPool\WorldOfWorkflows`
 
-   Also set the same full control to the data folder where you will store your databases (d:\Data in the example appsettings.json)
+         Also set the same full control to the data folder where you will store your databases (d:\Data in the example appsettings.json)
    4. Stop the `Default Web Site` site
 
-{: .key }  
-   Note: the Site name is also used by IIS to create an Application Pool.  
-   A `local` user is created called `IIS AppPool\<sitename>`.  This is the user you will need to grant access to `C:\inetpub\wwwroot\WorldOfWorkflows` and the database folder. 
+      {: .key }  
+         Note: the Site name is also used by IIS to create an Application Pool.  
+         A `local` user is created called `IIS AppPool\<sitename>`.  This is the user you will need to grant access to `C:\inetpub\wwwroot\WorldOfWorkflows` and the database folder. 
   
 5. Verify Web.Config
    The World fo Workflows Business Edition .zip should already include a web.config with an ```< aspNetCore />``` section.
@@ -166,7 +169,7 @@ On your Windows Server:
 #### Set up web site for HTTPS / SSL
 
 Import your ssl certificate into the IIS system.  Open IIS and go to the server settings.  Find `Server Certificates` and import your .pfx file.  You will need to know the password.  
-![](2025-09-17-14-11-26.png)  
+   ![](2025-09-17-14-11-26.png)  
 
 Next, go the bindings on your World of Workflows website and add HTTPS:  
 ![](2025-09-17-14-15-01.png)
