@@ -24,7 +24,7 @@ This **trigger** waits for activity on the defined path using the defined method
     - **Head** - A HEAD request returns metadata about the resource rather than how we can interact with it.
   - **Read Content** - A value indicating whether the HTTP request content body should be read and stored as part of the HTTP request model. *The stored format depends on the content-type header*.
 - Advanced
-  - **Target Type** - Used to enforce the type of data we are expecting to receive. This can be any loaded dotnet type.
+  - **Target Table** - Used to enforce the type of data we are expecting to receive. This can be any loaded dotnet type.
   - **Schema** - This is a JSON Schema of the data we are expecting to receive.
 - Security
   - **Authorize** - Check to only allow requests that satisfy a specified policy

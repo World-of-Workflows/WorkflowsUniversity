@@ -26,19 +26,19 @@ Each workflow is to be given both a Name and a DisplayName.  These names should 
 Tables should be named with a single word, or joined in CamelCase if more than one word is needed for clarity.
 
 ### Start with a Capital
-Type names should start with a Capital letter.
+Table names should start with a Capital letter.
 
 ### Singular
-Tables should be named in the singular.  For example, a Type that will hold a list of customers should be called `Customer`.  World of Workflows will display the plural of the type name when appropriate.
+Tables should be named in the singular.  For example, a Table that will hold a list of customers should be called `Customer`.  World of Workflows will display the plural of the type name when appropriate.
 
-> We make an exception for the Type `Settings`, which is always plural.
+> We make an exception for the Table `Settings`, which is always plural.
 
 ## Variable names
 
-Type names that represent a database object should be named with the Type of that database object.  Therefore variable names will start with a Capital letter.
+Table names that represent a database object should be named with the Table of that database object.  Therefore variable names will start with a Capital letter.
 
 {: .key }
-Normally we use the name of the Type as the name of the Variable.
+Normally we use the name of the Table as the name of the Variable.
 For example, if we are retrieving an instance of `Customer` the variable name would be `Customer`.  Your logic may require deviation from this, eg  `OldCustomer`, but do this with intention.  Do not call it 'MyCustomer' except to distinguish with another variable 'Customer'
 
 
@@ -60,7 +60,7 @@ The `Set Variable` defaults to "Set Variable".  Change the DisplayName to includ
 
 The syntax for the DisplayName of `Get Object Instance` should be `Get <variableName>`.  For example, if we are retrieving an instance of a type of `Customer` into the variable `Customer` from the database, the DisplayName of the `Get Object Instance` would be `Get Customer`.  
 
-Sometimes we deliberately choose a different variable name from the Type of the retrieved instance.  For example, getting a type of `Customer` into the variable `OldCustomer` from the database, the DisplayName of the `Get Object Instance` would be `Get OldCustomer`.  
+Sometimes we deliberately choose a different variable name from the Table of the retrieved instance.  For example, getting a type of `Customer` into the variable `OldCustomer` from the database, the DisplayName of the `Get Object Instance` would be `Get OldCustomer`.  
 
 
 
@@ -68,7 +68,7 @@ Sometimes we deliberately choose a different variable name from the Type of the 
 
 ### The `List Object Instances` activity
 
-The syntax for the DisplayName of `List Object Instances` should be `List <Type>`.  For example, if we are accessing a list of the Type `Customer` the DisplayName of  `List Object Instances` would be `List Customers`.  
+The syntax for the DisplayName of `List Object Instances` should be `List <Table>`.  For example, if we are accessing a list of the Table `Customer` the DisplayName of  `List Object Instances` would be `List Customers`.  
 
 > Append a representation of any limit used in the activity.  
 >  For example  `List Customers up to 10` or `List first 10 Customers`.

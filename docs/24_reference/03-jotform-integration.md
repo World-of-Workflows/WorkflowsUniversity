@@ -43,7 +43,7 @@ Workflows comes with a special Activity, **JSON Data Insert** which takes inform
 
     | Item | Contents | Reason |
     | --- | --- |--- |
-    | Object Type | SalesVisit | This is the name of the object type you want to append to. if this is not in your database, you just need to add a type. |
+    | Object Type | SalesVisit | This is the name of the object Table you want to append to. if this is not in your database, you just need to add a type. |
     | Key Field | submission_id | This is the key field, you can ensure the platform updates any objects with this field matching the one from jotform. For example, setting this to submission_id ensures that repeat identical submissions only update the data. |
     | Values | [see below](#activity-results-script) | This inserts the body from the HTTP Activity. |
 

@@ -12,7 +12,7 @@ To list data from the database, you can use the `ObjectInstanceList` activity. T
 
 1. **Add the `ObjectInstanceList` Activity:**
    - Drag and drop the `ObjectInstanceList` activity into your workflow.
-   - Specify the `Type` from which to retrieve records.
+   - Specify the `Table` from which to retrieve records.
    - Define any filtering criteria, sorting options, and the number of records to retrieve.
 
    **Example Configuration:**

@@ -13,7 +13,7 @@ You can very easily create a routine to use your World of Workflows data.
 In this example, we wanted to use 2 fields on a form to determine the value of a third field.  Here is the form we wanted to change:
 ![](../images/2024-07-06-16-47-17.png)
 We want the *OC Tier* field to be set based on the value of the *Lots* field and the *FirePanel* field.  
-Here is the data in the World of Workflows Type:
+Here is the data in the World of Workflows Table:
 ![](../images/2024-07-06-16-50-28.png)
 
 Export the data from World of Workflows so we can upload it to ChatGPT.

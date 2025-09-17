@@ -32,7 +32,7 @@ To create a new view, follow these steps:
 
 3.  Enter a name and a brief description for the view (optional).
 
-4.  Choose the *Type* from which the *View* will show the data.
+4.  Choose the *Table* from which the *View* will show the data.
 
 5.  Define the fields which will be shown for the view:
 

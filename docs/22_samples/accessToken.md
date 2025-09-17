@@ -22,7 +22,7 @@ Some HTTP APIs have an access token that is valid for a limited time only.  This
 The architecture for managing a changing access token involves:
    
 1. Creating a place to store an access token and its expiry Date
-   1. Our standard is to use a Type named `Settings`, which needs at least these 3 string fields:
+   1. Our standard is to use a Table named `Settings`, which needs at least these 3 string fields:
    - Key
    - Data1
    - Data2

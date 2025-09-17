@@ -9,7 +9,7 @@ nav_order: 6
 
 # Settings Variables
 
-Almost all World of Workflows workflows will have a way to hold configuration data.  We recommend using a `Settings` Type with these fields 
+Almost all World of Workflows workflows will have a way to hold configuration data.  We recommend using a `Settings` Table with these fields 
 
 1. Key (string)) 
 2. Value (string)

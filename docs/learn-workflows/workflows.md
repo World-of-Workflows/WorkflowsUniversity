@@ -63,9 +63,9 @@ When building workflows for the first time, one commonly uses the **HTTP Endpoin
 As we are using the **Object Instance Trigger**, we will need at least on type and instance. 
 
 1. Go to **Admin** -> **Tables**
-2. Click **Add Type**
+2. Click **Add Table**
 3. Enter the **Name** as ```Customer``` and **Description** as ```Paying customer```.
-   ![Creating New Type](2023-02-27-14-53-26.png)
+   ![Creating New Table](2023-02-27-14-53-26.png)
 4. Click **Save**
 5. Click **Customer** to add an instance and click the **Add Customer** button.
    ![Add Customer Button](2023-02-27-14-54-28.png)

@@ -751,7 +751,7 @@ This shows the information on your account, license key and more.
 # Getting Started / My First Workflow
 
 In this section, we're going to step you through getting started,
-creating a **Type** and **Data**, Creating a **Workflow** and working
+creating a **Table** and **Data**, Creating a **Workflow** and working
 with a task.
 
 We're going to start with a customer service example. We're going to
@@ -786,11 +786,11 @@ We're going to create two types:
 ## Creating Tables
 
 1.  Navigate to Admin -\> Tables ![Tables](../images/04_image.png)
-2.  Click **+** to create a New Type ![New
+2.  Click **+** to create a New Table ![New
     Lead](../images/04_image-1.png)
 3.  Enter the Name as **Lead** and the Description as **A Lead**. Click
     **Save**.
-4.  Click **+** to create another new Type
+4.  Click **+** to create another new Table
 5.  Enter the Name as **LeadStatus** and the Description as **Status of
     a Lead**
 6.  Tables should look like the screenshot below. If not, use the delete
@@ -799,8 +799,8 @@ We're going to create two types:
 
 ## Creating Columns
 
-1.  Click the ![Edit Type Columns](../images/04_image-3.png) button next
-    to the **Lead** Type.
+1.  Click the ![Edit Table Columns](../images/04_image-3.png) button next
+    to the **Lead** Table.
 2.  As you can see, we have an existing column, the Title Column. *Title
     columns are important but you can change their name, display name,
     description, display order and whether they are visible.* ![Initial
@@ -930,7 +930,7 @@ workflow](./create-workflow.html)**
     Editor](../images/04_image-24.png)
 18. To the right of the Title, click
     ![Elipsis](../images/04_image-25.png) and choose **Liquid**
-19. In the Title Type
+19. In the Title Table
     `Review Lead #{%raw%}{{Activities.LeadTrigger.InstanceId}}{%endraw%}`
 20. In the description, type
     `# Review Lead     It is time to review this lead. Please review it`
@@ -1001,17 +1001,17 @@ for managing your data, allowing you to:
 
 ## Creating and managing tables
 
-To create a new *Type* (table) in the User Configurable Database, follow
+To create a new *Table* (table) in the User Configurable Database, follow
 these steps:
 
 1.  Navigate to the User Configurable Database section in World of
     Workflows, by going to *Admin* then *Tables*
 2.  Click on the **Add Tables** button.`<br>`{=html} ![Add New
-    Type](../images/05a_image.png)
+    Table](../images/05a_image.png)
 3.  Enter a name for the table and a brief description (optional).
 4.  Click **Save** to confirm.
 
-Once your *Type* is created, you can begin adding fields:
+Once your *Table* is created, you can begin adding fields:
 
 1.  In the list of types, identify the type or table you want to work
     with.
@@ -1034,7 +1034,7 @@ To manage existing tables, you can:
 -   Delete tables or fields by clicking on the
     ![Delete](../images/05a_image-4.png) button (be cautious, as this
     action is irreversible and is designed to work only if you don't
-    have any entries for this *Type*).
+    have any entries for this *Table*).
 
 ## A word about data types
 
@@ -1054,9 +1054,9 @@ below:
                negative.                        
 
   Reference    Connects two Tables together by a The Title column of the
-               key field.                       referenced Type will be
+               key field.                       referenced Table will be
                                                 used in dropdowns of the
-                                                referenced Type's data
+                                                referenced Table's data
 
   Integer      Whole number, positive or        The integer is a whole
                negative.                        number which commonly is
@@ -1073,7 +1073,7 @@ below:
                                                 represent the results of
                                                 calculations, or distance
 
-  True/False   The Boolean or Bit Type          This is used to represent
+  True/False   The Boolean or Bit Table          This is used to represent
                                                 where we have a state
                                                 that can be true/false,
                                                 yes/no or off/on.
@@ -1111,16 +1111,16 @@ However, World of Workflows offers a single way to create relationships,
 but you can implement the three types of relationships by following the
 guide below:
 
-Imagine we have Type A and Type B
+Imagine we have Table A and Table B
 
 -   A one-to-one (1:1) relationship is easily established by adding a
-    column in Object A with data type Relationship and Type the type of
+    column in Object A with data type Relationship and Table the type of
     Object B.
 -   A one-to-many (1:∞) relationship between A and B is established by
-    adding a column in Object B with data type reference and Type the
+    adding a column in Object B with data type reference and Table the
     type of Object A.
 -   A many-to-many (∞:∞) relationship between objects A and B is created
-    by creating a new type (Type C). This has two columns, one is a
+    by creating a new type (Table C). This has two columns, one is a
     relationship with the type of Object A and the other is a
     relationship with the type of Object B.
 
@@ -1144,11 +1144,11 @@ You can then click *Columns* to see the list of columns and click
 
 ## Deleting Tables
 
-If you navigate to *Admin* then *Tables* you can click **Delete Type**
+If you navigate to *Admin* then *Tables* you can click **Delete Table**
 icon under Actions to delete a type. *Note: this only works if there are
 no data instances in the type.*
 
-![Delete Type](../images/05a_image15.png)
+![Delete Table](../images/05a_image15.png)
 
 Clicking **Delete** will immediately delete the type. If you have done
 this in error, you can easily recreate the type.
@@ -1163,7 +1163,7 @@ ready to work with.
 Clicking on *Admin* then *Tables* then clicking the name of the type you
 want to work with takes you to the data editing screen
 
-![Edit Type](../images/05a_image16.png)
+![Edit Table](../images/05a_image16.png)
 
 This screen allows you to manipulate your data as follows:
 
@@ -1320,9 +1320,9 @@ workflows.
 4.  When you see the correct details for your CSV file, click **Next.**
     ![Import3](../images/05a_image40.png)
 
-5.  If you are creating a new Type with this import, under the **Type**
+5.  If you are creating a new Table with this import, under the **Table**
     dropdown choose **New** and name the new type. If you are importing
-    data to an existing *Type*, select the type name in the dropdown and
+    data to an existing *Table*, select the type name in the dropdown and
     click **Next.** ![Import4](../images/05a_image41.png)
 
 6.  The system will automatically suggest fields for your import. You
@@ -1330,24 +1330,24 @@ workflows.
 
     1.  **Skip** - This column will be ignored
 
-    2.  **New** - A new Column in your Type will be created in the
+    2.  **New** - A new Column in your Table will be created in the
         database from the data in your CSV file. You can enter a Name,
-        Data Type, Display Name, Description, Display Order, whether the
+        Data Table, Display Name, Description, Display Order, whether the
         column should be Visible and whether it will be a Title column.
 
-        > What is a `Title` column? Every Type has 1 Title column. By
+        > What is a `Title` column? Every Table has 1 Title column. By
         > default it is called Title, but you can rename it.
 
-        > The 'title' column in a Type typically represents a key
+        > The 'title' column in a Table typically represents a key
         > attribute or identifier that provides a descriptive or
-        > meaningful name for each record or entry within that Type.
+        > meaningful name for each record or entry within that Table.
         > This column is often used to display a readable and
         > user-friendly name or label for the items, making it easier
         > for users to understand and manage the data associated with
-        > that Type.
+        > that Table.
 
-        > It will be used in the dropdown when another Type uses this
-        > Type as a Reference field.
+        > It will be used in the dropdown when another Table uses this
+        > Table as a Reference field.
 
     3.  \<Column name\> -- choose an existing column name and your CSV
         data will be added to this column.

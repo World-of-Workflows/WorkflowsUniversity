@@ -36,7 +36,7 @@ nav_order: 3
 17. Right Click the **Task Create** activity and choose **Edit**
     ![Task Editor](../images/04_image-24.png)
 18. To the right of the Title, click ![Elipsis](../images/04_image-25.png) and choose **Liquid**
-19. In the Title Type ```Review Lead {%raw%}{{Activities.LeadTrigger.InstanceId}}{%endraw%}```
+19. In the Title Table ```Review Lead {%raw%}{{Activities.LeadTrigger.InstanceId}}{%endraw%}```
 20. In the description, type 
     ```
     # Review Lead

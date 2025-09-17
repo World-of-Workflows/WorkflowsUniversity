@@ -8,7 +8,7 @@ has_children: false
 
 # Using `Write Line` to aid debugging
 
-The `WriteLine` activity is an outpu-only activity that can be used in a variety of ways
+The `WriteLine` activity is an output-only activity that can be used in a variety of ways
 
 ## Show variable value
 

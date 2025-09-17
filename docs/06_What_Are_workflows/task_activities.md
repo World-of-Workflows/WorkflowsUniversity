@@ -24,9 +24,9 @@ The `Task Create` activity is the central component for creating tasks in Workfl
 
 - **Due Date**: The number of days from when the task is created to when the task is due.
 
-- **Related Object ID**: A reference to a row in any **Type** within the *User Configurable Database*.
+- **Related Object ID**: A reference to a row in any **Table** within the *User Configurable Database*.
 
-- **Data Questions**: Allows you to add fields from the **Type** of the *Related Object ID* and prompt the user to complete them within the task.
+- **Data Questions**: Allows you to add fields from the **Table** of the *Related Object ID* and prompt the user to complete them within the task.
 
 - **Variable Name**: Assigns the updated row to a *Variable* for further use within the workflow.
 

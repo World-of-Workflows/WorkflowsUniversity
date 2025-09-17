@@ -1,7 +1,7 @@
 # Getting Started / My First Workflow
 
 In this section, we're going to step you through getting started,
-creating a **Type** and **Data**, Creating a **Workflow** and working
+creating a **Table** and **Data**, Creating a **Workflow** and working
 with a task.
 
 We're going to start with a customer service example. We're going to
@@ -36,11 +36,11 @@ We're going to create two types:
 ## Creating Tables
 
 1.  Navigate to Admin -\> Tables ![Tables](../images/04_image.png)
-2.  Click **+** to create a New Type ![New
+2.  Click **+** to create a New Table ![New
     Lead](../images/04_image-1.png)
 3.  Enter the Name as **Lead** and the Description as **A Lead**. Click
     **Save**.
-4.  Click **+** to create another new Type
+4.  Click **+** to create another new Table
 5.  Enter the Name as **LeadStatus** and the Description as **Status of
     a Lead**
 6.  Tables should look like the screenshot below. If not, use the delete
@@ -49,8 +49,8 @@ We're going to create two types:
 
 ## Creating Columns
 
-1.  Click the ![Edit Type Columns](../images/04_image-3.png) button next
-    to the **Lead** Type.
+1.  Click the ![Edit Table Columns](../images/04_image-3.png) button next
+    to the **Lead** Table.
 2.  As you can see, we have an existing column, the Title Column. *Title
     columns are important but you can change their name, display name,
     description, display order and whether they are visible.* ![Initial
@@ -180,7 +180,7 @@ workflow](./create-workflow.html)**
     Editor](../images/04_image-24.png)
 18. To the right of the Title, click
     ![Elipsis](../images/04_image-25.png) and choose **Liquid**
-19. In the Title Type
+19. In the Title Table
     `Review Lead #{%raw%}{{Activities.LeadTrigger.InstanceId}}{%endraw%}`
 20. In the description, type
     `# Review Lead     It is time to review this lead. Please review it`

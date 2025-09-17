@@ -97,7 +97,7 @@ Below are the detailed steps of the workflow:
      ```
 
 6. **List Google Maps Key Settings**:  
-   This activity retrieves a single entry from the Settings Type, using a filter.
+   This activity retrieves a single entry from the Settings Table, using a filter.
    - **Activity Type**: `ObjectInstanceList`
    - **Description**: Retrieves the Google Maps API key from the settings.
    - **ObjectType**: `Settings`

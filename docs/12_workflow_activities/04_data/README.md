@@ -10,7 +10,7 @@ has_children: false
 Allows you to work with data and types in the system
 
 ## Data Tables Read
-**Description:** Gets a list of all data types. Data types are used as hints on how to render an item in the user interface.
+**Description:** Gets a list of all data tables. Data types are used as hints on how to render an item in the user interface.
 
 **Category:** Data
 
@@ -21,17 +21,12 @@ Allows you to work with data and types in the system
 - **DataTypes**: No hint available
 
 ## Create Object Instance
-**Description:** Creates a new object of the specified type with the specified values.
+**Description:** Creates a new object of the specified Table with the specified values.
 
 **Category:** Data
 
-**Properties:**
-- **ObjectType**: The Object Type
-- **Values**: The Name field is the Column Name and the Value field is the value to assign to the Objects Column.
-- **VariableName**: The Output Variable Name
-
 **Input Properties:**
-- **ObjectType**: The Object Type
+- **ObjectType**: The Table
 - **Values**: The Name field is the Column Name and the Value field is the value to assign to the Objects Column.
 - **VariableName**: The Output Variable Name
 
@@ -173,17 +168,17 @@ Allows you to work with data and types in the system
 **Output Properties:**
 - **Output**: No hint available
 
-## Type Create
-**Description:** Creates a new Type.
+## Table Create
+**Description:** Creates a new Table.
 
 **Category:** Data
 
 **Properties:**
-- **TypeName**: The Name of the Type
+- **TypeName**: The Name of the Table
 - **TypeDescription**: The description of the type
 
 **Input Properties:**
-- **TypeName**: The Name of the Type
+- **TypeName**: The Name of the Table
 - **TypeDescription**: The description of the type
 
 **Output Properties:**
@@ -191,7 +186,7 @@ Allows you to work with data and types in the system
 - **ReturnResultException**: No hint available
 - **ReturnId**: No hint available
 
-## Type Delete
+## Table Delete
 **Description:** Deletes a type.
 
 **Category:** Data
@@ -202,7 +197,7 @@ Allows you to work with data and types in the system
 **Input Properties:**
 - **TypeId**: The ID of the type.
 
-## Columns Read by Type
+## Columns Read by Table
 **Description:** Gets the columns for a type.
 
 **Category:** Data
@@ -227,8 +222,8 @@ Allows you to work with data and types in the system
 **Output Properties:**
 - **Tables**: No hint available
 
-## Type Get Id
-**Description:** Gets a Type Id by Name.
+## Table Get Id
+**Description:** Gets a Table Id by Name.
 
 **Category:** Data
 
@@ -262,13 +257,13 @@ Allows you to work with data and types in the system
 **Category:** Data
 
 **Properties:**
-- **ObjectType**: The Object Type
+- **ObjectType**: The Table
 - **KeyField**: The Key Field. Use this to update a record based on a field
 - **ClearOmittedFields**: When this option is set (ie: true) any fields defined on the type that are missing from the specified valus are set to null. Otherwise, those fields are not updated. Note: Fields that are set to null are NOT considered missing.
 - **Values**: The data to save.
 
 **Input Properties:**
-- **ObjectType**: The Object Type
+- **ObjectType**: The Table
 - **KeyField**: The Key Field. Use this to update a record based on a field
 - **ClearOmittedFields**: When this option is set (ie: true) any fields defined on the type that are missing from the specified valus are set to null. Otherwise, those fields are not updated. Note: Fields that are set to null are NOT considered missing.
 - **Values**: The data to save.
@@ -366,8 +361,8 @@ Allows you to work with data and types in the system
 - **IncludeSuspended**: Select to include Suspended instances.
 - **IncludeRunning**: Select to include Running instances.
 
-## Type History Delete
-**Description:** Deletes historical records from the specified Type.
+## Table History Delete
+**Description:** Deletes historical records from the specified Table.
 
 **Category:** Data
 

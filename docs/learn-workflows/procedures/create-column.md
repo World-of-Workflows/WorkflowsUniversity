@@ -27,7 +27,7 @@ __Source:__ [Tango](https://app.tango.us/app/workflow/09b2b431-1ec0-44b3-b15a-06
 ![Step 4 screenshot](https://images.tango.us/workflows/09b2b431-1ec0-44b3-b15a-06bbc3a453ec/steps/8c8bacb8-7148-4e99-893d-92d7efa4897e/f66330be-35d8-4b30-9a62-3587dde826d9.png?crop=focalpoint&fit=crop&fp-x=0.9588&fp-y=0.1033&fp-z=3.0335&w=1200&ar=3240%3A1922)
 
 
-### 5. Type the column name
+### 5. Table the column name
 Best practices dictate that we have no spaces and capitalise each word.
 ![Step 5 screenshot](https://images.tango.us/workflows/09b2b431-1ec0-44b3-b15a-06bbc3a453ec/steps/38dccae8-8f53-4857-9489-ad63141c1d81/56e1b3c2-7fa0-4552-8892-a376626d914f.png?crop=focalpoint&fit=crop&fp-x=0.8963&fp-y=0.1303&fp-z=3.0335&w=1200&ar=3240%3A1922)
 
