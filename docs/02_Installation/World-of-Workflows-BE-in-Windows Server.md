@@ -114,8 +114,8 @@ On your Windows Server:
    There are a number of items you will need to update:  
 
    1. The ConnectionStrings section contains the location and filename of your two World of Workflows databases.
-      - the Elsa database holds the Workflow definitions and any workflow instance logs.
-      - the WorldOfWorkflows
+      - the Elsa database holds the Workflow Definitions and  Workflow Instance logs.
+      - the WorldOfWorkflows holds all the persistent data you create in `Tables` World of Workflows.
       ```
       "ConnectionStrings": {  
             "Elsa": "Data Source=D:\\Data\\WoWWorkflows.db",  
@@ -126,7 +126,7 @@ On your Windows Server:
       {: .key }  
       A note on SQLite database settings.  
 
-      You may improve performance slightly by enabling 'wal' mode on a database, but only of the database is on a local disk.  
+      You may improve performance slightly by enabling 'wal' mode on a database, but only if the database is on a local disk.  'wal' mode uses a shared memory file, which must not be located on a network drive. 
       
       {: .key }  
       You must not enable 'wal' mode on a database located on a network drive.
@@ -193,7 +193,9 @@ On your Windows Server:
 
 #### Set up web site for HTTPS / SSL
 
-Import your ssl certificate into the IIS system.  Open IIS and go to the server settings.  Find `Server Certificates` and import your .pfx file.  You will need to know the password.  
+Import your ssl certificate into the IIS system.  
+Open IIS and go to the server settings.  
+Find `Server Certificates` and import your .pfx file.  You will need to know the password.  
    ![](2025-09-17-14-11-26.png)  
 
 Next, go the bindings on your World of Workflows website and add HTTPS:  
