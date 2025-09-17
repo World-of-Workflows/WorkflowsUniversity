@@ -72,6 +72,9 @@ On your Windows Server:
 (ASP.NET Core doesn’t run on the IIS CLR — it runs on Kestrel).  
 ![](2025-09-17-12-57-18.png)
 	3.	Ensure the Identity of the App Pool (ApplicationPoolIdentity by default) has Read/Write access to the app folder if the app logs or writes files.
+   Grant read/write access to `C:\inetpub\wwwroot\WorldOfWorkflows` folder for the user `IIS AppPool\WorldOfWorkflows`
+
+   Also set the same full control to the data folder where you will store your databases (d:\Data in the example appsettings.json)
    4. Stop the `Default Web Site` site
 
 {: .key }  
@@ -99,7 +102,7 @@ On your Windows Server:
 6. Create a logs folder  
    Create the folder  ```C:\inetpub\wwwroot\WorldOfWorkflows\logs``` if you enabled log output in `web.config`
    
-7. Grant read/write access to the logs folder
+7. Grant read/write access to the logs folder for the user `IIS AppPool\WorldOfWorkflows`
 
 8. Update appsettings.json  
    Here is a <a href="./appsettings.json" download>sample `appsessings.json` </a> file.
