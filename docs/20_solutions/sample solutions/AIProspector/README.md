@@ -14,7 +14,7 @@ layout: default
 2. Office 365 Registered Application - To register a new office 365 application for World of Workflows, see [here](register-office365-application.md)
 
 ## Installation
-### 1. Create Data Types and Date
+### 1. Create Data Tables and Date
 1. Open World of Workflows
 2. Navigate to Admin
 3. Click Import
@@ -107,7 +107,7 @@ layout: default
 # Run a workflow
 1. Open World of Workflows
 2. Navigate to Admin
-3. Navigate to **Types**
+3. Navigate to **Tables**
 4. Click **Lead**
 5. Cick Lead 1
 6. Navigate to the **Workflows** Tab

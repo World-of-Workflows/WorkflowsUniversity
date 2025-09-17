@@ -1,12 +1,12 @@
 ---
-title: Types
+title: Tables
 layout: default
 parent: Liquid Reference
 grand_parent: Reference
 nav_order: 5
 ---
 {% raw %}
-# Types
+# Tables
 Liquid objects can be one of six types:
 
 - String

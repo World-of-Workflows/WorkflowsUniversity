@@ -34,7 +34,7 @@ World of Workflows comes in two key editions:
 Our extensible database which can be accessed from the User Interface or within workflows provides the following features:
 
 - Extremely high performance
-- Customizable tables (Types), Columns and Relationships
+- Customizable tables (Tables), Columns and Relationships
 - Custom views to see filtered and sorted database entries.
 - Flexible import
 - Full Export
@@ -54,7 +54,8 @@ Our customers have used World of Workflows to automate several business processe
 
 1.  A media company uses World of Workflows integrated with ChatGPT to write draft articles on incoming press releases automatically.
 2.  A soccer club uses World of Workflows to notify coaches and managers when it is their turn to put up or take down nets on a soccer field based on the draw in an external system.
-3.  An independent school uses World of Workflows to manage its enrolment process.
+3.  An independent school uses World of Workflows to manage its enrollment process.
 4.  A managed service provider uses World of Workflows to correctly bill customers for their telephone voice usage.
 5.  A sporting club uses World of Workflows to automatically generate a weekly newsletter.
 6.  A not-for-profit uses World of Workflows to manage its grant application process.
+7.  Australia's largest limousine company relies on World of Workflows to perform the complex task of scheduling their drivers to collect passengers. 

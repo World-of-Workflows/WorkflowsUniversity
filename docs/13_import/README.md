@@ -28,7 +28,7 @@ Step 3 is to map your data fields.  For a new Type, you will create new fields.
 By default, all fields are set to Skip.  To create a new field, select New and complete the field details.  **Import** attempts to predict the data type based on the first few rows of data it finds.  You can change the data type as appropriate.
 
 {: .key}
-You must select one field to be a **Title** field.  This is the field that is shown when you link Types together with special fields called Reference fields.
+You must select one field to be a **Title** field.  This is the field that is shown when you link Tables together with special fields called Reference fields.
 
 When you have set all the fields up as needed, click Next.
 

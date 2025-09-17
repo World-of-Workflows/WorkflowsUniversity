@@ -36,7 +36,7 @@ In this module, we're going to use the Personal Edition. You can download a copy
 On the home page or **Dashboard**, you can see the following
 1. An icon top left showing the version of the software (in this case 1.5.259-PE)
 2. A menu showing **Dashboard**, **Tasks**, and **Admin**
-3. Three tiles showing **Tasks**, **Types** and **Views**
+3. Three tiles showing **Tasks**, **Tables** and **Views**
 
 ## Tasks
 The Tasks screen allows an end user to work with incoming task queues and manage their own to do list.
@@ -83,7 +83,7 @@ The Admin page allows you to work with and configure the rest of the system. An 
 ### Workflows
 Workflows are the core of World of Workflows. Workflows allows you to create automated processes, by joining a rich set of activities together. Workflows are limited by your imagination, but can do anything from qualify a lead, send an email, update date and much, much more.
 
-### Types
+### Tables
 This is the database system within World of Workflows. The platform contains a rich, relational and fast database you can use to store and manipualte any data you require.
 
 ### Views
@@ -93,7 +93,7 @@ Views are custom views of your data which can then appear as menu items in the s
 This allows you to administer all the tasks in the system.
 
 ### Import
-This wizard allows you to easily import data from CSV into World of Workflows Types.
+This wizard allows you to easily import data from CSV into World of Workflows Tables.
 
 ### Workflows University
 Our online training and reference system. Use this to access live training, help and information on the platform.

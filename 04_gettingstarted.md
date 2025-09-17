@@ -33,9 +33,9 @@ We're going to create two types:
 
 *Note: we use singular names by convention when creating types.*
 
-## Creating Types
+## Creating Tables
 
-1.  Navigate to Admin -\> Types ![Types](../images/04_image.png)
+1.  Navigate to Admin -\> Tables ![Tables](../images/04_image.png)
 2.  Click **+** to create a New Type ![New
     Lead](../images/04_image-1.png)
 3.  Enter the Name as **Lead** and the Description as **A Lead**. Click
@@ -43,9 +43,9 @@ We're going to create two types:
 4.  Click **+** to create another new Type
 5.  Enter the Name as **LeadStatus** and the Description as **Status of
     a Lead**
-6.  Types should look like the screenshot below. If not, use the delete
+6.  Tables should look like the screenshot below. If not, use the delete
     or edit buttons to make the relevant amendments. ![Created
-    Types](../images/04_image-2.png)
+    Tables](../images/04_image-2.png)
 
 ## Creating Columns
 
@@ -108,7 +108,7 @@ adding data](./adding_data.html)**
 In this section, we are going to add some lead statuses, and our first
 couple of leads.
 
-1.  Navigate to **Admin** -\> **Types** -\> **LeadStatus**
+1.  Navigate to **Admin** -\> **Tables** -\> **LeadStatus**
     ![LeadStatusClear](../images/04_image-7.png)
 2.  Click **+** to add a new Lead Status ![Add Lead
     Status](../images/04_image-8.png)
@@ -127,7 +127,7 @@ couple of leads.
 
 ## Leads
 
-1.  Navigate to **Admin** -\> **Types** -\> **Lead**
+1.  Navigate to **Admin** -\> **Tables** -\> **Lead**
     ![LeadsClear](../images/04_image-10.png)
 2.  Click **+** to add a new Lead ![Add New
     Lead](../images/04_image-11.png)
@@ -207,7 +207,7 @@ JavaScript for this.
 
 # Try it Out
 
-1.  Navigate to **Admin** --\> **Types** --\> **Lead**
+1.  Navigate to **Admin** --\> **Tables** --\> **Lead**
     ![Leads](../images/04_image-29.png)
 2.  Click the Id for the Lead (In this case 4) ![Lead
     Details](../images/04_image-30.png)

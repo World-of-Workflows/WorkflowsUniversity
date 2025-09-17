@@ -57,7 +57,7 @@ References to the server URL in this sample are to `https://localhost:7063`.  Th
 19. Click Users and Group and add any users and groups.
 
 ## Settings
-Finally, Navigate to Workflows (eg `https://localhost:7063/admin`), go to `Types`, then `Settings` type and set up these entries:
+Finally, Navigate to Workflows (eg `https://localhost:7063/admin`), go to `Tables`, then `Settings` type and set up these entries:
 
 |Key|Value|
 |:--|:--|

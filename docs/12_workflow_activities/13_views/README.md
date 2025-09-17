@@ -52,11 +52,11 @@ has_children: false
 
 **Properties:**
 - **ViewName**: The Name of the View
-- **Expanded**: Expands to get details on related Types
+- **Expanded**: Expands to get details on related Tables
 
 **Input Properties:**
 - **ViewName**: The Name of the View
-- **Expanded**: Expands to get details on related Types
+- **Expanded**: Expands to get details on related Tables
 
 **Output Properties:**
 - **Output**: No hint available

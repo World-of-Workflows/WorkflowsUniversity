@@ -6,7 +6,7 @@
    
 "World of Workflows" comes equipped with a User Configurable Database, a powerful tool designed to aid in efficient and effective data management. This database serves as a flexible platform for data handling and provides several key features. 
 
-Users can create custom Types, which function as tables, complete with user-defined fields, data types, and relationships. The database also facilitates data import and export in multiple formats, such as CSV. 
+Users can create custom Tables, which function as tables, complete with user-defined fields, data types, and relationships. The database also facilitates data import and export in multiple formats, such as CSV. 
 
 Further enhancing its usability, the User Configurable Database allows for quick data retrieval through features like search, filter, and sort. Additionally, it can seamlessly integrate with external databases or APIs, providing a centralized data management solution. Lastly, the database can be directly accessed and manipulated within workflows and tasks, ensuring smooth data-flow within your processes.
 
@@ -20,4 +20,4 @@ Further enhancing its usability, the User Configurable Database allows for quick
 
     Lastly, the ability to integrate with external databases and APIs means that your data is always connected. This can streamline processes and workflows, ensuring that your data is always up-to-date and accessible when and where you need it.
 
-In the next sections, we'll dive deeper into how to create and manage Types (tables), understand data types, establish relationships, and work with your data. By the end of this module, you'll be equipped with the knowledge and skills to make the most of the User Configurable Database in "World of Workflows".
+In the next sections, we'll dive deeper into how to create and manage Tables (tables), understand data types, establish relationships, and work with your data. By the end of this module, you'll be equipped with the knowledge and skills to make the most of the User Configurable Database in "World of Workflows".

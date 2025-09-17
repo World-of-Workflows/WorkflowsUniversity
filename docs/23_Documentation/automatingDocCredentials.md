@@ -13,7 +13,7 @@ nav_order: 10
 3. Click `Add New`
 4. Select `OAuth2 credentials` and give it a suitable name (eg MyWoWCredentials)
 
-5. Navigate to `Admin` -> `Swagger' This will open a new window showing all of the APIs which your World of Workflows instance has available.  You will recognise your Types etc.
+5. Navigate to `Admin` -> `Swagger' This will open a new window showing all of the APIs which your World of Workflows instance has available.  You will recognise your Tables etc.
 6. Click the `Authorize` button at the top, ![](../images/2024-08-06-14-45-08.png)
 7. Use your browser's Find function, search for `read workflow activity def`  
   

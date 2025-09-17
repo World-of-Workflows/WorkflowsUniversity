@@ -37,14 +37,14 @@ the Workflows in the system. Workflows are ways of visually describing
 what your process should do and instructing World of Workflows to
 perform tasks that you want it to perform.
 
-### Types
+### Tables
 
-Types give you access to the inbuilt database within World of Workflows.
+Tables give you access to the inbuilt database within World of Workflows.
 Here you can add, retrieve and manipulate data across the system.
 
 ### Views
 
-While Types allows you to manipulate the underlying data, **Views**
+While Tables allows you to manipulate the underlying data, **Views**
 allows you to choose what the users of the system see. You can choose
 which fields they see and apply filters. Within views, you can easily
 set up navigation hierarchies for end users.
@@ -93,7 +93,7 @@ part of it) for loading on another World of Workflows system.
 ### Swagger
 
 This shows API Definitions as it applies to your own World of Workflows
-installation. The API extends as you create new Types and publish new
+installation. The API extends as you create new Tables and publish new
 workflows.
 
 ### Account

@@ -20,16 +20,16 @@ Remember that World of Workflows is CaSe SensitIVE !
 
 Each workflow is to be given both a Name and a DisplayName.  These names should be descriptive and unique within the instance.
 
-## Types
+## Tables
 
 ### Short Name
-Types should be named with a single word, or joined in CamelCase if more than one word is needed for clarity.
+Tables should be named with a single word, or joined in CamelCase if more than one word is needed for clarity.
 
 ### Start with a Capital
 Type names should start with a Capital letter.
 
 ### Singular
-Types should be named in the singular.  For example, a Type that will hold a list of customers should be called `Customer`.  World of Workflows will display the plural of the type name when appropriate.
+Tables should be named in the singular.  For example, a Type that will hold a list of customers should be called `Customer`.  World of Workflows will display the plural of the type name when appropriate.
 
 > We make an exception for the Type `Settings`, which is always plural.
 

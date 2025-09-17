@@ -18,7 +18,7 @@ let variableName = 'Elsa Workflows';
 const constantVariable = 42;
 ```
 
-## Data Types
+## Data Tables
 JavaScript has a few basic data types:
 
 -	String: Textual data enclosed in single or double quotes.

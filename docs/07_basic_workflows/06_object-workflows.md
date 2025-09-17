@@ -20,7 +20,7 @@ The instructions below show how to do this:
 ## 1. Create a Type
 1. Go To Workflows
 2. Login
-3. Navigate to `Admin` ->`Types`
+3. Navigate to `Admin` ->`Tables`
 4. Click **Add Type**  
 5. Type the *Name* and *Description* and click **Save**  
    ![](../images/2022-11-08-07-11-38.png)
@@ -61,7 +61,7 @@ The instructions below show how to do this:
 6. Click **Publish**
 
 ## 4. Execute and Test Workflow
-1. Navigate to `Admin` -> `Types`
+1. Navigate to `Admin` -> `Tables`
 2. Click the Name of the New Type created in Step 1
 3. Open the Object by clicking on the link in the first column.  This is a unique number for that object.
 4. Click Workflows, and click the Play icon

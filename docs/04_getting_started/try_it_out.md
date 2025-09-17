@@ -7,7 +7,7 @@ nav_order: 4
 
 # Try it Out
 
-1. Navigate to **Admin** --> **Types** --> **Lead**
+1. Navigate to **Admin** --> **Tables** --> **Lead**
    ![Leads](../images/04_image-29.png)
 2. Click the Id for the Lead (In this case 4)
    ![Lead Details](../images/04_image-30.png)

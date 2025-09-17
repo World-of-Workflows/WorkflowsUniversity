@@ -32,13 +32,13 @@ The sections of the Admin page are defined below:
 
 This gives you access to the Workflows which allows you to manage all of the Workflows in the system. Workflows are ways of visually describing what your process should do and instructing World of Workflows to perform tasks that you want it to perform.
 
-### Types
+### Tables
 
-Types give you access to the inbuilt database within World of Workflows. Here you can add, retrieve and manipulate data across the system.
+Tables give you access to the inbuilt database within World of Workflows. Here you can add, retrieve and manipulate data across the system.
 
 ### Views
 
-While Types allows you to manipulate the underlying data, **Views** allows you to choose what the users of the system see. You can choose which fields they see and apply filters. Within views, you can easily set up navigation hierarchies for end users.
+While Tables allows you to manipulate the underlying data, **Views** allows you to choose what the users of the system see. You can choose which fields they see and apply filters. Within views, you can easily set up navigation hierarchies for end users.
 
 ### Tasks
 
@@ -74,7 +74,7 @@ Solutions tile allow you to import and export your entire configuration (or part
 
 ### Swagger
 
-This shows API Definitions as it applies to your own World of Workflows installation.  The API extends as you create new Types and publish new workflows. 
+This shows API Definitions as it applies to your own World of Workflows installation.  The API extends as you create new Tables and publish new workflows. 
 
 ### Account
 

@@ -20,7 +20,7 @@ let name = "John Doe";
 const age = 30;
 ```
 
-### 2. Data Types
+### 2. Data Tables
 JavaScript has several data types, including strings (text), numbers, booleans (true or false), and arrays (lists of data). Here are some examples of these data types:
 
 ```js

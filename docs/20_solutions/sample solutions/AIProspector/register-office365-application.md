@@ -30,7 +30,7 @@ The following steps register the application correctly in order to connect World
    ![New Registration](2023-03-06-08-15-27.png)
 4. Enter the following details:
    1. **Name:** World of Workflows
-   2. **Supported Account Types:** Accounts in this organizational directory only
+   2. **Supported Account Tables:** Accounts in this organizational directory only
    3. **Redirect URI:** - Leave Blank
    ![Registration Details](2023-03-06-08-16-55.png)
 5. Click **Register**

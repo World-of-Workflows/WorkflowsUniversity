@@ -10,7 +10,7 @@ has_children: false
 
 ## Use the `Expand` option of `List Object Instances`
 
-The `List Object Instances` activity has an 'Expand' option, which allows you to collect, in one array, the details of two Types, linked by a Reference field.
+The `List Object Instances` activity has an 'Expand' option, which allows you to collect, in one array, the details of two Tables, linked by a Reference field.
 
 Consider a Type (called `Permissions`) which has a reference field called `Feature`.
 
@@ -72,7 +72,7 @@ The details of the referenced Type, Features, is included in the 'expandedVariab
 
 ## JavaScript function
 
-In addition to this built-in functionality, you may have a data structure that has two Types with common (or even just similar) data columns, that you want to programmatically bring into one array.
+In addition to this built-in functionality, you may have a data structure that has two Tables with common (or even just similar) data columns, that you want to programmatically bring into one array.
 
 
 ```js

@@ -12,7 +12,7 @@ databases or APIs.
 The User Configurable Database offers a flexible and intuitive platform
 for managing your data, allowing you to:
 
--   Create custom *Types* (tables) with user-defined fields, data types,
+-   Create custom *Tables* (tables) with user-defined fields, data types,
     and relationships.
 -   Import and export data in various formats, such as CSV
 -   Search, filter, and sort records to quickly find the information you
@@ -27,8 +27,8 @@ To create a new *Type* (table) in the User Configurable Database, follow
 these steps:
 
 1.  Navigate to the User Configurable Database section in World of
-    Workflows, by going to *Admin* then *Types*
-2.  Click on the **Add Types** button.`<br>`{=html} ![Add New
+    Workflows, by going to *Admin* then *Tables*
+2.  Click on the **Add Tables** button.`<br>`{=html} ![Add New
     Type](../images/05a_image.png)
 3.  Enter a name for the table and a brief description (optional).
 4.  Click **Save** to confirm.
@@ -74,7 +74,7 @@ below:
                bounds. Integers are whole numbers,    as the Id for every object in
                positive or negative.                  the system.
 
-  Reference    Connects two Types together by a key   The Title column of the
+  Reference    Connects two Tables together by a key   The Title column of the
                field.                                 referenced Type will be used
                                                       in dropdowns of the
                                                       referenced Type's data
@@ -149,18 +149,18 @@ manipulate it..
 ## Editing Columns
 
 To edit a column, Navigate to the type itself by going to *Admin* then
-*Types* and then clicking the type.
+*Tables* and then clicking the type.
 
-![Types](../images/05a_image13.png)
+![Tables](../images/05a_image13.png)
 
 You can then click *Columns* to see the list of columns and click
 **Edit** to edit each one.
 
 ![Columns](../images/05a_image14.png)
 
-## Deleting Types
+## Deleting Tables
 
-If you navigate to *Admin* then *Types* you can click **Delete Type**
+If you navigate to *Admin* then *Tables* you can click **Delete Type**
 icon under Actions to delete a type. *Note: this only works if there are
 no data instances in the type.*
 
@@ -176,7 +176,7 @@ editing of your data. These features make it incredibly simple to
 manipulate your data in the system to ensure you have the correct data
 ready to work with.
 
-Clicking on *Admin* then *Types* then clicking the name of the type you
+Clicking on *Admin* then *Tables* then clicking the name of the type you
 want to work with takes you to the data editing screen
 
 ![Edit Type](../images/05a_image16.png)
@@ -306,7 +306,7 @@ Your workflows can of course use any sort of data.
 
 To export data, follow these steps:
 
-1.  Navigate to *Admin* -\> *Types* and select the desired table.
+1.  Navigate to *Admin* -\> *Tables* and select the desired table.
 2.  Click on the
     `<img src="../images/05a_image37.png" width="24" />`{=html} button.
 3.  A CSV file will shortly download.

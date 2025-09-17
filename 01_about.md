@@ -8,15 +8,7 @@ processes for yourself or processes that encompass your entire business.
 
 World of Workflows is a powerful software solution designed to
 streamline and optimize your business processes by providing an
-intuitive platform for creating, managing, and automating both simple
-and complex workflows. We consider any process you perform with more
-than one step to be considered a workflow. With over 100 activities to
-choose from and plugins that extend this functionality, you can easily
-tailor workflows to suit your organization's specific needs. By
-integrating a rich, dynamic, user-configurable database and an advanced
-task management system, World of Workflows enables you to efficiently
-manage your projects and tasks, collaborate with your team, and track
-progress in real-time.
+intuitive platform for creating, managing, and automating both simple and complex workflows. We consider any process you perform with more than one step to be considered a workflow. With over 100 activities to choose from and plugins that extend this functionality, you can easily tailor workflows to suit your organization's specific needs. By integrating a rich, dynamic, user-configurable database and an advanced task management system, World of Workflows enables you to efficiently manage your projects and tasks, collaborate with your team, and track progress in real-time.
 
 World of Workflows comes in two key editions:
 
@@ -56,7 +48,7 @@ Our extensible database which can be accessed from the User Interface or
 within workflows provides the following features:
 
 -   Extremely high performance
--   Customizable tables (Types), Columns and Relationships
+-   Customizable Tables, Columns and Relationships
 -   Custom views to see filtered and sorted database entries.
 -   Flexible import
 -   Full Export
@@ -77,17 +69,12 @@ features:
 Our customers have used World of Workflows to automate several business
 processes. Here are some examples:
 
-1.  A media company uses World of Workflows integrated with ChatGPT to
-    write draft articles on incoming press releases automatically.
-2.  A soccer club uses World of Workflows to notify coaches and managers
-    when it is their turn to put up or take down nets on a soccer field
-    based on the draw in an external system.
+1.  A media company uses World of Workflows integrated with ChatGPT to write draft articles on incoming press releases automatically.
+2.  A soccer club uses World of Workflows to notify coaches and managers when it is their turn to put up or take down nets on a soccer field based on the draw in an external system.
 3.  An independent school uses World of Workflows to manage its
     enrolment process.
-4.  A managed service provider uses World of Workflows to correctly bill
-    customers for their telephone voice usage.
-5.  A sporting club uses World of Workflows to automatically generate a
-    weekly newsletter.
+4.  A managed service provider uses World of Workflows to correctly bill customers for their telephone voice usage.
+5.  A sporting club uses World of Workflows to automatically generate a weekly newsletter.
 6.  A not-for-profit uses World of Workflows to manage its grant
     application process.
 
@@ -120,7 +107,7 @@ and the `Business Edition`.
   Data Restore               Yes                Yes                
   Data Export                Yes                Yes                
   Data Import                Yes                Yes                
-  Workflows Univeristy       Yes                Yes                
+  Workflows University       Yes                Yes                
   Self Documentation         Yes                Yes                
 
 **Workflow Features**

@@ -17,7 +17,7 @@ World of Workflows admin page supports data import and export in CSV.  Your work
 
 To export data, follow these steps:
 
-1.  Navigate to *Admin* -\> *Types* and select the desired table.
+1.  Navigate to *Admin* -\> *Tables* and select the desired table.
 2.  Click on the <img src="../images/05a_image37.png" width="24" /> button.
 3.  A CSV file will shortly download.
 4.  You can also [filter](./working-with-data.html#sort-and-filter) the data and the export will only export the filtered data.

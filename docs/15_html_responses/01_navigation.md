@@ -24,7 +24,7 @@ Once that's complete, we'll add some extensions
 
 ## Create Type
 
-1. Navigate to **Admin --> Types**
+1. Navigate to **Admin --> Tables**
 2. Click **+**
 3. Name the Type **Lead**, with the description **A Lead** and click **Save**
    ![Create Lead Type](../images/html-image-1.png)
@@ -207,7 +207,7 @@ If we examine the following line in our HTML, we can see the text ```<form actio
    ![Contact us](../images/html-image-12.png)
 2. Enter your details and click **Submit**  
    ![Submitted](../images/html-image-13.png)
-3. Navigate to Types in World of Workflows (**Admin --> Types**)
+3. Navigate to Tables in World of Workflows (**Admin --> Tables**)
 4. Click **Lead**  
    ![Leads List](../images/html-image-14.png)
 5. You can now see the new lead in the system.  

@@ -10,8 +10,8 @@ nav_order: 1
 
 To create a new *Type* (table) in the User Configurable Database, follow these steps:
 
-1.  Navigate to the User Configurable Database section in World of Workflows, by going to *Admin* then *Types*
-2.  Click on the **Add Types** button.<br>
+1.  Navigate to the User Configurable Database section in World of Workflows, by going to *Admin* then *Tables*
+2.  Click on the **Add Tables** button.<br>
     ![Add New Type](../images/05a_image.png)
 3.  Enter a name for the table and a brief description (optional).
 4.  Click **Save** to confirm.
@@ -39,7 +39,7 @@ Every time you create a column, it needs to have a data type. This tells World o
 | Name        | Description                                                                                                                                                     | Example Uses                                                                                                               |
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | Big Integer | The Big Integer represents an arbitrarily large integer whose value *in theory* has no upper or lower bounds. Integers are whole numbers, positive or negative. | Commonly used as Id’s for items where they may grow large, this is the type used as the Id for every object in the system. |
-| Reference | Connects two Types together by a key field.|The Title column of the referenced Type will be used in dropdowns of the referenced Type's data|
+| Reference | Connects two Tables together by a key field.|The Title column of the referenced Type will be used in dropdowns of the referenced Type's data|
 | Integer     | Whole number, positive or negative.                                                                                                                             | The integer is a whole number which commonly is used to represent a count of objects, e.g. 3 people or 5 cats.             |
 | Decimal 2   | Number with two decimal places.                                                                                                                                 | This is a number with two decimal places, commonly used to represent currency                                              |
 | Decimal 5   | Number with five decimal places                                                                                                                                 | This is commonly used to represent the results of calculations, or distance                                                |
@@ -68,17 +68,17 @@ Imagine we have Type A and Type B
 
 ## Editing Columns
 
-To edit a column, Navigate to the type itself by going to *Admin* then *Types* and then clicking the type.
+To edit a column, Navigate to the type itself by going to *Admin* then *Tables* and then clicking the type.
 
-![Types](../images/05a_image13.png)
+![Tables](../images/05a_image13.png)
 
 You can then click *Columns* to see the list of columns and click **Edit** to edit each one.
 
 ![Columns](../images/05a_image14.png)
 
-## Deleting Types
+## Deleting Tables
 
-If you navigate to *Admin* then *Types* you can click **Delete Type** icon under Actions to delete a type. *Note: this only works if there are no data instances in the type.*
+If you navigate to *Admin* then *Tables* you can click **Delete Type** icon under Actions to delete a type. *Note: this only works if there are no data instances in the type.*
 
 ![Delete Type](../images/05a_image15.png)
 
