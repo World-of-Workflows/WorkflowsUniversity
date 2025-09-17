@@ -9,7 +9,7 @@ has_children: false
 # Data
 Allows you to work with data and types in the system
 
-## Data Types Read
+## Data Tables Read
 **Description:** Gets a list of all data types. Data types are used as hints on how to render an item in the user interface.
 
 **Category:** Data
@@ -218,14 +218,14 @@ Allows you to work with data and types in the system
 **Output Properties:**
 - **Columns**: No hint available
 
-## Types Read
-**Description:** Gets a List of All Types.
+## Tables Read
+**Description:** Gets a List of All Tables.
 
 **Category:** Data
 
 
 **Output Properties:**
-- **Types**: No hint available
+- **Tables**: No hint available
 
 ## Type Get Id
 **Description:** Gets a Type Id by Name.

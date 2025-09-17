@@ -24,7 +24,7 @@
 8. What functionality does the "Admin" section of World of Workflows provide?
    - [x] It allows for the configuration and management of the system
 
-9. What is the role of the "Types" area within the "Admin" section of World of Workflows?
+9. What is the role of the "Tables" area within the "Admin" section of World of Workflows?
    - [x] It serves as the database system within World of Workflows
 
 10. What is the purpose of "Plugins" in the World of Workflows?

@@ -11,7 +11,7 @@ nav_order: 2
 
 In this section, we are going to add some lead statuses, and our first couple of leads.
 
-1. Navigate to **Admin** -> **Types** -> **LeadStatus**
+1. Navigate to **Admin** -> **Tables** -> **LeadStatus**
    ![LeadStatusClear](../images/04_image-7.png)
 2. Click **+** to add a new Lead Status
    ![Add Lead Status](../images/04_image-8.png)
@@ -29,7 +29,7 @@ In this section, we are going to add some lead statuses, and our first couple of
 
 ## Leads
 
-1. Navigate to **Admin** -> **Types** -> **Lead**
+1. Navigate to **Admin** -> **Tables** -> **Lead**
    ![LeadsClear](../images/04_image-10.png)
 2. Click **+** to add a new Lead
    ![Add New Lead](../images/04_image-11.png)

@@ -13,17 +13,17 @@ We're going to create two types:
 
 *Note: we use singular names by convention when creating types.*
 
-## Creating Types
+## Creating Tables
 
-1. Navigate to Admin -> Types
-   ![Types](../images/04_image.png)
+1. Navigate to Admin -> Tables
+   ![Tables](../images/04_image.png)
 2. Click **+** to create a New Type
    ![New Lead](../images/04_image-1.png)
 3. Enter the Name as **Lead** and the Description as **A Lead**. Click **Save**.
 4. Click **+** to create another new Type
 5. Enter the Name as **LeadStatus** and the Description as **Status of a Lead**
-6. Types should look like the screenshot below. If not, use the delete or edit buttons to make the relevant amendments.
-   ![Created Types](../images/04_image-2.png)
+6. Tables should look like the screenshot below. If not, use the delete or edit buttons to make the relevant amendments.
+   ![Created Tables](../images/04_image-2.png)
 
 ## Creating Columns
 

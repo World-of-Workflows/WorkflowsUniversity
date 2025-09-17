@@ -9,7 +9,7 @@ nav_order: 4
 
 World of Workflows offers sorting, filtering, inline editing and bulk editing of your data. These features make it incredibly simple to manipulate your data in the system to ensure you have the correct data ready to work with.
 
-Clicking on *Admin* then *Types* then clicking the name of the type you want to work with takes you to the data editing screen
+Clicking on *Admin* then *Tables* then clicking the name of the type you want to work with takes you to the data editing screen
 
 ![Edit Type](../images/05a_image16.png)
 

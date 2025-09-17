@@ -7,7 +7,7 @@ Welcome to this module on the World of Workflows database. In this section, you'
 
 The World of Workflows database is a relational database which is a collection of data organized in tables with columns and rows, allowing for easy access and manipulation of the data. You'll learn about the different types of data types, the rules of good database design, and how to use the user interface and workflows to interact with the database. By the end of this course, you'll have a solid foundation in the principles of World of Workflows databases and be able to use them effectively in your work. Let's get started.
 
-# Types
+# Tables
 A **type** in the workflows database and a spreadsheet are similar in that they both organize data into rows and columns. However, there are some key differences between the two. A spreadsheet is typically used for storing and analyzing small amounts of data, while a table in the workflows database is designed for storing and managing large amounts of data. 
 
 Additionally, a spreadsheet is limited in the number of rows and columns it can have, whereas a table in a relational database can have an almost unlimited number of rows and columns. 
@@ -21,7 +21,7 @@ We consider spreadsheets commonly store quite **unstructured** data whereas the 
 
 Managing Data in World of Workflows allows you to create, edit and delete types, columns and data to meet your exact business needs.
 
-## Data Types
+## Data Tables
 Each column in a workflows database **type** has a specific data type. The data types determine what kind of data can be stored in the column, and how the data can be used.
 
 For example, we can store currency values, dates, strings as simple types but also store email addresses, phone numbers, and URLs as more complex types.
@@ -76,7 +76,7 @@ To access the database configuration you need to be an administrator or be runni
 
 You access the database by clicking **types** from the Admin Page.
 
-![Types Link](2023-11-20-10-53-18.png)
+![Tables Link](2023-11-20-10-53-18.png)
 
 Unless you have already created some types or installed a **Solution**, there will be no types in your system
 
@@ -107,7 +107,7 @@ Each type has a column created for you, called Title. This is what we call the t
 
 Follow along the next section and add the columns we need to get started with our CRM.
 
-To add a column, go back to Types and click **properties** on the type you wish to add a column to.
+To add a column, go back to Tables and click **properties** on the type you wish to add a column to.
 
 To add a column to this type, click **Add column** and enter the data as follows:
 

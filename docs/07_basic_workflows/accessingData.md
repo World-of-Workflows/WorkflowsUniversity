@@ -12,7 +12,7 @@ has_children: false
 
 Workflows need to create, read, update and delete data.  Temporary data is held in variables.  Variables exist only while the workflow is running.
 
-To store data outside of the context of a workflow we use the [User Configurable Database](..\05_Database\README.html).  This allows you to store data ( `object instances`) in tables (`Types`).
+To store data outside of the context of a workflow we use the [User Configurable Database](..\05_Database\README.html).  This allows you to store data ( `object instances`) in tables (`Tables`).
 
 Use [List Object Instances](..\12_workflow_activities/04_data/README.html#list-object-instances), [Get Object Instance](..\12_workflow_activities/04_data/README.html#get-object-instance), [Update Object Instance](..\12_workflow_activities/04_data/README.html#update-object-instance), [Delete Object Instance](..\12_workflow_activities/04_data/README.html#delete-object-instance) to interact with the User Configurable Database.
 

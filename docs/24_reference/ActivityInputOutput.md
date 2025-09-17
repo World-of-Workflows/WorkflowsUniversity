@@ -221,7 +221,7 @@ Triggers when files are created/modified in the given folder
 | -- | -- | -- | -- | -- | -- |
 | Path | System.String | Path | The path of the directory to watch | False | True |
 | Pattern | System.String | Pattern | The file pattern for interested files | False | True |
-| ChangeTypes | System.IO.WatcherChangeTypes | Change Types | The types of file system events to subscribe to | False | True |
+| ChangeTypes | System.IO.WatcherChangeTypes | Change Tables | The types of file system events to subscribe to | False | True |
 | NotifyFilters | System.IO.NotifyFilters | Notify Filters |  | False | True |
 
 #### Output Parameters
@@ -425,7 +425,7 @@ Run JavaScript code.
 
 - Done
 
-### Data Types Read
+### Data Tables Read
 Gets a list of all data types. Data types are used as hints on how to render an item in the user interface.
 
 **Category:** Data
@@ -812,8 +812,8 @@ Gets the columns for a type.
 - Success
 - Object type not found
 
-### Types Read
-Gets a List of All Types.
+### Tables Read
+Gets a List of All Tables.
 
 **Category:** Data
 
@@ -823,7 +823,7 @@ Gets a List of All Types.
 
 | Name | Type | Hint |
 | -- | -- | -- |
-| Types | HubOneWorkflows.Models.API.ObjectTypeInfoWithColumns`1[HubOneWorkflows.Models.API.ObjectTypeColumnInfo][] |  |
+| Tables | HubOneWorkflows.Models.API.ObjectTypeInfoWithColumns`1[HubOneWorkflows.Models.API.ObjectTypeColumnInfo][] |  |
 
 #### Outcomes
 

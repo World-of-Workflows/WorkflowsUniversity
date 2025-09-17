@@ -62,7 +62,7 @@ When building workflows for the first time, one commonly uses the **HTTP Endpoin
 ## Pre-requisites
 As we are using the **Object Instance Trigger**, we will need at least on type and instance. 
 
-1. Go to **Admin** -> **Types**
+1. Go to **Admin** -> **Tables**
 2. Click **Add Type**
 3. Enter the **Name** as ```Customer``` and **Description** as ```Paying customer```.
    ![Creating New Type](2023-02-27-14-53-26.png)
@@ -93,7 +93,7 @@ As we are using the **Object Instance Trigger**, we will need at least on type a
 11. Click **Save** then  **Publish**.
 
 ## Test the Workflow
-1. Go to **Admin** -> **Types**
+1. Go to **Admin** -> **Tables**
 2. Click **Customer**
 3. Click **John Smith**
 4. Click the **Workflows Tab**

@@ -16,9 +16,10 @@ This section describes the differences between the `Personal Edition` and the `B
 
 | Feature | Personal Edition | Business Edition |  
 | --- | --- | --- | --- |  
-| SQLLite Support | Yes | Yes |   
-| SQL Server Support | - | - |   
-| Azure SQL Server Support | - | - |   
+| SQLLite support | Yes | Yes |   
+| SQL Server support | - | Planned |   
+| Postgres database support | - | Planned |   
+| Azure SQL Server support | - | Planned |   
 | Local Installation | Yes | Yes |   
 | Users | - | Yes |   
 | Groups | - | Yes |   
@@ -34,7 +35,7 @@ This section describes the differences between the `Personal Edition` and the `B
 | Data Restore | Yes | Yes |   
 | Data Export | Yes | Yes |   
 | Data Import | Yes | Yes |   
-| Workflows Univeristy | Yes | Yes |   
+| Workflows University | Yes | Yes |   
 | Self Documentation | Yes | Yes |   
 
 
@@ -50,7 +51,6 @@ This section describes the differences between the `Personal Edition` and the `B
 | Email | Yes | Yes |   
 | File | Yes | Yes |   
 | HTTP | Yes | Yes |   
-| Jotform | Yes | Yes |   
 | Random Numbers | Yes | Yes |   
 | Robotic Process Automation | Yes | Yes |   
 | JavaScript Support | Yes | Yes |   

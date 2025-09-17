@@ -54,6 +54,6 @@ Now, whenever you navigate to the URL you specified, the workflow will run.
 
 Now, whenever you open an instance of the Type specified, this workflow will appear in the workflow tabs.
 
-`Admin`-> `Types` -> *`[Type Name]`* -> *`[Instance Name]`* -> `Workflows`
+`Admin`-> `Tables` -> *`[Type Name]`* -> *`[Instance Name]`* -> `Workflows`
 
 ![](../images/2023-02-02-11-18-18.png)

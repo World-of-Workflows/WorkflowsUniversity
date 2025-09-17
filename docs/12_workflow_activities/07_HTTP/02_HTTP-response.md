@@ -19,7 +19,7 @@ This activity writes a HTTP response back to the calling client.
   - **Char Set** - The Character Set to use when writing the response
   - **Response Headers** - Additional headers to write
 
-## HTTP Content Types
+## HTTP Content Tables
 
 | Type | Description |
 | -- | -- |
@@ -27,7 +27,7 @@ This activity writes a HTTP response back to the calling client.
 | text/plain | This is the default for textual files. Even if it really means "unknown textual file," browsers assume they can display it. |
 | text/css | CSS files used to style a Web page must be sent with text/css. If a server doesn't recognize the .css suffix for CSS files, it may send them with text/plain or application/octet-stream MIME types. If so, they won't be recognized as CSS by most browsers and will be ignored. |
 | text/html | All HTML content should be served with this type. Alternative MIME types for XHTML (like application/xhtml+xml) are mostly useless nowadays. |
-| text/javascript | Per the IANA Media Types registry, RFC 9239, and the HTML specification, JavaScript content should always be served using the MIME type text/javascript. No other MIME types are considered valid for JavaScript, and using any MIME type other than text/javascript may result in scripts that do not load or run. You may find some JavaScript content incorrectly served with a charset parameter as part of the MIME type — as an attempt to specify the character set for the script content. That charset parameter isn't valid for JavaScript content, and in most cases will result in a script failing to load. |
+| text/javascript | Per the IANA Media Tables registry, RFC 9239, and the HTML specification, JavaScript content should always be served using the MIME type text/javascript. No other MIME types are considered valid for JavaScript, and using any MIME type other than text/javascript may result in scripts that do not load or run. You may find some JavaScript content incorrectly served with a charset parameter as part of the MIME type — as an attempt to specify the character set for the script content. That charset parameter isn't valid for JavaScript content, and in most cases will result in a script failing to load. |
 | image/apng | Animated Portable Network Graphics (APNG) |
 | image/avif | AV1 Image File Format (AVIF) |
 | image/gif | Graphics Interchange Format (GIF) |

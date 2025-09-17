@@ -48,7 +48,7 @@
    - [ ] It allows for the configuration and management of the system
    - [ ] It provides a chat platform for team communication
 
-9. What is the role of the "Types" area within the "Admin" section of World of Workflows?
+9. What is the role of the "Tables" area within the "Admin" section of World of Workflows?
    - [ ] It allows for the customization of the user interface
    - [ ] It provides access to the built-in email client
    - [ ] It serves as the database system within World of Workflows

@@ -56,7 +56,7 @@ Our extensible database which can be accessed from the User Interface or
 within workflows provides the following features:
 
 -   Extremely high performance
--   Customizable tables (Types), Columns and Relationships
+-   Customizable tables (Tables), Columns and Relationships
 -   Custom views to see filtered and sorted database entries.
 -   Flexible import
 -   Full Export
@@ -685,14 +685,14 @@ the Workflows in the system. Workflows are ways of visually describing
 what your process should do and instructing World of Workflows to
 perform tasks that you want it to perform.
 
-### Types
+### Tables
 
-Types give you access to the inbuilt database within World of Workflows.
+Tables give you access to the inbuilt database within World of Workflows.
 Here you can add, retrieve and manipulate data across the system.
 
 ### Views
 
-While Types allows you to manipulate the underlying data, **Views**
+While Tables allows you to manipulate the underlying data, **Views**
 allows you to choose what the users of the system see. You can choose
 which fields they see and apply filters. Within views, you can easily
 set up navigation hierarchies for end users.
@@ -741,7 +741,7 @@ part of it) for loading on another World of Workflows system.
 ### Swagger
 
 This shows API Definitions as it applies to your own World of Workflows
-installation. The API extends as you create new Types and publish new
+installation. The API extends as you create new Tables and publish new
 workflows.
 
 ### Account
@@ -783,9 +783,9 @@ We're going to create two types:
 
 *Note: we use singular names by convention when creating types.*
 
-## Creating Types
+## Creating Tables
 
-1.  Navigate to Admin -\> Types ![Types](../images/04_image.png)
+1.  Navigate to Admin -\> Tables ![Tables](../images/04_image.png)
 2.  Click **+** to create a New Type ![New
     Lead](../images/04_image-1.png)
 3.  Enter the Name as **Lead** and the Description as **A Lead**. Click
@@ -793,9 +793,9 @@ We're going to create two types:
 4.  Click **+** to create another new Type
 5.  Enter the Name as **LeadStatus** and the Description as **Status of
     a Lead**
-6.  Types should look like the screenshot below. If not, use the delete
+6.  Tables should look like the screenshot below. If not, use the delete
     or edit buttons to make the relevant amendments. ![Created
-    Types](../images/04_image-2.png)
+    Tables](../images/04_image-2.png)
 
 ## Creating Columns
 
@@ -858,7 +858,7 @@ adding data](./adding_data.html)**
 In this section, we are going to add some lead statuses, and our first
 couple of leads.
 
-1.  Navigate to **Admin** -\> **Types** -\> **LeadStatus**
+1.  Navigate to **Admin** -\> **Tables** -\> **LeadStatus**
     ![LeadStatusClear](../images/04_image-7.png)
 2.  Click **+** to add a new Lead Status ![Add Lead
     Status](../images/04_image-8.png)
@@ -877,7 +877,7 @@ couple of leads.
 
 ## Leads
 
-1.  Navigate to **Admin** -\> **Types** -\> **Lead**
+1.  Navigate to **Admin** -\> **Tables** -\> **Lead**
     ![LeadsClear](../images/04_image-10.png)
 2.  Click **+** to add a new Lead ![Add New
     Lead](../images/04_image-11.png)
@@ -957,7 +957,7 @@ JavaScript for this.
 
 # Try it Out
 
-1.  Navigate to **Admin** --\> **Types** --\> **Lead**
+1.  Navigate to **Admin** --\> **Tables** --\> **Lead**
     ![Leads](../images/04_image-29.png)
 2.  Click the Id for the Lead (In this case 4) ![Lead
     Details](../images/04_image-30.png)
@@ -990,7 +990,7 @@ databases or APIs.
 The User Configurable Database offers a flexible and intuitive platform
 for managing your data, allowing you to:
 
--   Create custom *Types* (tables) with user-defined fields, data types,
+-   Create custom *Tables* (tables) with user-defined fields, data types,
     and relationships.
 -   Import and export data in various formats, such as CSV
 -   Search, filter, and sort records to quickly find the information you
@@ -1005,8 +1005,8 @@ To create a new *Type* (table) in the User Configurable Database, follow
 these steps:
 
 1.  Navigate to the User Configurable Database section in World of
-    Workflows, by going to *Admin* then *Types*
-2.  Click on the **Add Types** button.`<br>`{=html} ![Add New
+    Workflows, by going to *Admin* then *Tables*
+2.  Click on the **Add Tables** button.`<br>`{=html} ![Add New
     Type](../images/05a_image.png)
 3.  Enter a name for the table and a brief description (optional).
 4.  Click **Save** to confirm.
@@ -1053,7 +1053,7 @@ below:
                whole numbers, positive or       object in the system.
                negative.                        
 
-  Reference    Connects two Types together by a The Title column of the
+  Reference    Connects two Tables together by a The Title column of the
                key field.                       referenced Type will be
                                                 used in dropdowns of the
                                                 referenced Type's data
@@ -1133,18 +1133,18 @@ manipulate it..
 ## Editing Columns
 
 To edit a column, Navigate to the type itself by going to *Admin* then
-*Types* and then clicking the type.
+*Tables* and then clicking the type.
 
-![Types](../images/05a_image13.png)
+![Tables](../images/05a_image13.png)
 
 You can then click *Columns* to see the list of columns and click
 **Edit** to edit each one.
 
 ![Columns](../images/05a_image14.png)
 
-## Deleting Types
+## Deleting Tables
 
-If you navigate to *Admin* then *Types* you can click **Delete Type**
+If you navigate to *Admin* then *Tables* you can click **Delete Type**
 icon under Actions to delete a type. *Note: this only works if there are
 no data instances in the type.*
 
@@ -1160,7 +1160,7 @@ editing of your data. These features make it incredibly simple to
 manipulate your data in the system to ensure you have the correct data
 ready to work with.
 
-Clicking on *Admin* then *Types* then clicking the name of the type you
+Clicking on *Admin* then *Tables* then clicking the name of the type you
 want to work with takes you to the data editing screen
 
 ![Edit Type](../images/05a_image16.png)
@@ -1290,7 +1290,7 @@ Your workflows can of course use any sort of data.
 
 To export data, follow these steps:
 
-1.  Navigate to *Admin* -\> *Types* and select the desired table.
+1.  Navigate to *Admin* -\> *Tables* and select the desired table.
 2.  Click on the
     `<img src="../images/05a_image37.png" width="24" />`{=html} button.
 3.  A CSV file will shortly download.
