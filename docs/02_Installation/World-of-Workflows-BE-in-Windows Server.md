@@ -82,84 +82,89 @@ On your Windows Server:
    A `local` user is created called `IIS AppPool\<sitename>`.  This is the user you will need to grant access to `C:\inetpub\wwwroot\WorldOfWorkflows` and the database folder. 
   
 5. Verify Web.Config
-   The World fo Workflows Business Edition .zip should already include a web.config with an ```<aspNetCore />``` section.
+   The World fo Workflows Business Edition .zip should already include a web.config with an ```< aspNetCore />``` section.
    If you need to, update the logging to be enabled, like this:
-```
-<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-  <location path="." inheritInChildApplications="false">
-    <system.webServer>
-      <handlers>
-        <add name="aspNetCore" path="*" verb="*" modules="AspNetCoreModuleV2" resourceType="Unspecified" />
-      </handlers>
-      <aspNetCore processPath=".\HubOneWorkflowsApp.Server.exe" stdoutLogEnabled="true" stdoutLogFile=".\logs\stdout" hostingModel="inprocess" />
-    </system.webServer>
-  </location>
-</configuration>
-   
-```
+
+   ```
+      <?xml version="1.0" encoding="utf-8"?>
+      <configuration>
+      <location path="." inheritInChildApplications="false">
+         <system.webServer>
+            <handlers>
+            <add name="aspNetCore" path="*" verb="*" modules="AspNetCoreModuleV2" resourceType="Unspecified" />
+            </handlers>
+            <aspNetCore processPath=".\HubOneWorkflowsApp.Server.exe" stdoutLogEnabled="true" stdoutLogFile=".\logs\stdout" hostingModel="inprocess" />
+         </system.webServer>
+      </location>
+      </configuration>
+   ```
 
 6. Create a logs folder  
-   Create the folder  ```C:\inetpub\wwwroot\WorldOfWorkflows\logs``` if you enabled log output in `web.config`
+   Create the folder   
+    ```C:\inetpub\wwwroot\WorldOfWorkflows\logs```  
+   if you enabled log output in `web.config`
    
 7. Grant read/write access to the logs folder for the user `IIS AppPool\WorldOfWorkflows`
 
 8. Update appsettings.json  
    Here is a <a href="./appsettings.json" download>sample `appsessings.json` </a> file.
    There are a number of items you will need to update:  
+
    1. The ConnectionStrings section contains the location and filename of your two World of Workflows databases.
       - the Elsa database holds the Workflow definitions and any workflow instance logs.
       - the WorldOfWorkflows
-   ```
-     "ConnectionStrings": {  
-         "Elsa": "Data Source=D:\\Data\\WoWWorkflows.db",  
-         "WorldOfWorkflows": "Data Source=D:\\Data\\WoWData.db;cache=shared"  
-      },  
-   ```
+      ```
+      "ConnectionStrings": {  
+            "Elsa": "Data Source=D:\\Data\\WoWWorkflows.db",  
+            "WorldOfWorkflows": "Data Source=D:\\Data\\WoWData.db;cache=shared"  
+         },  
+      ```
    2. The ClientConfiguration contains details on how authentication is set up within AzureAD.
       The `Authority` will need to be set with your Azure Subscriptions Tenant Id.  
       The `ClientId` will need to be changed to your App Registration's Client Id
-   ```
-   "WorldOfWorkflows": {
-    "ClientConfiguration": {
+      ```
       "WorldOfWorkflows": {
-        "Server": {
-          "Scopes": {
-            "Default": [
-              "api://xxxxxxxx-xxxx-xxxx-xxxx-xxxx/.default"
-            ]
-          }
-        }
-      },
-      "AzureAd": {
-        "Authority": "https://login.microsoftonline.com/xxxxxxxx-xxxx-xxxx-xxxx-xxxx",
-        "ValidateAuthority": true,
-        "ClientId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxx"
-      }
-   }
-    ```
-   3. Add your server web url name to the `Cors` setting, and any other servers you want to be able to access your server
-   ```
-   "Cors": {
-      "AllowedOrigins":[ "https://xxx.domain.com","http://localhost"]
-    },
-   ```
-  4. Add your server web url name to the `Kestrel.Enpoints.Public.Url` setting and set your https certificate filename and password.
-   ``` 
-      "Kestrel": {
-         "Endpoints": {
-            "Public": {
-            "Url": "https://wow.xxx.com.au:443",
-            "Protocols": "Http1",
-            "Certificate": {
-                  "Path": "D:\\Data\\xxx.pfx",
-                  "Password": "xxx"
-               }
+      "ClientConfiguration": {
+         "WorldOfWorkflows": {
+         "Server": {
+            "Scopes": {
+               "Default": [
+               "api://xxxxxxxx-xxxx-xxxx-xxxx-xxxx/.default"
+               ]
             }
          }
+         },
+         "AzureAd": {
+         "Authority": "https://login.microsoftonline.com/xxxxxxxx-xxxx-xxxx-xxxx-xxxx",
+         "ValidateAuthority": true,
+         "ClientId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxx"
+         }
       }
- ```
+      ```
+   3. Add your server web url name to the `Cors` setting, and any other servers you want to be able to access your server
+      ```
+      "Cors": {
+         "AllowedOrigins":[ "https://xxx.domain.com","http://localhost"]
+      },
+      ```
+   4. Add your server web url name to the `Kestrel.Enpoints.Public.Url` setting and set your https certificate filename and password.
+         ``` 
+            "Kestrel": {
+               "Endpoints": {
+                  "Public": {
+                  "Url": "https://wow.xxx.com.au:443",
+                  "Protocols": "Http1",
+                  "Certificate": {
+                        "Path": "D:\\Data\\xxx.pfx",
+                        "Password": "xxx"
+                     }
+                  }
+               }
+            }
+         ```
+
 #### Set up web site for HTTPS / SSL
+
 Import your ssl certificate into the IIS system.  Open IIS and go to the server settings.  Find `Server Certificates` and import your .pfx file.  You will need to know the password.  
 ![](2025-09-17-14-11-26.png)  
 
@@ -209,4 +214,4 @@ Now you can navigate to your new server and login.
 
 ### Install a SQLite database tool  
 
-eg sqlitebrowser.org/dl
+eg http://sqlitebrowser.org/dl
