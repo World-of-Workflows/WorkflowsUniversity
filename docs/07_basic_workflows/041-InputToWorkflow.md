@@ -35,7 +35,7 @@ The Object Instance Trigger has built-in outputs called Instance and InstanceId.
 ![](../images/2024-07-09-15-36-51.png)
 ![](../images/2024-07-09-15-37-18.png)
 
-This is how we would use the data from the trigger:
+This is how we would use the data from the trigger:  
 ![](../images/2024-07-09-15-38-05.png)
 
 ## 'Child' Workflows - accessing data passed from the parent workflow run by the `Run Workflow` activity
@@ -43,7 +43,7 @@ This is how we would use the data from the trigger:
 A special JavaScript variable is available when a workflow is run by another workflow using the `Run Workflow` activity.
 The first activity in a workflow can access a special JavaScript variable called `input`. 
 
-Here is an example of a (parent) workflow calling a (child) workflow:
+Here is an example of a (parent) workflow calling a (child) workflow:  
 ![](../images/2024-07-09-15-43-11.png)
 ![](../images/2024-07-09-15-44-01.png)
 
@@ -51,8 +51,8 @@ In this case we are passing a JSON object built by a small liquid script.
 This is the equivalent in JavaScript:
  ![](../images/2024-07-09-15-46-47.png)
  
- The child workflow can now access the data using the special `input` variable in the very first activity.
- ![](../images/2024-07-09-15-50-09.png)
+ The child workflow can now access the data using the special `input` variable in the very first activity.   
+ ![](../images/2024-07-09-15-50-09.png)  
  ![](../images/2024-07-09-15-50-28.png)  
 
  Subseqient activities in the child workflow will see the data as

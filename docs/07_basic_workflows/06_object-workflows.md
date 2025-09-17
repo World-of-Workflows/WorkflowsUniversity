@@ -10,7 +10,7 @@ grand_parent: Beginner's Guide to Workflows
 This guide shows how to create a workflow that can be executed from within the Object Editor Screen.
 
 The process is as follows:
-1. Create a Type
+1. Create a Type. 
 2. Create an Instance
 3. Create a Workflow with the Object Instance Trigger activity
 4. Execute and test the workflow
@@ -21,8 +21,8 @@ The instructions below show how to do this:
 1. Go To Workflows
 2. Login
 3. Navigate to `Admin` ->`Types`
-4. Click **Add Type**
-5. Type the *Name* and *Description* and click **Save**
+4. Click **Add Type**  
+5. Type the *Name* and *Description* and click **Save**  
    ![](../images/2022-11-08-07-11-38.png)
 6. The example below shows the new type. Make note of the Title of your Type, in my case ```MyNewType```
    ![](../images/2022-11-08-07-13-03.png)

@@ -26,9 +26,9 @@ Solutions are packaged collections of Types, Views and Workflows. Using the Solu
 4. Choose the Types, Workflows and Views
    ![](../images/2024-07-11-14-00-34.png)
 
-5. When you select a Type, you can choose to also copy some of the data within the type.  This can be helpful when setting up a Production environment from yoru Development environment, to copy items such as the list of Statuses used in a dropdown menu
+5. When you select a Type, you can choose to also copy some of the data within the type.  This can be helpful when setting up a Production environment from your Development environment, to copy items such as the list of Statuses used in a dropdown menu
    ![](../images/2024-07-11-14-03-53.png)
-6. Types which reference other Types are noted in blue.  Selecting one (eg Contacts in this example wil automatically select the referenced types.  You can unselect these as appropriate.
+6. Types which reference other Types are noted in blue.  Selecting one (eg Contacts in this example will automatically select the referenced types.  You can unselect these as appropriate.
    ![](../images/2024-07-11-14-05-54.png)
 7. Select any desired Workflows  
    ![](../images/2024-07-11-14-08-41.png)
@@ -48,7 +48,7 @@ World of Workflows is an open, extensible environment.  This applies to Solution
 A Solution is a carefully-crafted World of Workflows workflow.  Like any workflow, it can be altered using World of Workflows graphical interface.  
 Here is an example of the contents of a Solution:  
 ![](../images/2024-07-11-14-18-47.png)  
-You can import any of the SETUPxxx_WF.json files to modify what the workflow will do when the solution is impoerted.  This might be useful if you wanted to run a proprietary workflow once when a solution is imported.
+You can import any of the SETUPxxx_WF.json files to modify what the workflow will do when the solution is imported.  This might be useful if you wanted to run a proprietary workflow once when a solution is imported.
 Note that the Utilities plugin is included in this solution.
 
 ## Importing a solution
