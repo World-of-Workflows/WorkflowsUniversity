@@ -201,6 +201,17 @@ Find `Server Certificates` and import your .pfx file.  You will need to know the
 Next, go the bindings on your World of Workflows website and add HTTPS:  
 ![](2025-09-17-14-15-01.png)
 
+#### Update the Application Pool configuration
+
+The defaults for the Application Pool can have the server shut down after 20 minutes of inactivity.  
+
+Open The WorldOfWorkflows Application Pool.  Go to Advanced Settings and set these:
+   - Process Model - Idle Time-out (minutes): default is 20.  Change to **1720**
+   - Process Model - Idle Time-out Action: default is Terminate.  Change to **Suspend**
+   - Shutdown Time Limit (seconds): default is 90. Change to **500**
+   - Startup Time Limit (seconds): default is 90. Change to **500**   
+![](2025-09-19-09-43-28.png)
+
 
 ### Granting Permission to access the World of Workflows Admin page
 
