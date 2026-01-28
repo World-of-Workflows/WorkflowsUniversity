@@ -12,25 +12,57 @@ World of Workflows Business Edition is available on the Azure Marketplace here:
 
 [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/worldofworkflows.wowbe?tab=Overview)
 
-## Installation Instructions
+## Installation Instructions - Obsolete
 
 ### Installing Pre-requisites
 
-1. Navigate to the [Azure Portal](https://portal.azure.com/#home)
+1. Navigate to the [Azure Portal](https://portal.azure.com/#home)  
    ![Azure Portal](../images/02_image-7.png)
-2. Click **[+ Create a resource](https://portal.azure.com/#create/hub)**
+2. Click **[+ Create a resource](https://portal.azure.com/#create/hub)**  
    ![Create Resource](../images/02_image-8.png)
 3. Search for **User Managed Identity**.
    ![User Managed Identity](../images/02_image-9.png)
 4. Under User Managed Identity, click **Create**
-5. Create or choose a **Resource Group**, Set the Region to be your local region and give the Identity a name. We commonly use **WOWBEInstaller**.
+5. Create or choose a **Resource Group**, Set the Region to be your local region and give the Identity a name. We commonly use **WOWBEInstaller**.  
    ![Create Managed Identity](../images/02_image-10.png)
+   ![](2025-11-15-09-06-45.png)
 6. Click **Review + Create**
 7. Give your managed Identity Permissions as follows:
-   - for the subscription where you will install World of Workflows, make the managed Identity an **Owner**.
-   - In Entra Id, in the directory you will install World of Workflows, make the managed Identity an **Application Administrator**
+   - for the subscription where you will install World of Workflows, make the managed Identity an **Owner**.  
+      - Find the Managed Identity Resource:  
+      ![](2025-11-14-10-03-17.png)  
+      - Add the Owner role  
+      ![](2025-11-14-10-05-53.png)
+   - In Entra Id, in the directory you will install World of Workflows, make the managed Identity an **Application Administrator**  
+      - Go to Microsoft Entra ID (left menu).
+	   - Click **Manage -> Roles and administrators**
+      — Open the **Application Administrator** Role
+	   - Click Add assignments  
+      ![](2025-11-14-10-16-04.png)
+	   ![](2025-11-14-10-18-18.png)
+	   - Click Add.
+      You will now see an active assignment for WoWBEInstaller (your Managed Identity) 
 
-**Note: ** *The managed identity can be deleted after deployment is complete.*
+{: .key }
+   > This **can only** be done by a user with appropriate authority.  Without the correct authority you will not see the the **Add Assignment** button.   
+
+{: .key }  
+   *The managed identity can be deleted after deployment is complete.* 
+Add role to the managed identity  
+![](2025-11-15-11-07-07.png)  
+![](2025-11-15-11-04-53.png)  
+![](2025-11-15-11-08-08.png)  
+
+8. Ensure your subscription has the Resource provider Microsoft.web registered.  In the Azure portal:
+	1.	Go to Subscriptions.  
+	2.	Open subscription your subscription.  
+	3.	In the left menu, choose **Settings -> Resource providers**.  
+	4.	Search for Microsoft.Web.  
+	5.	Click Register. 
+
+For example:  
+![](2025-11-14-23-00-11.png)
+
 
 ### Installing World of Workflows
 
@@ -41,6 +73,8 @@ World of Workflows Business Edition is available on the Azure Marketplace here:
 3. Search for **User World of Workflows** or click the link to the [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/worldofworkflows.wowbe?tab=Overview).
 4. Choose your plan and click **Create**
 5. Complete the form as follows:
+![](2025-11-15-09-20-02.png)  
+![](2025-11-15-09-21-09.png)
    1. **Project Details**
    ![Project Details](../images/02_image-11.png)
       - Enter the subscription where you would like to install world of Workflows and create a new **Resource Group** by clicking **Create new**
@@ -105,3 +139,10 @@ Granting permissions in World of Workflows requires you first to configure the S
 
 Now you can navigate to your new server and login.
 
+
+
+
+## Installation Instructions - Powershell installer
+
+gotcha: make sure the GA user has this turned on in Tenant Propertie
+![](2025-12-02-10-59-32.png)
