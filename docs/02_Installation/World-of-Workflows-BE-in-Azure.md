@@ -142,7 +142,65 @@ Now you can navigate to your new server and login.
 
 
 
-## Installation Instructions - Powershell installer
+## Installation Instructions - Self-serve installer
 
-gotcha: make sure the GA user has this turned on in Tenant Propertie
-![](2025-12-02-10-59-32.png)
+The Self-Serve installer allows a Global Administrator to install World of Workflows Business Edition in an existing Azure subscription.
+
+## Create the Azure subscription
+
+If your Microsoft relationship is managed by a Customer Service Provider (CSP)) such as PAX8 you should go to the PA site to create the subscription. These instructions are for PAX8.  Alternatively log into portal.azure.com and create a subscription as a PAYG subscription.
+
+1. Log into Pax8 Portal and go to the Catalog.  Search on Azure Plan.  Configure it.  It will be a PAYG plan, that will create a subscripotionin the client called `Azure subscription 1`
+
+2. Go Portal.azure.com
+   - open tenant Properties. The easiest way is to search Tenant in trhe search bar at the top of the page.
+   - Enable access to the subscription by turning on this switch:  
+    ![](2026-06-18-11-52-03.png)  
+    
+3. Wait 10-15 minutes before you move to the next step.
+4. Go to the Subscription, and add yourself as Owner role to the subscription:  
+   1. ![](2026-06-18-11-54-00.png)
+   2. Click Grant Role assignment, and select the Privileges administrator rolw of Owner  
+   ![](2026-06-18-11-55-55.png)
+   3. Add yourself in the Members list
+   4. Select at least this level of rights:  
+   ![](2026-06-18-11-58-00.png)
+   5. Complete the assignment.  
+   6. Go to the Subscription and select Access Control (IAM).  Under View my access you shoudld now see this:  ![](2026-06-18-13-16-46.png)
+
+
+>   If errors occur, you might need to wait longer.
+
+5. Open https://wowcentral.worldofworkflows.com/SelfServeDeploy
+
+- Click signin to Azure  
+  This should ask you to grant access.  Tick the box and grant access.  You may need to enble popups for the site.
+  It should also load your subsription.  If you have more than 1, select the appropriate subscription.
+
+- Enter a name for your system.  Often we use the customer name.  This does not have to be the desired website host name, but it can be.
+- Click 'Check Availability.  This will ensure your name is unique in Azure, and populate the remaining fields.
+- Confirm the remaining values. If you are unsure what they mean, keep them as defaulted.
+- Your email address is prepopulated into Admin User UPN.
+- Guest Admins can be invited by entering their email address.
+- Select the App Service Plan Size.   this can be changed later to grow.  Start small.
+
+6. Click `Start Deployment`
+- This will provision your new server.
+- Monitor the Job Status window.  It mat ask you to perform some additional actions.  
+![](2026-06-18-13-44-13.png)  
+
+7. Open the site once deployment has completed.  
+8. Login.  You will be asked to grant access.  Tick the box and accept.  
+![](2026-06-18-13-22-45.png)
+
+## Populate your new World of Workflows Business Edition system
+
+Once logged in, your new site will be empty.   
+
+![](2026-06-18-13-45-58.png)
+
+You may be prompted to install a solution from our Solution store.  This dialog can be loaded at any time from the Admin -> Solutions card.
+
+![](2026-06-18-13-49-39.png)
+
+![](2026-06-18-13-51-22.png)

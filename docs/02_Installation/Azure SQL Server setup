@@ -1,0 +1,215 @@
+# Azure SQL Database Setup Guide
+
+## Prerequisites
+
+- Active Azure subscription
+- Azure Portal access
+- Administrative privileges
+
+
+
+
+## Step 1: Create SQL Database
+
+1. In Azure Portal, click **Create a resource**
+2. Search for **SQL Database**
+![](2026-06-05-16-18-47.png)
+3. Select your Subscription.  Plan will be *SQL Database*
+3. Click **Create**
+4.  Apply the free offer:
+![](2026-06-05-16-20-31.png)
+4. Select your resource group
+5. Select an existing server, or create a new one
+- Create new  
+![](2026-06-05-16-33-39.png)
+  server name (must be globally unique, e.g., `workflows-server`)
+6. Set Location to match your region
+7. Configure Administrator login and password
+7. Select Both SQL and Microsoft Entra Authentication
+   8. Click **Next: Networking**
+   9. Configure firewall rules:
+      - Allow Azure services to access: **Yes**
+      - Add current address to enable remote access fro your location.
+   10. Click **Review + create** then **Create**
+
+## Step 3: Create SQL Database
+
+1. Now enter database name (e.g., `WorkflowsElsa` or `WorkflowsData`) - craete 2 databases for better cost management, but they can be all in one database.  Each name must be unique on the selected database server
+
+4. Auto-pause the database.  change this later if appropriate
+![](2026-06-05-16-39-05.png)
+5. Click **Next: Networking**
+6. Review firewall settings
+7. Click **Review + create** then **Create**
+
+## Step 4: Configure Firewall Rules
+
+1. Open SQL Server resource
+2. Go to **Firewalls and virtual networks**
+3. Add rules for your IP:
+   - Click **Add client IP**
+   - Or manually add IP range
+4. Allow Azure services: **On**
+![](2026-06-05-16-47-25.png)
+5. Click **Save**
+
+## Step 5: Connect to Database
+
+### Update App Server
+Your App Server comes by default with SQLite databases.
+There are 3 connection strings you need:
+1. Elsa
+2. ElsaSecrets
+3. W
+
+By default, your system might have connections strings for SQLite:
+
+```
+[
+  {
+    "name": "Elsa",
+    "value": "Data Source=/data/worldofworkflowsElsa.db",
+    "type": "Custom",
+    "slotSetting": false
+  },
+  {
+    "name": "ElsaSecrets",
+    "value": "Data Source=/data/worldofworkflowsElsa.db",
+    "type": "Custom",
+    "slotSetting": false
+  },
+  {
+    "name": "WorldOfWorkflows",
+    "value": "Data Source=/data/worldofworkflows.db",
+    "type": "Custom",
+    "slotSetting": false
+  }
+]
+```
+#### Obtain your Connection strings for SQL Server
+Each database in Azure has a different connection string.  You may use 1, 2 or 3 SQL Server databases.
+You may mix-an0match SQLIte and SQL Server, for example, SQL Server for the `WorldOfWorkflows` connection string, and SQLite for the others.
+
+1. Open your SQL Server database in Azure portal.
+2. Click on `Show database connection strings`  
+![](2026-06-05-16-57-09.png)
+3. You will use the ADO.NET (SQL authentication) string.  Copy it to the clipboard.
+For example:
+```Server=tcp:tribetechsqlserver.database.windows.net,1433;Initial Catalog=TribetechElsa;Persist Security Info=False;User ID=TribetechSQLProductionAdmin;Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;```
+
+> When you use this connection string, you will enter the admin password you used to set up the database.
+
+Repeat this for any other databases you want to use.
+
+
+#### Add Connection String to your Azure App Service
+
+1. Open your Azure App Service
+2. Stop your App Server.
+2. Select Environment Variables.
+3. Select Connection Strings.
+![](2026-06-05-17-02-14.png)
+4. Click Advanced Edit to open the JSON editor
+5. Update the value(s) you want to change, remembering to use your password.
+6. Apply the changes
+
+#### Add/Update Environment Variables
+1. Still in the Azure App Service Environment Variables, select App Settings.
+2. Click Advanced Edit and add these entries, or adjust them as needed
+```{
+    "name": "DatabaseProviders__Elsa",
+    "value": "SQLServer",
+    "slotSetting": false
+  },
+  {
+    "name": "DatabaseProviders__ElsaSecrets",
+    "value": "SQLServer",
+    "slotSetting": false
+  },
+  {
+    "name": "DatabaseProviders__WorldOfWorkflows",
+    "value": "SQLServer",
+    "slotSetting": false
+  },
+  ```
+> Points to note:  
+> 1. The providers are SQLServer and SQLite.  These are case sensitive.
+> 2. Match the provider to the connection string if you are mixing providers.
+
+#### Restart your App Service
+1. Go back to the App Service overview and click Start.
+2. Browse to your World of Workflows Business Edition site, to activate the system.
+
+### Import your SQLite databases.
+Any changes you made before switching to SQL Server will remain in the SQLite database(s). You will probably want to import them to SQL Server.
+
+1. Navigate to your Azure Storage account.  You can find this from the `Settings /Configuration / Path Mappings` page in your Azure App Service:  
+![](2026-06-05-17-18-17.png)
+
+
+2. Connect to your Storage account and download the SQLite databases you want to migrate.
+
+> Navigate to `Data Storage / Classic file shares` in your storage account  
+![](2026-06-05-17-27-56.png)
+
+3. Open the share and click 'Connect' to see the variety of ways to access your storage account files.
+If using macOS, show the script and run it in a terminal.
+4. Copy the files to your local machine.
+
+5. Ensure you are on a supported version of World of Workflows Business Edition.  1.9.94-RC is the minimum version required to migrate your databases.
+
+6. Navigate to the `/admin` page of your World of Workflows Business Edition instance.
+![](2026-06-05-17-36-38.png)
+
+7. Select Solutions
+8. Select Import Database
+9. Choose which databases you will migrate.  The databases must match the connection strings you specified.
+
+![](2026-06-05-17-42-08.png)
+
+10. Wait for the files to be uploaded, and then confirm the actions with Next ->  
+![](2026-06-05-17-43-31.png)
+
+11. Select Fresh install Import, and Next ->  then Begin Import
+
+![](2026-06-05-17-44-16.png)
+
+## Best Practices
+
+- **Backup**: Enable automated backups (default: 7 days)
+- **Security**: Use Azure AD authentication when possible
+- **Monitoring**: Set up alerts for DTU usage
+- **Networking**: Use Private Endpoints for production
+- **Encryption**: Enable Transparent Data Encryption (TDE)
+- **Credentials**: Store connection strings in Azure Key Vault
+
+## Connection String Reference
+
+```
+Server=tcp:<server-name>.database.windows.net,1433;Initial Catalog=<database-name>;Persist Security Info=False;User ID=<username>;Password=<password>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+```
+
+## Cleanup
+
+To remove resources and avoid charges:
+
+1. Delete the resource group (removes all associated resources)
+2. Navigate to Resource groups
+3. Select your group
+4. Click **Delete resource group**
+5. Confirm deletion
+
+## Troubleshooting
+
+| Issue | Solution |
+|-------|----------|
+| Cannot connect | Check firewall rules, verify IP address whitelisted |
+| Login failed | Verify credentials, check SQL Authentication enabled |
+| High costs | Review DTU usage, consider lower service tier |
+| Performance issues | Check Query Store, review slow queries, optimize indexes |
+
+## References
+
+- [Azure SQL Database Documentation](https://learn.microsoft.com/en-us/azure/azure-sql/)
+- [SQL Server Connection Strings](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/connection-strings)
+- [Azure Security Best Practices](https://learn.microsoft.com/en-us/azure/security/)
