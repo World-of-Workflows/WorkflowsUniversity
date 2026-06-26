@@ -86,6 +86,10 @@ On your Windows Server:
   
 5. Verify/update Web.Config
    The World of Workflows Business Edition .zip should already include a web.config with an ```< aspNetCore />``` section.
+   
+   {: .key }
+   Changes to web.config automatically, immediately, restart IIS.
+
    If you need to, update the logging to be enabled, like this:
 
    ```

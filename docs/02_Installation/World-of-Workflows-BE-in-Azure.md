@@ -12,25 +12,57 @@ World of Workflows Business Edition is available on the Azure Marketplace here:
 
 [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/worldofworkflows.wowbe?tab=Overview)
 
-## Installation Instructions
+## Installation Instructions - Obsolete
 
 ### Installing Pre-requisites
 
-1. Navigate to the [Azure Portal](https://portal.azure.com/#home)
+1. Navigate to the [Azure Portal](https://portal.azure.com/#home)  
    ![Azure Portal](../images/02_image-7.png)
-2. Click **[+ Create a resource](https://portal.azure.com/#create/hub)**
+2. Click **[+ Create a resource](https://portal.azure.com/#create/hub)**  
    ![Create Resource](../images/02_image-8.png)
 3. Search for **User Managed Identity**.
    ![User Managed Identity](../images/02_image-9.png)
 4. Under User Managed Identity, click **Create**
-5. Create or choose a **Resource Group**, Set the Region to be your local region and give the Identity a name. We commonly use **WOWBEInstaller**.
+5. Create or choose a **Resource Group**, Set the Region to be your local region and give the Identity a name. We commonly use **WOWBEInstaller**.  
    ![Create Managed Identity](../images/02_image-10.png)
+   ![](2025-11-15-09-06-45.png)
 6. Click **Review + Create**
 7. Give your managed Identity Permissions as follows:
-   - for the subscription where you will install World of Workflows, make the managed Identity an **Owner**.
-   - In Entra Id, in the directory you will install World of Workflows, make the managed Identity an **Application Administrator**
+   - for the subscription where you will install World of Workflows, make the managed Identity an **Owner**.  
+      - Find the Managed Identity Resource:  
+      ![](2025-11-14-10-03-17.png)  
+      - Add the Owner role  
+      ![](2025-11-14-10-05-53.png)
+   - In Entra Id, in the directory you will install World of Workflows, make the managed Identity an **Application Administrator**  
+      - Go to Microsoft Entra ID (left menu).
+	   - Click **Manage -> Roles and administrators**
+      — Open the **Application Administrator** Role
+	   - Click Add assignments  
+      ![](2025-11-14-10-16-04.png)
+	   ![](2025-11-14-10-18-18.png)
+	   - Click Add.
+      You will now see an active assignment for WoWBEInstaller (your Managed Identity) 
 
-**Note: ** *The managed identity can be deleted after deployment is complete.*
+{: .key }
+   > This **can only** be done by a user with appropriate authority.  Without the correct authority you will not see the the **Add Assignment** button.   
+
+{: .key }  
+   *The managed identity can be deleted after deployment is complete.* 
+Add role to the managed identity  
+![](2025-11-15-11-07-07.png)  
+![](2025-11-15-11-04-53.png)  
+![](2025-11-15-11-08-08.png)  
+
+8. Ensure your subscription has the Resource provider Microsoft.web registered.  In the Azure portal:
+	1.	Go to Subscriptions.  
+	2.	Open subscription your subscription.  
+	3.	In the left menu, choose **Settings -> Resource providers**.  
+	4.	Search for Microsoft.Web.  
+	5.	Click Register. 
+
+For example:  
+![](2025-11-14-23-00-11.png)
+
 
 ### Installing World of Workflows
 
@@ -41,6 +73,8 @@ World of Workflows Business Edition is available on the Azure Marketplace here:
 3. Search for **User World of Workflows** or click the link to the [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/worldofworkflows.wowbe?tab=Overview).
 4. Choose your plan and click **Create**
 5. Complete the form as follows:
+![](2025-11-15-09-20-02.png)  
+![](2025-11-15-09-21-09.png)
    1. **Project Details**
    ![Project Details](../images/02_image-11.png)
       - Enter the subscription where you would like to install world of Workflows and create a new **Resource Group** by clicking **Create new**
@@ -105,126 +139,68 @@ Granting permissions in World of Workflows requires you first to configure the S
 
 Now you can navigate to your new server and login.
 
-## Appendix: Installing SQlite3
-
-Below are detailed instructions for installing the SQLite3 command-line utilities on Windows, macOS, and Linux. These steps should help you get up and running so you can interact directly with SQLite databases on the command line.
 
 
 
-### Windows
+## Installation Instructions - Self-serve installer
 
-**Method 1: Download Pre-compiled Binaries**
+The Self-Serve installer allows a Global Administrator to install World of Workflows Business Edition in an existing Azure subscription.
 
-1. **Visit the SQLite Downloads Page**: Go to the official SQLite website at [https://www.sqlite.org/download.html](https://www.sqlite.org/download.html).
-2. **Select the Windows Binary**: Under the "Precompiled Binaries for Windows" section, locate the download link for the `sqlite-tools-win32-x86-*` zip file. Even if you have a 64-bit machine, the 32-bit version works fine.
-3. **Download and Extract**: Save the ZIP file to your computer. Once downloaded, right-click on the ZIP file and select “Extract All…” to extract the contents into a folder of your choice. You should now have `sqlite3.exe` in that folder.
-4. **Add to Path (Optional)**: To run `sqlite3` from any directory in the command prompt, add the folder containing `sqlite3.exe` to your system’s PATH:
-   - Press **Windows + R**, type `sysdm.cpl` and hit Enter.
-   - Go to the **Advanced** tab and click **Environment Variables**.
-   - Under **System variables**, find the `Path` variable, select it, then click **Edit**.
-   - Click **New**, then type the path of the folder containing `sqlite3.exe`, and click **OK**.
-   - Open a new Command Prompt and type `sqlite3` to ensure it runs correctly.
+## Create the Azure subscription
 
-**Method 2: Using a Package Manager (e.g., Chocolatey)**
+If your Microsoft relationship is managed by a Customer Service Provider (CSP)) such as PAX8 you should go to the PA site to create the subscription. These instructions are for PAX8.  Alternatively log into portal.azure.com and create a subscription as a PAYG subscription.
 
-1. **Install Chocolatey** (if you haven’t already):  
-   - Open PowerShell as Administrator.
-   - Run:  
-     ```powershell
-     Set-ExecutionPolicy Bypass -Scope Process -Force; `
-     [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; `
-     Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-     ```
-2. **Install SQLite3**:  
-   ```powershell
-   choco install sqlite
-   ```
-3. **Verify Installation**: Open a new Command Prompt or PowerShell window and run:  
-   ```powershell
-   sqlite3 --version
-   ```
+1. Log into Pax8 Portal and go to the Catalog.  Search on Azure Plan.  Configure it.  It will be a PAYG plan, that will create a subscripotionin the client called `Azure subscription 1`
 
----
-
-### macOS
-
-**Method 1: Using Homebrew**
-
-1. **Install Homebrew** (if you haven’t yet): In Terminal, run:  
-   ```bash
-   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-   ```
-2. **Install SQLite3**: Once Homebrew is installed, run:  
-   ```bash
-   brew install sqlite
-   ```
-3. **Verify Installation**:  
-   ```bash
-   sqlite3 --version
-   ```
-
-**Method 2: Using MacPorts**
-
-1. **Install MacPorts**: If you prefer MacPorts, first install it from [https://www.macports.org/install.php](https://www.macports.org/install.php).
-2. **Install SQLite3**:  
-   ```bash
-   sudo port install sqlite3
-   ```
-3. **Verify Installation**:  
-   ```bash
-   sqlite3 --version
-   ```
-
-**Note**: SQLite may already be included on macOS by default. You can simply open Terminal and type `sqlite3`. If it’s already installed, it will open the SQLite prompt. If not, use one of the methods above.
-
----
-
-### Linux
-
-On most Linux distributions, SQLite3 is readily available via the default package manager.
-
-**For Debian/Ubuntu-Based Distributions**:
-
-1. **Update Package Lists**:  
-   ```bash
-   sudo apt update
-   ```
-2. **Install SQLite3**:  
-   ```bash
-   sudo apt install sqlite3
-   ```
-3. **Verify Installation**:  
-   ```bash
-   sqlite3 --version
-   ```
-
-**For Fedora/CentOS/RHEL**:
-
-1. **Install SQLite3**:  
-   ```bash
-   sudo dnf install sqlite
-   ```
-   *(On older distributions, you may need `yum` instead of `dnf`.)*
-2. **Verify Installation**:  
-   ```bash
-   sqlite3 --version
-   ```
-
-**For Arch Linux**:
-
-1. **Install via Pacman**:  
-   ```bash
-   sudo pacman -S sqlite
-   ```
-2. **Verify Installation**:  
-   ```bash
-   sqlite3 --version
-   ```
-
-**For Other Distributions**: Consult your distribution’s package manager or software repositories. Typically, a command like `sudo zypper install sqlite3` (for openSUSE) or similar will work.
+2. Go Portal.azure.com
+   - open tenant Properties. The easiest way is to search Tenant in trhe search bar at the top of the page.
+   - Enable access to the subscription by turning on this switch:  
+    ![](2026-06-18-11-52-03.png)  
+    
+3. Wait 10-15 minutes before you move to the next step.
+4. Go to the Subscription, and add yourself as Owner role to the subscription:  
+   1. ![](2026-06-18-11-54-00.png)
+   2. Click Grant Role assignment, and select the Privileges administrator rolw of Owner  
+   ![](2026-06-18-11-55-55.png)
+   3. Add yourself in the Members list
+   4. Select at least this level of rights:  
+   ![](2026-06-18-11-58-00.png)
+   5. Complete the assignment.  
+   6. Go to the Subscription and select Access Control (IAM).  Under View my access you shoudld now see this:  ![](2026-06-18-13-16-46.png)
 
 
-### Conclusion
+>   If errors occur, you might need to wait longer.
 
-After following the above instructions for your operating system, you should have the SQLite3 command-line tool installed. You can verify a successful installation by opening your terminal or command prompt and running `sqlite3 --version`. If it returns a version number rather than an error, you’re all set!
+5. Open https://wowcentral.worldofworkflows.com/SelfServeDeploy
 
+- Click signin to Azure  
+  This should ask you to grant access.  Tick the box and grant access.  You may need to enble popups for the site.
+  It should also load your subsription.  If you have more than 1, select the appropriate subscription.
+
+- Enter a name for your system.  Often we use the customer name.  This does not have to be the desired website host name, but it can be.
+- Click 'Check Availability.  This will ensure your name is unique in Azure, and populate the remaining fields.
+- Confirm the remaining values. If you are unsure what they mean, keep them as defaulted.
+- Your email address is prepopulated into Admin User UPN.
+- Guest Admins can be invited by entering their email address.
+- Select the App Service Plan Size.   this can be changed later to grow.  Start small.
+
+6. Click `Start Deployment`
+- This will provision your new server.
+- Monitor the Job Status window.  It mat ask you to perform some additional actions.  
+![](2026-06-18-13-44-13.png)  
+
+7. Open the site once deployment has completed.  
+8. Login.  You will be asked to grant access.  Tick the box and accept.  
+![](2026-06-18-13-22-45.png)
+
+## Populate your new World of Workflows Business Edition system
+
+Once logged in, your new site will be empty.   
+
+![](2026-06-18-13-45-58.png)
+
+You may be prompted to install a solution from our Solution store.  This dialog can be loaded at any time from the Admin -> Solutions card.
+
+![](2026-06-18-13-49-39.png)
+
+![](2026-06-18-13-51-22.png)
