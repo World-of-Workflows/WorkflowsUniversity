@@ -14,6 +14,8 @@ This **trigger** waits for activity on the defined path using the defined method
 
 - Properties
   - **Path** - The relative path that triggers this activity. Good paths are ```/endpoint``` or even ```/```.
+
+    > **Note:** The path is relative to the root of the server. It must start with a ```/``` character.
   - **Methods** - This is the HTTP Method the client uses to send the data and can be on or many of:
     - **Get** - Commonly used to retrieve information with no or little input
     - **Post** - Commonly used to create new entities.

@@ -57,3 +57,8 @@ has_children: true
   - submitting on button press 
   - Tailwinds CSS 
 
+[Interacting with Power Automate](./PowerAutomate.html) shows these concepts:
+
+- HTTP requests
+- HTTP end points
+- Power Automate
